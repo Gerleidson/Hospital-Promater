@@ -3,37 +3,140 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hospital Promater." />
-    <meta name="keywords" content="Hospital, Promater" />
+    <meta name="description" content="Dashboard do Hospital Promater" />
+    <meta name="keywords" content="Dashboard, Hospital, Promater" />
     <meta name="author" content="Gerleidson Bomfim" />
     <meta name="robots" content="index, follow" />
-    <title>Painel de Administração</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts-icones.css">
+    <title>Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png" type="image/ico" />
-  
-    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
 </head>
 <body>
-    <div class="dashboard-container">
-        <h1>Bem-vindo ao Painel de Administração</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Usuários</a></li>
-                <li><a href="#">Postagens</a></li>
-                <li><a href="#">Configurações</a></li>
-                <li><a href="#" id="logoutButton">Sair</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Hospital Promater</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Especialidades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="especialidadesDropdown">
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adm.html">Administrador</a></li>
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+                            <button class="btn btn-light my-2 my-sm-0" type="submit">Pesquisar</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <div class="content">
-            <p>Conteúdo principal do painel de administração.</p>
+    </header>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav id="sidebar" class="col-md-2 bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Consultas Agendadas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Pacientes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Relatórios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Configurações
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main content -->
+            <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4">
+                <h2>Bem-vindo ao Dashboard</h2>
+                <p>Aqui você pode visualizar e gerenciar todas as operações do hospital.</p>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card border-primary">
+                            <div class="card-header bg-primary text-white">
+                                Consultas Agendadas
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Visualize e gerencie todas as consultas agendadas.</p>
+                                <a href="#" class="btn btn-primary">Ver Consultas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card border-success">
+                            <div class="card-header bg-success text-white">
+                                Pacientes
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Gerencie o cadastro e informações dos pacientes.</p>
+                                <a href="#" class="btn btn-success">Ver Pacientes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card border-info">
+                            <div class="card-header bg-info text-white">
+                                Relatórios
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Acesse e gere relatórios de desempenho e estatísticas.</p>
+                                <a href="#" class="btn btn-info">Ver Relatórios</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card border-warning">
+                            <div class="card-header bg-warning text-dark">
+                                Configurações
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Ajuste as configurações do sistema conforme necessário.</p>
+                                <a href="#" class="btn btn-warning">Acessar Configurações</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
     </div>
-    <script src="script.js"></script>
-</body>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
