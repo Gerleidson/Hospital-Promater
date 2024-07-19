@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hospital Promater." />
+    <meta name="keywords" content="Hospital, Promater" />
+    <meta name="author" content="Gerleidson Bomfim" />
+    <meta name="robots" content="index, follow" />
+    <title>Login</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/ico" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Hospital Promater</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="especialidades.html" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Especialidades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="especialidadesDropdown">
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sobre
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="sobreDropdown">
+                            <a class="dropdown-item" href="#">Quem Somos</a>
+                            <a class="dropdown-item" href="#">Política de qualidade</a>
+                            <a class="dropdown-item" href="#">Visão, missão e valores</a>
+                            <a class="dropdown-item" href="#">Política LGPD</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="trabalheConosco.html">Trabalhe Conosco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Fale Conosco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adm.html">Área do Administrador</a></li>
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="login-container">
+                    <h2 class="text-center">Login</h2>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="username">Usuário:</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Senha:</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

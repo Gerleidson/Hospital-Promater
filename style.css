@@ -1,0 +1,36 @@
+header{
+    background-color: #4b875a;
+}
+
+main{
+    background-color: #daffe7;
+}
+
+footer{
+    background-color: #4b875a;
+    color: #fff;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: #4b875a;
+    background-color: #fff;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+footer a:hover{
+    color: #daffe7;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    cursor: pointer;
+}

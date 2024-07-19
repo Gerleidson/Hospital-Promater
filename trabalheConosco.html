@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página Trabalhe Conosco - Hospital Promater" />
+    <meta name="keywords" content="Trabalhe Conosco, Hospital, Promater" />
+    <meta name="author" content="Gerleidson Bomfim" />
+    <meta name="robots" content="index, follow" />
+    <title>Trabalhe Conosco</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/ico" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Hospital Promater</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="especialidades.html" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Especialidades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="especialidadesDropdown">
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sobre
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="sobreDropdown">
+                            <a class="dropdown-item" href="#">Quem Somos</a>
+                            <a class="dropdown-item" href="#">Política de qualidade</a>
+                            <a class="dropdown-item" href="#">Visão, missão e valores</a>
+                            <a class="dropdown-item" href="#">Política LGPD</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="trabalheConosco.html">Trabalhe Conosco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Fale Conosco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adm.html">Área do Administrador</a></li>
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Trabalhe Conosco</h2>
+            <p class="text-center mb-4">Preencha o formulário abaixo para se candidatar a uma vaga em nosso hospital. Anexe seu currículo e outros documentos relevantes.</p>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" class="form-control" id="telefone" name="telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="cargo">Cargo Desejado:</label>
+                    <input type="text" class="form-control" id="cargo" name="cargo" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="curriculo">Anexar Currículo:</label>
+                    <input type="file" class="form-control-file" id="curriculo" name="curriculo" accept=".pdf, .doc, .docx" required>
+                </div>
+                <div class="form-group">
+                    <label for="documentos">Anexar Outros Documentos (opcional):</label>
+                    <input type="file" class="form-control-file" id="documentos" name="documentos[]" multiple accept=".pdf, .doc, .docx, .jpg, .png">
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Siga-nos</h5>
+                    <ul class="list-unstyled social-icons">
+                        <li><a href="https://facebook.com/hospitalpromater" class="text-white">Facebook</a></li>
+                        <li><a href="https://instragram.com/hospitalpromater" class="text-white">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Empresa</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!">Sobre Nós</a></li>
+                        <li><a href="#!">Serviços</a></li>
+                        <li><a href="#!">Política de Privacidade</a></li>
+                        <li><a href="#!">Programas</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Ajuda</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!">FAQ</a></li>
+                        <li><a href="#!">Telefones</a></li>
+                        <li><a href="#!">E-mails</a></li>
+                        <li><a href="#!">Chat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            <a class="text-dark" href="#">Hospital Promater</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

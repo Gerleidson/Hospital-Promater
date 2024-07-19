@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hospital Promater - Fale Conosco" />
+    <meta name="keywords" content="Hospital, Promater, Contato" />
+    <meta name="author" content="Gerleidson Bomfim" />
+    <meta name="robots" content="index, follow" />
+    <title>Fale Conosco</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/ico" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Hospital Promater</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="especialidades.html" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Especialidades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="especialidadesDropdown">
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sobre
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="sobreDropdown">
+                            <a class="dropdown-item" href="#">Quem Somos</a>
+                            <a class="dropdown-item" href="#">Política de qualidade</a>
+                            <a class="dropdown-item" href="#">Visão, missão e valores</a>
+                            <a class="dropdown-item" href="#">Política LGPD</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="trabalheConosco.html">Trabalhe Conosco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Fale Conosco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adm.html">Área do Administrador</a></li>
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Informações de Contato</h2>
+                <div class="info">
+                    <h4>Endereço</h4>
+                    <p>Av. Lauro de Freitas, 1125</p>
+                    <p>Bairro: Centro - Dias D'àvila/BA.</p>
+                    <p>CEP: 42850-000</p>
+                </div>
+                <div class="info">
+                    <h4>Telefones</h4>
+                    <p>Fixo <br><i class="icon icon-phone"></i> (71) 3648-3750</p>
+                    <p>Call-center <br><i class="icon icon-phone"></i> (71) 98802-6456</p>
+                    <p>Qualidade <br><i class="icon icon-phone"></i> (71) 99620-7149</p>
+                </div>
+                <div class="info">
+                    <h4>Horário de Atendimento</h4>
+                    <p>Segunda a sexta das 09h às 19h.</p>
+                    <p>Sábados das 08h às 13h</p>
+                </div>
+                <h2>Onde Estamos</h2>
+                <div class="map-container mt-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.460133545778!2d-38.37987998494225!3d-12.737150641339853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716b751a849f6b%3A0x979a227b2c24f90!2sAv.%20Lauro%20de%20Freitas%2C%201125%20-%20Centro%2C%20Dias%20D'Ávila%20-%20BA%2C%2042850-000!5e0!3m2!1spt-BR!2sbr!4v1625164607363!5m2!1spt-BR!2sbr" width="200%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Fale Conosco</h2>
+                <p>Se você tiver alguma dúvida, sugestão ou reclamação, entre em contato conosco preenchendo o formulário abaixo:</p>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" class="form-control" id="assunto" name="assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

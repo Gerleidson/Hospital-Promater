@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página de notícias do Hospital Promater">
+    <meta name="keywords" content="notícias, hospital, Promater">
+    <meta name="author" content="Gerleidson Bomfim">
+    <meta name="robots" content="index, follow">
+    <title>Notícias - Hospital Promater</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="index.html">Hospital Promater</a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="especialidades.html">Especialidades</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sobre
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="sobreDropdown">
+                            <a class="dropdown-item" href="#">Quem Somos</a>
+                            <a class="dropdown-item" href="#">Política de qualidade</a>
+                            <a class="dropdown-item" href="#">Visão, missão e valores</a>
+                            <a class="dropdown-item" href="#">Política LGPD</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="trabalheConosco.html">Trabalhe Conosco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adm.html">Área do Administrador</a></li>
+                    <li class="search-bar">
+                        <form id="search-form" action="javascript:search()">
+                            <input type="text" id="search-input" placeholder="Buscar...">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-5">
+        <!-- Page Header -->
+        <div class="text-center mb-4">
+            <h1 class="display-4">Notícias</h1>
+            <p class="lead">Fique por dentro das últimas notícias e atualizações do Hospital Promater.</p>
+        </div>
+
+        <!-- Featured Articles -->
+        <section>
+            <h2 class="mb-4">Destaques</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="uploads/featured1.jpg" class="card-img-top" alt="Destaque 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Notícia Destaque 1</h5>
+                            <p class="card-text">Breve descrição do artigo em destaque. Clique para ler mais.</p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="uploads/featured2.jpg" class="card-img-top" alt="Destaque 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Notícia Destaque 2</h5>
+                            <p class="card-text">Breve descrição do artigo em destaque. Clique para ler mais.</p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="uploads/featured2.jpg" class="card-img-top" alt="Destaque 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Notícia Destaque 3</h5>
+                            <p class="card-text">Breve descrição do artigo em destaque. Clique para ler mais.</p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News List -->
+        <section>
+            <h2 class="mb-4">Todas as Notícias</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="uploads/news1.jpg" class="card-img-top" alt="Notícia 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Notícia 1</h5>
+                            <p class="card-text">Resumo da notícia 1. Clique para ler mais.</p>
+                            <a href="#" class="btn btn-secondary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="uploads/news2.jpg" class="card-img-top" alt="Notícia 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Notícia 2</h5>
+                            <p class="card-text">Resumo da notícia 2. Clique para ler mais.</p>
+                            <a href="#" class="btn btn-secondary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="uploads/news3.jpg" class="card-img-top" alt="Notícia 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Notícia 3</h5>
+                            <p class="card-text">Resumo da notícia 3. Clique para ler mais.</p>
+                            <a href="#" class="btn btn-secondary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="bg-light p-4 mt-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Assine nossa Newsletter</h2>
+                <form action="javascript:subscribeNewsletter()" method="post" class="text-center">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="newsletterEmail" placeholder="Seu e-mail" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Assinar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- WhatsApp Button -->
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=5571988026456&text=Ol%C3%A1,%20Seja%20bem%20vindo!%20Como%20posso%20te%20ajudar?">
+        <div class="rwb-tooltip">Agende pelo Whatsapp</div>
+        <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+    </a>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Siga-nos</h5>
+                    <ul class="list-unstyled social-icons">
+                        <li><a href="https://facebook.com/hospitalpromater" class="text-white">Facebook</a></li>
+                        <li><a href="https://instragram.com/hospitalpromater" class="text-white">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Empresa</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!">Sobre Nós</a></li>
+                        <li><a href="#!">Serviços</a></li>
+                        <li><a href="#!">Política de Privacidade</a></li>
+                        <li><a href="#!">Programas</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Ajuda</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!">FAQ</a></li>
+                        <li><a href="#!">Telefones</a></li>
+                        <li><a href="#!">E-mails</a></li>
+                        <li><a href="#!">Chat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            <a class="text-dark" href="#">Hospital Promater</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Função para busca (placeholder)
+        function search() {
+            alert("Função de busca ainda não implementada.");
+        }
+
+        // Função para inscrição na newsletter (placeholder)
+        function subscribeNewsletter() {
+            alert("Inscrição na newsletter ainda não implementada.");
+        }
+    </script>
+</body>
+</html>
