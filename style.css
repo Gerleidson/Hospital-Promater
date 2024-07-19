@@ -15,7 +15,9 @@ a{
     color: #fff;
     text-decoration: none;
 }
-
+.card-text{
+    color: #000;
+}
 header a:hover{
     color: #4b875a;
     background-color: #fff;
@@ -33,4 +35,24 @@ footer a:hover{
     transform: scale(1.05);
     transition: transform 0.3s;
     cursor: pointer;
+}
+
+
+.btn-3d {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745; /* Verde */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para efeito 3D */
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.btn-3d:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra mais intensa ao passar o mouse */
+    transform: translateY(-2px); /* Levanta o botão */
 }
