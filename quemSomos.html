@@ -11,11 +11,12 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png" type="image/ico" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #4b875a;">
-            <a class="navbar-brand text-white" href="#">Hospital Promater</a>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b875a;">
+            <a class="navbar-brand" href="#">Hospital Promater</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,9 +24,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Especialidades
-                        </a>
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Especialidades</a>
                         <div class="dropdown-menu" aria-labelledby="especialidadesDropdown">
                             <a class="dropdown-item" href="#">*****</a>
                             <a class="dropdown-item" href="#">*****</a>
@@ -34,14 +33,12 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Sobre Nós
-                        </a>
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre Nós</a>
                         <div class="dropdown-menu" aria-labelledby="sobreDropdown">
                             <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>                         
                             <a class="dropdown-item" href="missão.html">Visão, missão e valores</a>
                             <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
-                            <a class="dropdown-item" href="politicaLGPD.html">Política LGPD</a>
+                            <a class="dropdown-item" href="politicaLGPD.html">Política de Privacidade</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">*****</a>
                             <a class="dropdown-item" href="#">*****</a>
@@ -61,11 +58,65 @@
         </nav>
     </header>
 
-    <div class="container mt-5">
-        <h1>Quem Somos</h1>
-        <p>O Hospital Promater é uma instituição dedicada ao atendimento de qualidade e excelência em saúde. Fundado com o objetivo de oferecer cuidados médicos abrangentes e personalizados, nosso hospital conta com uma equipe de profissionais altamente qualificados e tecnologia avançada para garantir o melhor atendimento aos nossos pacientes.</p>
-        <p>Nosso compromisso é com a saúde e o bem-estar da comunidade, proporcionando um ambiente acolhedor e seguro para todos que buscam nossos serviços. Estamos constantemente atualizando nossos métodos e práticas para atender às necessidades de nossos pacientes e melhorar continuamente nossos serviços.</p>
-    </div>
+    <main>
+        <div class="container mt-5">
+            <div class="bg-white p-4 rounded shadow-sm">
+                <h1 class="text-center">Quem Somos</h1>
+                <p>
+                    A PROMATER POLICLÍNICA E MATERNIDADE SOCIEDADE SIMPLES LTDA, conhecida pelo seu nome popular de (Promater), foi fundada em 1991 pelo médico Dr. José Carlos, um visionário que buscava aplicar seus conhecimentos na área da saúde com um novo conceito voltado para o bem-estar da população. O início dessa jornada ocorreu na cidade de Dias D'Ávila, Bahia.
+                </p>
+                <p>
+                    No ano de 2020, Dr. José Carlos Junior e Dra. Evelyn Nascimento assumiram a direção da organização Promater, trazendo um novo impulso e revitalização da marca. Com suas competências e visão estratégica, contribuíram significativamente para o crescimento e desenvolvimento contínuo da instituição. Seus esforços foram fundamentais para fortalecer ainda mais o compromisso da Promater com a excelência no atendimento e na inovação em serviços de saúde, garantindo assim uma trajetória de sucesso e confiança junto à comunidade que atendem.
+                </p>
+                <p>
+                    Desde sua fundação, a Promater tem se destacado pela constante preocupação com a qualidade, agilidade e confiança nos resultados oferecidos. A instituição é reconhecida pela excelência na prestação de serviços médicos, superando as expectativas dos clientes diariamente. Com uma equipe de profissionais altamente qualificados, a Promater assegura um atendimento que combina competência técnica com um acolhimento humano e respeitoso.
+                </p>
+                <p>
+                    A Promater nos dias atuais oferece à sociedade diversos tipos de especialidades médicas, serviços de imagem, mais de 6.000 tipos de exames de sangue. Utilizando tecnologia de ponta e mantendo uma equipe técnica e administrativa constantemente treinada, o hospital garante qualidade e eficácia em todos os seus procedimentos.
+                </p>
+                <p>
+                    A Promater, no ano de 2024, está passando por um processo contínuo de revitalização, atualizando sua marca e imagem para melhor refletir seus valores e compromissos com a excelência em saúde. Esse esforço visa não apenas modernizar sua identidade visual, mas também fortalecer sua presença no mercado, destacando-se como uma instituição inovadora e comprometida com o bem-estar da comunidade que serve.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start mt-5" style="background-color: #4b875a;">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-white">Siga-nos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://facebook.com/hospitalpromater" class="text-white">Facebook</a></li>
+                        <li><a href="https://instagram.com/hospitalpromater" class="text-white">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white">Empresa</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!" class="text-white">Sobre Nós</a></li>
+                        <li><a href="#!" class="text-white">Serviços</a></li>
+                        <li><a href="#!" class="text-white">Política de Privacidade</a></li>
+                        <li><a href="#!" class="text-white">Programas</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white">Ajuda</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!" class="text-white">FAQ</a></li>
+                        <li><a href="#!" class="text-white">Telefones</a></li>
+                        <li><a href="#!" class="text-white">E-mails</a></li>
+                        <li><a href="#!" class="text-white">Chat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: #3c6b47;">
+            © 2024 Copyright:
+            <a class="text-white" href="#">Hospital Promater</a>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>

@@ -11,11 +11,12 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png" type="image/ico" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
+    <link rel="stylesheet" href="style.css"> <!-- Certifique-se de que este seja o mesmo arquivo CSS usado em outras páginas -->
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #4b875a;">
-            <a class="navbar-brand text-white" href="#">Hospital Promater</a>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4b875a;">
+            <a class="navbar-brand text-white" href="index.html">Hospital Promater</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,14 +35,14 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Sobre Nós
                         </a>
                         <div class="dropdown-menu" aria-labelledby="sobreDropdown">
                             <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>                         
-                            <a class="dropdown-item" href="missão.html">Visão, missão e valores</a>
+                            <a class="dropdown-item" href="missao.html">Visão, Missão e Valores</a>
                             <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
-                            <a class="dropdown-item" href="politicaLGPD.html">Política LGPD</a>
+                            <a class="dropdown-item" href="politicaLGPD.html">Política de Privacidade</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">*****</a>
                             <a class="dropdown-item" href="#">*****</a>
@@ -61,24 +62,72 @@
         </nav>
     </header>
 
-    <div class="container mt-5">
-        <h1>Visão, Missão e Valores</h1>
+    <main>
+        <div class="container mt-5">
+            <div class="bg-white p-4 rounded shadow-sm">
+                <h1 class="text-center">Visão, Missão e Valores</h1>
+                <div class="col-md-8 offset-md-2">
+                    <section>
+                        <h2>Missão</h2>
+                        <p>Oferecer cuidados de saúde nos segmentos assistencial, ambulatorial, emergencial e laboratorial, promovendo o bem-estar de nossos clientes com atendimento ágil e garantindo que cada pessoa que entre em nosso hospital seja recebida com respeito, empatia e alta qualidade.</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Visão</h2>
+                        <p>Tornar-se um hospital de referência regional, reconhecido pela qualidade e excelência no atendimento e cuidado com a saúde da comunidade.</p>
+                    </section>
 
-        <h2>Visão</h2>
-        <p>Ser reconhecido como o melhor hospital da região, oferecendo atendimento de qualidade com tecnologia de ponta e respeito aos pacientes e colaboradores.</p>
+                    <section>
+                        <h2>Valores</h2>
+                        <ul>
+                            <li>Administração participativa.</li>
+                            <li>Competitividade de mercado.</li>
+                            <li>Integração com a comunidade.</li>
+                            <li>Hierarquia e disciplina.</li>
+                            <li>Liberdade de expressão.</li>
+                            <li>Transparência e ética.</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+    </main>
 
-        <h2>Missão</h2>
-        <p>Proporcionar um atendimento médico humanizado e eficaz, promovendo a saúde e bem-estar dos nossos pacientes com excelência e inovação.</p>
-
-        <h2>Valores</h2>
-        <ul>
-            <li>Humanização: Tratamento com respeito e empatia.</li>
-            <li>Excelência: Compromisso com a qualidade e melhoria contínua.</li>
-            <li>Inovação: Busca constante por novas tecnologias e práticas.</li>
-            <li>Integridade: Atuação ética e transparente.</li>
-            <li>Responsabilidade: Cuidados com a saúde e segurança dos nossos pacientes e colaboradores.</li>
-        </ul>
-    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start mt-5" style="background-color: #4b875a;">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-white">Siga-nos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://facebook.com/hospitalpromater" class="text-white">Facebook</a></li>
+                        <li><a href="https://instagram.com/hospitalpromater" class="text-white">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white">Empresa</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!" class="text-white">Sobre Nós</a></li>
+                        <li><a href="#!" class="text-white">Serviços</a></li>
+                        <li><a href="#!" class="text-white">Política de Privacidade</a></li>
+                        <li><a href="#!" class="text-white">Programas</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white">Ajuda</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!" class="text-white">FAQ</a></li>
+                        <li><a href="#!" class="text-white">Telefones</a></li>
+                        <li><a href="#!" class="text-white">E-mails</a></li>
+                        <li><a href="#!" class="text-white">Chat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: #3c6b47;">
+            © 2024 Copyright:
+            <a class="text-white" href="#">Hospital Promater</a>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
