@@ -41,6 +41,16 @@ footer a:hover{
     cursor: pointer;
 }
 
+.btn-outline-success{
+    background-color: #fff;
+    border:#4b875a;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
 
 .btn-3d {
     display: inline-block;
