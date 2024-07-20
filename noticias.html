@@ -56,109 +56,114 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container mt-5">
+    <main>
+    <div class="container mt-5">
+        <div class="bg-white p-4 rounded shadow-sm">
         <!-- Page Header -->
-        <div class="text-center mb-4">
-            <h1 class="display-4">Notícias</h1>
-            <p class="lead">Fique por dentro das últimas notícias e atualizações do Hospital Promater.</p>
+                <div class="text-center mb-4">
+                    <h1 class="display-4">Notícias</h1>
+                    <p class="lead">Fique por dentro das últimas notícias e atualizações do Hospital Promater.</p>
+                </div>
+
+                <!-- Featured Articles -->
+                <section>
+                    <h2 class="mb-4">Destaques</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <img src="uploads/featured1.jpg" class="card-img-top" alt="Destaque 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Notícia Destaque 1</h5>
+                                    <p class="card-text">Breve descrição do artigo em destaque. Clique para ler mais.</p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <img src="uploads/featured2.jpg" class="card-img-top" alt="Destaque 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Notícia Destaque 2</h5>
+                                    <p class="card-text">Breve descrição do artigo em destaque. Clique para ler mais.</p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <img src="uploads/featured3.jpg" class="card-img-top" alt="Destaque 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Notícia Destaque 3</h5>
+                                    <p class="card-text">Breve descrição do artigo em destaque. Clique para ler mais.</p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <img src="uploads/featured4.jpg" class="card-img-top" alt="Destaque 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Notícia Destaque 4</h5>
+                                    <p class="card-text">Breve descrição do artigo em destaque. Clique para ler mais.</p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- News List -->
+                <section>
+                    <h2 class="mb-4">Todas as Notícias</h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="uploads/news1.jpg" class="card-img-top" alt="Notícia 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Notícia 1</h5>
+                                    <p class="card-text">Resumo da notícia 1. Clique para ler mais.</p>
+                                    <a href="#" class="btn btn-secondary">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="uploads/news2.jpg" class="card-img-top" alt="Notícia 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Notícia 2</h5>
+                                    <p class="card-text">Resumo da notícia 2. Clique para ler mais.</p>
+                                    <a href="#" class="btn btn-secondary">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="uploads/news3.jpg" class="card-img-top" alt="Notícia 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Notícia 3</h5>
+                                    <p class="card-text">Resumo da notícia 3. Clique para ler mais.</p>
+                                    <a href="#" class="btn btn-secondary">Leia mais</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Signup -->
+            <section class="bg-light p-4 mt-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">Assine nossa Newsletter</h2>
+                    <form action="javascript:subscribeNewsletter()" method="post" class="text-center">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="newsletterEmail" placeholder="Seu e-mail" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Assinar</button>
+                    </form>
+                </div>
+            </section>
         </div>
+    </div>
 
-        <!-- Featured Articles -->
-        <section>
-            <h2 class="mb-4">Destaques</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <img src="uploads/featured1.jpg" class="card-img-top" alt="Destaque 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Notícia Destaque 1</h5>
-                            <p class="card-text">Breve descrição do artigo em destaque. Clique para ler mais.</p>
-                            <a href="#" class="btn btn-primary">Leia mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <img src="uploads/featured2.jpg" class="card-img-top" alt="Destaque 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Notícia Destaque 2</h5>
-                            <p class="card-text">Breve descrição do artigo em destaque. Clique para ler mais.</p>
-                            <a href="#" class="btn btn-primary">Leia mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <img src="uploads/featured3.jpg" class="card-img-top" alt="Destaque 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Notícia Destaque 3</h5>
-                            <p class="card-text">Breve descrição do artigo em destaque. Clique para ler mais.</p>
-                            <a href="#" class="btn btn-primary">Leia mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <img src="uploads/featured4.jpg" class="card-img-top" alt="Destaque 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Notícia Destaque 4</h5>
-                            <p class="card-text">Breve descrição do artigo em destaque. Clique para ler mais.</p>
-                            <a href="#" class="btn btn-primary">Leia mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- News List -->
-        <section>
-            <h2 class="mb-4">Todas as Notícias</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="uploads/news1.jpg" class="card-img-top" alt="Notícia 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Notícia 1</h5>
-                            <p class="card-text">Resumo da notícia 1. Clique para ler mais.</p>
-                            <a href="#" class="btn btn-secondary">Leia mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="uploads/news2.jpg" class="card-img-top" alt="Notícia 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Notícia 2</h5>
-                            <p class="card-text">Resumo da notícia 2. Clique para ler mais.</p>
-                            <a href="#" class="btn btn-secondary">Leia mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="uploads/news3.jpg" class="card-img-top" alt="Notícia 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Notícia 3</h5>
-                            <p class="card-text">Resumo da notícia 3. Clique para ler mais.</p>
-                            <a href="#" class="btn btn-secondary">Leia mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Newsletter Signup -->
-        <section class="bg-light p-4 mt-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Assine nossa Newsletter</h2>
-                <form action="javascript:subscribeNewsletter()" method="post" class="text-center">
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="newsletterEmail" placeholder="Seu e-mail" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Assinar</button>
-                </form>
-            </div>
-        </section>
     </main>
 
     <!-- WhatsApp Button -->
@@ -203,6 +208,7 @@
         © 2024 Copyright:
         <a class="text-dark" href="#">Hospital Promater</a>
     </div>
+
 </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
