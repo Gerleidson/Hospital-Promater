@@ -1,7 +1,3 @@
-Claro, vou criar uma versão mais profissional da documentação do site, sem incluir instruções de instalação.
-
----
-
 # Documentação do Site Hospital Promater
 
 ## Índice
