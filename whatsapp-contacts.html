@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha um Contato</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Adiciona cor personalizada para o fundo e a borda */
+        .bg-custom-green {
+            background-color: #4b875a !important;
+        }
+        .border-custom-green {
+            border-color: #4b875a !important;
+        }
+        .text-custom-green {
+            color: #4b875a !important;
+        }
+        .list-group-item:hover {
+            background-color: #4b875a;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-custom-green text-white text-center py-4">
+        <h1 class="display-4">Escolha um Contato</h1>
+        <p class="lead">Entre em contato conosco pelo WhatsApp</p>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="list-group">
+                            <!-- Efeito de borda e sombra com cor personalizada -->
+                            <a href="https://api.whatsapp.com/send?phone=5571988026456&text=Ol%C3%A1,%20Seja%20bem%20vindo!%20Como%20posso%20te%20ajudar?" class="list-group-item list-group-item-action mb-3 border border-custom-green rounded shadow-sm" target="_blank">
+                                <h5 class="mb-1">Call Center</h5>
+                                <p class="mb-1">WhatsApp</p>
+                            </a>
+                            
+                            <a href="https://api.whatsapp.com/send?phone=5571996207149&text=Olá,%20como%20posso%20ajudar?" class="list-group-item list-group-item-action border border-custom-green rounded shadow-sm" target="_blank">
+                                <h5 class="mb-1">Qualidade</h5>
+                                <p class="mb-1">WhatsApp</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
