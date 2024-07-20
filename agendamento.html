@@ -13,16 +13,29 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/ico" />
 </head>
 <body>
+    <!-- Navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg ">
             <a class="navbar-brand" href="index.html">Hospital Promater</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="especialidades.html">Especialidades</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="especialidades.html" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Especialidades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="especialidadesDropdown">
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                        </div>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Sobre Nós
@@ -32,14 +45,17 @@
                             <a class="dropdown-item" href="missão.html">Visão, missão e valores</a>
                             <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
                             <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">***** </a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="trabalheConosco.html">Trabalhe Conosco</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contato.html">Fale Conosco</a></li>
-                    <li class="nav-item"><a class="nav-link" href="adm.html">Área do Administrador</a></li>
-                    <li class="nav-item">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+                    <li class="nav-item"><a class="nav-link" href="trabalheConosco.html" title="Trabalhe Conosco">Trabalhe Conosco</a></li>            
+                    <li class="nav-item"><a class="nav-link" href="contato.html" title="Fale Conosco">Contato</a></li>             
+                    <li class="nav-item"><a class="nav-link" href="adm.html" title="Área do Administrador">Área do Administrador</a></li>
+                    <li class="search-bar">
+                        <form id="search-form" action="javascript:search()">
+                            <input type="text" id="search-input" placeholder="Buscar...">
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
                         </form>
                     </li>
@@ -50,115 +66,117 @@
 
     <main>
         <div class="container mt-5">
-            <h1>Serviços de Agendamento</h1>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="consulta-agenda-tab" data-toggle="tab" href="#consulta-agenda" role="tab" aria-controls="consulta-agenda" aria-selected="true">Consultar Agenda Médica</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="marcacao-exames-tab" data-toggle="tab" href="#marcacao-exames" role="tab" aria-controls="marcacao-exames" aria-selected="false">Marcar Exame</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="historico-marcacoes-tab" data-toggle="tab" href="#historico-marcacoes" role="tab" aria-controls="historico-marcacoes" aria-selected="false">Consultar Histórico de Marcações</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="cancelar-marcacao-tab" data-toggle="tab" href="#cancelar-marcacao" role="tab" aria-controls="cancelar-marcacao" aria-selected="false">Cancelar Marcação</a>
-                </li>
-            </ul>
-            <div class="tab-content mt-3" id="myTabContent">
-                <!-- Consultar Agenda Médica -->
-                <div class="tab-pane fade show active" id="consulta-agenda" role="tabpanel" aria-labelledby="consulta-agenda-tab">
-                    <h2>Consultar Agenda Médica</h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="especialidadeConsulta">Especialidade:</label>
-                            <select class="form-control" id="especialidadeConsulta" name="especialidadeConsulta" required>
-                                <option value="">Selecione uma especialidade</option>
-                                <option value="clinica-geral">Clínica Geral</option>
-                                <option value="cardiologia">Cardiologia</option>
-                                <option value="dermatologia">Dermatologia</option>
-                                <option value="pediatria">Pediatria</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="dataConsulta">Data:</label>
-                            <input type="date" class="form-control" id="dataConsulta" name="dataConsulta" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Consultar Agenda</button>
-                    </form>
-                </div>
-                <!-- Marcar Exame -->
-                <div class="tab-pane fade" id="marcacao-exames" role="tabpanel" aria-labelledby="marcacao-exames-tab">
-                    <h2>Marcar Exame</h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="nome">Nome:</label>
-                            <input type="text" class="form-control" id="nome" name="nome" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="telefone">Telefone:</label>
-                            <input type="tel" class="form-control" id="telefone" name="telefone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="tipoExame">Tipo de Exame:</label>
-                            <select class="form-control" id="tipoExame" name="tipoExame" required>
-                                <option value="">Selecione o tipo de exame</option>
-                                <option value="sangue">Exame de Sangue</option>
-                                <option value="urina">Exame de Urina</option>
-                                <option value="imagem">Exame de Imagem</option>
-                                <!-- Adicione mais opções conforme necessário -->
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="dataExame">Data:</label>
-                            <input type="date" class="form-control" id="dataExame" name="dataExame" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Marcar Exame</button>
-                    </form>
-                </div>
-                <!-- Consultar Histórico de Marcações -->
-                <div class="tab-pane fade" id="historico-marcacoes" role="tabpanel" aria-labelledby="historico-marcacoes-tab">
-                    <h2>Consultar Histórico de Marcações</h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="emailHistorico">E-mail:</label>
-                            <input type="email" class="form-control" id="emailHistorico" name="emailHistorico" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Consultar Histórico</button>
-                    </form>
-                </div>
-                <!-- Cancelar Marcação -->
-                <div class="tab-pane fade" id="cancelar-marcacao" role="tabpanel" aria-labelledby="cancelar-marcacao-tab">
-                    <h2>Cancelar Marcação</h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="codigoMarcacao">Código da Marcação:</label>
-                            <input type="text" class="form-control" id="codigoMarcacao" name="codigoMarcacao" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="motivoCancelamento">Motivo do Cancelamento:</label>
-                            <textarea class="form-control" id="motivoCancelamento" name="motivoCancelamento" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Cancelar Marcação</button>
-                    </form>
+            <div class="bg-white p-4 rounded shadow-sm">
+                <h1>Serviços de Agendamento</h1>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark active" id="consulta-agenda-tab" data-toggle="tab" href="#consulta-agenda" role="tab" aria-controls="consulta-agenda" aria-selected="true">Consultar Agenda Médica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" id="marcacao-exames-tab" data-toggle="tab" href="#marcacao-exames" role="tab" aria-controls="marcacao-exames" aria-selected="false">Marcar Exame</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" id="historico-marcacoes-tab" data-toggle="tab" href="#historico-marcacoes" role="tab" aria-controls="historico-marcacoes" aria-selected="false">Consultar Histórico de Marcações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" id="cancelar-marcacao-tab" data-toggle="tab" href="#cancelar-marcacao" role="tab" aria-controls="cancelar-marcacao" aria-selected="false">Cancelar Marcação</a>
+                    </li>
+                </ul>
+                <div class="tab-content mt-3" id="myTabContent">
+                    <!-- Consultar Agenda Médica -->
+                    <div class="tab-pane fade show active" id="consulta-agenda" role="tabpanel" aria-labelledby="consulta-agenda-tab">
+                        <h2>Consultar Agenda Médica</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="especialidadeConsulta">Especialidade:</label>
+                                <select class="form-control" id="especialidadeConsulta" name="especialidadeConsulta" required>
+                                    <option value="">Selecione uma especialidade</option>
+                                    <option value="clinica-geral">Clínica Geral</option>
+                                    <option value="cardiologia">Cardiologia</option>
+                                    <option value="dermatologia">Dermatologia</option>
+                                    <option value="pediatria">Pediatria</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="dataConsulta">Data:</label>
+                                <input type="date" class="form-control" id="dataConsulta" name="dataConsulta" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Consultar Agenda</button>
+                        </form>
+                    </div>
+                    <!-- Marcar Exame -->
+                    <div class="tab-pane fade" id="marcacao-exames" role="tabpanel" aria-labelledby="marcacao-exames-tab">
+                        <h2>Marcar Exame</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" class="form-control" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone:</label>
+                                <input type="tel" class="form-control" id="telefone" name="telefone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tipoExame">Tipo de Exame:</label>
+                                <select class="form-control" id="tipoExame" name="tipoExame" required>
+                                    <option value="">Selecione o tipo de exame</option>
+                                    <option value="sangue">Exame de Sangue</option>
+                                    <option value="urina">Exame de Urina</option>
+                                    <option value="imagem">Exame de Imagem</option>
+                                    <!-- Adicione mais opções conforme necessário -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="dataExame">Data:</label>
+                                <input type="date" class="form-control" id="dataExame" name="dataExame" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Marcar Exame</button>
+                        </form>
+                    </div>
+                    <!-- Consultar Histórico de Marcações -->
+                    <div class="tab-pane fade" id="historico-marcacoes" role="tabpanel" aria-labelledby="historico-marcacoes-tab">
+                        <h2>Consultar Histórico de Marcações</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="nomeHistorico">Nome:</label>
+                                <input type="text" class="form-control" id="nomeHistorico" name="nomeHistorico" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailHistorico">E-mail:</label>
+                                <input type="email" class="form-control" id="emailHistorico" name="emailHistorico" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Consultar Histórico</button>
+                        </form>
+                    </div>
+                    <!-- Cancelar Marcação -->
+                    <div class="tab-pane fade" id="cancelar-marcacao" role="tabpanel" aria-labelledby="cancelar-marcacao-tab">
+                        <h2>Cancelar Marcação</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="idMarcacao">ID da Marcação:</label>
+                                <input type="text" class="form-control" id="idMarcacao" name="idMarcacao" required>
+                            </div>
+                            <button type="submit" class="btn btn-danger">Cancelar Marcação</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="text-center text-lg-start mt-5">
+    <footer class=" text-center text-lg-start mt-5">
         <div class="container p-4">
             <div class="row">
                 <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
                     <h5 class="text-uppercase">Siga-nos</h5>
                     <ul class="list-unstyled social-icons">
-                        <li><a href="https://facebook.com/hospitalpromater" class="text-dark">Facebook</a></li>
-                        <li><a href="https://instragram.com/hospitalpromater" class="text-dark">Instagram</a></li>
+                        <li><a href="https://facebook.com/hospitalpromater" class="text-white">Facebook</a></li>
+                        <li><a href="https://instragram.com/hospitalpromater" class="text-white">Instagram</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
@@ -188,7 +206,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -9,21 +9,24 @@
     <meta name="robots" content="index, follow" />
     <title>Política de Privacidade</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/ico" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #4b875a;">
-            <a class="navbar-brand text-white" href="index.html">Hospital Promater</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="index.html">Hospital Promater</a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="especialidades.html" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Especialidades
                         </a>
                         <div class="dropdown-menu" aria-labelledby="especialidadesDropdown">
@@ -44,24 +47,27 @@
                             <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">*****</a>
-                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">***** </a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link text-white" href="trabalheConosco.html">Trabalhe Conosco</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="contato.html">Fale Conosco</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="adm.html">Área do Administrador</a></li>
-                    <li class="nav-item">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
-                            <button class="btn btn-light my-2 my-sm-0" type="submit">Pesquisar</button>
+
+                    <li class="nav-item"><a class="nav-link" href="trabalheConosco.html" title="Trabalhe Conosco">Trabalhe Conosco</a></li>            
+                    <li class="nav-item"><a class="nav-link" href="contato.html" title="Fale Conosco">Contato</a></li>             
+                    <li class="nav-item"><a class="nav-link" href="adm.html" title="Área do Administrador">Área do Administrador</a></li>
+                                     
+                    <li class="search-bar">
+                        <form id="search-form" action="javascript:search()">
+                            <input type="text" id="search-input" placeholder="Buscar...">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
                         </form>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-
+<main>
     <div class="container mt-5">
+        <div class="bg-white p-4 rounded shadow-sm">
         <h1>Política de Privacidade</h1>
         <p>O Hospital Promater valoriza a sua privacidade e está comprometido em proteger suas informações pessoais. Esta política explica como coletamos, usamos, armazenamos e protegemos suas informações.</p>
         
@@ -80,6 +86,45 @@
         <h2>Alterações na Política</h2>
         <p>Podemos atualizar nossa política de privacidade periodicamente. Quaisquer alterações serão publicadas nesta página com uma data de revisão atualizada.</p>
     </div>
+</main>
+
+ <!-- Footer -->
+ <footer class=" text-center text-lg-start mt-5">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Siga-nos</h5>
+                <ul class="list-unstyled social-icons">
+                    <li><a href="https://facebook.com/hospitalpromater" class="text-white">Facebook</a></li>
+                    <li><a href="https://instragram.com/hospitalpromater" class="text-white">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Empresa</h5>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="#!">Sobre Nós</a></li>
+                    <li><a href="#!">Serviços</a></li>
+                    <li><a href="#!">Política de Privacidade</a></li>
+                    <li><a href="#!">Programas</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Ajuda</h5>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="#!">FAQ</a></li>
+                    <li><a href="#!">Telefones</a></li>
+                    <li><a href="#!">E-mails</a></li>
+                    <li><a href="#!">Chat</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Copyright:
+        <a class="text-dark" href="#">Hospital Promater</a>
+    </div>
+</footer>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>

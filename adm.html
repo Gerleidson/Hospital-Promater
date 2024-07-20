@@ -14,17 +14,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b875a;">
-            <a class="navbar-brand" href="index">Hospital Promater</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <!-- Navbar -->
+       <header>
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="index.html">Hospital Promater</a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Especialidades</a>
+                        <a class="nav-link dropdown-toggle" href="especialidades.html" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Especialidades
+                        </a>
                         <div class="dropdown-menu" aria-labelledby="especialidadesDropdown">
                             <a class="dropdown-item" href="#">*****</a>
                             <a class="dropdown-item" href="#">*****</a>
@@ -33,7 +38,9 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre Nós</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sobre Nós
+                        </a>
                         <div class="dropdown-menu" aria-labelledby="sobreDropdown">
                             <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>                         
                             <a class="dropdown-item" href="missão.html">Visão, missão e valores</a>
@@ -41,47 +48,51 @@
                             <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">*****</a>
-                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">***** </a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link text-white" href="trabalheConosco.html">Trabalhe Conosco</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="contato.html">Fale Conosco</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="adm.html">Área do Administrador</a></li>
-                    <li class="nav-item">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
-                            <button class="btn btn-light my-2 my-sm-0" type="submit">Pesquisar</button>
+
+                    <li class="nav-item"><a class="nav-link" href="trabalheConosco.html" title="Trabalhe Conosco">Trabalhe Conosco</a></li>            
+                    <li class="nav-item"><a class="nav-link" href="contato.html" title="Fale Conosco">Contato</a></li>             
+                    <li class="nav-item"><a class="nav-link" href="adm.html" title="Área do Administrador">Área do Administrador</a></li>
+                                     
+                    <li class="search-bar">
+                        <form id="search-form" action="javascript:search()">
+                            <input type="text" id="search-input" placeholder="Buscar...">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
                         </form>
                     </li>
                 </ul>
             </div>
         </nav>
-    </header>
+     </header>
 
     <main>
         <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="login-container p-4 border rounded shadow">
-                        <h2 class="text-center mb-4">Login</h2>
-                        <form id="loginForm">
-                            <div class="form-group">
-                                <label for="username">Usuário:</label>
-                                <input type="text" class="form-control" id="username" name="username" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Senha:</label>
-                                <input type="password" class="form-control" id="password" name="password" required>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
-                        </form>
+            <div class="bg-white p-4 rounded shadow-sm">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="login-container p-4 border rounded shadow">
+                            <h2 class="text-center mb-4">Login</h2>
+                            <form id="loginForm">
+                                <div class="form-group">
+                                    <label for="username">Usuário:</label>
+                                    <input type="text" class="form-control" id="username" name="username" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Senha:</label>
+                                    <input type="password" class="form-control" id="password" name="password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-      <!-- Footer -->
+    <!-- Footer -->
     <footer class=" text-center text-lg-start mt-5">
         <div class="container p-4">
             <div class="row">

@@ -14,87 +14,98 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b875a;">
-            <a class="navbar-brand" href="index.html">Hospital Promater</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Especialidades</a>
-                        <div class="dropdown-menu" aria-labelledby="especialidadesDropdown">
-                            <a class="dropdown-item" href="#">*****</a>
-                            <a class="dropdown-item" href="#">*****</a>
-                            <a class="dropdown-item" href="#">*****</a>
-                            <a class="dropdown-item" href="#">*****</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre Nós</a>
-                        <div class="dropdown-menu" aria-labelledby="sobreDropdown">
-                            <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>                         
-                            <a class="dropdown-item" href="missão.html">Visão, missão e valores</a>
-                            <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
-                            <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">*****</a>
-                            <a class="dropdown-item" href="#">*****</a>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a class="nav-link text-white" href="trabalheConosco.html">Trabalhe Conosco</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="contato.html">Fale Conosco</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="adm.html">Área do Administrador</a></li>
-                    <li class="nav-item">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
-                            <button class="btn btn-light my-2 my-sm-0" type="submit">Pesquisar</button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg ">
+                <a class="navbar-brand" href="index.html">Hospital Promater</a>
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="especialidades.html" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Especialidades
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="especialidadesDropdown">
+                                <a class="dropdown-item" href="#">*****</a>
+                                <a class="dropdown-item" href="#">*****</a>
+                                <a class="dropdown-item" href="#">*****</a>
+                                <a class="dropdown-item" href="#">*****</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sobre Nós
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="sobreDropdown">
+                                <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>                         
+                                <a class="dropdown-item" href="missão.html">Visão, missão e valores</a>
+                                <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
+                                <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">*****</a>
+                                <a class="dropdown-item" href="#">***** </a>
+                            </div>
+                        </li>
+    
+                        <li class="nav-item"><a class="nav-link" href="trabalheConosco.html" title="Trabalhe Conosco">Trabalhe Conosco</a></li>            
+                        <li class="nav-item"><a class="nav-link" href="contato.html" title="Fale Conosco">Contato</a></li>             
+                        <li class="nav-item"><a class="nav-link" href="adm.html" title="Área do Administrador">Área do Administrador</a></li>
+                                         
+                        <li class="search-bar">
+                            <form id="search-form" action="javascript:search()">
+                                <input type="text" id="search-input" placeholder="Buscar...">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+         </header>
 
     <main>
         <div class="container mt-5">
-            <h2 class="text-center mb-4">Trabalhe Conosco</h2>
-            <p class="text-center mb-4">Preencha o formulário abaixo para se candidatar a uma vaga em nosso hospital. Anexe seu currículo e outros documentos relevantes.</p>
-            <form action="#" method="post" enctype="multipart/form-data">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="nome">Nome:</label>
-                        <input type="text" class="form-control" id="nome" name="nome" required>
+            <div class="bg-white p-4 rounded shadow-sm">
+                <h2 class="text-center mb-4">Trabalhe Conosco</h2>
+                <p class="text-center mb-4">Preencha o formulário abaixo para se candidatar a uma vaga em nosso hospital. Anexe seu currículo e outros documentos relevantes.</p>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nome">Nome:</label>
+                            <input type="text" class="form-control" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">E-mail:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">E-mail:</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" class="form-control" id="telefone" name="telefone" required>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="telefone">Telefone:</label>
-                    <input type="text" class="form-control" id="telefone" name="telefone" required>
-                </div>
-                <div class="form-group">
-                    <label for="cargo">Cargo Desejado:</label>
-                    <input type="text" class="form-control" id="cargo" name="cargo" required>
-                </div>
-                <div class="form-group">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="curriculo">Anexar Currículo:</label>
-                    <input type="file" class="form-control-file" id="curriculo" name="curriculo" accept=".pdf, .doc, .docx" required>
-                </div>
-                <div class="form-group">
-                    <label for="documentos">Anexar Outros Documentos (opcional):</label>
-                    <input type="file" class="form-control-file" id="documentos" name="documentos[]" multiple accept=".pdf, .doc, .docx, .jpg, .png">
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+                    <div class="form-group">
+                        <label for="cargo">Cargo Desejado:</label>
+                        <input type="text" class="form-control" id="cargo" name="cargo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="curriculo">Anexar Currículo:</label>
+                        <input type="file" class="form-control-file" id="curriculo" name="curriculo" accept=".pdf, .doc, .docx" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="documentos">Anexar Outros Documentos (opcional):</label>
+                        <input type="file" class="form-control-file" id="documentos" name="documentos[]" multiple accept=".pdf, .doc, .docx, .jpg, .png">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
         </div>
     </main>
 

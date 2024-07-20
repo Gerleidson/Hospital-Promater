@@ -14,102 +14,113 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b875a;">
-            <a class="navbar-brand" href="#">Hospital Promater</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Especialidades</a>
-                        <div class="dropdown-menu" aria-labelledby="especialidadesDropdown">
-                            <a class="dropdown-item" href="#">*****</a>
-                            <a class="dropdown-item" href="#">*****</a>
-                            <a class="dropdown-item" href="#">*****</a>
-                            <a class="dropdown-item" href="#">*****</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre Nós</a>
-                        <div class="dropdown-menu" aria-labelledby="sobreDropdown">
-                            <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>                         
-                            <a class="dropdown-item" href="missão.html">Visão, missão e valores</a>
-                            <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
-                            <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">*****</a>
-                            <a class="dropdown-item" href="#">*****</a>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a class="nav-link text-white" href="trabalheConosco.html">Trabalhe Conosco</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="contato.html">Fale Conosco</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="adm.html">Área do Administrador</a></li>
-                    <li class="nav-item">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
-                            <button class="btn btn-light my-2 my-sm-0" type="submit">Pesquisar</button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg ">
+                <a class="navbar-brand" href="index.html">Hospital Promater</a>
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="especialidades.html" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Especialidades
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="especialidadesDropdown">
+                                <a class="dropdown-item" href="#">*****</a>
+                                <a class="dropdown-item" href="#">*****</a>
+                                <a class="dropdown-item" href="#">*****</a>
+                                <a class="dropdown-item" href="#">*****</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sobre Nós
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="sobreDropdown">
+                                <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>                         
+                                <a class="dropdown-item" href="missão.html">Visão, missão e valores</a>
+                                <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
+                                <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">*****</a>
+                                <a class="dropdown-item" href="#">***** </a>
+                            </div>
+                        </li>
+    
+                        <li class="nav-item"><a class="nav-link" href="trabalheConosco.html" title="Trabalhe Conosco">Trabalhe Conosco</a></li>            
+                        <li class="nav-item"><a class="nav-link" href="contato.html" title="Fale Conosco">Contato</a></li>             
+                        <li class="nav-item"><a class="nav-link" href="adm.html" title="Área do Administrador">Área do Administrador</a></li>
+                                         
+                        <li class="search-bar">
+                            <form id="search-form" action="javascript:search()">
+                                <input type="text" id="search-input" placeholder="Buscar...">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+         </header>
     <main>
         <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="contact-info mb-4">
-                        <h2>Informações de Contato</h2>
-                        <div class="info mb-3">
-                            <h4>Endereço</h4>
-                            <p>Av. Lauro de Freitas, 1125</p>
-                            <p>Bairro: Centro - Dias D'àvila/BA.</p>
-                            <p>CEP: 42850-000</p>
-                        </div>
-                        <div class="info mb-3">
-                            <h4>Telefones</h4>
-                            <p>Fixo <br><i class="icon icon-phone"></i> (71) 3648-3750</p>
-                            <p>Call-center <br><i class="icon icon-phone"></i> (71) 98802-6456</p>
-                            <p>Qualidade <br><i class="icon icon-phone"></i> (71) 99620-7149</p>
-                        </div>
-                        <div class="info mb-4">
-                            <h4>Horário de Atendimento</h4>
-                            <p>Segunda a sexta das 09h às 19h.</p>
-                            <p>Sábados das 08h às 13h</p>
-                        </div>
-                        <h2>Onde Estamos</h2>
-                        <div class="map-container mt-4">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.460133545778!2d-38.37987998494225!3d-12.737150641339853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716b751a849f6b%3A0x979a227b2c24f90!2sAv.%20Lauro%20de%20Freitas%2C%201125%20-%20Centro%2C%20Dias%20D'Ávila%20-%20BA%2C%2042850-000!5e0!3m2!1spt-BR!2sbr!4v1625164607363!5m2!1spt-BR!2sbr" width="700" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="bg-white p-4 rounded shadow-sm">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-info mb-4">
+                            <h2>Informações de Contato</h2>
+                            <div class="info mb-3">
+                                <h4>Endereço</h4>
+                                <p>Av. Lauro de Freitas, 1125</p>
+                                <p>Bairro: Centro - Dias D'àvila/BA.</p>
+                                <p>CEP: 42850-000</p>
+                            </div>
+                            <div class="info mb-3">
+                                <h4>Telefones</h4>
+                                <p>Fixo <br><i class="icon icon-phone"></i> (71) 3648-3750</p>
+                                <p>Call-center <br><i class="icon icon-phone"></i> (71) 98802-6456</p>
+                                <p>Qualidade <br><i class="icon icon-phone"></i> (71) 99620-7149</p>
+                            </div>
+                            <div class="info mb-4">
+                                <h4>Horário de Atendimento</h4>
+                                <p>Segunda a sexta das 09h às 19h.</p>
+                                <p>Sábados das 08h às 13h</p>
+                            </div>
+                            <h2>Onde Estamos</h2>
+                            <div class="map-container mt-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.460133545778!2d-38.37987998494225!3d-12.737150641339853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716b751a849f6b%3A0x979a227b2c24f90!2sAv.%20Lauro%20de%20Freitas%2C%201125%20-%20Centro%2C%20Dias%20D'Ávila%20-%20BA%2C%2042850-000!5e0!3m2!1spt-BR!2sbr!4v1625164607363!5m2!1spt-BR!2sbr" width="700" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="contact-form">
-                        <h2>Fale Conosco</h2>
-                        <p>Se você tiver alguma dúvida, sugestão ou reclamação, entre em contato conosco preenchendo o formulário abaixo:</p>
-                        <form>
-                            <div class="form-group">
-                                <label for="nome">Nome:</label>
-                                <input type="text" class="form-control" id="nome" name="nome" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">E-mail:</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="assunto">Assunto:</label>
-                                <input type="text" class="form-control" id="assunto" name="assunto" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="mensagem">Mensagem:</label>
-                                <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                        </form>
+                    <div class="col-md-6">
+                        <div class="contact-form">
+                            <h2>Fale Conosco</h2>
+                            <p>Se você tiver alguma dúvida, sugestão ou reclamação, entre em contato conosco preenchendo o formulário abaixo:</p>
+                            <form>
+                                <div class="form-group">
+                                    <label for="nome">Nome:</label>
+                                    <input type="text" class="form-control" id="nome" name="nome" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mail:</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="assunto">Assunto:</label>
+                                    <input type="text" class="form-control" id="assunto" name="assunto" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mensagem">Mensagem:</label>
+                                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
