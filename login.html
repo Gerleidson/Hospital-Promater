@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Visão, Missão e Valores - Hospital Promater" />
-    <meta name="keywords" content="noticias Hospital, Promater" />
+    <meta name="description" content="Hospital Promater">
+    <meta name="keywords" content="Hospital, Promater">
     <meta name="author" content="Gerleidson Bomfim e Ruan Esteves">
-    <meta name="robots" content="index, follow" />
-    <title>Notícia - Hospital Promater</title>
-    <!-- Incluindo o CSS do Bootstrap -->
+    <meta name="robots" content="index, follow">
+    <title>Hospital Promater</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png" type="image/ico">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-      <!-- Navbar -->
-      <header>
+    <!-- Navbar -->
+    <header>
         <nav class="navbar navbar-expand-lg ">
             <a class="navbar-brand" href="index.html">Hospital Promater</a>
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,9 +53,9 @@
                     </li>
 
                     <li class="nav-item"><a class="nav-link" href="trabalheConosco.html" title="Trabalhe Conosco">Trabalhe Conosco</a></li>            
-                    <li class="nav-item"><a class="nav-link" href="contato.html" title="Fale Conosco">Contato</a></li>    
-                    <!-- Ao invés de Área do Administrador, foi colocado o botão de Login/Registrar-->
-                    <li class="nav-item"><a class="nav-link" href="login.html" title="Login">Login / Registrar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html" title="Fale Conosco">Contato</a></li>           
+                    <!-- Aí agora o botão de Administrador -->
+                    <li class="nav-item"><a class="nav-link" href="adm.html" title="Área do Administrador">Área do Administrador</a></li>
                                      
                     <li class="search-bar">
                         <form id="search-form" action="javascript:search()">
@@ -68,53 +68,42 @@
         </nav>
     </header>
 
-    <!-- Cabeçalho -->
-    <header class="bg-transparent text-black text-center py-5">
-        <div class="container">
-            <h1 class="display-5">Notícia do Hospital Promater</h1>
-        </div>
-    </header>
-
-
-    <!-- Conteúdo -->
-     <main>
+    <main>
         <div class="container mt-5">
             <div class="bg-white p-4 rounded shadow-sm">
-                <div class="row">
-                    <div class="col-md-8">
-                        <article>
-                            <h2 class="mb-4">Título da Notícia 1</h2>
-                            <p><strong>Data:</strong> 20 de Julho de 2024</p>
-                            <img src="noticia-imagem.jpg" alt="Imagem da notícia" class="img-fluid mb-4">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nibh sit amet metus congue vehicula. Integer gravida velit nec orci gravida, non dictum augue facilisis. Sed vel felis nec erat vehicula dignissim a non libero. Sed et metus vestibulum, lacinia quam eu, faucibus mi. Integer nec lectus eu nulla malesuada fermentum.</p>
-                            <p>Vestibulum euismod quam in libero aliquet, in elementum nulla ultrices. Quisque scelerisque elit nec nulla sagittis, nec eleifend tortor pretium. Suspendisse sed urna at eros volutpat bibendum.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem dolorem, laborum velit est fugiat temporibus excepturi, culpa minima, modi quis quaerat accusantium mollitia cumque quia neque non impedit commodi. Nostrum?</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus porro eveniet rerum sed minus fuga et, est, ducimus, quibusdam cum blanditiis earum voluptate saepe accusantium cupiditate quis assumenda autem quasi.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem dolorem, laborum velit est fugiat temporibus excepturi, culpa minima, modi quis quaerat accusantium mollitia cumque quia neque non impedit commodi. Nostrum?</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus porro eveniet rerum sed minus fuga et, est, ducimus, quibusdam cum blanditiis earum voluptate saepe accusantium cupiditate quis assumenda autem quasi.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-4">
-                        <aside>
-                            <h4>Outras Notícias</h4>
-                            <div class="bg-dark p-4 rounded shadow-sm">
-                                <ul class="list-unstyled">
-                                    <li><a href="noticia1.html">Notícia 1</a></li>
-                                    <li><a href="noticia2.html">Notícia 2</a></li>
-                                    <li><a href="noticia3.html">Notícia 3</a></li>
-                                    <li><a href="noticias.html">Todas as Noticias</a></li>
-                                </ul>
-
-                            </div>
-                        </aside>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="login-container p-4 border rounded shadow">
+                            <h2 class="text-center mb-4">Login</h2>
+                            <form id="loginForm">
+                                <div class="form-group">
+                                    <label for="username">Usuário:</label>
+                                    <input type="text" class="form-control" id="username" name="username" placeholder="Insira seu Usuário" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Senha:</label>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Insira sua Senha" required>
+                                </div>
+                                <a href="dashboard.html" class="btn btn-primary btn-block">Entrar</a>
+                            </form>
+                            <p class="mt-3">Ainda não tem uma conta? <a class="text-primary" href="cadPaciente.html">Cadastre-se</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-<!-- Footer -->
-<footer class=" text-center text-lg-start mt-5">
+   
+    <!--<div>
+            //botão voltar
+            <a href="index.html" class="btn btn-primary btn-floating" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+                <i class="fa fa-arrow-up"></i>
+            </a>
+    </div>-->
+    
+   <!-- Footer -->
+   <footer class=" text-center text-lg-start mt-5">
     <div class="container p-4">
         <div class="row">
             <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
@@ -170,9 +159,12 @@
     </div>
 </footer>
 
-    <!-- Incluindo os scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.userway.org/widget.js" async></script>
 </body>
 </html>

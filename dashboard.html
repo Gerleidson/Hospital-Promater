@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Dashboard do Hospital Promater" />
     <meta name="keywords" content="Dashboard, Hospital, Promater" />
-    <meta name="author" content="Gerleidson Bomfim" />
+    <meta name="author" content="Gerleidson Bomfim e Ruan Esteves">
     <meta name="robots" content="index, follow" />
     <title>Dashboard</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -50,13 +50,16 @@
                             <a class="dropdown-item" href="#">*****</a>
                         </div>
                     </li>
+                   
                     <li class="nav-item"><a class="nav-link" href="trabalheConosco.html" title="Trabalhe Conosco">Trabalhe Conosco</a></li>            
-                    <li class="nav-item"><a class="nav-link" href="contato.html" title="Fale Conosco">Contato</a></li>             
-                    <li class="nav-item"><a class="nav-link" href="adm.html" title="Área do Administrador">Área do Administrador</a></li>
-                    <li class="nav-item">
-                        <form id="search-form" class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" id="search-input" placeholder="Buscar..." aria-label="Buscar">
-                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+                    <li class="nav-item"><a class="nav-link" href="contato.html" title="Fale Conosco">Contato</a></li>    
+                    <!-- Ao invés de Área do Administrador, foi colocado o botão de Login/Registrar-->
+                    <li class="nav-item"><a class="nav-link" href="login.html" title="Login">Login / Registrar</a></li>
+
+                    <li class="search-bar">
+                        <form id="search-form" action="javascript:search()">
+                            <input type="text" id="search-input" placeholder="Buscar...">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
                         </form>
                     </li>
                 </ul>
