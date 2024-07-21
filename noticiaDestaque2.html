@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícia - Hospital Promater</title>
+    <!-- Incluindo o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- Navbar -->
+      <header>
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="index.html">Hospital Promater</a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="especialidades.html" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Especialidades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="especialidadesDropdown">
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sobre Nós
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="sobreDropdown">
+                            <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>                         
+                            <a class="dropdown-item" href="missão.html">Visão, missão e valores</a>
+                            <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
+                            <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">***** </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="trabalheConosco.html" title="Trabalhe Conosco">Trabalhe Conosco</a></li>            
+                    <li class="nav-item"><a class="nav-link" href="contato.html" title="Fale Conosco">Contato</a></li>             
+                    <li class="nav-item"><a class="nav-link" href="adm.html" title="Área do Administrador">Área do Administrador</a></li>
+                                     
+                    <li class="search-bar">
+                        <form id="search-form" action="javascript:search()">
+                            <input type="text" id="search-input" placeholder="Buscar...">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cabeçalho -->
+    <header class="bg-transparent text-black text-center py-5">
+        <div class="container">
+            <h1 class="display-5">Notícia do Hospital Promater</h1>
+        </div>
+    </header>
+
+
+    <!-- Conteúdo -->
+     <main>
+        <div class="container mt-5">
+            <div class="bg-white p-4 rounded shadow-sm">
+                <div class="row">
+                    <div class="col-md-8">
+                        <article>
+                            <h2 class="mb-4">Título da Notícia 2</h2>
+                            <p><strong>Data:</strong> 20 de Julho de 2024</p>
+                            <img src="noticia-imagem.jpg" alt="Imagem da notícia" class="img-fluid mb-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nibh sit amet metus congue vehicula. Integer gravida velit nec orci gravida, non dictum augue facilisis. Sed vel felis nec erat vehicula dignissim a non libero. Sed et metus vestibulum, lacinia quam eu, faucibus mi. Integer nec lectus eu nulla malesuada fermentum.</p>
+                            <p>Vestibulum euismod quam in libero aliquet, in elementum nulla ultrices. Quisque scelerisque elit nec nulla sagittis, nec eleifend tortor pretium. Suspendisse sed urna at eros volutpat bibendum.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem dolorem, laborum velit est fugiat temporibus excepturi, culpa minima, modi quis quaerat accusantium mollitia cumque quia neque non impedit commodi. Nostrum?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus porro eveniet rerum sed minus fuga et, est, ducimus, quibusdam cum blanditiis earum voluptate saepe accusantium cupiditate quis assumenda autem quasi.</p>
+                          
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <aside>
+                            <h4>Outras Notícias</h4>
+                            <div class="bg-dark p-4 rounded shadow-sm">
+                                <ul class="list-unstyled">
+                                    <li><a href="noticiaDestaque1.html">Notícia 1</a></li>
+                                    <li><a href="noticiaDestaque2.html">Notícia 2</a></li>
+                                    <li><a href="noticiaDestaque3.html">Notícia 3</a></li>
+                                    <li><a href="noticias.html">Todas as Noticias</a></li>
+                                </ul>
+
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- Footer -->
+<footer class=" text-center text-lg-start mt-5">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Siga-nos</h5>
+                <ul class="list-unstyled social-icons">
+                    <li><a href="https://facebook.com/hospitalpromater" class="text-white">Facebook</a></li>
+                    <li><a href="https://instragram.com/hospitalpromater" class="text-white">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Empresa</h5>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="#!">Sobre Nós</a></li>
+                    <li><a href="#!">Serviços</a></li>
+                    <li><a href="#!">Política de Privacidade</a></li>
+                    <li><a href="#!">Programas</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Ajuda</h5>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="#!">FAQ</a></li>
+                    <li><a href="#!">Telefones</a></li>
+                    <li><a href="#!">E-mails</a></li>
+                    <li><a href="#!">Chat</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Copyright:
+        <a class="text-dark" href="#">Hospital Promater</a>
+    </div>
+</footer>
+
+    <!-- Incluindo os scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
