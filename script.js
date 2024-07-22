@@ -21,11 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Inicializar o EmailJS com sua chave pública
-emailjs.init('RGj-qlr3EToNws06Y'); // Substitua 'RGj-qlr3EToNws06Y' pela sua chave pública do EmailJS
+emailjs.init('7OOZI8uZIBY3CPXEP'); // Substitua pelo ID fornecido pelo EmailJS
 
-// Função para enviar e-mail
+// Função para enviar e-mail com anexos
 function sendEmail(form) {
-    emailjs.sendForm('service_r1fli0g', 'template_y33p7po', form)
+    const formData = new FormData(form); // Cria um objeto FormData a partir do formulário
+
+    emailjs.sendForm('service_r1fli0g', 'template_y33p7po', formData)
         .then(function(response) {
             console.log('Sucesso:', response);
             alert('Sua candidatura foi enviada com sucesso!');
@@ -37,18 +39,14 @@ function sendEmail(form) {
 
 // Adiciona o evento de submit ao formulário
 document.addEventListener('DOMContentLoaded', function() {
-    var form = document.querySelector('form');
+    var form = document.querySelector('form[action="#"]');
     if (form) {
         form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita o envio do formulário padrão
-            sendEmail(form); // Envia o formulário usando EmailJS
+            event.preventDefault(); // Evita o envio do formulário
+            sendEmail(this); // Envia o formulário usando EmailJS
         });
     }
 });
-
-
-
-
 
 
 // Inicializa um contador para gerar IDs sequenciais e códigos
@@ -122,3 +120,20 @@ document.getElementById("clientForm").addEventListener("submit", function(event)
     document.getElementById("virtualCard").style.display = "none";
 });
 
+//funcao para pagina contato.html
+// Initialize EmailJS with your user ID
+emailjs.init("7OOZI8uZIBY3CPXEP"); // Replace 'user_yourUserId' with your actual EmailJS user ID
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const form = event.target;
+
+    emailjs.sendForm("service_yourServiceId", "template_yourTemplateId", form)
+        .then(function(response) {
+            alert("Mensagem enviada com sucesso!");
+            form.reset(); // Clear the form fields
+        }, function(error) {
+            alert("Falha ao enviar a mensagem. Tente novamente.");
+        });
+});
