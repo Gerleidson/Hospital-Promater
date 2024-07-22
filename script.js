@@ -1,3 +1,56 @@
+
+// Função de autenticação para dashboard
+document.addEventListener('DOMContentLoaded', function() {
+    var loginForm = document.getElementById('loginForm');
+
+    if (loginForm) {
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio do formulário
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === 'admin' && password === 'admin123') {
+                // Redireciona para o dashboard se o login for bem-sucedido
+                window.location.href = 'dashboard.html';
+            } else {
+                alert('Usuário ou senha inválidos');
+            }
+        });
+    }
+});
+
+// Inicializar o EmailJS com sua chave pública
+emailjs.init('RGj-qlr3EToNws06Y'); // Substitua 'RGj-qlr3EToNws06Y' pela sua chave pública do EmailJS
+
+// Função para enviar e-mail
+function sendEmail(form) {
+    emailjs.sendForm('service_r1fli0g', 'template_y33p7po', form)
+        .then(function(response) {
+            console.log('Sucesso:', response);
+            alert('Sua candidatura foi enviada com sucesso!');
+        }, function(error) {
+            console.log('Erro:', error);
+            alert('Houve um problema ao enviar sua candidatura.');
+        });
+}
+
+// Adiciona o evento de submit ao formulário
+document.addEventListener('DOMContentLoaded', function() {
+    var form = document.querySelector('form');
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio do formulário padrão
+            sendEmail(form); // Envia o formulário usando EmailJS
+        });
+    }
+});
+
+
+
+
+
+
 // Inicializa um contador para gerar IDs sequenciais e códigos
 let cardIDCounter = 1;
 const codePrefix = 'CODE-'; // Prefixo para o código do cartão
