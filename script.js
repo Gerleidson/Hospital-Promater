@@ -20,34 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Inicializar o EmailJS com sua chave pública
-emailjs.init('7OOZI8uZIBY3CPXEP'); // Substitua pelo ID fornecido pelo EmailJS
-
-// Função para enviar e-mail com anexos
-function sendEmail(form) {
-    const formData = new FormData(form); // Cria um objeto FormData a partir do formulário
-
-    emailjs.sendForm('service_r1fli0g', 'template_y33p7po', formData)
-        .then(function(response) {
-            console.log('Sucesso:', response);
-            alert('Sua candidatura foi enviada com sucesso!');
-        }, function(error) {
-            console.log('Erro:', error);
-            alert('Houve um problema ao enviar sua candidatura.');
-        });
-}
-
-// Adiciona o evento de submit ao formulário
-document.addEventListener('DOMContentLoaded', function() {
-    var form = document.querySelector('form[action="#"]');
-    if (form) {
-        form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita o envio do formulário
-            sendEmail(this); // Envia o formulário usando EmailJS
-        });
-    }
-});
-
 
 // Inicializa um contador para gerar IDs sequenciais e códigos
 let cardIDCounter = 1;
@@ -120,7 +92,7 @@ document.getElementById("clientForm").addEventListener("submit", function(event)
     document.getElementById("virtualCard").style.display = "none";
 });
 
-//funcao para pagina contato.html
+/*funcao para pagina contato.html
 // Initialize EmailJS with your user ID
 emailjs.init("7OOZI8uZIBY3CPXEP"); // Replace 'user_yourUserId' with your actual EmailJS user ID
 
@@ -136,4 +108,32 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         }, function(error) {
             alert("Falha ao enviar a mensagem. Tente novamente.");
         });
-});
+});*/
+
+/* Inicializar o EmailJS com sua chave pública
+emailjs.init('7OOZI8uZIBY3CPXEP'); // Substitua pelo ID fornecido pelo EmailJS
+
+// Função para enviar e-mail com anexos
+function sendEmail(form) {
+    const formData = new FormData(form); // Cria um objeto FormData a partir do formulário
+
+    emailjs.sendForm('service_r1fli0g', 'template_y33p7po', formData)
+        .then(function(response) {
+            console.log('Sucesso:', response);
+            alert('Sua candidatura foi enviada com sucesso!');
+        }, function(error) {
+            console.log('Erro:', error);
+            alert('Houve um problema ao enviar sua candidatura.');
+        });
+}
+
+// Adiciona o evento de submit ao formulário
+document.addEventListener('DOMContentLoaded', function() {
+    var form = document.querySelector('form[action="#"]');
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio do formulário
+            sendEmail(this); // Envia o formulário usando EmailJS
+        });
+    }
+});*/
