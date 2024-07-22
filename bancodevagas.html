@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Banco de Vagas - Hospital Promater" />
+    <meta name="keywords" content="Vagas, Hospital, Promater" />
+    <meta name="author" content="Gerleidson Bomfim e Ruan Esteves">
+    <meta name="robots" content="index, follow" />
+    <title>Banco de Vagas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+     <!-- Navbar -->
+     <header>
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="index.html">Hospital Promater</a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="especialidades.html" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Especialidades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="especialidadesDropdown">
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sobre Nós
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="sobreDropdown">
+                            <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>                         
+                            <a class="dropdown-item" href="missão.html">Visão, missão e valores</a>
+                            <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
+                            <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">***** </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="trabalheConosco.html" title="Trabalhe Conosco">Trabalhe Conosco</a></li>            
+                    <li class="nav-item"><a class="nav-link" href="contato.html" title="Fale Conosco">Contato</a></li>    
+                    <li class="nav-item"><a class="nav-link" href="cadPaciente.html" title="Login">Cadastre-se</a></li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" title="Área do Administrador">
+                            <i class="fas fa-user-shield"></i> Admin
+                        </a>
+                    </li>
+                                     
+                    <li class="search-bar">
+                        <form id="search-form" action="javascript:search()">
+                            <input type="text" id="search-input" placeholder="Buscar...">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+     </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container mt-5">
+            <div class="bg-white p-4 rounded shadow-sm">
+
+                <h2 class="text-center mb-4">Banco de Vagas Disponíveis</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Nome da Vaga</th>
+                                <th>Tipo de Contratação</th>
+                                <th>Presencial ou Home Office</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="vagaDetalhes.html?vaga=enfermeiro" class="text-dark">Enfermeiro</a></td>
+                                <td>CLT</td>
+                                <td>Presencial</td>
+                            </tr>
+                            <tr>
+                                <td><a href="vagaDetalhes.html?vaga=assistente-administrativo" class="text-dark">Assistente Administrativo</a></td>
+                                <td>Estágio</td>
+                                <td>Home Office</td>
+                            </tr>
+                            <tr>
+                                <td><a href="vagaDetalhes.html?vaga=medico" class="text-dark">Médico</a></td>
+                                <td>CLT</td>
+                                <td>Presencial</td>
+                            </tr>
+                            <tr>
+                                <td><a href="vagaDetalhes.html?vaga=recepcionista" class="text-dark">Recepcionista</a></td>
+                                <td>CLT</td>
+                                <td>Presencial</td>
+                            </tr>
+                            <tr>
+                                <td><a href="vagaDetalhes.html?vaga=desenvolvedor" class="text-dark">Desenvolvedor</a></td>
+                                <td>Freelancer</td>
+                                <td>Home Office</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- Footer -->
+<footer class=" text-center text-lg-start mt-5">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Siga-nos</h5>
+                <ul class="list-unstyled social-icons">
+                    <li><a href="https://facebook.com/hospitalpromater" class="text-white"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="https://instagram.com/hospitalpromater" class="text-white"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>                    
+            </div>
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Empresa</h5>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="quemSomos.html">Sobre Nós</a></li>
+                    <li><a href="politicaPrivacidade.html">Política de Privacidade</a></li>
+                    <li><a href="trabalheConosco.html">Trabalhe Conosco</a></li>
+                </ul>
+                <br>
+                <h5 class="text-uppercase">Endereço</h5>
+                <ul class="list-unstyled mb-0">
+                    <li>Av. Lauro de Freitas, 1125 - Centro</li>
+                    <li>Dias D'Ávila - BA, 42850-000</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Contatos</h5>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="tel:+557136483750">Fixo: (71) 3648-3750</a></li>
+                    <li><a href="tel:+5571988026456">Call-center: (71) 98802-6456</a></li>
+                    <li><a href="tel:+5571996207149">Qualidade: (71) 99620-7149</a></li>
+                </ul>                  
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <!-- Botao Whatsapp -->          
+        <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+        <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
+            <div class="rwb-tooltip">Agende pelo Whatsapp</div>
+            <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+        </a>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Copyright:
+        <a class="text-white" href="index.html">Hospital Promater</a>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="https://cdn.userway.org/widget.js" async></script>
+
+</body>
+</html>

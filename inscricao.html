@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hospital Promater">
-    <meta name="keywords" content="Hospital, Promater, cartão, fidelidade">
+    <meta name="description" content="Inscrição para Vaga - Hospital Promater" />
+    <meta name="keywords" content="Inscrição, Vaga, Hospital, Promater" />
     <meta name="author" content="Gerleidson Bomfim e Ruan Esteves">
-    <meta name="robots" content="index, follow">
-    <title>Cadastro e Compra de Cartão Fidelidade</title>
+    <meta name="robots" content="index, follow" />
+    <title>Inscrição para Vaga</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/ico">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
     <link rel="stylesheet" href="style.css">
-    
-    <style>
-        #virtualCard, #paymentQRCode {
-            display: none;
-        }
-    </style>
 </head>
 <body>
-     <!-- Navbar -->
-     <header>
+    <!-- Navbar -->
+    <header>
         <nav class="navbar navbar-expand-lg ">
             <a class="navbar-brand" href="index.html">Hospital Promater</a>
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +42,7 @@
                             Sobre Nós
                         </a>
                         <div class="dropdown-menu" aria-labelledby="sobreDropdown">
-                            <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>                         
+                            <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>
                             <a class="dropdown-item" href="missão.html">Visão, missão e valores</a>
                             <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
                             <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
@@ -61,12 +55,13 @@
                     <li class="nav-item"><a class="nav-link" href="trabalheConosco.html" title="Trabalhe Conosco">Trabalhe Conosco</a></li>            
                     <li class="nav-item"><a class="nav-link" href="contato.html" title="Fale Conosco">Contato</a></li>    
                     <li class="nav-item"><a class="nav-link" href="cadPaciente.html" title="Login">Cadastre-se</a></li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="login.html" title="Área do Administrador">
                             <i class="fas fa-user-shield"></i> Admin
                         </a>
                     </li>
-                    
+                                 
                     <li class="search-bar">
                         <form id="search-form" action="javascript:search()">
                             <input type="text" id="search-input" placeholder="Buscar...">
@@ -77,48 +72,39 @@
             </div>
         </nav>
     </header>
-    <div class="container mt-5">
-        <h2>Compra de Cartão Fidelidade</h2>
-        <form id="clientForm">
-            <div class="form-group">
-                <label for="fullName">Nome Completo</label>
-                <input type="text" class="form-control" id="fullName" required>
-            </div>
-            <div class="form-group">
-                <label for="dob">Data de Nascimento</label>
-                <input type="date" class="form-control" id="dob" required>
-            </div>
-            <div class="form-group">
-                <label for="cpf">CPF</label>
-                <input type="text" class="form-control" id="cpf" required>
-            </div>
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Telefone</label>
-                <input type="tel" class="form-control" id="phone" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Efetuar Pagamento</button>
-        </form>
 
-        <div id="paymentQRCode" class="mt-4">
-            <h5>Escaneie o QR Code para efetuar o pagamento:</h5>
-            <img id="qrcode" src="img/qrcode.png" alt="QR Code">
-            <button class="btn btn-success mt-3" onclick="confirmPayment()">Confirmar Pagamento</button>
-        </div>
+    <!-- Main Content -->
+    <main>
+        <div class="container mt-5">
+            <div class="bg-white p-4 rounded shadow-sm">
 
-        <div id="virtualCard" class="mt-4">
-            <h4>Cartão Fidelidade Virtual</h4>
-            <p><strong>Hospital:</strong> Hospital Promater</p>
-            <p><strong>Código:</strong> <span id="cardCode"></span></p>
-            <p><strong>Nome Completo:</strong> <span id="cardName"></span></p>
-            <p><strong>Data de Nascimento:</strong> <span id="cardDOB"></span></p>
-            <button class="btn btn-secondary" onclick="generatePDF()">Baixar PDF</button>
-            <button class="btn btn-secondary" onclick="printCard()">Imprimir</button>
+                <h2 class="text-center mb-4">Inscrição para Vaga</h2>
+                <form action="processar_inscricao.php" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" class="form-control" id="telefone" name="telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="curriculo">Anexe seu Currículo (PDF)</label>
+                        <input type="file" class="form-control-file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="enviarFormulario()">Enviar</button>
+                </form>
+            </div>
         </div>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer class=" text-center text-lg-start mt-5">
@@ -157,35 +143,58 @@
         </div>
         <div>
 
-            <!-- Botão de Acessibilidade 
-            <div class="fixed-bottom d-flex justify-content-start p-3">
-                <div class="bg-light rounded shadow">
-                    <script src="https://cdn.userway.org/widget.js" async></script>
-                </div>
-            </div>-->
-     
             <!-- Botao Whatsapp -->          
             <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
             <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
                 <div class="rwb-tooltip">Agende pelo Whatsapp</div>
-                <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+                <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.svg" alt="Chat with us on WhatsApp">
             </a>
         </div>
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2024 Copyright:
-            <a class="text-white" href="index.html">Hospital Promater</a>
+        <div class="text-center p-3" style="background-color: #f1f1f1;">
+            <p>&copy; 2024 Hospital Promater. Todos os direitos reservados.</p>
         </div>
     </footer>
 
+ <!-- Scripts 
+ <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+ <script>
+     (function() {
+         emailjs.init("YOUR_USER_ID"); // Substitua YOUR_USER_ID pelo seu User ID do EmailJS
+     })();
 
+     function enviarFormulario() {
+         const form = document.getElementById('inscricaoForm');
+         const formData = new FormData(form);
+
+         // Prepare o template de email
+         const templateParams = {
+             nome: formData.get('nome'),
+             email: formData.get('email'),
+             telefone: formData.get('telefone'),
+             mensagem: formData.get('mensagem'),
+             // Convertendo o arquivo em base64 para envio via EmailJS
+             curriculo: formData.get('curriculo') // Envio do arquivo não é suportado diretamente pelo EmailJS, seria necessário tratamento adicional para o arquivo
+         };
+
+         // Enviar email
+         emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+             .then(function(response) {
+                 console.log('Success:', response);
+                 alert('Sua inscrição foi enviada com sucesso!');
+                 form.reset();
+             }, function(error) {
+                 console.log('Error:', error);
+                 alert('Ocorreu um erro ao enviar sua inscrição.');
+             });
+     }
+ </script>-->
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.userway.org/widget.js" async></script>
 </body>
 </html>

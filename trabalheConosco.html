@@ -12,7 +12,6 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/ico" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
         <!-- Navbar -->
@@ -74,48 +73,48 @@
             </nav>
          </header>
 
-    <main>
-        <div class="container mt-5">
-            <div class="bg-white p-4 rounded shadow-sm">
-                <h2 class="text-center mb-4">Trabalhe Conosco</h2>
-                <p class="text-center mb-4">Preencha o formulário abaixo para se candidatar a uma vaga em nosso hospital. Anexe seu currículo e outros documentos relevantes.</p>
-                <form action="https://formspree.io/f/meojeelz" method="post" enctype="multipart/form-data"> 
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="nome">Nome:</label>
-                            <input type="text" class="form-control" id="nome" name="nome" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="email">E-mail:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="telefone">Telefone:</label>
-                        <input type="text" class="form-control" id="telefone" name="telefone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cargo">Cargo Desejado:</label>
-                        <input type="text" class="form-control" id="cargo" name="cargo" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="curriculo">Anexar Currículo:</label>
-                        <input type="file" class="form-control-file" id="curriculo" name="curriculo" accept=".pdf, .doc, .docx" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="documentos">Anexar Outros Documentos (opcional):</label>
-                        <input type="file" class="form-control-file" id="documentos" name="documentos[]" multiple accept=".pdf, .doc, .docx, .jpg, .png">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
-        </div>
-    </main>
+         <main>
+            <div class="container mt-5">
+                <div class="bg-white p-4 rounded shadow-sm">
 
+                    <div class="row">
+                        <!-- Texto do lado esquerdo -->
+                        <div class="col-md-6 mb-4">
+                            <h2>Quem Trabalha no Hospital Promater</h2>
+                            <p>O Hospital Promater é composto por uma equipe altamente qualificada e dedicada a oferecer o melhor atendimento. Nosso time é formado por médicos especialistas, enfermeiros, técnicos de enfermagem, administradores e outros profissionais comprometidos com a excelência em saúde. Buscamos sempre a melhoria contínua e valorizamos nossos colaboradores, promovendo um ambiente de trabalho colaborativo e inovador.</p>
+                            <p>Oferecemos oportunidades para Pessoas com Deficiência (PCD) e Jovens Aprendizes, contribuindo para a inclusão e formação profissional.</p>
+                            
+                            <!-- Seção para PCD e Jovem Aprendiz -->
+                            <div class="mt-4">
+                                <h3>Oportunidades de Inclusão</h3>
+                                <div class="row">
+                                    <!-- Imagem para PCD -->
+                                    <div class="col-md-6 mb-4">
+                                        <img src="https://via.placeholder.com/500x300?text=PCD" alt="Pessoas com Deficiência" class="img-fluid mb-3">
+                                        <h4>Pessoas com Deficiência (PCD)</h4>
+                                        <p>Estamos comprometidos com a inclusão e oferecemos oportunidades para pessoas com deficiência, proporcionando um ambiente acessível e oportunidades iguais de desenvolvimento profissional.</p>
+                                    </div>
+                                    
+                                    <!-- Imagem para Jovem Aprendiz -->
+                                    <div class="col-md-6 mb-4">
+                                        <img src="https://via.placeholder.com/500x300?text=Jovem+Aprendiz" alt="Programa Jovem Aprendiz" class="img-fluid mb-3">
+                                        <h4>Programa Jovem Aprendiz</h4>
+                                        <p>Oferecemos programas de aprendizagem para jovens, promovendo a inserção no mercado de trabalho e oferecendo treinamentos e experiências práticas valiosas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Imagem e botão no centro -->
+                        <div class="col-md-6 text-center">
+                            <img src="https://via.placeholder.com/700x400" alt="Imagem do Hospital" class="img-fluid mb-4"> <!-- Imagem maior -->
+                            <a href="bancodevagas.html" class="btn btn-primary btn-lg">Veja Todas as Vagas</a> <!-- Botão abaixo da imagem -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
     <!-- Footer -->
     <footer class=" text-center text-lg-start mt-5">
         <div class="container p-4">
@@ -173,7 +172,7 @@
         </div>
     </footer>
 
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
