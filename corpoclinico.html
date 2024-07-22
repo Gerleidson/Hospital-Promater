@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpo Clínico - Hospital Promater</title>
+    <!-- Adicionando o link para o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="index.html">Hospital Promater</a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="especialidades.html" id="especialidadesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Especialidades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="especialidadesDropdown">
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">*****</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sobre Nós
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="sobreDropdown">
+                            <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>
+                            <a class="dropdown-item" href="missão.html">Visão, missão e valores</a>
+                            <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
+                            <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">*****</a>
+                            <a class="dropdown-item" href="#">***** </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="trabalheConosco.html" title="Trabalhe Conosco">Trabalhe Conosco</a></li>            
+                    <li class="nav-item"><a class="nav-link" href="contato.html" title="Fale Conosco">Contato</a></li>    
+                    <li class="nav-item"><a class="nav-link" href="cadPaciente.html" title="Login">Cadastre-se</a></li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" title="Área do Administrador">
+                            <i class="fas fa-user-shield"></i> Admin
+                        </a>
+                    </li>
+                                 
+                    <li class="search-bar">
+                        <form id="search-form" action="javascript:search()">
+                            <input type="text" id="search-input" placeholder="Buscar...">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cabeçalho -->
+    <header class="bg-white text-black text-center py-5">
+        <div class="center-text">
+            <h1>Corpo Clínico</h1>
+            <p>Conheça nossos especialistas</p>
+        </div>
+    </header>
+
+
+    <main>
+    <!-- Conteúdo -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="ANA CLÁUDIA CERQUEIRA LIMA DOS SANTOS">
+                    <div class="card-body">
+                        <h5 class="card-title">ANA CLÁUDIA CERQUEIRA LIMA DOS SANTOS</h5>
+                        <h6 class="card-title">CRM: 13141</h6>
+                        <p class="card-text">Especialista em Nutrição.</p>
+                        <p class="card-text">Atendimento: Sexta-feira</p>
+                        <p class="card-text">Turno: Manhã/Tarde</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="ANDRÉ DO NASCIMENTO SANTOS">
+                    <div class="card-body">
+                        <h5 class="card-title">ANDRÉ DO NASCIMENTO SANTOS</h5>
+                        <h6 class="card-title">CRM: 29890</h6>
+                        <p class="card-text">Especialista em Angiologia e Cirurgia Vascular.</p>
+                        <p class="card-text">Atendimento: Terça-feira</p>
+                        <p class="card-text">Turno: Tarde</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="ANDERSON PASSOS FIGUEIREDO">
+                    <div class="card-body">
+                        <h5 class="card-title">ANDERSON PASSOS FIGUEIREDO</h5>
+                        <h6 class="card-title">CRM: 9588</h6>
+                        <p class="card-text">Especialista em Ginecologia e Obstetrícia.</p>
+                        <p class="card-text">Atendimento: Segunda e Quarta-feira, Sábado</p>
+                        <p class="card-text">Turno: Tarde, Manhã</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="ANNA KARINA ANDRADE SANTANA KERCKHOT">
+                    <div class="card-body">
+                        <h5 class="card-title">ANNA KARINA ANDRADE SANTANA KERCKHOT</h5>
+                        <h6 class="card-title">CRM: 9975</h6>
+                        <p class="card-text">Especialista em Ginecologia.</p>
+                        <p class="card-text">Atendimento: Terça-feira</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="BRUNA CLEONICE OLIVEIRA ASSIS LORDELO">
+                    <div class="card-body">
+                        <h5 class="card-title">BRUNA CLEONICE OLIVEIRA ASSIS LORDELO</h5>
+                        <h6 class="card-title">CRM: 14383</h6>
+                        <p class="card-text">Especialista em Nutrição.</p>
+                        <p class="card-text">Atendimento: Quarta-feira</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="BRUNO DA FONSECA NORONHA">
+                    <div class="card-body">
+                        <h5 class="card-title">BRUNO DA FONSECA NORONHA</h5>
+                        <h6 class="card-title">CRM: 27206</h6>
+                        <p class="card-text">Especialista em Neurologia e Neurocirurgia.</p>
+                        <p class="card-text">Atendimento: Quinta-feira</p>
+                        <p class="card-text">Turno: Tarde</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="CARLOS ALEXANDRE DE SÁ VELOSO">
+                    <div class="card-body">
+                        <h5 class="card-title">CARLOS ALEXANDRE DE SÁ VELOSO</h5>
+                        <h6 class="card-title">CRM: 12845</h6>
+                        <p class="card-text">Especialista em Ortopedia.</p>
+                        <p class="card-text">Atendimento: Sexta-feira</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="ERIKA NAEGEL SIRQUEIRA">
+                    <div class="card-body">
+                        <h5 class="card-title">ERIKA NAEGEL SIRQUEIRA</h5>
+                        <h6 class="card-title">CRM: 32902</h6>
+                        <p class="card-text">Especialista em Emergência.</p>
+                        <p class="card-text">Atendimento: Domingo</p>
+                        <p class="card-text">Turno: 24 Horas</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="FERNANDO ARAÚJO MARTINS">
+                    <div class="card-body">
+                        <h5 class="card-title">FERNANDO ARAÚJO MARTINS</h5>
+                        <h6 class="card-title">CRM: 25521</h6>
+                        <p class="card-text">Especialista em Urologia.</p>
+                        <p class="card-text">Atendimento: Segunda-feira</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="FERNANDO SANTOS RIBEIRO SILVA">
+                    <div class="card-body">
+                        <h5 class="card-title">FERNANDO SANTOS RIBEIRO SILVA</h5>
+                        <h6 class="card-title">CRM: 19641</h6>
+                        <p class="card-text">Especialista em Cardiologia.</p>
+                        <p class="card-text">Atendimento: Segunda-feira, Quinta e Sexta-feira</p>
+                        <p class="card-text">Turno: Manhã/Tarde</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="FRANCISCO DE SALES CARVALHO FILHO">
+                    <div class="card-body">
+                        <h5 class="card-title">FRANCISCO DE SALES CARVALHO FILHO</h5>
+                        <h6 class="card-title">CRM: 16567</h6>
+                        <p class="card-text">Especialista em Gastroenterologia.</p>
+                        <p class="card-text">Atendimento: Segunda, Quinta e Sexta-feira</p>
+                        <p class="card-text">Turno: Manhã/Tarde</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="IRLAN FAHEK LEONEL FILHO">
+                    <div class="card-body">
+                        <h5 class="card-title">IRLAN FAHEK LEONEL FILHO</h5>
+                        <h6 class="card-title">CRM: 18180</h6>
+                        <p class="card-text">Especialista em Ortodontia.</p>
+                        <p class="card-text">Atendimento: Segunda e Quinta-feira</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="JOÃO LUIZ BARBOSA NUNES">
+                    <div class="card-body">
+                        <h5 class="card-title">JOÃO LUIZ BARBOSA NUNES</h5>
+                        <h6 class="card-title">CRM: 10781</h6>
+                        <p class="card-text">Especialista em Angiologia e Cirurgia Vascular.</p>
+                        <p class="card-text">Atendimento: Segunda e Quarta-feira</p>
+                        <p class="card-text">Turno: Tarde</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="JOÃO LUIZ MOREIRA SANTOS SILVA">
+                    <div class="card-body">
+                        <h5 class="card-title">JOÃO LUIZ MOREIRA SANTOS SILVA</h5>
+                        <h6 class="card-title">CRM: 24521</h6>
+                        <p class="card-text">Especialista em Coloproctologia.</p>
+                        <p class="card-text">Atendimento: Segunda-feira</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="JOÃO MANOEL ZATTI FALCÃO">
+                    <div class="card-body">
+                        <h5 class="card-title">JOÃO MANOEL ZATTI FALCÃO</h5>
+                        <h6 class="card-title">CRM: 35269</h6>
+                        <p class="card-text">Especialista em Ortopedia.</p>
+                        <p class="card-text">Atendimento: Terça-feira</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="JURANDIR JOSÉ CERQUEIRA DANTAS JÚNIOR">
+                    <div class="card-body">
+                        <h5 class="card-title">JURANDIR JOSÉ CERQUEIRA DANTAS JÚNIOR</h5>
+                        <h6 class="card-title">CRM: 23409</h6>
+                        <p class="card-text">Especialista em Endocrinologia.</p>
+                        <p class="card-text">Atendimento: Quinta-feira</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="KARINA VAZ DE SOUZA">
+                    <div class="card-body">
+                        <h5 class="card-title">KARINA VAZ DE SOUZA</h5>
+                        <h6 class="card-title">CRM: 7109</h6>
+                        <p class="card-text">Especialista em Fonoaudiologia.</p>
+                        <p class="card-text">Atendimento: Segunda e Quarta-feira</p>
+                        <p class="card-text">Turno: Tarde</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="LILIANE SANTOS GUIMARÃES">
+                    <div class="card-body">
+                        <h5 class="card-title">LILIANE SANTOS GUIMARÃES</h5>
+                        <h6 class="card-title">CRM: Não disponível</h6>
+                        <p class="card-text">Especialista em Podologia.</p>
+                        <p class="card-text">Atendimento: Terça-feira</p>
+                        <p class="card-text">Turno: Tarde</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="MARCEL REIS MOTTA MAIA">
+                    <div class="card-body">
+                        <h5 class="card-title">MARCEL REIS MOTTA MAIA</h5>
+                        <h6 class="card-title">CRM: 19565</h6>
+                        <p class="card-text">Especialista em Cardiologia.</p>
+                        <p class="card-text">Atendimento: Terça-feira</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="MATHEUS BORGES DE SOUZA">
+                    <div class="card-body">
+                        <h5 class="card-title">MATHEUS BORGES DE SOUZA</h5>
+                        <h6 class="card-title">CRM: 34245</h6>
+                        <p class="card-text">Especialista em Ginecologia/Obstetrícia.</p>
+                        <p class="card-text">Atendimento: Segunda e Quinta-feira</p>
+                        <p class="card-text">Turno: Tarde</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="NICOLE MOREIRA TELLES">
+                    <div class="card-body">
+                        <h5 class="card-title">NICOLE MOREIRA TELLES</h5>
+                        <h6 class="card-title">CRM: 43520</h6>
+                        <p class="card-text">Especialista em Clínica Médica.</p>
+                        <p class="card-text">Atendimento: Quarta-feira (Quinzenais)</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <p class="card-text">Emergência: Segunda, Terça e Sexta-feira (Quinzenais), 24 Horas</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="PEDRO RÊGO BRITO BRANDÃO">
+                    <div class="card-body">
+                        <h5 class="card-title">PEDRO RÊGO BRITO BRANDÃO</h5>
+                        <h6 class="card-title">CRM: 17392</h6>
+                        <p class="card-text">Especialista em Ortopedia.</p>
+                        <p class="card-text">Atendimento: Quarta-feira</p>
+                        <p class="card-text">Turno: Noite</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="RICARDO MARANHÃO MARQUES">
+                    <div class="card-body">
+                        <h5 class="card-title">RICARDO MARANHÃO MARQUES</h5>
+                        <h6 class="card-title">CRM: 22699</h6>
+                        <p class="card-text">Especialista em Oftalmologia.</p>
+                        <p class="card-text">Atendimento: Segunda e Quarta-feira</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <p class="card-text">Sexta-feira (Quinzenais), Manhã</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="ROBERTO ALVES DA CRUZ SOUZA">
+                    <div class="card-body">
+                        <h5 class="card-title">ROBERTO ALVES DA CRUZ SOUZA</h5>
+                        <h6 class="card-title">CRM: 15562</h6>
+                        <p class="card-text">Especialista em Psicologia.</p>
+                        <p class="card-text">Atendimento: Sábado</p>
+                        <p class="card-text">Turno: Manhã/Tarde</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="ROBERTO DE OLIVEIRA SEIXAS FILHO">
+                    <div class="card-body">
+                        <h5 class="card-title">ROBERTO DE OLIVEIRA SEIXAS FILHO</h5>
+                        <h6 class="card-title">CRM: 25845</h6>
+                        <p class="card-text">Especialista em Radiologia.</p>
+                        <p class="card-text">Atendimento: Terça-feira</p>
+                        <p class="card-text">Turno: Tarde</p>
+                        <p class="card-text">Quinta-feira, Manhã</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="RAÍZA EDNA FREITAS FONSECA DE SOUZA">
+                    <div class="card-body">
+                        <h5 class="card-title">RAÍZA EDNA FREITAS FONSECA DE SOUZA</h5>
+                        <h6 class="card-title">CRM: 22013</h6>
+                        <p class="card-text">Especialista em Nutrição.</p>
+                        <p class="card-text">Atendimento: Segunda-feira</p>
+                        <p class="card-text">Turno: Manhã/Tarde</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="ROGÉRIO ARAÚJO DAS NEVES">
+                    <div class="card-body">
+                        <h5 class="card-title">ROGÉRIO ARAÚJO DAS NEVES</h5>
+                        <h6 class="card-title">CRM: 323624</h6>
+                        <p class="card-text">Especialista em Psicologia.</p>
+                        <p class="card-text">Atendimento: Segunda a Sexta-feira</p>
+                        <p class="card-text">Turno: Noite</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="RODRIGO MARANHÃO MARQUES">
+                    <div class="card-body">
+                        <h5 class="card-title">RODRIGO MARANHÃO MARQUES</h5>
+                        <h6 class="card-title">CRM: 22698</h6>
+                        <p class="card-text">Especialista em Otorrinolaringologia.</p>
+                        <p class="card-text">Atendimento: Terça, Quinta e Sexta-feira</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="SÉRGIO DINIZ GONÇALVES QUEIROZ">
+                    <div class="card-body">
+                        <h5 class="card-title">SÉRGIO DINIZ GONÇALVES QUEIROZ</h5>
+                        <h6 class="card-title">CRM: 10787</h6>
+                        <p class="card-text">Especialista em Cirurgia Pediátrica.</p>
+                        <p class="card-text">Atendimento: Sexta-feira (Quinzenal)</p>
+                        <p class="card-text">Turno: Tarde</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="TAMIRES ALVES DE OLIVEIRA">
+                    <div class="card-body">
+                        <h5 class="card-title">TAMIRES ALVES DE OLIVEIRA</h5>
+                        <h6 class="card-title">CRM: 10317</h6>
+                        <p class="card-text">Especialista em Psicologia.</p>
+                        <p class="card-text">Atendimento: Terça-feira</p>
+                        <p class="card-text">Turno: Manhã/Tarde</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="TATIANA NÁDIA DE JESUS VAZ">
+                    <div class="card-body">
+                        <h5 class="card-title">TATIANA NÁDIA DE JESUS VAZ</h5>
+                        <h6 class="card-title">CRM: 43524</h6>
+                        <p class="card-text">Especialista em Clínica Médica.</p>
+                        <p class="card-text">Atendimento: Quarta-feira (Quinzenais)</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <p class="card-text">Emergência: Segunda, Terça e Sexta-feira (Quinzenais), 24 Horas</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="THALES WAGNER PEREIRA NEGREIROS">
+                    <div class="card-body">
+                        <h5 class="card-title">THALES WAGNER PEREIRA NEGREIROS</h5>
+                        <h6 class="card-title">CRM: 20001</h6>
+                        <p class="card-text">Especialista em Dermatologia.</p>
+                        <p class="card-text">Atendimento: Segunda e Sexta-feira</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="THAISE BÁRBARA DE JESUS LUZ">
+                    <div class="card-body">
+                        <h5 class="card-title">THAISE BÁRBARA DE JESUS LUZ</h5>
+                        <h6 class="card-title">CRM: 22343</h6>
+                        <p class="card-text">Especialista em Pediatria.</p>
+                        <p class="card-text">Atendimento: Quarta-feira (Quinzenal)</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="VANESSA CORRÊA MOREIRA">
+                    <div class="card-body">
+                        <h5 class="card-title">VANESSA CORRÊA MOREIRA</h5>
+                        <h6 class="card-title">CRM: 33321</h6>
+                        <p class="card-text">Especialista em Neurologia.</p>
+                        <p class="card-text">Atendimento: Segunda e Quinta-feira</p>
+                        <p class="card-text">Turno: Manhã/Tarde</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="VENICIUS BORGES DE SOUZA">
+                    <div class="card-body">
+                        <h5 class="card-title">VENICIUS BORGES DE SOUZA</h5>
+                        <h6 class="card-title">CRM: 18976</h6>
+                        <p class="card-text">Especialista em Ginecologia e Obstetrícia.</p>
+                        <p class="card-text">Atendimento: Quarta e Quinta-feira</p>
+                        <p class="card-text">Turno: Manhã</p>
+                        <p class="card-text">Terça-feira: Tarde</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="VITOR LOPES GIBARA">
+                    <div class="card-body">
+                        <h5 class="card-title">VITOR LOPES GIBARA</h5>
+                        <h6 class="card-title">CRM: 14455</h6>
+                        <p class="card-text">Especialista em Cirurgia Bariátrica.</p>
+                        <p class="card-text">Atendimento: Segunda-feira</p>
+                        <p class="card-text">Turno: Manhã (Quinzenal)</p>
+                        <a href="#" class="btn btn-primary">Agendar consulta</a>
+                    </div>
+                </div>
+            </div>
+            
+    </main>       
+            
+            
+
+     <!-- Footer -->
+     <footer class=" text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Siga-nos</h5>
+                    <ul class="list-unstyled social-icons">
+                        <li><a href="https://facebook.com/hospitalpromater" class="text-white"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="https://instagram.com/hospitalpromater" class="text-white"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>                    
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Empresa</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="quemSomos.html">Sobre Nós</a></li>
+                        <li><a href="politicaPrivacidade.html">Política de Privacidade</a></li>
+                        <li><a href="trabalheConosco.html">Trabalhe Conosco</a></li>
+                    </ul>
+                    <br>
+                    <h5 class="text-uppercase">Endereço</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>Av. Lauro de Freitas, 1125 - Centro</li>
+                        <li>Dias D'Ávila - BA, 42850-000</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contatos</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="tel:+557136483750">Fixo: (71) 3648-3750</a></li>
+                        <li><a href="tel:+5571988026456">Call-center: (71) 98802-6456</a></li>
+                        <li><a href="tel:+5571996207149">Qualidade: (71) 99620-7149</a></li>
+                    </ul>                  
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <!-- Botao Whatsapp -->          
+            <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+            <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
+                <div class="rwb-tooltip">Agende pelo Whatsapp</div>
+                <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.svg" alt="Chat with us on WhatsApp">
+            </a>
+        </div>
+        <div class="text-center p-3" style="background-color: #f1f1f1;">
+            <p>&copy; 2024 Hospital Promater. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.userway.org/widget.js" async></script>
+</body>
+</html>
