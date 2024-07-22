@@ -1,4 +1,5 @@
 # Documentação do Site Hospital Promater
+Autores: Gerleidson Bomfim e [Ruan Esteves](https://github.com/RuanRodriguesEsteves)
 
 ## Índice
 1. [Visão Geral](#visão-geral)
