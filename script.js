@@ -75,3 +75,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+function enviarFormulario() {
+    // Seleciona o formulário
+    var formulario = document.querySelector('form');
+    
+    // Verifica se o formulário é válido
+    if (formulario.checkValidity()) {
+        // Se o formulário for válido, submete o formulário
+        formulario.submit();
+    } else {
+        // Caso contrário, exibe uma mensagem de erro
+        alert('Por favor, preencha todos os campos obrigatórios.');
+    }
+}
