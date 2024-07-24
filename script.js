@@ -16,7 +16,39 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+// Função para manipular o login
+function handleLogin(event) {
+    event.preventDefault(); // Evita o envio do formulário padrão
 
+    // Obtém os valores dos campos de entrada
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    // Verifica se os campos estão preenchidos
+    if (username === 'admin' || password === 'admin123') {
+        alert('Por favor, preencha todos os campos.');
+        return;
+    }
+
+    // Simula uma verificação de login (aqui você deve substituir com a lógica real)
+    if (username === 'admin' && password === 'admin') {
+        alert('Login bem-sucedido!');
+        // Redireciona para outra página, se necessário
+        // window.location.href = 'paginaPrincipal.html';
+    } else {
+        alert('Usuário ou senha inválidos.');
+    }
+}
+
+// Adiciona um listener para o evento de submissão do formulário
+document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('loginForm');
+    if (form) {
+        form.addEventListener('submit', handleLogin);
+    }
+});
+
+// Variável para contador de IDs de cartões
     var clientForm = document.getElementById("clientForm");
     if (clientForm) {
         clientForm.addEventListener("submit", function(event) {

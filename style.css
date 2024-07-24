@@ -78,3 +78,10 @@ footer a:hover{
 .exam-card {
     margin-bottom: 20px;
 }
+
+.navbar-brand {
+    margin: 0 auto;
+    display: flex;
+    margin-left: 380px;
+    align-items: center;
+}
