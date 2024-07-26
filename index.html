@@ -12,79 +12,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/ico">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        .navbar-brand img {
-            max-height: 40px; /* Ajuste a altura do logo conforme necessário */
-        }
-    </style>
+  
 </head>
-
-
 <body>
     <!-- Navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logonav.ico" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="atendimentoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Atendimento
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="atendimentoDropdown">
-                            <a class="dropdown-item dropdown-toggle" href="#" id="ambulatorialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Ambulatorial
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="Logo" style="max-height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="atendimentoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Atendimento
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="ambulatorialDropdown">
-                                <a class="dropdown-item" href="contato.html">Especialidades</a>
+                            <div class="dropdown-menu" aria-labelledby="atendimentoDropdown">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="ambulatorialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Ambulatorial
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="ambulatorialDropdown">
+                                    <a class="dropdown-item" href="contato.html">Especialidades</a>
+                                </div>
+                                <a class="dropdown-item" href="#">Laboratorial</a>
+                                <a class="dropdown-item" href="#">Emergencial</a>
+                                <a class="dropdown-item" href="exames.html">Exames de Imagem</a>
+                                <a class="dropdown-item" href="#">Ocupacional</a>
                             </div>
-                            <a class="dropdown-item" href="#">Laboratorial</a>
-                            <a class="dropdown-item" href="#">Emergencial</a>
-                            <a class="dropdown-item" href="exames.html">Exames de Imagem</a>
-                            <a class="dropdown-item" href="#">Ocupacional</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            A Promater
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="sobreDropdown">
-                            <a class="dropdown-item dropdown-toggle" href="#" id="InstituicionalDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Institucional
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                A Promater
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="InstituicionalDropdown">
-                                <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>
-                                <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
-                                <a class="dropdown-item" href="missao.html">Visão, Missão e Valores</a>
-                                <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
+                            <div class="dropdown-menu" aria-labelledby="sobreDropdown">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="InstituicionalDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Institucional
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="InstituicionalDropdown">
+                                    <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>
+                                    <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
+                                    <a class="dropdown-item" href="missao.html">Visão, Missão e Valores</a>
+                                    <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
+                                </div>
+                                <a class="dropdown-item" href="diretoria.html">Diretoria</a>
+                                <a class="dropdown-item" href="#">Certificações e Acreditações</a>
                             </div>
-                            <a class="dropdown-item" href="diretoria.html">Diretoria</a>
-                            <a class="dropdown-item" href="#">Certificações e Acreditações</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="contatoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Contato
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="contatoDropdown">
-                            <a class="dropdown-item" href="contato.html"><i class="fas fa-envelope"></i> Fale Conosco</a>
-                            <a class="dropdown-item" href="trabalheConosco.html"><i class="fas fa-briefcase"></i> Trabalhe Conosco</a>
-                            <a class="dropdown-item" href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true"><i class="fas fa-poll"></i> Pesquisa de Satisfação</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html" title="Área do Administrador"><i class="fas fa-user-cog"></i> Admin</a>
-                    </li>
-                </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="contatoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Contato
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="contatoDropdown">
+                                <a class="dropdown-item" href="contato.html"><i class="fas fa-envelope"></i> Fale Conosco</a>
+                                <a class="dropdown-item" href="trabalheConosco.html"><i class="fas fa-briefcase"></i> Trabalhe Conosco</a>
+                                <a class="dropdown-item" href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true"><i class="fas fa-poll"></i> Pesquisa de Satisfação</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html" title="Área do Administrador"><i class="fas fa-user-cog"></i> Admin</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
