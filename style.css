@@ -85,3 +85,43 @@ footer a:hover{
     margin-left: 80px;
     align-items: center;
 }
+
+
+
+
+
+
+/* Estilo para o dropdown principal */
+.navbar-nav .dropdown-menu {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o submenu */
+.dropdown-menu .dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 100%;
+    margin-top: -1px; /* Para alinhar o submenu com o item pai */
+}
+
+/* Adiciona espaçamento interno aos itens do menu */
+.dropdown-item {
+    padding: 10px 15px;
+}
+
+/* Estilo do ícone dentro dos itens do menu */
+.dropdown-item i {
+    margin-right: 8px;
+}
+
+/* Muda a cor do item do menu ao passar o mouse */
+.dropdown-item:hover {
+    background-color: #e9ecef;
+}
+

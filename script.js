@@ -109,3 +109,8 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'inscricao.html';
     });
 });
+
+
+
+
+
