@@ -91,3 +91,18 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
     }
 });
+
+// Função para exibir uma mensagem quando a página é carregada
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Página carregada e o script.js está funcionando!');
+    // Adicione outras funcionalidades aqui
+
+    // Exemplo: Alterar o texto do botão de inscrição
+    var btnInscrever = document.getElementById('btnInscrever');
+    if (btnInscrever) {
+        btnInscrever.addEventListener('click', function() {
+            alert('Inscrição realizada com sucesso!');
+        });
+    }
+});
+
