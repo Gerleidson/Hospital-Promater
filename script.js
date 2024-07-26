@@ -45,4 +45,3 @@ function enviarFormulario() {
         alert('Por favor, preencha todos os campos obrigatórios.');
     }
 }
-
