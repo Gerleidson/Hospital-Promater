@@ -1,3 +1,4 @@
+//form login adm
 document.addEventListener('DOMContentLoaded', function() {
     var loginForm = document.getElementById('loginForm');
 
@@ -23,94 +24,70 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Adiciona um listener para o evento de submissão do formulário
-document.addEventListener('DOMContentLoaded', function() {
-    var form = document.getElementById('loginForm');
-    if (form) {
-        form.addEventListener('submit', handleLogin);
+// botao inscrever na vaga
+document.addEventListener("DOMContentLoaded", function() {
+    var inscreverButton = document.getElementById("btnInscrever");
+    if (inscreverButton) {
+        inscreverButton.addEventListener("click", function() {
+            window.location.href = 'inscricao.html';
+        });
     }
 });
 
-
-function enviarFormulario() {
-    // Seleciona o formulário
-    var formulario = document.querySelector('form');
-    
-    // Verifica se o formulário é válido
-    if (formulario.checkValidity()) {
-        // Se o formulário for válido, submete o formulário
-        formulario.submit();
-    } else {
-        // Caso contrário, exibe uma mensagem de erro
-        alert('Por favor, preencha todos os campos obrigatórios.');
-    }
-}
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Função para obter parâmetros da URL
+//detalhes da vaga
+document.addEventListener("DOMContentLoaded", function() {
+    // Função para obter o valor do parâmetro da URL
     function getQueryParam(param) {
-        const urlParams = new URLSearchParams(window.location.search);
+        var urlParams = new URLSearchParams(window.location.search);
         return urlParams.get(param);
     }
 
-    // Obtendo o parâmetro 'vaga'
-    const vaga = getQueryParam('vaga');
-    
-    // Dados das vagas (você pode substituir isso por uma chamada de API se preferir)
-    const vagas = {
-        'enfermeiro': {
-            nome: 'Enfermeiro',
-            tipoContratacao: 'CLT',
-            modalidade: 'Presencial',
-            descricao: 'Descrição detalhada sobre a vaga de Enfermeiro...'
+    // Dados das vagas (você pode buscar isso de um servidor ou de um arquivo JSON)
+    var vagas = {
+        "enfermeiro": {
+            nome: "Enfermeiro",
+            tipoContratacao: "CLT",
+            modalidade: "Presencial",
+            descricao: "Responsável por cuidar de pacientes em ambiente hospitalar, monitorando sinais vitais e administrando medicamentos."
         },
-        'assistente-administrativo': {
-            nome: 'Assistente Administrativo',
-            tipoContratacao: 'Estágio',
-            modalidade: 'Home Office',
-            descricao: 'Descrição detalhada sobre a vaga de Assistente Administrativo...'
+        "assistente-administrativo": {
+            nome: "Assistente Administrativo",
+            tipoContratacao: "Estágio",
+            modalidade: "Home Office",
+            descricao: "Auxilia nas tarefas administrativas da empresa, como atendimento telefônico, organização de documentos e controle de agenda."
         },
-        'medico': {
-            nome: 'Médico',
-            tipoContratacao: 'CLT',
-            modalidade: 'Presencial',
-            descricao: 'Descrição detalhada sobre a vaga de Médico...'
+        "medico": {
+            nome: "Médico",
+            tipoContratacao: "CLT",
+            modalidade: "Presencial",
+            descricao: "Atende pacientes, realiza diagnósticos, prescreve tratamentos e acompanha a recuperação dos pacientes."
         },
-        'recepcionista': {
-            nome: 'Recepcionista',
-            tipoContratacao: 'CLT',
-            modalidade: 'Presencial',
-            descricao: 'Descrição detalhada sobre a vaga de Recepcionista...'
+        "recepcionista": {
+            nome: "Recepcionista",
+            tipoContratacao: "CLT",
+            modalidade: "Presencial",
+            descricao: "Recebe visitantes e pacientes, faz agendamentos e fornece informações sobre os serviços da empresa."
         },
-        'desenvolvedor': {
-            nome: 'Desenvolvedor',
-            tipoContratacao: 'Freelancer',
-            modalidade: 'Home Office',
-            descricao: 'Descrição detalhada sobre a vaga de Desenvolvedor...'
+        "desenvolvedor": {
+            nome: "Desenvolvedor",
+            tipoContratacao: "Freelancer",
+            modalidade: "Home Office",
+            descricao: "Desenvolve e mantém sistemas e aplicativos, realiza testes e garante a funcionalidade dos programas."
         }
     };
 
-    // Preenchendo os detalhes da vaga
+    // Obter o nome da vaga da URL
+    var vaga = getQueryParam('vaga');
+
+    // Verificar se a vaga existe nos dados
     if (vaga && vagas[vaga]) {
-        document.getElementById('vagaNome').innerText = vagas[vaga].nome;
-        document.getElementById('vagaTipoContratacao').innerText = vagas[vaga].tipoContratacao;
-        document.getElementById('vagaModalidade').innerText = vagas[vaga].modalidade;
-        document.getElementById('vagaDescricao').innerText = vagas[vaga].descricao;
+        var dadosVaga = vagas[vaga];
+
+        // Preencher os dados na página
+        document.getElementById('vagaNome').textContent = dadosVaga.nome;
+        document.getElementById('vagaTipoContratacao').textContent = dadosVaga.tipoContratacao;
+        document.getElementById('vagaModalidade').textContent = dadosVaga.modalidade;
+        document.getElementById('vagaDescricao').textContent = dadosVaga.descricao;
     } else {
-        document.getElementById('vagaNome').innerText = 'Vaga não encontrada';
-        document.getElementById('vagaTipoContratacao').innerText = '';
-        document.getElementById('vagaModalidade').innerText = '';
-        document.getElementById('vagaDescricao').innerText = '';
     }
-
-    // Ação do botão "INSCREVER-SE NA VAGA"
-    document.getElementById('btnInscrever').addEventListener('click', function() {
-        window.location.href = 'inscricao.html';
-    });
 });
-
-
-
-
-
