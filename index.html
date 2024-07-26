@@ -11,16 +11,25 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png" type="image/ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 <body>
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar navbar-expand-lg ">
-            <a class="navbar-brand" href="index.html">Hospital Promater</a>
-            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+     <!-- Navbar -->
+     <header>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logocartao.png" alt="Hospital Promater" style="height: 80px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+        </nav>
+
+
+         <nav class="navbar navbar-expand-lg ">
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
@@ -31,44 +40,56 @@
                             Atendimento
                         </a>
                         <div class="dropdown-menu" aria-labelledby="atendimentoDropdown">
-                            <a class="dropdown-item" href="corpoclinico.html">Corpo Clínico</a>
-                            <a class="dropdown-item" href="exames.html">Exames Disponíveis</a>
-                            <a class="dropdown-item" href="#">Ambulatorial</a>
+                            <a class="dropdown-item dropdown-toggle" href="#" id="ambulatorialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Ambulatorial
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="ambulatorialDropdown">
+                                <a class="dropdown-item" href="contato.html">Especialidades</a>
+                            </div>
                             <a class="dropdown-item" href="#">Laboratorial</a>
                             <a class="dropdown-item" href="#">Emergencial</a>
-                            <a class="dropdown-item" href="#">Medicina Ocupacional</a>
+                            <a class="dropdown-item" href="exames.html">Exames de Imagem</a>
+                            <a class="dropdown-item" href="#">Ocupacional</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Sobre Nós
+                            A Promater
                         </a>
                         <div class="dropdown-menu" aria-labelledby="sobreDropdown">
-                            <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>                         
-                            <a class="dropdown-item" href="missão.html">Visão, missão e valores</a>
-                            <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
-                            <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
+                            <a class="dropdown-item dropdown-toggle" href="#" id="InstituicionalDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Institucional
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="InstituicionalDropdown">
+                                <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>
+                                <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
+                                <a class="dropdown-item" href="missao.html">Visão, Missão e Valores</a>
+                                <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
+                            </div>
                             <a class="dropdown-item" href="diretoria.html">Diretoria</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="contato.html">Contato</a>
-                            <a class="dropdown-item" href="trabalheConosco.html">Trabalhe Conosco</a>
+                            <a class="dropdown-item" href="#">Certificações e Acreditações</a>
                         </div>
                     </li>
-
-                    <!--
-                    <li class="nav-item"><a class="nav-link" href="cadPaciente.html" title="Login">Cadastre-se</a></li>   -->   
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html" title="Área do Administrador">
-                            <i class="fas fa-user-shield"></i> Admin
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contatoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contato
                         </a>
-                    </li>          
+                        <div class="dropdown-menu" aria-labelledby="contatoDropdown">
+                            <a class="dropdown-item" href="contato.html"><i class="fas fa-envelope"></i> Fale Conosco</a>
+                            <a class="dropdown-item" href="trabalheConosco.html"><i class="fas fa-briefcase"></i> Trabalhe Conosco</a>
+                            <a class="dropdown-item" href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true"><i class="fas fa-poll"></i> Pesquisa de Satisfação</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" title="Área do Administrador"><i class="fas fa-user-cog"></i> Admin</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
+    
 
-     <main>
+    <main>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -102,7 +123,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <a href="https://api.whatsapp.com/send?phone=5571996207149&text=Olá,%20como%20posso%20ajudar?" class="botao-servico">
                         <div class="card h-100">
-                            <img src="uploads/slide1.jpg" class="card-img-top" alt="Option 1">
+                            <img src="img/agendarexames.png" class="card-img-top" alt="Option 1">
                             <div class="card-body">
                                 <h5 class="card-title">Agendamento de exames</h5>
                                 <p class="card-text">Agende seus exames de forma rápida. Oferecemos uma ampla variedade de especialidades médicas e horários flexíveis para atender às suas necessidades.</p>
@@ -113,7 +134,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <a href="https://www.labchecap.com.br/resultado-de-exames" class="botao-servico">
                         <div class="card h-100">
-                            <img src="uploads/slide2.jpg" class="card-img-top" alt="Option 2">
+                            <img src="img/resultado.png" class="card-img-top" alt="Option 2">
                             <div class="card-body">
                                 <h5 class="card-title">Resultado de exames</h5>
                                 <p class="card-text">Consulte seus resultados de exames de forma rápida e segura através de nosso portal online.</p>
@@ -124,7 +145,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <a href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true" class="botao-servico">
                         <div class="card h-100">
-                            <img src="uploads/slide3.jpg" class="card-img-top" alt="Option 3">
+                            <img src="img/pesquisa.png" class="card-img-top" alt="Option 3">
                             <div class="card-body">
                                 <h5 class="card-title">Pesquisa de satisfação</h5>
                                 <p class="card-text">Sua opinião é muito importante para nós! Participe de nossa pesquisa de satisfação e nos ajude a melhorar nossos serviços.</p>
@@ -147,7 +168,17 @@
                     <iframe class="embed-responsive-item" src="img/NEWS.mp4" allowfullscreen></iframe>
                 </div>
             </div>  -->
-            
+            <!-- Informational Banner -->
+            <div class="container mt-5">
+                <div class="alert alert-info text-center p-4" style="background-image: url('URL_DA_IMAGEM_DE_FUNDO'); background-size: cover; background-position: center; color: #000000;">
+                    <h4 class="alert-heading">Atenção!</h4>
+                    <p>Estamos oferecendo consultas gratuitas para novos pacientes até o final do mês. Agende sua consulta agora e aproveite esta oportunidade.</p>
+                    <hr class="my-4">
+                    <p class="mb-0">
+                        Para mais informações e para agendar, <a href="agendamento.html" class="alert-link">clique aqui</a>.
+                    </p>
+                </div>
+            </div>
 
         </main>
         
@@ -216,9 +247,7 @@
             <p class="mt-4">
                 O Hospital Promater está localizado na Av. Lauro de Freitas, 1125 - Centro, Dias D'Ávila - BA. Estamos comprometidos em oferecer atendimento de qualidade e nossa localização é apenas uma das maneiras pelas quais trabalhamos para tornar sua visita o mais confortável possível.
             </p>
-            <p>
-                Estamos ansiosos para recebê-lo e cuidar de sua saúde com o carinho e profissionalismo que você merece.
-            </p>
+            <p>Estamos ansiosos para recebê-lo e cuidar de sua saúde com o carinho e profissionalismo que você merece.</p>
             <div class="container mt-4">
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.460133545778!2d-38.37987998494225!3d-12.737150641339853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716b751a849f6b%3A0x979a227b2c24f90!2sAv.%20Lauro%20de%20Freitas%2C%201125%20-%20Centro%2C%20Dias%20D'Ávila%20-%20BA%2C%2042850-000!5e0!3m2!1spt-BR!2sbr!4v1625164607363!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
@@ -228,59 +257,80 @@
         </div>
       </div>
     
-    <!-- Footer -->
-    <footer class=" text-center text-lg-start mt-5">
-        <div class="container p-4">
-            <div class="row">
-                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Siga-nos</h5>
-                    <ul class="list-unstyled social-icons">
-                        <li><a href="https://facebook.com/hospitalpromater" class="text-white"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                        <li><a href="https://instagram.com/hospitalpromater" class="text-white"><i class="fab fa-instagram"></i> Instagram</a></li>
-                    </ul>                    
-                </div>
-                <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Empresa</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li><a href="quemSomos.html">Sobre Nós</a></li>
-                        <li><a href="politicaPrivacidade.html">Política de Privacidade</a></li>
-                        <li><a href="trabalheConosco.html">Trabalhe Conosco</a></li>
-                    </ul>
+   <!-- Footer -->
+<footer class="text-center text-lg-start mt-5">
+    <div class="container p-4">
+        <div class="row">
+            <!-- Coluna da Logo -->
+            <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                <a href="index.html"><br>
+                    <img src="img/logonav.ico" alt="Hospital Promater" style="height: 130px;"> 
+                </a>
+            </div>
+            
+            <!-- Coluna Siga-nos -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase text-center">Siga-nos</h5>
+                <ul class="list-unstyled d-flex justify-content-center p-0 m-0">
+                    <li class="mx-3">
+                        <a href="https://facebook.com/hospitalpromater" class="text-white">
+                            <i class="fab fa-facebook-f fa-2x"></i> 
+                        </a>
+                    </li>
+                    <li class="mx-3">
+                        <a href="https://instagram.com/hospitalpromater" class="text-white">
+                            <i class="fab fa-instagram fa-2x"></i> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+           
+            <!-- Coluna Empresa -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Empresa</h5>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="quemSomos.html">Sobre Nós</a></li>
+                    <li><a href="politicaPrivacidade.html">Política de Privacidade</a></li>
+                    <li><a href="trabalheConosco.html">Trabalhe Conosco</a></li>
+                </ul>
+                <br>
+                <h5 class="text-uppercase">Endereço</h5>
+                <ul class="list-unstyled mb-0">
+                    <li>Av. Lauro de Freitas, 1125 - Centro</li>
+                    <li>Dias D'Ávila - BA, 42850-000</li>
+                </ul>
+            </div>
+            
+            <!-- Coluna Contatos -->
+            <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Contatos</h5>
+                <ul class="list-unstyled mb-0">
+                    <li>Central de Agendamento</li>
+                    <li><i class="fas fa-phone-alt"></i> <a href="tel:+557136483750">(71) 3648-3750</a></li>
+                    <li><i class="fab fa-whatsapp"></i><a href="tel:+5571988026456"> (71) 98802-6456</a></li>
                     <br>
-                    <h5 class="text-uppercase">Endereço</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li>Av. Lauro de Freitas, 1125 - Centro</li>
-                        <li>Dias D'Ávila - BA, 42850-000</li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Contatos</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li>Central de Agengamento</li>
-                        <i class="fas fa-phone-alt"></i> <a href="tel:+557136483750">(71) 3648-3750</a></li>
-                        <li><i class="fab fa-whatsapp"></i><a href="tel:+5571988026456"> (71) 98802-6456</i></a></li>
-                        <br>
-                        <li>Setor de Qualidade</li>
-                        <li><i class="fab fa-whatsapp"></i><a href="tel:+5571996207149"> (71) 99620-7149</i></a></li>
-                      
-                    </ul>                  
-                </div>
+                    <li>Setor de Qualidade</li>
+                    <li><i class="fab fa-whatsapp"></i><a href="tel:+5571996207149"> (71) 99620-7149</a></li>
+                </ul>
             </div>
         </div>
-        <div>
-
-            <!-- Botao Whatsapp -->          
-            <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
-            <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
-                <div class="rwb-tooltip">Agende pelo Whatsapp</div>
-                <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
-            </a>
-        </div>
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2024 Copyright:
-            <a class="text-white" href="index.html">Hospital Promater</a>
-        </div>
-    </footer>
+    </div>
+    
+    <!-- Botão WhatsApp -->
+    <div>
+        <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+        <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
+            <div class="rwb-tooltip">Agende pelo Whatsapp</div>
+            <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+        </a>
+    </div>
+    
+    <!-- Rodapé com Direitos Autorais -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Copyright:
+        <a class="text-white" href="index.html">Hospital Promater</a>
+    </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
     <script src="script.js"></script>
