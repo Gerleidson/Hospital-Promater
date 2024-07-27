@@ -15,6 +15,16 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <style>
+        a {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+    </style>
   
 </head>
 <body>
@@ -74,7 +84,6 @@
       </div><!-- menu -->
 
     </header>
-
 
     <main>
         <div id="carouselExample" class="carousel slide" data-ride="carousel">
@@ -155,57 +164,52 @@
                 </div>
             </div>
         </div>
-                      
-            <!-- Informational Banner -->
-            <div class="container mt-5">
-                <div class="alert alert-info text-center p-4" style="background-image: url('URL_DA_IMAGEM_DE_FUNDO'); background-size: cover; background-position: center; color: #000000;">
-                    <h4 class="alert-heading">Atenção!</h4>
-                    <p>Estamos oferecendo consultas gratuitas para novos pacientes até o final do mês. Agende sua consulta agora e aproveite esta oportunidade.</p>
-                    <hr class="my-4">
-                    <p class="mb-0">
-                        Para mais informações e para agendar, <a href="agendamento.html" class="alert-link">clique aqui</a>.
-                    </p>
+
+          <!-- Banner clicável com transição -->
+        <div class="container mt-5 text-center">
+            <a href="https://seusite.com" target="_blank" class="d-inline-block" style="width: 546px; height: 540px; border: 3px solid #000000; border-radius: 8px; overflow: hidden;">
+                <img src="img/4.png" alt="Banner" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%;">
+            </a>
+        </div>
+
+        <div class="container mt-5 text-center">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="noticiaDestaque1.html" class="botao-noticia">                     
+                        <div class="card h-100">
+                            <img src="uploads/slide1.jpg" class="card-img-top" alt="Option 1">
+                            <div class="card-body" >
+                                <h5 class="card-title">Noticia Destaque 1</h5>
+                                <p class="card-text">Description for option 1.</p>
+                            </div>
+                        </div>
+                    </a> 
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="noticiaDestaque2.html" class="botao-noticia">                  
+                        <div class="card h-100">
+                            <img src="uploads/slide2.jpg" class="card-img-top" alt="Option 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Noticia Destaque 2</h5>
+                                <p class="card-text">Description for option 2.</p>
+                            </div>
+                        </div>
+                    </a> 
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="noticiaDestaque3.html" class="botao-noticia">                  
+                        <div class="card h-100">
+                            <img src="uploads/slide3.jpg" class="card-img-top" alt="Option 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Noticia Destaque 3</h5>
+                                <p class="card-text">Description for option 3.</p>
+                            </div>
+                        </div>
+                    </a> 
                 </div>
             </div>
-    
-            <div class="container mt-5 text-center">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <a href="noticiaDestaque1.html" class="botao-noticia">                     
-                            <div class="card h-100">
-                                <img src="uploads/slide1.jpg" class="card-img-top" alt="Option 1">
-                                <div class="card-body" >
-                                    <h5 class="card-title">Noticia Destaque 1</h5>
-                                    <p class="card-text">Description for option 1.</p>
-                                </div>
-                            </div>
-                        </a> 
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <a href="noticiaDestaque2.html" class="botao-noticia">                  
-                            <div class="card h-100">
-                                <img src="uploads/slide2.jpg" class="card-img-top" alt="Option 2">
-                                <div class="card-body">
-                                    <h5 class="card-title">Noticia Destaque 2</h5>
-                                    <p class="card-text">Description for option 2.</p>
-                                </div>
-                            </div>
-                        </a> 
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <a href="noticiaDestaque3.html" class="botao-noticia">                  
-                            <div class="card h-100">
-                                <img src="uploads/slide3.jpg" class="card-img-top" alt="Option 3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Noticia Destaque 3</h5>
-                                    <p class="card-text">Description for option 3.</p>
-                                </div>
-                            </div>
-                        </a> 
-                    </div>
-                </div>
-                    <a href="noticias.html" class="btn btn-3d">Mais Notícias</a>           
-            </div> 
+                <a href="noticias.html" class="btn btn-3d">Mais Notícias</a>           
+        </div> 
     
     </main>  
 
