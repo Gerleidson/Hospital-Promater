@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hospital Promater">
     <meta name="keywords" content="Hospital, Promater">
     <meta name="author" content="Gerleidson Bomfim e Ruan Esteves">
@@ -10,107 +10,112 @@
     <title>Hospital Promater</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/ico">
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   
 </head>
 <body>
-    <!-- Navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="Logo" style="width: 100px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="atendimentoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Atendimento
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="atendimentoDropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#" id="ambulatorialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Ambulatorial
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="ambulatorialDropdown">
-                                    <a class="dropdown-item" href="corpoclinico.html">Especialidades</a>
-                                </div>
-                                <a class="dropdown-item" href="#">Laboratorial</a>
-                                <a class="dropdown-item" href="#">Emergencial</a>
-                                <a class="dropdown-item" href="exames.html">Exames de Imagem</a>
-                                <a class="dropdown-item" href="#">Ocupacional</a>
-                            </div>
+        <img src="img/logonav.ico"  class="navbar-brand" href="index.html" alt="Logo" style="width: 90px;">
+        
+        <nav class="main-nav" >      
+            <ul>              
+                <li><a href="index.html" title="Home">Home</a></li>               
+                <li><a href="">Atendimento</a>                
+                    <ul>                      
+                        <li><a href="#" title="Ambulatorial">Ambulatorial</a>
+                            <ul>
+                                <li><a href="corpoclinico.html" title="Especianlidades">Especialidades</a></li>                              
+                            </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                A Promater
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="sobreDropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#" id="InstituicionalDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Institucional
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="InstituicionalDropdown">
-                                    <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>
-                                    <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
-                                    <a class="dropdown-item" href="missao.html">Visão, Missão e Valores</a>
-                                    <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
-                                </div>
-                                <a class="dropdown-item" href="diretoria.html">Diretoria</a>
-                                <a class="dropdown-item" href="#">Certificações e Acreditações</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="contatoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Contato
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="contatoDropdown">
-                                <a class="dropdown-item" href="contato.html"><i class="fas fa-envelope"></i> Fale Conosco</a>
-                                <a class="dropdown-item" href="trabalheConosco.html"><i class="fas fa-briefcase"></i> Trabalhe Conosco</a>
-                                <a class="dropdown-item" href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true"><i class="fas fa-poll"></i> Pesquisa de Satisfação</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html" title="Área do Administrador"><i class="fas fa-user-cog"></i> Admin</a>
-                        </li>
+                        <li><a href="#" title="Laboratorial">Laboratorial</a></li>
+                        <li><a href="#" title="Emergencial">Emergencial</a></li>
+                        <li><a href="exames.html" title="Exames de imagem">Exames de imagem</a></li>
+                        <li><a href="#" title="Ocupacional">Ocupacional</a></li>
                     </ul>
-                </div>
-            </div>
+                </li>                
+                <li><a href="">A Promater</a>                
+                    <ul>
+                        <li><a href="#" title="Institucional">Institucional</a>
+                            <ul>
+                                <li><a href="quemSomos.html" title="Quem Somos">Quem Somos</a></li>
+                                <li><a href="politicaQualidade.html" title="Política de Qualidade">Política de Qualidade</a></li>
+                                <li><a href="missao.html" title="Missão, Visão e Valores">Missão, Visão e Valores</a></li>
+                                <li><a href="politicaPrivacidade.html" title="Politica de Privacidade">Politica de Privacidade</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="diretoria.html" title="Diretoria">Diretoria</a></li>
+                        <li><a href="#" title="Certificações e Acreditações">Certificações e Acreditações</a></li>
+                    </ul>
+                </li>
+                <li><a href="contato.html" title="Blog">Contato</a>
+                    <ul>
+                        <li><a href="contato.html" title="Fale Conosco"><i class="fas fa-envelope"></i> Fale Conosco</a></li>
+                        <li><a href="trabalheConosco.html" title="Trabalhe Conosco"><i class="fas fa-briefcase"></i> Trabalhe Conosco</a></li>
+                        <li><a href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true"><i class="fas fa-poll"></i> Pesquisa de Satisfação</a>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html" title="Área do Administrador"><i class="fas fa-user-cog"></i> Admin</a>
+                </li>              
+            </ul>
         </nav>
+        
+        <div class="mob-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="overlay"></div>
+        
+      </div><!-- menu -->
+
     </header>
-    
+
 
     <main>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExample" data-slide-to="1"></li>
+                <li data-target="#carouselExample" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="uploads/slide1.jpg" class="d-block w-100" alt="First slide">
+                    <img src="uploads/slide1.jpg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First Slide</h5>
+                        <p>Description for the first slide.</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="uploads/slide2.jpg" class="d-block w-100" alt="Second slide">
+                    <img src="uploads/slide2.jpg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second Slide</h5>
+                        <p>Description for the second slide.</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="uploads/slide3.jpg" class="d-block w-100" alt="Third slide">
+                    <img src="uploads/slide3.jpg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third Slide</h5>
+                        <p>Description for the third slide.</p>
+                    </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+           <!-- <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
-            </a>
+            </a>-->
         </div>
+
     
         <!-- Options Grid -->
         <div class="container mt-5 text-center">
@@ -150,19 +155,7 @@
                 </div>
             </div>
         </div>
-            
-        <main>
-
-            <!-- Video Banner 
-            <div class="container mt-5 text-center" >
-                <h2>Conheça o Hospital Promater</h2>
-                <p class="mt-4">
-                    Assista ao nosso vídeo para saber mais sobre os serviços que oferecemos e o nosso compromisso com a sua saúde e bem-estar.
-                </p>
-                <div class="embed-responsive embed-responsive-16by9 mt-4">
-                    <iframe class="embed-responsive-item" src="img/NEWS.mp4" allowfullscreen></iframe>
-                </div>
-            </div>  -->
+                      
             <!-- Informational Banner -->
             <div class="container mt-5">
                 <div class="alert alert-info text-center p-4" style="background-image: url('URL_DA_IMAGEM_DE_FUNDO'); background-size: cover; background-position: center; color: #000000;">
@@ -174,162 +167,189 @@
                     </p>
                 </div>
             </div>
-
-        </main>
-        
-
-        <!-- Newsletter -->      
-        <div class="container mt-5 text-center">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="noticiaDestaque1.html" class="botao-noticia">                     
-                    <div class="card h-100">
-                        <img src="uploads/slide3.jpg" class="card-img-top" alt="Option 1">
-                        <div class="card-body" >
-                            <h5 class="card-title">Noticia Destaque 1</h5>
-                            <p class="card-text">Description for option 1.</p>
-                        </div>
-                    </div>
-                </a> 
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="noticiaDestaque2.html" class="botao-noticia">                  
-                    <div class="card h-100">
-                        <img src="uploads/slide2.jpg" class="card-img-top" alt="Option 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Noticia Destaque 2</h5>
-                            <p class="card-text">Description for option 2.</p>
-                        </div>
-                    </div>
-                </a>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="noticiaDestaque3.html" class="botao-noticia">
-                        <div class="noticia">
-                        <div class="card h-100">
-                            <img src="uploads/slide1.jpg" class="card-img-top" alt="Option 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Noticia Destaque 3</h5>
-                                <p class="card-text">Description for option 3.</p>
+    
+            <div class="container mt-5 text-center">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <a href="noticiaDestaque1.html" class="botao-noticia">                     
+                            <div class="card h-100">
+                                <img src="uploads/slide1.jpg" class="card-img-top" alt="Option 1">
+                                <div class="card-body" >
+                                    <h5 class="card-title">Noticia Destaque 1</h5>
+                                    <p class="card-text">Description for option 1.</p>
+                                </div>
                             </div>
+                        </a> 
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <a href="noticiaDestaque2.html" class="botao-noticia">                  
+                            <div class="card h-100">
+                                <img src="uploads/slide2.jpg" class="card-img-top" alt="Option 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Noticia Destaque 2</h5>
+                                    <p class="card-text">Description for option 2.</p>
+                                </div>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <a href="noticiaDestaque3.html" class="botao-noticia">                  
+                            <div class="card h-100">
+                                <img src="uploads/slide3.jpg" class="card-img-top" alt="Option 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Noticia Destaque 3</h5>
+                                    <p class="card-text">Description for option 3.</p>
+                                </div>
+                            </div>
+                        </a> 
+                    </div>
+                </div>
+                    <a href="noticias.html" class="btn btn-3d">Mais Notícias</a>           
+            </div> 
+    
+    </main>  
+
+        <!-- Onde Estamos -->
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2>Onde Estamos</h2>
+                    <p class="mt-4">
+                        O Hospital Promater está localizado na Av. Lauro de Freitas, 1125 - Centro, Dias D'Ávila - BA. Estamos comprometidos em oferecer atendimento de qualidade e nossa localização é apenas uma das maneiras pelas quais trabalhamos para tornar sua visita o mais confortável possível.
+                    </p>
+                    <p>Estamos ansiosos para recebê-lo e cuidar de sua saúde com o carinho e profissionalismo que você merece.</p>
+                    <div class="container mt-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.460133545778!2d-38.37987998494225!3d-12.737150641339853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716b751a849f6b%3A0x979a227b2c24f90!2sAv.%20Lauro%20de%20Freitas%2C%201125%20-%20Centro%2C%20Dias%20D'Ávila%20-%20BA%2C%2042850-000!5e0!3m2!1spt-BR!2sbr!4v1625164607363!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
-                    </a>
+                    </div>             
                 </div>
             </div>
-        </div> 
-        <a href="noticias.html" class="btn btn-3d">Mais Notícias</a>
-    </main>
-
-    <!-- Onde Estamos -->
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <h2>Onde Estamos</h2>
-            <p class="mt-4">
-                O Hospital Promater está localizado na Av. Lauro de Freitas, 1125 - Centro, Dias D'Ávila - BA. Estamos comprometidos em oferecer atendimento de qualidade e nossa localização é apenas uma das maneiras pelas quais trabalhamos para tornar sua visita o mais confortável possível.
-            </p>
-            <p>Estamos ansiosos para recebê-lo e cuidar de sua saúde com o carinho e profissionalismo que você merece.</p>
-            <div class="container mt-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.460133545778!2d-38.37987998494225!3d-12.737150641339853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716b751a849f6b%3A0x979a227b2c24f90!2sAv.%20Lauro%20de%20Freitas%2C%201125%20-%20Centro%2C%20Dias%20D'Ávila%20-%20BA%2C%2042850-000!5e0!3m2!1spt-BR!2sbr!4v1625164607363!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>             
-          </div>
         </div>
-      </div>
     
    <!-- Footer -->
-<footer class="text-center text-lg-start mt-5">
-    <div class="container p-4">
-        <div class="row">
-            <!-- Coluna da Logo -->
-            <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
-                <a href="index.html"><br>
-                    <img src="img/logonav.ico" alt="Hospital Promater" style="height: 130px;"> 
-                </a>
-            </div>
+    <footer class="text-center text-lg-start mt-5">
+        <div class="container p-4" >
+            <div class="row">
+                <!-- Coluna da Logo -->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                    <a href="index.html"><br>
+                        <img src="img/logonav.ico" alt="Hospital Promater" style="height: 130px;"> 
+                    </a>
+                </div>
+                
+                <!-- Coluna Siga-nos -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-center">Siga-nos</h5>
+                    <ul class="list-unstyled d-flex justify-content-center p-0 m-0">
+                        <li class="mx-3">
+                            <a href="https://facebook.com/hospitalpromater" class="text-white">
+                                <i class="fab fa-facebook-f fa-2x"></i> 
+                            </a>
+                        </li>
+                        <li class="mx-3">
+                            <a href="https://instagram.com/hospitalpromater" class="text-white">
+                                <i class="fab fa-instagram fa-2x"></i> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             
-            <!-- Coluna Siga-nos -->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase text-center">Siga-nos</h5>
-                <ul class="list-unstyled d-flex justify-content-center p-0 m-0">
-                    <li class="mx-3">
-                        <a href="https://facebook.com/hospitalpromater" class="text-white">
-                            <i class="fab fa-facebook-f fa-2x"></i> 
-                        </a>
-                    </li>
-                    <li class="mx-3">
-                        <a href="https://instagram.com/hospitalpromater" class="text-white">
-                            <i class="fab fa-instagram fa-2x"></i> 
-                        </a>
-                    </li>
-                </ul>
-            </div>
-           
-            <!-- Coluna Empresa -->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Empresa</h5>
-                <ul class="list-unstyled mb-0">
-                    <li><a href="quemSomos.html">Sobre Nós</a></li>
-                    <li><a href="politicaPrivacidade.html">Política de Privacidade</a></li>
-                    <li><a href="trabalheConosco.html">Trabalhe Conosco</a></li>
-                </ul>
-                <br>
-                <h5 class="text-uppercase">Endereço</h5>
-                <ul class="list-unstyled mb-0">
-                    <li>Av. Lauro de Freitas, 1125 - Centro</li>
-                    <li>Dias D'Ávila - BA, 42850-000</li>
-                </ul>
-            </div>
-            
-            <!-- Coluna Contatos -->
-            <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Contatos</h5>
-                <ul class="list-unstyled mb-0">
-                    <li>Central de Agendamento</li>
-                    <li><i class="fas fa-phone-alt"></i> <a href="tel:+557136483750">(71) 3648-3750</a></li>
-                    <li><i class="fab fa-whatsapp"></i><a href="tel:+5571988026456"> (71) 98802-6456</a></li>
+                <!-- Coluna Empresa -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Empresa</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="quemSomos.html">Sobre Nós</a></li>
+                        <li><a href="politicaPrivacidade.html">Política de Privacidade</a></li>
+                        <li><a href="trabalheConosco.html">Trabalhe Conosco</a></li>
+                    </ul>
                     <br>
-                    <li>Setor de Qualidade</li>
-                    <li><i class="fab fa-whatsapp"></i><a href="tel:+5571996207149"> (71) 99620-7149</a></li>
-                </ul>
+                    <h5 class="text-uppercase">Endereço</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>Av. Lauro de Freitas, 1125 - Centro</li>
+                        <li>Dias D'Ávila - BA, 42850-000</li>
+                    </ul>
+                </div>
+                
+                <!-- Coluna Contatos -->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contatos</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>Central de Agendamento</li>
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:+557136483750">(71) 3648-3750</a></li>
+                        <li><i class="fab fa-whatsapp"></i><a href="tel:+5571988026456"> (71) 98802-6456</a></li>
+                        <br>
+                        <li>Setor de Qualidade</li>
+                        <li><i class="fab fa-whatsapp"></i><a href="tel:+5571996207149"> (71) 99620-7149</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Botão WhatsApp -->
-    <div>
-        <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
-        <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
-            <div class="rwb-tooltip">Agende pelo Whatsapp</div>
-            <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
-        </a>
-    </div>
-    
-    <!-- Rodapé com Direitos Autorais -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2024 Copyright:
-        <a class="text-white" href="index.html">Hospital Promater</a>
-    </div>
-</footer>
+        
+        <!-- Botão WhatsApp -->
+        <div>
+            
+            <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
+                <div class="rwb-tooltip">Agende pelo Whatsapp</div>
+                <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+            </a>
+        </div>
+        
+        <!-- Rodapé com Direitos Autorais -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            <a class="text-white" href="index.html">Hospital Promater</a>
+        </div>
+    </footer>
 
+    <script src="js/jquery.js"></script>
+    <script>
+        
+        //Menu
+        $(".main-nav ul li:has(ul)").addClass("submenu");
+        $(".main-nav ul li:has(ul)").append("<i></i>");
+        $(".main-nav ul i").click(function() {
+          $(this)
+            .parent("li")
+            .toggleClass("open");
+          $(this)
+            .parent("li")
+            .children("ul")
+            .slideToggle();
+        });
+    
+        //Menu Mobile
+        $(".mob-btn").click(function() {
+          if (!$("html").hasClass("show-menu")) {
+            $("html").addClass("show-menu");
+          } else {
+            $("html").removeClass("show-menu");
+          }
+        });
+    
+        $(".overlay").click(function() {
+          if ($("html").hasClass("show-menu")) {
+            $("html").removeClass("show-menu");
+          }
+        });
+    
+        //Aparecer addClass
+        $(".first ul")
+          .clone()
+          .prependTo(".main-nav")
+          .addClass("desk-hide");
+        $(".last ul")
+          .clone()
+          .appendTo(".main-nav")
+          .addClass("desk-hide");
+    
+    </script>
+
+ 
     <script src="script.js"></script>   
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-    <!-- <script src="https://cdn.userway.org/widget.js" async></script>
-     <script src="https://cdn.userway.org/widget.js?account=YOUR_ACCOUNT_CODE" async></script>
-
-    <script>
-        (function() {
-            var widget = document.createElement('script');
-            widget.src = 'https://cdn.userway.org/widget.js';
-            widget.async = true;
-            document.body.appendChild(widget);
-        })();
-    </script> -->
 
 </body>
 </html>
