@@ -3,70 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Convênios</title>
-    <!-- Link para o CSS do Bootstrap -->
+    <meta name="description" content="Hospital Promater">
+    <meta name="keywords" content="Hospital, Promater">
+    <meta name="author" content="Gerleidson Bomfim e Ruan Esteves">
+    <meta name="robots" content="index, follow">
+    <title>Convênios</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <style>
+        a {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+  
 </head>
 <body>
+    <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
+    <nav class="navbar">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logonav.ico" alt="Logo" style="width: 90px;">
             </a>
             <div class="ml-auto">
-                <a class="nav-link" href="#" title="Convênios">Convênios</a>
+                <a class="nav-link" href="convenio.html" title="Convênios">Convênios</a>
             </div>
-        </div>
+      
     </nav>
+        
+        <nav class="main-nav" >      
+            <ul>              
+                <li><a href="index.html" title="Home">INICIO</a></li>               
+                <li><a href="">ATENDIMENTO</a>                
+                    <ul>                      
+                        <li><a href="#" title="Ambulatorial">Ambulatorial</a>
+                            <ul>
+                                <li><a href="corpoclinico.html" title="Especianlidades">Especialidades</a></li>                              
+                            </ul>
+                        </li>
+                        <li><a href="#" title="Laboratorial">Laboratorial</a></li>
+                        <li><a href="#" title="Emergencial">Emergencial</a></li>
+                        <li><a href="exames.html" title="Exames de imagem">Exames de imagem</a></li>
+                        <li><a href="#" title="Ocupacional">Ocupacional</a></li>
+                    </ul>
+                </li>                
+                <li><a href="">A PROMATER</a>                
+                    <ul>
+                        <li><a href="#" title="Institucional">Institucional</a>
+                            <ul>
+                                <li><a href="quemSomos.html" title="Quem Somos">Quem Somos</a></li>
+                                <li><a href="politicaQualidade.html" title="Política de Qualidade">Política de Qualidade</a></li>
+                                <li><a href="missao.html" title="Missão, Visão e Valores">Missão, Visão e Valores</a></li>
+                                <li><a href="politicaPrivacidade.html" title="Politica de Privacidade">Politica de Privacidade</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="diretoria.html" title="Diretoria">Diretoria</a></li>
+                        <li><a href="#" title="Certificações e Acreditações">Certificações e Acreditações</a></li>
+                    </ul>
+                </li>
+                <li><a href="contato.html" title="Blog">CONTATO</a>
+                    <ul>
+                        <li><a href="contato.html" title="Fale Conosco"><i class="fas fa-envelope"></i> Fale Conosco</a></li>
+                        <li><a href="trabalheConosco.html" title="Trabalhe Conosco"><i class="fas fa-briefcase"></i> Trabalhe Conosco</a></li>
+                        <li><a href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true"><i class="fas fa-poll"></i> Pesquisa de Satisfação</a>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html" title="Área do Administrador"><i class="fas fa-user-cog"></i> ADMIN</a>
+                </li>              
+            </ul>
+        </nav>
+        
+        <div class="mob-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="overlay"></div>
+        
+      </div><!-- menu -->
 
-    <!-- Banner -->
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-12">
-                <a href="https://seusite.com" target="_blank">
-                    <img src="img/banner.jpg" alt="Banner" class="img-fluid w-100">
-                </a>
-            </div>
-        </div>
+    </header>
+
+    <!-- Lista de Convênios -->
+<main>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Nossos Convênios</h1>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <h5 class="mb-1">Convênio 1</h5>
+                    <p class="mb-1">Descrição detalhada do convênio 1. Benefícios e vantagens oferecidos aos usuários.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Saiba Mais</a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <h5 class="mb-1">Convênio 2</h5>
+                    <p class="mb-1">Descrição detalhada do convênio 2. Destaca as principais características e serviços.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Saiba Mais</a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <h5 class="mb-1">Convênio 3</h5>
+                    <p class="mb-1">Descrição detalhada do convênio 3, com informações sobre benefícios e serviços exclusivos.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Saiba Mais</a>
+            </li>
+            <!-- Adicione mais itens conforme necessário -->
+        </ul>
     </div>
+</main>
 
-    <!-- Seção de Conteúdo -->
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-center">Nossos Convênios</h1>
-                <p class="text-center">
-                    Bem-vindo à nossa página de convênios! Aqui você encontrará informações detalhadas sobre os convênios oferecidos por nossa instituição. 
-                </p>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start mt-5">
+        <div class="container p-4" >
+            <div class="row">
+                <!-- Coluna da Logo -->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                    <a href="index.html">
+                        <img src="img/logonav.ico" alt="Hospital Promater" style="height: 100px; margin-top: 5px;"> 
+                    </a>
+                    <br>
+                    <h5 class="text-uppercase" style="margin-top: 5px;"> Endereço</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>Av. Lauro de Freitas, 1125 - Centro</li>
+                        <li>Dias D'Ávila/BA </li>
+                    </ul>
+                </div>
+                
+                
+                <!-- Coluna Siga-nos -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-center">Siga-nos</h5>
+                    <ul class="list-unstyled d-flex justify-content-center p-0 m-0">
+                        <li class="mx-3">
+                            <a href="https://facebook.com/hospitalpromater" class="text-white">
+                                <i class="fab fa-facebook-f fa-2x"></i> 
+                            </a>
+                        </li>
+                        <li class="mx-3">
+                            <a href="https://instagram.com/hospitalpromater" class="text-white">
+                                <i class="fab fa-instagram fa-2x"></i> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <!-- Coluna Empresa -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Empresa</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="quemSomos.html">Sobre Nós</a></li>
+                        <li><a href="politicaPrivacidade.html">Política de Privacidade</a></li>
+                        <li><a href="trabalheConosco.html">Trabalhe Conosco</a></li>
+                    </ul>
+                    <br>
+                    
+                </div>
+                
+                <!-- Coluna Contatos -->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contatos</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>Central de Agendamento</li>
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:+557136483750"> (71) 3648-3750</a></li>
+                        <li><i class="fab fa-whatsapp"></i><a href="tel:+5571988026456"> (71) 98802-6456</a></li>
+                        <br>
+                        <li>Setor de Qualidade</li>
+                        <li><i class="fab fa-whatsapp"></i><a href="tel:+5571996207149"> (71) 99620-7149</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Convênio 1</h2>
-                <p>
-                    Descrição do convênio 1. Este convênio oferece benefícios exclusivos para nossos clientes.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <h2>Convênio 2</h2>
-                <p>
-                    Descrição do convênio 2. Aproveite as vantagens e serviços oferecidos através deste convênio.
-                </p>
-            </div>
+        
+        <!-- Botão WhatsApp -->
+        <div>
+            
+            <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
+                <div class="rwb-tooltip">Agende pelo Whatsapp</div>
+                <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+            </a>
         </div>
-    </div>
-
-    <!-- Rodapé -->
-    <footer class="bg-light py-4">
-        <div class="container text-center">
-            <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+        
+        <!-- Rodapé com Direitos Autorais -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            <a class="text-white" href="index.html">Hospital Promater</a>
         </div>
     </footer>
 
-    <!-- Scripts do Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    
+    <script>
+        
+        //Menu
+        $(".main-nav ul li:has(ul)").addClass("submenu");
+        $(".main-nav ul li:has(ul)").append("<i></i>");
+        $(".main-nav ul i").click(function() {
+          $(this)
+            .parent("li")
+            .toggleClass("open");
+          $(this)
+            .parent("li")
+            .children("ul")
+            .slideToggle();
+        });
+    
+        //Menu Mobile
+        $(".mob-btn").click(function() {
+          if (!$("html").hasClass("show-menu")) {
+            $("html").addClass("show-menu");
+          } else {
+            $("html").removeClass("show-menu");
+          }
+        });
+    
+        $(".overlay").click(function() {
+          if ($("html").hasClass("show-menu")) {
+            $("html").removeClass("show-menu");
+          }
+        });
+    
+        //Aparecer addClass
+        $(".first ul")
+          .clone()
+          .prependTo(".main-nav")
+          .addClass("desk-hide");
+        $(".last ul")
+          .clone()
+          .appendTo(".main-nav")
+          .addClass("desk-hide");
+    
+    </script>
+
+    <script src="script.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

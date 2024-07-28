@@ -4,20 +4,21 @@ main{ background-color: #daffe7;}
 
 footer{ background-color: #4b875a;  color: #fff;}
 
+footer a:hover{
+  color: #daffe7;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
 a{ color: #fff; text-decoration: none;}
 
 .card-title{ color: #000;}
 
 .card-text{ color: #000;}
+
 header a:hover{
     color: #4b875a;
     background-color: #fff;
-    border-radius: 15px;
-    transition: 0.5s;
-}
-
-footer a:hover{
-    color: #daffe7;
     border-radius: 15px;
     transition: 0.5s;
 }
@@ -81,6 +82,7 @@ footer a:hover{
 
 }
 
+
 @media only screen and (min-width: 1200px) {
 
 .desk-hide {
@@ -99,6 +101,7 @@ footer a:hover{
   justify-content: center; /* Centraliza os itens da lista */
   padding: 0;
   margin: 0;
+
 }
 
 .main-nav > ul > li {

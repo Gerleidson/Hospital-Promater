@@ -113,17 +113,42 @@
     </main>
 
 <!-- Footer -->
-<footer class=" text-center text-lg-start mt-5">
-    <div class="container p-4">
+<footer class="text-center text-lg-start mt-5">
+    <div class="container p-4" >
         <div class="row">
+            <!-- Coluna da Logo -->
             <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Siga-nos</h5>
-                <ul class="list-unstyled social-icons">
-                    <li><a href="https://facebook.com/hospitalpromater" class="text-white"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                    <li><a href="https://instagram.com/hospitalpromater" class="text-white"><i class="fab fa-instagram"></i> Instagram</a></li>
-                </ul>                    
+                <a href="index.html">
+                    <img src="img/logonav.ico" alt="Hospital Promater" style="height: 100px; margin-top: 5px;"> 
+                </a>
+                <br>
+                <h5 class="text-uppercase" style="margin-top: 5px;"> Endereço</h5>
+                <ul class="list-unstyled mb-0">
+                    <li>Av. Lauro de Freitas, 1125 - Centro</li>
+                    <li>Dias D'Ávila/BA </li>
+                </ul>
             </div>
-            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+            
+            
+            <!-- Coluna Siga-nos -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase text-center">Siga-nos</h5>
+                <ul class="list-unstyled d-flex justify-content-center p-0 m-0">
+                    <li class="mx-3">
+                        <a href="https://facebook.com/hospitalpromater" class="text-white">
+                            <i class="fab fa-facebook-f fa-2x"></i> 
+                        </a>
+                    </li>
+                    <li class="mx-3">
+                        <a href="https://instagram.com/hospitalpromater" class="text-white">
+                            <i class="fab fa-instagram fa-2x"></i> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- Coluna Empresa -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                 <h5 class="text-uppercase">Empresa</h5>
                 <ul class="list-unstyled mb-0">
                     <li><a href="quemSomos.html">Sobre Nós</a></li>
@@ -131,47 +156,87 @@
                     <li><a href="trabalheConosco.html">Trabalhe Conosco</a></li>
                 </ul>
                 <br>
-                <h5 class="text-uppercase">Endereço</h5>
-                <ul class="list-unstyled mb-0">
-                    <li>Av. Lauro de Freitas, 1125 - Centro</li>
-                    <li>Dias D'Ávila - BA, 42850-000</li>
-                </ul>
+                
             </div>
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            
+            <!-- Coluna Contatos -->
+            <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
                 <h5 class="text-uppercase">Contatos</h5>
                 <ul class="list-unstyled mb-0">
-                    <li>Central de Agengamento</li>
-                    <i class="fas fa-phone-alt"></i> <a href="tel:+557136483750">(71) 3648-3750</a></li>
-                    <li><i class="fab fa-whatsapp"></i><a href="tel:+5571988026456"> (71) 98802-6456</i></a></li>
+                    <li>Central de Agendamento</li>
+                    <li><i class="fas fa-phone-alt"></i> <a href="tel:+557136483750"> (71) 3648-3750</a></li>
+                    <li><i class="fab fa-whatsapp"></i><a href="tel:+5571988026456"> (71) 98802-6456</a></li>
                     <br>
                     <li>Setor de Qualidade</li>
-                    <li><i class="fab fa-whatsapp"></i><a href="tel:+5571996207149"> (71) 99620-7149</i></a></li>
-                  
-                </ul>                  
+                    <li><i class="fab fa-whatsapp"></i><a href="tel:+5571996207149"> (71) 99620-7149</a></li>
+                </ul>
             </div>
         </div>
     </div>
+    
+    <!-- Botão WhatsApp -->
     <div>
-
-        <!-- Botao Whatsapp -->          
-        <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+        
         <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
             <div class="rwb-tooltip">Agende pelo Whatsapp</div>
             <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
         </a>
     </div>
+    
+    <!-- Rodapé com Direitos Autorais -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2024 Copyright:
         <a class="text-white" href="index.html">Hospital Promater</a>
     </div>
 </footer>
 
+
+<script>
+    
+    //Menu
+    $(".main-nav ul li:has(ul)").addClass("submenu");
+    $(".main-nav ul li:has(ul)").append("<i></i>");
+    $(".main-nav ul i").click(function() {
+      $(this)
+        .parent("li")
+        .toggleClass("open");
+      $(this)
+        .parent("li")
+        .children("ul")
+        .slideToggle();
+    });
+
+    //Menu Mobile
+    $(".mob-btn").click(function() {
+      if (!$("html").hasClass("show-menu")) {
+        $("html").addClass("show-menu");
+      } else {
+        $("html").removeClass("show-menu");
+      }
+    });
+
+    $(".overlay").click(function() {
+      if ($("html").hasClass("show-menu")) {
+        $("html").removeClass("show-menu");
+      }
+    });
+
+    //Aparecer addClass
+    $(".first ul")
+      .clone()
+      .prependTo(".main-nav")
+      .addClass("desk-hide");
+    $(".last ul")
+      .clone()
+      .appendTo(".main-nav")
+      .addClass("desk-hide");
+
+</script>
+
+<script src="script.js"></script>   
 <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
-<script src="script.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </body>
 </html>
