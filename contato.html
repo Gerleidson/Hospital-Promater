@@ -9,82 +9,88 @@
     <meta name="robots" content="index, follow" />
     <title>Fale Conosco</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
-    <head>
-        <!-- Outros links e metadados -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <style>
+        a {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+  
 </head>
 <body>
-    <!-- Navbar --> 
     <header>
-        <nav class="navbar navbar-expand-lg ">
+    <!-- Navbar -->
+    <nav class="navbar">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logonav.ico" alt="Logo" style="width: 90px;">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="atendimentoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Atendimento
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="atendimentoDropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#" id="ambulatorialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Ambulatorial
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="ambulatorialDropdown">
-                                    <a class="dropdown-item" href="corpoclinico.html">Especialidades</a>
-                                </div>
-                                <a class="dropdown-item" href="#">Laboratorial</a>
-                                <a class="dropdown-item" href="#">Emergencial</a>
-                                <a class="dropdown-item" href="exames.html">Exames de Imagem</a>
-                                <a class="dropdown-item" href="#">Ocupacional</a>
-                            </div>
+            <div class="ml-auto">
+                <a class="nav-link" href="convenio.html" title="Convênios">Convênios</a>
+            </div>    
+    </nav>
+        
+        <nav class="main-nav" >      
+            <ul>              
+                <li><a href="index.html" title="Home">INICIO</a></li>               
+                <li><a href="">ATENDIMENTO</a>                
+                    <ul>                      
+                        <li><a href="#" title="Ambulatorial">Ambulatorial</a>
+                            <ul>
+                                <li><a href="corpoclinico.html" title="Especianlidades">Especialidades</a></li>                              
+                            </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="sobreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                A Promater
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="sobreDropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#" id="InstituicionalDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Institucional
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="InstituicionalDropdown">
-                                    <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>
-                                    <a class="dropdown-item" href="politicaQualidade.html">Política de Qualidade</a>
-                                    <a class="dropdown-item" href="missao.html">Visão, Missão e Valores</a>
-                                    <a class="dropdown-item" href="politicaPrivacidade.html">Política de Privacidade</a>
-                                </div>
-                                <a class="dropdown-item" href="diretoria.html">Diretoria</a>
-                                <a class="dropdown-item" href="#">Certificações e Acreditações</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="contatoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Contato
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="contatoDropdown">
-                                <a class="dropdown-item" href="contato.html"><i class="fas fa-envelope"></i> Fale Conosco</a>
-                                <a class="dropdown-item" href="trabalheConosco.html"><i class="fas fa-briefcase"></i> Trabalhe Conosco</a>
-                                <a class="dropdown-item" href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true"><i class="fas fa-poll"></i> Pesquisa de Satisfação</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html" title="Área do Administrador"><i class="fas fa-user-cog"></i> Admin</a>
-                        </li>
+                        <li><a href="#" title="Laboratorial">Laboratorial</a></li>
+                        <li><a href="#" title="Emergencial">Emergencial</a></li>
+                        <li><a href="exames.html" title="Exames de imagem">Exames de imagem</a></li>
+                        <li><a href="#" title="Ocupacional">Ocupacional</a></li>
                     </ul>
-                </div>
-            </div>
+                </li>                
+                <li><a href="">A PROMATER</a>                
+                    <ul>
+                        <li><a href="#" title="Institucional">Institucional</a>
+                            <ul>
+                                <li><a href="quemSomos.html" title="Quem Somos">Quem Somos</a></li>
+                                <li><a href="politicaQualidade.html" title="Política de Qualidade">Política de Qualidade</a></li>
+                                <li><a href="missao.html" title="Missão, Visão e Valores">Missão, Visão e Valores</a></li>
+                                <li><a href="politicaPrivacidade.html" title="Politica de Privacidade">Politica de Privacidade</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="diretoria.html" title="Diretoria">Diretoria</a></li>
+                        <li><a href="#" title="Certificações e Acreditações">Certificações e Acreditações</a></li>
+                    </ul>
+                </li>
+                <li><a href="contato.html" title="Blog">CONTATO</a>
+                    <ul>
+                        <li><a href="contato.html" title="Fale Conosco"><i class="fas fa-envelope"></i> Fale Conosco</a></li>
+                        <li><a href="trabalheConosco.html" title="Trabalhe Conosco"><i class="fas fa-briefcase"></i> Trabalhe Conosco</a></li>
+                        <li><a href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true"><i class="fas fa-poll"></i> Pesquisa de Satisfação</a>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html" title="Área do Administrador"><i class="fas fa-user-cog"></i> ADMIN</a>
+                </li>              
+            </ul>
         </nav>
+        
+        <div class="mob-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="overlay"></div>
+        
+      </div><!-- menu -->
+
     </header>
      
     <main>

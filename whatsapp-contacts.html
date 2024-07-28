@@ -10,25 +10,89 @@
     <meta name="robots" content="index, follow" />
     <title>Escolha um Contato</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <style>
-        /* Adiciona cor personalizada para o fundo e a borda */
-        .bg-custom-green {
-            background-color: #4b875a !important;
+        a {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .border-custom-green {
-            border-color: #4b875a !important;
-        }
-        .text-custom-green {
-            color: #4b875a !important;
-        }
-        .list-group-item:hover {
-            background-color: #4b875a;
-            color: #fff;
+        a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
         }
     </style>
+  
 </head>
+<body>
+    <header>
+    <!-- Navbar -->
+    <nav class="navbar">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logonav.ico" alt="Logo" style="width: 90px;">
+            </a>
+            <div class="ml-auto">
+                <a class="nav-link" href="convenio.html" title="Convênios">Convênios</a>
+            </div>    
+    </nav>
+        
+        <nav class="main-nav" >      
+            <ul>              
+                <li><a href="index.html" title="Home">INICIO</a></li>               
+                <li><a href="">ATENDIMENTO</a>                
+                    <ul>                      
+                        <li><a href="#" title="Ambulatorial">Ambulatorial</a>
+                            <ul>
+                                <li><a href="corpoclinico.html" title="Especianlidades">Especialidades</a></li>                              
+                            </ul>
+                        </li>
+                        <li><a href="#" title="Laboratorial">Laboratorial</a></li>
+                        <li><a href="#" title="Emergencial">Emergencial</a></li>
+                        <li><a href="exames.html" title="Exames de imagem">Exames de imagem</a></li>
+                        <li><a href="#" title="Ocupacional">Ocupacional</a></li>
+                    </ul>
+                </li>                
+                <li><a href="">A PROMATER</a>                
+                    <ul>
+                        <li><a href="#" title="Institucional">Institucional</a>
+                            <ul>
+                                <li><a href="quemSomos.html" title="Quem Somos">Quem Somos</a></li>
+                                <li><a href="politicaQualidade.html" title="Política de Qualidade">Política de Qualidade</a></li>
+                                <li><a href="missao.html" title="Missão, Visão e Valores">Missão, Visão e Valores</a></li>
+                                <li><a href="politicaPrivacidade.html" title="Politica de Privacidade">Politica de Privacidade</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="diretoria.html" title="Diretoria">Diretoria</a></li>
+                        <li><a href="#" title="Certificações e Acreditações">Certificações e Acreditações</a></li>
+                    </ul>
+                </li>
+                <li><a href="contato.html" title="Blog">CONTATO</a>
+                    <ul>
+                        <li><a href="contato.html" title="Fale Conosco"><i class="fas fa-envelope"></i> Fale Conosco</a></li>
+                        <li><a href="trabalheConosco.html" title="Trabalhe Conosco"><i class="fas fa-briefcase"></i> Trabalhe Conosco</a></li>
+                        <li><a href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true"><i class="fas fa-poll"></i> Pesquisa de Satisfação</a>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html" title="Área do Administrador"><i class="fas fa-user-cog"></i> ADMIN</a>
+                </li>              
+            </ul>
+        </nav>
+        
+        <div class="mob-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="overlay"></div>
+        
+      </div><!-- menu -->
+
+    </header>
 
 <body>
     <header class="bg-custom-green text-white text-center py-4">
