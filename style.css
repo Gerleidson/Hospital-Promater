@@ -106,6 +106,18 @@ header a:hover{
     align-items: center;
 }
 
+.navbar {
+    background-color: #daffe7; /* Cor de fundo da navbar */
+    height: 90px; /* Altura fixa para a navbar */
+    display: flex;
+    align-items: center; /* Alinha o conteúdo verticalmente */
+}
+
+.logo-img {
+    height: 75px; /* Altura do logo */
+    width: auto;  /* Mantém a proporção da imagem */
+}
+
 
 /* pagina teste */
 .menu {
