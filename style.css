@@ -4,7 +4,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
 main{ background-color: #fff;} /*daffe7*/
 
 footer{ background-color: #4b875a;  color: #fff;}
@@ -16,6 +15,39 @@ footer a:hover{
 }
 
 a{ color: #fff; text-decoration: none;}
+
+a {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.table-logo img {
+    width: 100px;
+    height: auto;
+}
+.table-logo td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.sidebar {
+  padding: 20px;
+}
+.sidebar .nav-link {
+  font-weight: bold;
+}
+.card {
+  border-radius: 10px;
+}
+.card-header {
+  border-bottom: none;
+}
+.modal-header {
+  border-bottom: none;
+}
 
 .card-title{ color: #000;}
 
@@ -416,4 +448,14 @@ header a:hover{
 
 .carousel-container .carousel-indicators .active {
   background-color: #fff;
+}
+
+/*noticias admin*/
+.news-item {
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+}
+
+.news-item .btn {
+  margin-right: 5px;
 }
