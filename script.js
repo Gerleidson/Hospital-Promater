@@ -98,9 +98,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Adicione outras funcionalidades aqui
 
     // Exemplo: Alterar o texto do botão de inscrição
-    var btnInscrever = document.getElementById('btnInscrever');
-    if (btnInscrever) {
-        btnInscrever.addEventListener('click', function() {
+    var btnEnviar = document.getElementById('btnEnviar');
+    if (btnEnviar) {
+        btnEnviar.addEventListener('click', function() {
             alert('Inscrição realizada com sucesso!');
         });
     }

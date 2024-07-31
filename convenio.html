@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hospital Promater">
-    <meta name="keywords" content="Hospital, Promater">
+    <meta name="description" content="Convênios e Cartões de Desconto - Hospital Promater">
+    <meta name="keywords" content="Hospital, Convênios, Cartões de Desconto">
     <meta name="author" content="Gerleidson Bomfim e Ruan Esteves">
     <meta name="robots" content="index, follow">
-    <title>Convênios - Hospital Promater</title>
+    <title>Convênios e Cartões de Desconto - Hospital Promater</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
@@ -15,28 +15,25 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
     <style>
-        a {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .table-logo img {
+            width: 100px;
+            height: auto;
         }
-        a:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        .table-logo td {
+            text-align: center;
+            vertical-align: middle;
         }
     </style>
-  
 </head>
 <body>
+
     <header>
         <!-- Navbar -->
         <nav class="navbar">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logonav.ico" alt="Logo" style="width: 90px;">
-                </a>
-                <div class="ml-auto">
-                    <a class="nav-link" href="convenio.html" title="Convênios">Convênios</a>
-                </div>    
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logonav.ico" alt="Logo" style="width: 90px;">
+            </a>
         </nav>
             
         <nav class="main-nav" >      
@@ -93,6 +90,11 @@
                                 <li><a href="#" title="Ocupacional">Medicina Ocupacional</a></li>
                             </ul>
                             </li>
+                            <li><a href="#" title="convenio">Convênios</a>
+                            <ul>
+                                <li><a href="convenio.html" title="Convênios">Convênios</a></li>
+                            </ul>
+                            </li>                           
                     </ul>
                 </li>   
 
@@ -105,7 +107,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html" title="Área do Administrador"><i class="fas fa-user-cog"></i> ADMIN</a>
+                    <a class="nav-link" href="login.html" title="Área do Administrador"></i> ADMIN</a>
                 </li>
 
             </ul>
@@ -120,38 +122,72 @@
 
     </header>
     
-    <!-- Lista de Convênios -->
-    <main>
-        <div class="container my-5">
-            <div class="bg-white p-4 rounded shadow-sm">
-                <h1 class="text-center mb-4">SAIBA QUAIS CONVÊNIOS</h1>
-                <h5 class="text-center mb-4">SÃO ACEITOS PELO HOSPITAL PROMATER</h5>
+    <header class="bg-primary text-white text-center py-1">
+        <p class="lead">Conheça os convênios e cartões de desconto aceitos pelo Hospital Promater.</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="row">
+            <!-- Convênios -->
+            <div class="col-md-12 mb-4">
+                <h2 class="h4 mb-3">Convênios</h2>
+                <table class="table table-bordered table-logo">
+                    <thead>
+                       <!-- <tr>
+                            <th colspan="5">Convênios</th>
+                        </tr>-->
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="convenios/amil.png" alt="Amil"></td>
+                            <td><img src="convenios/camed.png" alt="Camed"></td>
+                            <td><img src="convenios/capesaude.png" alt="Capesaúde"></td>
+                            <td><img src="convenios/fundaçãoChesf.png" alt="Fundação CHESF"></td>
+                            <td><img src="convenios/goldencross.png" alt="Golden Cross"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="convenios/hapvida.png" alt="Hapvida"></td>
+                            <td><img src="convenios/mediservice.png" alt="Mediservice"></td>
+                            <td><img src="convenios/notredame.png" alt="Notre Dame"></td>
+                            <td><img src="convenios/petrobras.png" alt="Petrobras"></td>
+                            <td><img src="convenios/planserv.png" alt="Planserv"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="convenios/bradescosaude.png" alt="Saúde Bradesco"></td>
+                            <td><img src="convenios/sulamerica.png" alt="SulAmérica"></td>
+                            <td><img src="convenios/unimed.png" alt="Unimed"></td>
+                            <td><img src="convenios/vitallis.png" alt="Vitallis"></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
                 
-                <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <div>
-                            <h5 class="mb-1">Convênio 1</h5>
-                            <p class="mb-1">Descrição detalhada do convênio 1. Benefícios e vantagens oferecidos aos usuários.</p>
-                        </div>
-                        <a href="#" class="btn btn-primary">Saiba Mais</a>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <div>
-                            <h5 class="mb-1">Convênio 2</h5>
-                            <p class="mb-1">Descrição detalhada do convênio 2. Destaca as principais características e serviços.</p>
-                        </div>
-                        <a href="#" class="btn btn-primary">Saiba Mais</a>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <div>
-                            <h5 class="mb-1">Convênio 3</h5>
-                            <p class="mb-1">Descrição detalhada do convênio 3, com informações sobre benefícios e serviços exclusivos.</p>
-                        </div>
-                        <a href="#" class="btn btn-primary">Saiba Mais</a>
-                    </li>
-                    <!-- Adicione mais itens conforme necessário -->
-                </ul>
-            </h6>
+                <!-- Cartões de Desconto -->
+                <h2 class="h4 mb-3">Cartões de Desconto</h2>
+                <table class="table table-bordered table-logo">
+                    <thead>
+                        <!--<tr>
+                            <th colspan="5">Cartões de Desconto</th>
+                        </tr>-->
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="cartoesDescontos/ambep.png" alt="AMBEP"></td>
+                            <td><img src="cartoesDescontos/candeias.png" alt="Candeias Turismo"></td>
+                            <td><img src="cartoesDescontos/osab.png" alt="OSAB"></td>
+                            <td><img src="cartoesDescontos/san mateus.png" alt="San Mateus"></td>
+                            <td><img src="cartoesDescontos/avus.png" alt="AVUS"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="path/to/convenio-promater-logo.png" alt="Convênio Promater"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
 
@@ -171,7 +207,7 @@
                         <li>Dias D'Ávila/BA </li>
                     </ul>
                 </div>
-                
+                               
                 <!-- Coluna Siga-nos -->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase text-center">Siga-nos</h5>
@@ -217,7 +253,7 @@
         </div>
         
         <!-- Botão WhatsApp -->
-        <div>
+        <div>          
             <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
                 <div class="rwb-tooltip">Agende pelo Whatsapp</div>
                 <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
@@ -230,7 +266,7 @@
             <a class="text-white" href="index.html">Hospital Promater</a>
         </div>
     </footer>
-    
+
     <script>
         
         //Menu

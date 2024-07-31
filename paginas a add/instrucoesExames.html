@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Visão, Missão e Valores - Hospital Promater" />
-    <meta name="keywords" content="noticas, hospital, Promater" />
+    <meta name="description" content="Detalhes da Vaga - Hospital Promater" />
+    <meta name="keywords" content="Hospital, Promater, Instruções, Exames" />
     <meta name="author" content="Gerleidson Bomfim e Ruan Esteves">
     <meta name="robots" content="index, follow" />
-    <title>Notícia - Hospital Promater</title>
+    <title>Instruções Exames - Hospital Promater</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
@@ -120,49 +120,11 @@
         </div>
         <div class="overlay"></div>
 
-    </header>   
-
-    <!-- Cabeçalho -->
-    <header class="bg-transparent text-black text-center py-5">
-        <div class="container">
-            <h1 class="display-5">Notícia do Hospital Promater</h1>
-        </div>
     </header>
-
-    <!-- Conteúdo -->
+    
+    <!-- Main Content -->
     <main>
-        <div class="container mt-5">
-            <div class="bg-white p-4 rounded shadow-sm">
-                <div class="row">
-                    <div class="col-md-8">
-                        <article>
-                            <h2 class="mb-4">Título da Notícia 2</h2>
-                            <p><strong>Data:</strong> 20 de Julho de 2024</p>
-                            <img src="noticia-imagem.jpg" alt="Imagem da notícia" class="img-fluid mb-4">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nibh sit amet metus congue vehicula. Integer gravida velit nec orci gravida, non dictum augue facilisis. Sed vel felis nec erat vehicula dignissim a non libero. Sed et metus vestibulum, lacinia quam eu, faucibus mi. Integer nec lectus eu nulla malesuada fermentum.</p>
-                            <p>Vestibulum euismod quam in libero aliquet, in elementum nulla ultrices. Quisque scelerisque elit nec nulla sagittis, nec eleifend tortor pretium. Suspendisse sed urna at eros volutpat bibendum.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem dolorem, laborum velit est fugiat temporibus excepturi, culpa minima, modi quis quaerat accusantium mollitia cumque quia neque non impedit commodi. Nostrum?</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus porro eveniet rerum sed minus fuga et, est, ducimus, quibusdam cum blanditiis earum voluptate saepe accusantium cupiditate quis assumenda autem quasi.</p>
-                          
-                        </article>
-                    </div>
-                    <div class="col-md-4">
-                        <aside>
-                            <h4>Outras Notícias</h4>
-                            <div class="bg-dark p-4 rounded shadow-sm">
-                                <ul class="list-unstyled">
-                                    <li><a href="noticiaDestaque1.html">Notícia 1</a></li>
-                                    <li><a href="noticiaDestaque2.html">Notícia 2</a></li>
-                                    <li><a href="noticiaDestaque3.html">Notícia 3</a></li>
-                                    <li><a href="noticias.html">Todas as Noticias</a></li>
-                                </ul>
-
-                            </div>
-                        </aside>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h1>Instruções Exames</h1>
     </main>
 
     <!-- Footer -->
@@ -181,7 +143,7 @@
                         <li>Dias D'Ávila/BA </li>
                     </ul>
                 </div>
-                              
+                               
                 <!-- Coluna Siga-nos -->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase text-center">Siga-nos</h5>
@@ -227,7 +189,7 @@
         </div>
         
         <!-- Botão WhatsApp -->
-        <div> 
+        <div>          
             <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
                 <div class="rwb-tooltip">Agende pelo Whatsapp</div>
                 <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
@@ -247,40 +209,40 @@
         $(".main-nav ul li:has(ul)").addClass("submenu");
         $(".main-nav ul li:has(ul)").append("<i></i>");
         $(".main-nav ul i").click(function() {
-        $(this)
+          $(this)
             .parent("li")
             .toggleClass("open");
-        $(this)
+          $(this)
             .parent("li")
             .children("ul")
             .slideToggle();
         });
-
+    
         //Menu Mobile
         $(".mob-btn").click(function() {
-        if (!$("html").hasClass("show-menu")) {
+          if (!$("html").hasClass("show-menu")) {
             $("html").addClass("show-menu");
-        } else {
+          } else {
             $("html").removeClass("show-menu");
-        }
+          }
         });
-
+    
         $(".overlay").click(function() {
-        if ($("html").hasClass("show-menu")) {
+          if ($("html").hasClass("show-menu")) {
             $("html").removeClass("show-menu");
-        }
+          }
         });
-
+    
         //Aparecer addClass
         $(".first ul")
-        .clone()
-        .prependTo(".main-nav")
-        .addClass("desk-hide");
+          .clone()
+          .prependTo(".main-nav")
+          .addClass("desk-hide");
         $(".last ul")
-        .clone()
-        .appendTo(".main-nav")
-        .addClass("desk-hide");
-
+          .clone()
+          .appendTo(".main-nav")
+          .addClass("desk-hide");
+    
     </script>
 
     <script src="script.js"></script>   

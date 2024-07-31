@@ -1,5 +1,10 @@
 header{ background-color: #4b875a;}
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
 main{ background-color: #fff;} /*daffe7*/
 
 footer{ background-color: #4b875a;  color: #fff;}
@@ -360,3 +365,55 @@ header a:hover{
       margin-top: 5px;
   }
  }
+
+
+ /*carousel*/
+ 
+ .carousel-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+.carousel-container .carousel-inner {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.carousel-container .carousel-item img {
+  border-radius: 15px;
+  object-fit: cover;
+  height: 100%;
+}
+
+.carousel-container .carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 1rem;
+  bottom: 10%;
+}
+
+.carousel-container .carousel-caption h5 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.carousel-container .carousel-caption p {
+  color: #ddd;
+}
+
+.carousel-container .carousel-indicators {
+  bottom: 10px;
+}
+
+.carousel-container .carousel-indicators li {
+  background-color: #000;
+}
+
+.carousel-container .carousel-indicators .active {
+  background-color: #fff;
+}
