@@ -118,6 +118,18 @@ header a:hover{
     width: auto;  /* Mantém a proporção da imagem */
 }
 
+.img-border {
+    border: 2px solid #006400; /* Cor verde escuro */
+    border-radius: 4px;       /* Arredondamento dos cantos */
+    padding: 4px;             /* Espaçamento entre a imagem e a borda */
+    width: 80px;              /* Largura das imagens */
+    height: auto;            /* Altura automática para manter a proporção */
+}
+
+/* Espaçamento entre as imagens */
+.list-unstyled > li {
+    margin-right: 15px;      /* Espaçamento entre as imagens */
+}
 
 /* pagina teste */
 .menu {
