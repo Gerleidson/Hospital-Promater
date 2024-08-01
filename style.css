@@ -6,15 +6,15 @@ body {
 
 main{ background-color: #fff;} /*daffe7*/
 
-footer{ background-color: #4b875a;  color: #fff;}
+footer{ background-color: #daffe7;  color: #fff;}
 
 footer a:hover{
-  color: #daffe7;
+  color: #000;
   border-radius: 15px;
   transition: 0.5s;
 }
 
-a{ color: #fff; text-decoration: none;}
+a{ color: #000; text-decoration: none;}
 
 a {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
