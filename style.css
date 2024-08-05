@@ -21,6 +21,14 @@ header{
 }
 
 main{ background-color: #fff;} /*daffe7*/
+.carousel-item img {
+  width: 100%;
+  height: auto; /* Garante que a imagem se ajuste proporcionalmente */
+}
+
+.carousel {
+  margin-top: 100px; /* Espaçamento superior para garantir que o carousel não sobreponha o header */
+}
 
 footer{ background-color: #daffe7;  color: #fff;}
 
