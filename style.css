@@ -1,7 +1,23 @@
-header{ background-color: #daffe7;}
+/* Resetando margens e preenchimentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+header{
+  position: fixed; /* Fixa o header no topo */
+  top: 0; /* Alinha o header ao topo */
+  left: 0; /* Alinha o header à esquerda */
+  width: 100%; /* Largura total da tela */
+  background-color: #daffe7; /* Cor de fundo do header */
+  z-index: 1000; /* Garante que o header fique acima de outros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
+  
 }
 
 main{ background-color: #fff;} /*daffe7*/
