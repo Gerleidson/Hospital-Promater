@@ -20,14 +20,9 @@ header{
   
 }
 
-main{ background-color: #fff;} /*daffe7*/
-.carousel-item img {
-  width: 100%;
-  height: auto; /* Garante que a imagem se ajuste proporcionalmente */
-}
-
-.carousel {
-  margin-top: 100px; /* Espaçamento superior para garantir que o carousel não sobreponha o header */
+main {
+  background-color: #fff; /* Cor de fundo principal */
+  padding-top: 90px; /* Ajuste o espaço superior para a navbar fixa */
 }
 
 footer{ background-color: #daffe7;  color: #fff;}
@@ -38,11 +33,8 @@ footer a:hover{
   transition: 0.5s;
 }
 
-a{ color: #000; text-decoration: none;}
+a{ color: #000; text-decoration: none;  transition: transform 0.3s ease, box-shadow 0.3s ease;}
 
-a {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 a:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
