@@ -1,249 +1,442 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Detalhes da Vaga - Hospital Promater" />
-    <meta name="keywords" content="Hospital, Promater, Instruções, Exames" />
-    <meta name="author" content="Gerleidson Bomfim e Ruan Esteves">
-    <meta name="robots" content="index, follow" />
-    <title>Instruções Exames - Hospital Promater</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruções de Exames</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+  
     <style>
-        a {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        a:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        .instruction-content {
+            display: none;
         }
     </style>
-  
 </head>
 <body>
 
     <header>
         <!-- Navbar -->
         <nav class="navbar">
+            <!-- Logo -->
             <a class="navbar-brand" href="index.html">
                 <img src="img/logoSemFundo.png" alt="Logo" class="logo-img">
             </a>
-        </nav> 
-
-        <nav class="main-nav" >      
-            <ul>              
-                <li><a href="index.html" title="Home">INICIO</a></li>
-
-                <li><a href="">A PROMATER</a>                
-                    <ul>
-                        <li><a href="#" title="Institucional">Institucional</a>
-                            <ul>
-                                <li><a href="quemSomos.html" title="Quem Somos">Quem Somos</a></li>
-                                <li><a href="politicaQualidade.html" title="Política de Qualidade">Política de Qualidade</a></li>
-                                <li><a href="missao.html" title="Missão, Visão e Valores">Missão, Visão e Valores</a></li>
-                                <li><a href="politicaPrivacidade.html" title="Politica de Privacidade">Politica de Privacidade</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a href="diretoria.html" title="Diretoria">Diretoria</a></li>
-
-                        <li><a href="certificacoes.html" title="Certificações e Acreditações">Certificações e Acreditações</a></li>
-                    </ul>
-                </li>
-                               
-                <li><a href="">ATENDIMENTO</a>                
-                    <ul>                      
-                        <li><a href="#" title="Ambulatorial">Ambulatorial</a>
-                            <ul>
-                                <li><a href="corpoclinico.html" title="Especialidades">Especialidades</a></li>                              
-                            </ul>
-                        </li>
-
-                        <li><a href="#" title="Laboratorial">Laboratorial</a>
-                            <ul>
-                                <li><a href="https://www.labchecap.com.br/resultado-de-exames" title="Resultado de exames">Resultado de exames</a></li>       
-                                <li><a href="instrucoesExames.html" title="Instruções de exame">Instruções de exames</a></li>
-                                <li><a href="parceriaLabchecap.html" title="Parceria Labchecap">Parceria Labchecap</a></li>    
-                                <li><a href="coletaDomiciliar.html" title="Coleta domiciliar">Coleta domiciliar</a></li>                           
-                            </ul>
-                        </li>
-
-                        <li><a href="#" title="Emergencial">Emergencial</a>
-                            <ul>
-                                <li><a href="atendimento24H.html" title="Sobre Atendimento 24H">Sobre Atendimento 24H</a></li>
-                            </ul>
-                         </li>
-                         <li><a href="#" title="Exames de imagem">Exames de imagem</a>
-                            <ul>
-                                <li><a href="exames.html" title="Exames de imagem">Exames de imagem</a></li>
-                            </ul>
-                         </li>
-
-                         <li><a href="#" title="Ocupacional">Ocupacional</a>
-                            <ul>
-                                <li><a href="medicinaOcupacional.html" title="Ocupacional">Medicina Ocupacional</a></li>
-                            </ul>
-                         </li>
-                         <li><a href="#" title="convenio">Convênios</a>
-                            <ul>
-                                <li><a href="convenio.html" title="Convênios">Convênios</a></li>
-                            </ul>
-                         </li>                           
-                    </ul>
-                </li>   
-
-                <li><a href="#">CONTATO</a>
-                    <ul>
-                        <li><a href="contato.html" title="Fale Conosco"><i class="fas fa-envelope"></i> Fale Conosco</a></li>
-                        <li><a href="trabalheConosco.html" title="Trabalhe Conosco"><i class="fas fa-briefcase"></i> Trabalhe Conosco</a></li>
-                        <li><a href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true"><i class="fas fa-poll"></i> Pesquisa de Satisfação</a>
-                        <li><a href="login.html" title="Área do Administrador"><i class="fas fa-user-shield"></i> Administrador</a></li>
-                    </ul>
-                </li>
-            </ul>
+    
+            <!-- Main Navigation -->
+            <div class="main-nav">
+                <ul>
+                    <li><a href="index.html" title="Home">INICIO</a></li>
+                    <li><a href="#">A PROMATER</a>
+                        <ul>
+                            <li><a href="#" title="Institucional">Institucional</a>
+                                <ul>
+                                    <li><a href="quemSomos.html" title="Quem Somos">Quem Somos</a></li>
+                                    <li><a href="politicaQualidade.html" title="Política de Qualidade">Política de Qualidade</a></li>
+                                    <li><a href="missao.html" title="Missão, Visão e Valores">Missão, Visão e Valores</a></li>
+                                    <li><a href="politicaPrivacidade.html" title="Politica de Privacidade">Politica de Privacidade</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="diretoria.html" title="Diretoria">Diretoria</a></li>
+                            <li><a href="certificacoes.html" title="Certificações e Acreditações">Certificações e Acreditações</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ATENDIMENTO</a>
+                        <ul>
+                            <li><a href="#" title="Ambulatorial">Ambulatorial</a>
+                                <ul>
+                                    <li><a href="corpoclinico.html" title="Especialidades">Especialidades</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Laboratorial">Laboratorial</a>
+                                <ul>
+                                    <li><a href="https://www.labchecap.com.br/resultado-de-exames" title="Resultado de exames">Resultado de exames</a></li>
+                                   <!-- <li><a href="instrucoesExames.html" title="Instruções de exame">Instruções de exames</a></li>  -->
+                                    <li><a href="parceriaLabchecap.html" title="Parceria Labchecap">Parceria Labchecap</a></li>
+                                    <li><a href="coletaDomiciliar.html" title="Coleta domiciliar">Coleta domiciliar</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Emergencial">Emergencial</a>
+                                <ul>
+                                    <li><a href="atendimento24H.html" title="Sobre Atendimento 24H">Sobre Atendimento 24H</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Ocupacional">Ocupacional</a>
+                                <ul>
+                                    <li><a href="medicinaOcupacional.html" title="Ocupacional">Medicina Ocupacional</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="exames.html" title="Exames de imagem">Exames de imagem</a></li>
+                            <li><a href="convenio.html" title="Convenio">Convênios</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CONTATO</a>
+                        <ul>
+                            <li><a href="contato.html" title="Fale Conosco"><i class="fas fa-envelope"></i> Fale Conosco</a></li>
+                            <li><a href="trabalheConosco.html" title="Trabalhe Conosco"><i class="fas fa-briefcase"></i> Trabalhe Conosco</a></li>
+                            <li><a href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true"><i class="fas fa-poll"></i> Pesquisa de Satisfação</a></li>
+                            <li><a href="login.html" title="Área do Administrador"><i class="fas fa-user-shield"></i> Administrador</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Mobile Menu Button and Overlay -->
+            <div class="mob-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="overlay"></div>
         </nav>
-        
-        <div class="mob-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="overlay"></div>
-
     </header>
-    
-    <!-- Main Content -->
-    <main>
-        <h1>Instruções Exames</h1>
-    </main>
 
-    <!-- Footer -->
-    <footer class="text-center text-lg-start mt-5">
-        <div class="container p-4" >
-            <div class="row">
-                <!-- Coluna da Logo -->
-                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">      
-                        <img src="img/logoSemFundo.png" alt="Hospital Promater" style="height: 100px; margin-top: -10px;">     
-                    <br>
-                    <h5 class="text-uppercase" style="margin-top: 5px; color: black;"> Endereço</h5>
-                    <ul class="list-unstyled mb-0" style="color: black;">
-                        <li><i class="fas fa-map-marker-alt"></i> Av. Lauro de Freitas, 1125 - Centro - Dias D'Ávila/BA </li>
-                    
-                    </ul>
+    <!-- Main Content -->
+    <main class="pagina">
+        <div class="container mt-4">
+            <h3 class="mb-4">Instruções de Exames</h3>
+            <div id="examList" class="list-group">
+                <!-- Repeat this block for each exam item -->
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Sangue</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('bloodTest')">+</button>
+                    </div>
+                    <div id="bloodTest" class="instruction-content mt-2">
+                        <p>Para o exame de sangue, é necessário estar em jejum de pelo menos 8 horas. Evite consumir bebidas alcoólicas 24 horas antes do exame.</p>
+                    </div>
                 </div>
-                            
-                <!-- Coluna Siga-nos -->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase text-center" style="color: black;">Siga-nos</h5>
-                    <ul class="list-unstyled d-flex justify-content-center p-0 m-0">
-                        <li class="mx-3">
-                            <a href="https://facebook.com/hospitalpromater" class="text-black">
-                                <i class="fab fa-facebook-f fa-2x"></i> 
-                            </a>
-                        </li>
-                        <li class="mx-3">
-                            <a href="https://instagram.com/hospitalpromater" class="text-black">
-                                <i class="fab fa-instagram fa-2x"></i> 
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            
-                <!-- Coluna Empresa -->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase" style="color: black">Empresa</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li><a href="quemSomos.html">Sobre Nós</a></li>
-                        <li><a href="politicaPrivacidade.html">Política de Privacidade</a></li>
-                        <li><a href="trabalheConosco.html">Trabalhe Conosco</a></li>
-                    </ul>
-                    <br>
-                    
-                </div>
-                
-                <!-- Coluna Contatos -->
-                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase" style="color: black;">Contatos</h5>
-                    <ul class="list-unstyled mb-0" style="color: black;">
-                        <li>Central de Agendamento</li>
-                        <li><i class="fas fa-phone-alt"></i><a href="tel:+557136483750"> (71) 3648-3750</a></li>
-                        <li><i class="fab fa-whatsapp"></i><a href="tel:+5571988026456"> (71) 98802-6456</a></li>
-                        <br>
-                        <li>Setor de Qualidade</li>
-                        <li><i class="fab fa-whatsapp"></i><a href="tel:+5571996207149"> (71) 99620-7149</a></li>
-                    </ul>
-                </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Urina</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('urineTest')">+</button>
+                        </div>
+                        <div id="urineTest" class="instruction-content mt-2">
+                            <p>Para o exame de urina, deve-se evitar a ingestão de alimentos que possam alterar a coloração da urina, como beterraba.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Fezes</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('stoolTest')">+</button>
+                        </div>
+                        <div id="stoolTest" class="instruction-content mt-2">
+                            <p>Para o exame de fezes, deve-se evitar alimentos que podem alterar o resultado, como frutas e vegetais ricos em fibras.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Colesterol</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('cholesterolTest')">+</button>
+                        </div>
+                        <div id="cholesterolTest" class="instruction-content mt-2">
+                            <p>Para o exame de colesterol, é recomendado jejum de 12 horas. Evite alimentos gordurosos no dia anterior.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Glicose</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('glucoseTest')">+</button>
+                        </div>
+                        <div id="glucoseTest" class="instruction-content mt-2">
+                            <p>Para o exame de glicose, é necessário jejum de pelo menos 8 horas. Evite doces e bebidas açucaradas antes do exame.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Hepatite</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('hepatitisTest')">+</button>
+                        </div>
+                        <div id="hepatitisTest" class="instruction-content mt-2">
+                            <p>Para o exame de hepatite, não há preparações especiais, mas informe ao médico sobre qualquer condição pré-existente.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de HIV</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('hivTest')">+</button>
+                        </div>
+                        <div id="hivTest" class="instruction-content mt-2">
+                            <p>Para o exame de HIV, é aconselhável não realizar qualquer tipo de teste diagnóstico nos 6 meses anteriores ao exame.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de TSH</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('tshTest')">+</button>
+                        </div>
+                        <div id="tshTest" class="instruction-content mt-2">
+                            <p>Para o exame de TSH, não é necessário jejum. Pode ser realizado a qualquer hora do dia.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de PSA</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('psaTest')">+</button>
+                        </div>
+                        <div id="psaTest" class="instruction-content mt-2">
+                            <p>Para o exame de PSA, é recomendado evitar atividades físicas intensas e relações sexuais nas 48 horas anteriores.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Creatinina</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('creatinineTest')">+</button>
+                        </div>
+                        <div id="creatinineTest" class="instruction-content mt-2">
+                            <p>Para o exame de creatinina, não é necessário jejum. No entanto, evite a ingestão de alimentos ricos em proteínas antes do exame.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Ácido Úrico</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('uricAcidTest')">+</button>
+                        </div>
+                        <div id="uricAcidTest" class="instruction-content mt-2">
+                            <p>Para o exame de ácido úrico, recomenda-se jejum de 8 horas e evitar alimentos ricos em purinas, como carnes vermelhas.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Hormônios</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('hormonesTest')">+</button>
+                        </div>
+                        <div id="hormonesTest" class="instruction-content mt-2">
+                            <p>Para exames hormonais, o jejum e o horário do exame podem variar dependendo do hormônio a ser testado.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Vitamina D</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('vitaminDTest')">+</button>
+                        </div>
+                        <div id="vitaminDTest" class="instruction-content mt-2">
+                            <p>Não há preparação especial para o exame de vitamina D, mas evite a exposição excessiva ao sol antes do exame.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Cálcio</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('calciumTest')">+</button>
+                        </div>
+                        <div id="calciumTest" class="instruction-content mt-2">
+                            <p>Para o exame de cálcio, recomenda-se jejum de 12 horas e evitar suplementos de cálcio antes do exame.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Ferritina</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('ferritinTest')">+</button>
+                        </div>
+                        <div id="ferritinTest" class="instruction-content mt-2">
+                            <p>Para o exame de ferritina, jejum não é necessário, mas evite alimentos ricos em ferro antes do exame.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Bilirrubina</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('bilirubinTest')">+</button>
+                        </div>
+                        <div id="bilirubinTest" class="instruction-content mt-2">
+                            <p>Para o exame de bilirrubina, não é necessário jejum, mas evite alimentos gordurosos e bebidas alcoólicas antes do exame.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Albumina</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('albuminTest')">+</button>
+                        </div>
+                        <div id="albuminTest" class="instruction-content mt-2">
+                            <p>Não é necessário jejum para o exame de albumina. Informe ao médico sobre qualquer medicamento que esteja tomando.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Triglicerídeos</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('triglyceridesTest')">+</button>
+                        </div>
+                        <div id="triglyceridesTest" class="instruction-content mt-2">
+                            <p>Para o exame de triglicerídeos, recomenda-se jejum de 12 horas. Evite alimentos ricos em gorduras e açúcares.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Gama GT</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('gammaGTTest')">+</button>
+                        </div>
+                        <div id="gammaGTTest" class="instruction-content mt-2">
+                            <p>Para o exame de gama GT, é aconselhável evitar o consumo de bebidas alcoólicas e medicamentos que podem afetar o resultado.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de TGO e TGP</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('tgoTgpTest')">+</button>
+                        </div>
+                        <div id="tgoTgpTest" class="instruction-content mt-2">
+                            <p>Para o exame de TGO e TGP, recomenda-se jejum de 8 horas. Evite alimentos gordurosos e bebidas alcoólicas.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Ácido Fólico</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('folicAcidTest')">+</button>
+                        </div>
+                        <div id="folicAcidTest" class="instruction-content mt-2">
+                            <p>Não é necessário jejum para o exame de ácido fólico, mas informe ao médico sobre qualquer suplemento vitamínico.</p>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Exame de Cobre</span>
+                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('copperTest')">+</button>
+                        </div>
+                        <div id="copperTest" class="instruction-content mt-2">
+                            <p>Para o exame de cobre, é recomendado jejum de 12 horas e evitar o uso de suplementos de cobre antes do exame.</p>
+                        </div>
+                    </div>
             </div>
         </div>
-
-            <!-- Botão WhatsApp -->
-            <div>
-                <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
-                    <div class="rwb-tooltip">Agende pelo Whatsapp</div>
-                    <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
-                </a>
+    </main>
+<!-- Footer -->
+<footer class="text-center text-lg-start mt-5">
+    <div class="container p-4">
+        <div class="row">
+            <!-- Coluna da Logo -->
+            <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                <img src="img/logoSemFundo.png" alt="Hospital Promater" style="height: 100px; margin-top: -10px;">
+                <h5 class="text-uppercase mt-3" style="color: black;">Endereço</h5>
+                <ul class="list-unstyled mb-0" style="color: black;">
+                    <li><i class="fas fa-map-marker-alt"></i> Av. Lauro de Freitas, 1125 - Centro - Dias D'Ávila/BA</li>
+                </ul>
+            </div>
+            
+            <!-- Coluna Siga-nos -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase" style="color: black;">Siga-nos</h5>
+                <ul class="list-unstyled d-flex justify-content-center p-0 m-0">
+                    <li class="mx-3">
+                        <a href="https://facebook.com/hospitalpromater" class="text-black" aria-label="Facebook">
+                            <i class="fab fa-facebook-f fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="mx-3">
+                        <a href="https://instagram.com/hospitalpromater" class="text-black" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         
-            <!-- Rodapé com Direitos Autorais -->
-            <div class="text-center p-3" style="background-color: #4b875a;">
-                © 2024 Copyright
-                <a class="text-white" href="index.html">Hospital Promater</a>
+            <!-- Coluna Empresa -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase" style="color: black;">Empresa</h5>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="quemSomos.html" style="color: black;">Sobre Nós</a></li>
+                    <li><a href="politicaPrivacidade.html" style="color: black;">Política de Privacidade</a></li>
+                    <li><a href="trabalheConosco.html" style="color: black;">Trabalhe Conosco</a></li>
+                </ul>
             </div>
-    </footer>
+            
+            <!-- Coluna Contatos -->
+            <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase" style="color: black;">Contatos</h5>
+                <ul class="list-unstyled mb-0" style="color: black;">
+                    <li>Central de Agendamento</li>
+                    <li><i class="fas fa-phone-alt"></i> <a href="tel:+557136483750" style="color: black;"> (71) 3648-3750</a></li>
+                    <li><i class="fab fa-whatsapp"></i> <a href="tel:+5571988026456" style="color: black;"> (71) 98802-6456</a></li>
+                    <li class="mt-3">Setor de Qualidade</li>
+                    <li><i class="fab fa-whatsapp"></i> <a href="tel:+5571996207149" style="color: black;"> (71) 99620-7149</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Botão WhatsApp -->
+    <div class="text-center my-3">
+        <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
+            <div class="rwb-tooltip">Agende pelo Whatsapp</div>
+            <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg" alt="WhatsApp">
+        </a>
+    </div>
+    
+    <!-- Rodapé com Direitos Autorais -->
+    <div class="text-center p-3" style="background-color: #4b875a;">
+        © 2024 Copyright
+        <a class="text-white" href="index.html">Hospital Promater</a>
+    </div>
+</footer>
 
-    <script>
-        
-        //Menu
-        $(".main-nav ul li:has(ul)").addClass("submenu");
-        $(".main-nav ul li:has(ul)").append("<i></i>");
-        $(".main-nav ul i").click(function() {
-          $(this)
-            .parent("li")
-            .toggleClass("open");
-          $(this)
-            .parent("li")
-            .children("ul")
-            .slideToggle();
-        });
+<script>
     
-        //Menu Mobile
-        $(".mob-btn").click(function() {
-          if (!$("html").hasClass("show-menu")) {
-            $("html").addClass("show-menu");
-          } else {
-            $("html").removeClass("show-menu");
-          }
-        });
-    
-        $(".overlay").click(function() {
-          if ($("html").hasClass("show-menu")) {
-            $("html").removeClass("show-menu");
-          }
-        });
-    
-        //Aparecer addClass
-        $(".first ul")
-          .clone()
-          .prependTo(".main-nav")
-          .addClass("desk-hide");
-        $(".last ul")
-          .clone()
-          .appendTo(".main-nav")
-          .addClass("desk-hide");
-    
-    </script>
+    //Menu
+    $(".main-nav ul li:has(ul)").addClass("submenu");
+    $(".main-nav ul li:has(ul)").append("<i></i>");
+    $(".main-nav ul i").click(function() {
+      $(this)
+        .parent("li")
+        .toggleClass("open");
+      $(this)
+        .parent("li")
+        .children("ul")
+        .slideToggle();
+    });
 
-    <script src="script.js"></script>   
-    <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    //Menu Mobile
+    $(".mob-btn").click(function() {
+      if (!$("html").hasClass("show-menu")) {
+        $("html").addClass("show-menu");
+      } else {
+        $("html").removeClass("show-menu");
+      }
+    });
+
+    $(".overlay").click(function() {
+      if ($("html").hasClass("show-menu")) {
+        $("html").removeClass("show-menu");
+      }
+    });
+
+    //Aparecer addClass
+    $(".first ul")
+      .clone()
+      .prependTo(".main-nav")
+      .addClass("desk-hide");
+    $(".last ul")
+      .clone()
+      .appendTo(".main-nav")
+      .addClass("desk-hide");
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', function () {
+    if (window.scrollY > 50) { // Ajuste o valor conforme necessário
+    navbar.classList.add('scrolled');
+    } else {
+    navbar.classList.remove('scrolled');
+    }
+    });
+    });
+
+
+</script>
+
+<script src="script.js"></script>   
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 
 </body>
 </html>
+
+       

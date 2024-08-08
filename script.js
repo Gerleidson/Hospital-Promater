@@ -106,72 +106,100 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
-/*noticias
-document.addEventListener('DOMContentLoaded', () => {
-    const newsList = document.getElementById('newsList');
-    const newsForm = document.getElementById('newsForm');
-    
-    // Dados de exemplo (substitua por dados do seu backend)
-    const newsData = [
-        { title: 'Notícia 1', content: 'Conteúdo da notícia 1' },
-        { title: 'Notícia 2', content: 'Conteúdo da notícia 2' }
-    ];
-    
-    // Função para renderizar a lista de notícias
-    function renderNews() {
-        newsList.innerHTML = '';
-        newsData.forEach((news, index) => {
-            const newsItem = document.createElement('div');
-            newsItem.className = 'news-item card mb-3';
-            newsItem.innerHTML = `
-                <div class="card-body">
-                    <h5 class="card-title">${news.title}</h5>
-                    <p class="card-text">${news.content}</p>
-                    <button class="btn btn-warning btn-sm" onclick="editNews(${index})">Editar</button>
-                    <button class="btn btn-danger btn-sm" onclick="deleteNews(${index})">Excluir</button>
-                </div>
-            `;
-            newsList.appendChild(newsItem);
-        });
+// Função para alternar a visibilidade das instruções
+function toggleInstruction(id) {
+    const content = document.getElementById(id);
+    if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+    } else {
+        content.style.display = 'none';
     }
+}
 
-    // Função para adicionar uma notícia
-    newsForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const title = document.getElementById('newsTitle').value;
-        const content = document.getElementById('newsContent').value;
-        
-        newsData.push({ title, content });
-        renderNews();
-        
-        // Limpar formulário e fechar modal
-        newsForm.reset();
-        $('#addNewsModal').modal('hide');
+  
+    // Classe no Navbar ao Rolar
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
     });
 
-    // Função para editar uma notícia
-    window.editNews = function(index) {
-        const news = newsData[index];
-        document.getElementById('newsTitle').value = news.title;
-        document.getElementById('newsContent').value = news.content;
-        
-        // Exibir modal
-        $('#addNewsModal').modal('show');
-    };
 
-    // Função para excluir uma notícia
-    window.deleteNews = function(index) {
-        newsData.splice(index, 1);
-        renderNews();
-    };
+    let slides = document.querySelectorAll('.slideshow');
+let dots = document.querySelectorAll('.dot');
+let slideIndex = 1;
+let timeoutID;
 
-    // Inicializar a lista de notícias
-    renderNews();
-});
+const showSlides = (n) => {
+    let i;
 
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
 
-*/
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
 
+    for (i = 0; i < slides.length; i++) {
+        dots[i].setAttribute('class', 'dot');
+    }
 
+    slides[slideIndex - 1].style.display = 'block';
+    dots[slideIndex - 1].setAttribute('class', 'dot ativo');
+    clearTimeout(timeoutID);
+    timeoutID = setTimeout(autoSlides, 4000);
+};
 
+const plusSlides = (n) => {
+    showSlides(slideIndex += n);
+};
+
+const currentSlide = (n) => {
+    showSlides(slideIndex = n);
+};
+
+function autoSlides() {
+    let i;
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        dots[i].setAttribute('class', 'dot');
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].setAttribute('class', 'dot ativo');
+    timeoutID = setTimeout(autoSlides, 1000);
+    
+    autoSlides();
+}
+
+//show menu
+document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.querySelector('.mob-btn');
+    const menu = document.querySelector('.main-nav');
+    const overlay = document.querySelector('.overlay');
+  
+    menuButton.addEventListener('click', function() {
+      document.body.classList.toggle('show-menu');
+    });
+  
+    overlay.addEventListener('click', function() {
+      document.body.classList.remove('show-menu');
+    });
+  });
+  

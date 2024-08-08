@@ -5,27 +5,151 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
+body { font-family: 'Roboto', sans-serif;}
 
 header{
   position: fixed; /* Fixa o header no topo */
   top: 0; /* Alinha o header ao topo */
   left: 0; /* Alinha o header à esquerda */
   width: 100%; /* Largura total da tela */
-  background-color: #daffe7; /* Cor de fundo do header */
   z-index: 1000; /* Garante que o header fique acima de outros elementos */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
+  width: 100%;
+  padding: 0 0;
+}
+
+header a:hover{
+  color: #4b875a;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.10s;
+}
+
+/* Navbar container */
+.navbar {
+  background-color: transparent; /* Fundo transparente */
+  height: 80px; /* Altura fixa para a navbar */
+  display: flex;
+  align-items: center; /* Alinha o conteúdo verticalmente */
+  justify-content: space-around;
+  transition: background-color 0.10s; /* Transição suave para o fundo */
   
 }
 
-main {
-  background-color: #fff; /* Cor de fundo principal */
-  padding-top: 90px; /* Ajuste o espaço superior para a navbar fixa */
+/* Estilo para a navbar quando a página é rolada */
+.navbar.scrolled {
+  background-color: #daffe7;}
+
+/* Logo container */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
 }
 
-footer{ background-color: #daffe7;  color: #fff;}
+/* Main navigation styling */
+.main-nav {
+  flex: 1;
+  text-align: left;
+  align-items: center;
+  background-color: transparent;}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background: transparent; /* Fundo transparente */
+  transition: background-color 0.10s; /* Transição suave para o fundo */
+}
+
+.main-nav li {
+  display: inline-block;
+  color: #fff;
+}
+
+.main-nav a { text-decoration: none;}
+
+main {
+  background-color: #fff; /* Cor de fundo principal */
+  margin-top: 0px ; /* se remover fica como no modelo, se ficar as outras paginas ficam com titulo no topo */
+}
+.home-page {
+  /* Remove margin-top apenas para a página inicial */
+  margin-top: 0;
+}
+
+.pagina {
+  /* Aplica margin-top para outras páginas */
+  margin-top: 100px; /* Ajuste conforme necessário */
+}
+
+.banner {
+    width: 100%; /* Largura total da página */
+    height: 515px; /* Altura desejada */
+    overflow: hidden; /* Oculta qualquer parte da imagem que ultrapasse a div */
+    position: relative; /* Posiciona a imagem dentro da div */
+}
+
+.logo-img {
+  max-height: 60px;
+  width: auto;  /* Mantém a proporção da imagem */
+}
+
+.img-border {
+  border: 2px solid #006400; /* Cor verde escuro */
+  border-radius: 4px;       /* Arredondamento dos cantos */
+  padding: 4px;             /* Espaçamento entre a imagem e a borda */
+  width: 120px;              /* Largura das imagens */
+  height: auto;            /* Altura automática para manter a proporção */
+}
+
+/* Espaçamento entre as imagens */
+.list-unstyled > li {
+  margin-right: 15px;      /* Espaçamento entre as imagens */
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  width: 5%;
+  height: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-control-prev { left: 0;}
+.carousel-control-next { right: 0;}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
+footer {
+  background-color: #daffe7; /* Cor de fundo do footer */
+  color: #fff;
+  padding: 20px 0 0 0; /* Adicione padding para aumentar o tamanho do footer */
+  min-height: 100px; /* Defina uma altura mínima para o footer */
+  text-align: center; /* Alinha o texto ao centro */
+}
 
 footer a:hover{
   color: #000;
@@ -33,7 +157,11 @@ footer a:hover{
   transition: 0.5s;
 }
 
-a{ color: #000; text-decoration: none;  transition: transform 0.3s ease, box-shadow 0.3s ease;}
+a {
+  color: #000;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 a:hover {
   transform: scale(1.05);
@@ -49,38 +177,39 @@ a:hover {
     vertical-align: middle;
 }
 
-.sidebar {
-  padding: 20px;
-}
-.sidebar .nav-link {
-  font-weight: bold;
-}
+.sidebar { padding: 20px;}
+.sidebar .nav-link { font-weight: normal;}
+
 .card {
-  border-radius: 10px;
-}
-.card-header {
-  border-bottom: none;
-}
-.modal-header {
-  border-bottom: none;
-}
-
-.card-title{ color: #000;}
-
-.card-text{ color: #000;}
-
-header a:hover{
-    color: #4b875a;
-    background-color: #fff;
-    border-radius: 15px;
-    transition: 0.5s;
+  border-radius: 8px; /* Opcional: bordas arredondadas */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites da borda */
+  height: 100%; /* Faz com que o card ocupe a altura total do grid-wrapper */
+  background-color: #fff;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
-    cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  cursor: pointer;
 }
+
+.grid-wrapper {
+  border: 5px solid #4b875a; /* Borda ao redor da grid */
+  border-radius: 12px; /* Opcional: bordas arredondadas */
+  padding: 20px; /* Espaço entre a borda e o card */
+  background-color: #fff; /* Cor de fundo do contêiner da borda */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra leve para destaque */
+  width: 100%; /* Garante que o grid-wrapper ocupe toda a largura disponível da coluna */
+  height: 400px; /* Altura fixa padrão para o contêiner */
+  margin: 0 auto; /* Centraliza o contêiner dentro da coluna */
+}
+
+.home-page .card { background-color: #4b875a; /* Cor de fundo específica para a página inicial */}
+.home-page .card-title{ color: #fff;}
+.home-page .card-text{ color: #fff;}
+.noticias .card{ background-color: #fff;}
+.noticias .card-title {color: #000;}
+.noticias .card-text { color: #000;}
 
 .btn-outline-success{
     background-color: #fff;
@@ -111,55 +240,10 @@ header a:hover{
     transform: translateY(-2px);
 }
 
-.href{color: Blue;}
-
+.href{color: rgb(0, 0, 255);}
 .exam-card { margin-bottom: 20px;}
 
-.navbar-brand {
-    margin: 0 auto;
-    display: flex;
-    margin-left: 50px;
-    align-items: center;
-}
-
-.navbar {
-    background-color: #daffe7; /* Cor de fundo da navbar */
-    height: 90px; /* Altura fixa para a navbar */
-    display: flex;
-    align-items: center; /* Alinha o conteúdo verticalmente */
-}
-
-.logo-img {
-    height: 75px; /* Altura do logo */
-    width: auto;  /* Mantém a proporção da imagem */
-}
-
-.img-border {
-    border: 2px solid #006400; /* Cor verde escuro */
-    border-radius: 4px;       /* Arredondamento dos cantos */
-    padding: 4px;             /* Espaçamento entre a imagem e a borda */
-    width: 80px;              /* Largura das imagens */
-    height: auto;            /* Altura automática para manter a proporção */
-}
-
-/* Espaçamento entre as imagens */
-.list-unstyled > li {
-    margin-right: 15px;      /* Espaçamento entre as imagens */
-}
-
-/* pagina teste */
-.menu {
- 
-  background: #0553a5;
-  margin-bottom: 0;
-  width: 100%;
-  float: left;
-  margin-top: 0;
-  border-top: 1px #2369b2 solid;
-
-}
-
-
+/* Responsividade */
 @media only screen and (min-width: 1200px) {
 
 .desk-hide {
@@ -169,8 +253,7 @@ header a:hover{
 .main-nav {
   font-size: 17px;
   justify-content: center;
-  background-color: #fff;
-  
+  background-color: transparent;
 }
 
 .main-nav > ul {
@@ -178,13 +261,11 @@ header a:hover{
   justify-content: center; /* Centraliza os itens da lista */
   padding: 0;
   margin: 0;
-
 }
 
 .main-nav > ul > li {
   display: inline-block;
   position: relative;
-  
 }
 
 .main-nav > ul > li:last-child {
@@ -192,7 +273,6 @@ header a:hover{
 }
 
 .main-nav > ul > li.submenu:after {
-
   content: "";
   position: absolute;
   height: 0;
@@ -203,36 +283,28 @@ header a:hover{
   right: 7px;
   top: 24px;
   pointer-events: none;
-
 }
 
-.main-nav > ul > li > a {
-  
+.main-nav > ul > li > a { 
   color: #000000;
   display: block;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 15px;
-
 }
 
 .main-nav > ul > li:hover > a {
-  
   color: #000;
   background: #fff;
-
 }
 
 .main-nav > ul > li:hover > ul {
-  
   visibility: visible;
   opacity: 1;
   z-index: 1;
-
 }
 
 .main-nav > ul > li ul {
-
   position: absolute;
   margin: 0;
   padding: 0;
@@ -242,7 +314,6 @@ header a:hover{
   opacity: 0;
   font-size: 14px;
   display: block !important;
-
 }
 
 .main-nav > ul > li ul li {
@@ -256,33 +327,26 @@ header a:hover{
 }
 
 .main-nav > ul > li ul li a {
-
   padding: 15px 20px;
   display: block;
   text-decoration: none;
   font-size: 15px;
   color: #000;
-
 }
 
 .main-nav > ul > li ul li:hover > ul {
-  
   visibility: visible;
   opacity: 1;
   left: 250px;
   top: 0;
-
 }
 
 .main-nav > ul > li ul li:hover > a {
-
   background: #4b875a;
   color: #fff;
-
 }
 
 .main-nav > ul > li ul li.submenu::after {
-  
   content: "";
   position: absolute;
   height: 0;
@@ -293,12 +357,9 @@ header a:hover{
   right: 11px;
   top: 20px;
   pointer-events: none;
-
 }
 
-.mob-btn {
-  display: none;
-}
+.mob-btn {display: none;}
 }
 
 
@@ -337,9 +398,7 @@ header a:hover{
       font-size: 15px;
   }
 
-  .main-nav ul li span {
-      display: none;
-  }
+  .main-nav ul li span { display: none;}
 
   .main-nav ul li a {
       color: #000;
@@ -383,26 +442,12 @@ header a:hover{
       display: none;
   }
 
-  .main-nav ul ul li:last-child {
-      border-bottom: 0;
-  }
+  .main-nav ul ul li:last-child { border-bottom: 0;}
+  .main-nav ul ul li:first-child { border-top: 1px solid #000;}
+  .main-nav ul ul li a { padding-left: 20px;}
+  .main-nav ul ul li ul a { padding-left: 30px;}
 
-  .main-nav ul ul li:first-child {
-      border-top: 1px solid #000;
-  }
-
-  .main-nav ul ul li a {
-      padding-left: 20px;
-  }
-
-  .main-nav ul ul li ul a {
-      padding-left: 30px;
-  }
-
-  .show-menu .main-nav {
-      right: 0; /* Ajustado para mostrar o menu */
-  }
-
+  .show-menu .main-nav { right: 0; /* Ajustado para mostrar o menu */}
   .show-menu .overlay {
       position: fixed;
       top: 0;
@@ -433,7 +478,5 @@ header a:hover{
       background: #fff; 
   }
 
-  .mob-btn span + span {
-      margin-top: 5px;
-  }
+  .mob-btn span + span { margin-top: 5px;}
  }
