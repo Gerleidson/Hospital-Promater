@@ -1,0 +1,48 @@
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Adicionar gradiente de opacidade nos cantos */
+  .carousel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(50,197,149,0) 30%, rgba(50,197,149,1) 98%);
+    pointer-events: none; /* Garantir que o gradiente não interfira na interação com o carousel */
+    z-index: 1; /* Coloca o gradiente sobre o carousel */
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    width: 5%;
+    height: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carousel-control-prev { left: 0; }
+  .carousel-control-next { right: 0; }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+  }
+  

@@ -1,0 +1,49 @@
+/* Navbar container */
+.navbar {
+  background-color: transparent; /* Fundo transparente */
+  height: 80px; /* Altura fixa para a navbar */
+  display: flex;
+  align-items: center; /* Alinha o conteúdo verticalmente */
+  justify-content: space-around;
+  transition: background-color 0.10s; /* Transição suave para o fundo */
+}
+
+/* Estilo para a navbar quando a página é rolada */
+.navbar.scrolled {
+  background-color: #04ac8c ;}
+
+/* Logo container */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+/* styles-index.css */
+.index-page .main-nav {
+  color: #fff;
+}
+
+/* Main navigation styling */
+.main-nav {
+  flex: 1;
+  text-align: left;
+  align-items: center;
+  background-color: transparent;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background: transparent; /* Fundo transparente */
+  transition: background-color 0.10s; /* Transição suave para o fundo */
+}
+
+.main-nav li {
+  display: inline-block;
+  color: #fff;
+}
+
+.main-nav a { text-decoration: none;}
