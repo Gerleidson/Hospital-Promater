@@ -222,13 +222,13 @@ display: block;
 .carousel-control-next {
     position: absolute;
     top: 50%; /* Centraliza verticalmente */
-    right: 40px; /* Ajuste a distância do lado direito conforme necessário */
-    transform: translateY(-50%); /* Ajusta a posição vertical para centralizar */
+    right: 70px; /* Ajuste a distância do lado direito conforme necessário */
+
     width: 50px; /* Largura dos botões */
     height: 50px; /* Altura dos botões */
-    background-color: #04ac8c; /* Cor de fundo verde */
+    background-color: #003400; /* Cor de fundo verde */
     color: #fff; /* Cor do texto branca */
-    border-radius: 50%; /* Torna os botões circulares */
+    border-radius: 10%; /* Torna os botões quadrado arredondado */
     display: flex;
     align-items: center;
     justify-content: center;
