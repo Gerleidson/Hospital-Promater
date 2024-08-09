@@ -45,4 +45,12 @@
     width: 20px;
     height: 20px;
   }
+
+  .carousel-container {
+    position: relative;
+    border: 0; /* Remove todas as bordas */
+    border-bottom: 8px solid #04ac8c; /* Adiciona a borda somente na parte inferior */    border-radius: 0;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 10%, 90% 100%, 0 100%);
+}
   
