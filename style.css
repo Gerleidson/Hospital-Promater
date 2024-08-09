@@ -44,8 +44,10 @@ position: relative;
 }
 
 .logo-img {
-max-height: 60px;
-width: auto;  
+max-height: 90px;
+width: auto;
+background-color: transparent;
+
 }
 
 .img-border {
@@ -119,7 +121,7 @@ transform: translateY(-2px);
 /* Navbar container */
 .navbar {
 background-color: transparent; 
-height: 80px; 
+height: 100%; 
 display: flex;
 align-items: center; 
 justify-content: space-around;
@@ -135,6 +137,7 @@ background-color: #04ac8c ;}
 display: flex;
 align-items: center;
 margin-left: 50px;
+
 }
 
 /* Main navigation styling */
@@ -182,7 +185,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background: radial-gradient(circle, rgba(50,197,149,0) 30%, rgba(50,197,149,1) 98%);
+background: radial-gradient(circle, rgba(4,172,140,0) 65%, rgba(4,172,140,1) 92%, rgba(4,172,140,1) 95%, rgba(4,172,140,1) 100%);
 pointer-events: none; 
 z-index: 1; 
 }
