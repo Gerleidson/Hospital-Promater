@@ -7,21 +7,24 @@ box-sizing: border-box;
 
 body { font-family: 'SkolaSans-Regular', sans-serif;}
 
-header{
-position: fixed; /* Fixa o header no topo */
-top: 0; /* Alinha o header ao topo */
-left: 0; /* Alinha o header à esquerda */
-width: 100%; /* Largura total da tela */
-z-index: 1000; /* Garante que o header fique acima de outros elementos */
-padding: 0 0;
-}               
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+    padding: 0;
+    box-shadow: 0 0 0 3px #04ac8c; 
+}
 
-header a:hover{
-color: #04ac8c;
-background-color: #fff;
-border-radius: 5px;
-transition: 0.10s;
-}  
+/* Estilo para links dentro do header */
+header a:hover {
+    color: #04ac8c;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.10s;
+}
+
 
 main {
 background-color: #fff; /* Cor de fundo principal */

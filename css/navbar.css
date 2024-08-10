@@ -6,6 +6,7 @@
   align-items: center; /* Alinha o conteúdo verticalmente */
   justify-content: space-around;
   transition: background-color 0.10s; /* Transição suave para o fundo */
+  
 }
 
 /* Estilo para a navbar quando a página é rolada */
