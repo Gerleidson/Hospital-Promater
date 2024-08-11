@@ -28,14 +28,12 @@ main {
 background-color: #fff; 
 margin-top: 0px ; 
 }
-
-/*Main da pagina home*/
-
+/*main da pagina home*/
 .home-page {
 margin-top: 0;
 }
 
-/*Main da outras paginas*/
+/*main das outras paginas*/
 .pagina {
 margin-top: 100px;
 }
@@ -185,78 +183,6 @@ color: #fff;
 
 .main-nav a { text-decoration: none;}
 
-/* Carousel */
-.carousel {
-position: relative;
-width: 100%;
-overflow: hidden;
-}
-
-.carousel-inner {
-position: relative;
-width: 100%;
-overflow: hidden;
-}
-
-/* Adicionar gradiente de opacidade nos cantos */
-.carousel::before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: radial-gradient(circle, rgba(4,172,140,0) 65%, rgba(4,172,140,1) 100%);
-pointer-events: none; 
-z-index: 1; 
-}
-
-.carousel-item.active {
-display: block;
-}
-
-/* Estilo para os botões do carrossel */
-.carousel-control-prev,
-.carousel-control-next {
-    position: absolute;
-    top: 50%; 
-    right: 70px; 
-    width: 50px; 
-    height: 50px; 
-    background-color: #003400; 
-    color: #fff; 
-    border-radius: 10%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000; 
-}
-
-/* Estilo para os ícones dos botões */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: transparent; 
-    background-size: 100%; 
-    width: 20px; 
-    height: 20px; 
-    background-repeat: no-repeat;
-    color: #fff; 
-}
-
-.carousel-container {
-    position: relative;
-    border: 0; 
-    border-bottom: 8px solid #04ac8c;
-    border-radius: 0;
-    overflow: hidden;
-    clip-path: polygon(0 0, 100% 0, 100% 10%, 90% 100%, 0 100%);
-}
-
-/* Esconder os indicadores do carrossel */
-.carousel-indicators {
-    display: none;
-}
-
 /* Cards */
 .card {
 border-radius: 8px; 
@@ -375,7 +301,7 @@ pointer-events: none;
 }
 
 .main-nav > ul > li > a { 
-color: #fff;
+color: #000;
 display: block;
 padding: 10px 20px;
 text-decoration: none;
@@ -449,7 +375,6 @@ pointer-events: none;
 }
 
 .mob-btn {display: none;}
-
 }
 
 
@@ -571,10 +496,10 @@ background: #fff;
 
 .footer-background {
     background: url('img/bg_footer_mobile.png') no-repeat center center;
-    background-size: cover;
+    background-size: cover; 
     background-attachment: fixed; 
     height: auto;
-    padding: 20px 0; 
-}
+    padding: 20px 0;
 
+}
 }
