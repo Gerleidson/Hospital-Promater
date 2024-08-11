@@ -14,7 +14,7 @@ left: 0;
 width: 100%; 
 z-index: 1000; 
 padding: 0 0;
-
+background: url('img/1.png') no-repeat 100% 100%;
 }               
 
 header a:hover{
@@ -64,12 +64,6 @@ position: relative;
     width: 100%;
     height: auto;
     border-radius: 5px;
-}
-
-.logo-img {
-max-height: 90px;
-width: auto;
-background-color: transparent;
 }
 
 .img-border {
@@ -137,7 +131,6 @@ transform: translateY(-2px);
 
 .href{color: rgb(0, 0, 255);}
 
-
 /* Navbar container */
 .navbar {
 background-color: transparent; 
@@ -154,9 +147,27 @@ background-color: #04ac8c ;}
 
 /* Logo container */
 .navbar-brand {
-display: flex;
-align-items: center;
-margin-left: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    background: transparent;
+    text-decoration: none; 
+
+}
+
+/* Logo image */
+.logo-img {
+    max-height: 90px;
+    width: auto;
+    background-color: transparent;
+    border: none; 
+}
+
+/* Remove hover effects for the logo link */
+.navbar-brand:hover {
+    color: inherit; 
+    background-color: transparent;
+    box-shadow: none;
 }
 
 /* Main navigation styling */
@@ -301,7 +312,7 @@ pointer-events: none;
 }
 
 .main-nav > ul > li > a { 
-color: #000;
+color: #fff;
 display: block;
 padding: 10px 20px;
 text-decoration: none;
