@@ -388,6 +388,11 @@ pointer-events: none;
 .mob-btn {display: none;}
 }
 
+.btn{
+    background-color: #04ac8c;
+    color: #fff;
+}
+
 
 /* Responsividade para telas menores */
 @media only screen and (max-width: 1199px) {
