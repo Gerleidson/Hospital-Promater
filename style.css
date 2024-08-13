@@ -54,16 +54,18 @@ position: relative;
 
 .video-container {
     position: absolute;
-    top: 20%; 
-    right: 7%; 
+    top: 18%; 
+    right: 5%; 
     width: 40%; 
     z-index: 10;
 }
 
 .video-container video {
-    width: 100%;
+    width: 95%;
     height: auto;
     border-radius: 5px;
+    border: #fff;
+
 }
 
 .logo-img {
@@ -289,6 +291,21 @@ margin: 0 auto;
 
 .exam-card { margin-bottom: 20px;}
 
+/* Estilo para o botão WhatsApp */
+#robbu-whatsapp-button {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  /* Opcional: Estilo do tooltip se necessário */
+  .rwb-tooltip {
+    display: none; 
+  }
+  
+
+  
 
 /* Footer*/
 footer {
