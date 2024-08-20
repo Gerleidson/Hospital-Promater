@@ -38,34 +38,7 @@ margin-top: 0;
 margin-top: 100px;
 }
 
-/*banner*/
-.banner {
-width: 100%; 
-height: 520px; 
-overflow: hidden; 
-position: relative; 
-}
-
-.banner img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.video-container {
-    position: absolute;
-    top: 10%; 
-    right: 10%; 
-    width: 37%; 
-    z-index: 10;
-}
-
-.video-container video {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
+/*banners convenios*/
 .img-border {
 border: 2px solid #04ac8c;
 border-radius: 4px;       
@@ -141,9 +114,9 @@ justify-content: space-around;
 transition: background-color 0.10s; 
 }
 
-/* Estilo para a navbar quando a página é rolada */
+/* Estilo para a navbar quando a página é rolada 
 .navbar.scrolled {
-background-color: #04ac8c ;}
+background-color: #04ac8c ;}*/
 
 /* Logo container */
 .navbar-brand {
@@ -152,7 +125,6 @@ background-color: #04ac8c ;}
     margin-left: 50px;
     background: transparent;
     text-decoration: none; 
-
 }
 
 /* Logo image */
@@ -219,16 +191,6 @@ height: 400px;
 margin: 0 auto;
 }
 
-.home-page .card { background-color: #04ac8c;}
-.home-page .card-title{ color: #fff;}
-.home-page .card-text{ color: #fff;}
-.noticias .card{ background-color: #fff;}
-.noticias .card-title {color: #000;}
-.noticias .card-text { color: #000;}
-
-.exam-card { margin-bottom: 20px;}
-
-
 /* Footer*/
 footer {
 background-color: transparent; 
@@ -268,6 +230,19 @@ position: relative;
 z-index: 2;
 }
 
+/* Estilo para o botão WhatsApp */
+#robbu-whatsapp-button {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  /* Opcional: Estilo do tooltip se necessário */
+  .rwb-tooltip {
+    display: none; 
+  }
+
 
 
 /* Responsividade telas maiores*/
@@ -284,14 +259,15 @@ background-color: transparent;
 }
 
 .main-nav > ul {
-display: flex;
-justify-content: center; 
-margin: 0;
-}
+    display: flex;
+    justify-content: right; 
+    padding-right: 22%;
+    margin: 0;
+    }
 
 .main-nav > ul > li {
 display: inline-block;
-position: relative;
+margin-right: 20px;
 }
 
 .main-nav > ul > li:last-child {

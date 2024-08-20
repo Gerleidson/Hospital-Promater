@@ -9,9 +9,9 @@
         <meta name="robots" content="index, follow" />
         <title>Hospital Promater</title>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Droid+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
         <link rel="stylesheet" href="style.css" />
 
@@ -162,48 +162,48 @@
                         <div class="grid-wrapper">
                             <a href="https://api.whatsapp.com/send?phone=5571996207149&text=Olá,%20como%20posso%20ajudar?" class="botao-servico">
                                 <div class="card h-100">
-                                    <img src="img/agendarexames.png" class="card-img-top" alt="Option 1" />
+                                    <img src="img/agendarexames.png" class="card-img-top" alt="Option 1" /> </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Agendamento de exames</h5>
                                         <p class="card-text">Agende seus exames de forma rápida. Oferecemos uma ampla variedade de especialidades médicas e horários flexíveis para atender às suas necessidades.</p>
                                     </div>
                                 </div>
-                            </a>
+                            
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="grid-wrapper">
                             <a href="https://www.labchecap.com.br/resultado-de-exames" class="botao-servico">
                                 <div class="card h-100">
-                                    <img src="img/resultado.png" class="card-img-top" alt="Option 2" />
+                                    <img src="img/resultado.png" class="card-img-top" alt="Option 2" />  </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Resultado de exames</h5>
                                         <p class="card-text">Consulte seus resultados de exames de forma rápida e segura através de nosso portal online.</p>
                                     </div>
                                 </div>
-                            </a>
+                        
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="grid-wrapper">
                             <a href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true" class="botao-servico">
                                 <div class="card h-100">
-                                    <img src="img/pesquisa.png" class="card-img-top" alt="Option 3" />
+                                    <img src="img/pesquisa.png" class="card-img-top" alt="Option 3" /> </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Pesquisa de satisfação</h5>
                                         <p class="card-text">Sua opinião é muito importante para nós! Participe de nossa pesquisa de satisfação e nos ajude a melhorar nossos serviços.</p>
                                     </div>
                                 </div>
-                            </a>
+                           
                         </div>
                     </div>
                 </div>
             </div>
-
+                
             <!-- Banner -->
             <div class="banner">
                 <a href="#" target="_blank">
-                    <img src="img/banner1.png" alt="Banner" class="img-fluid" />
+                    <img src="img/banner.png" alt="Banner" class="img-fluid" />
                 </a>
                 <div class="video-container">
                     <video controls>
@@ -222,7 +222,7 @@
                     <!-- Notícia 1 -->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="videosnoticias/noticia1.mp4" target="_blank">
+                            <a href="#" data-toggle="modal" data-target="#videoModal" data-video="videosnoticias/noticia1.mp4">
                                 <img src="img/serviços.png" alt="Notícia 1" class="img-fluid w-100" />
                             </a>
                             <div class="card-body">
@@ -231,11 +231,11 @@
                             </div>
                         </div>
                     </div>
-
+            
                     <!-- Notícia 2 -->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="videosnoticias/noticia2.mp4" target="_blank">
+                            <a href="#" data-toggle="modal" data-target="#videoModal" data-video="videosnoticias/noticia2.mp4">
                                 <img src="img/dio.png" alt="Notícia 2" class="img-fluid w-100" />
                             </a>
                             <div class="card-body">
@@ -244,11 +244,11 @@
                             </div>
                         </div>
                     </div>
-
+            
                     <!-- Notícia 3 -->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="videosnoticias/noticia3.mp4" target="_blank">
+                            <a href="#" data-toggle="modal" data-target="#videoModal" data-video="videosnoticias/noticia3.mp4">
                                 <img src="img/maternidade.png" alt="Notícia 3" class="img-fluid w-100" />
                             </a>
                             <div class="card-body">
@@ -260,6 +260,28 @@
                 </div>
                 <a href="noticias.html" class="btn btn-3d">Mais Notícias</a>
             </div>
+            
+            <!-- Modal para exibir o vídeo -->
+            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="videoModalLabel">Notícia em Vídeo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video id="modalVideo" class="embed-responsive-item" controls>
+                                    <source src="" type="video/mp4">
+                                    Seu navegador não suporta o elemento de vídeo.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </main>
 
         <!-- Onde Estamos -->
@@ -378,9 +400,15 @@
                 </a>
             </div>
 
+             <!-- Botão Voltar ao Topo -->
+            <button id="scrollToTopBtn" class="btn btn-primary">
+                <i class="fa fa-arrow-up"></i>
+            </button>
+
             <!-- Rodapé com Direitos Autorais -->
             <div class="mb-2 text-center p-3" style="color: black;">
-                © 2024 HOSPITAL PROMATER | TODOS OS DIREITOS RESERVADOS
+              <p>&copy; 2024 Hospital Promater | Todos os direitos reservados.</p>
+
             </div>
         </footer>
 
@@ -425,26 +453,27 @@
                 });
             });
 
-            jQuery(document).ready(function () {
-                // Exibe ou oculta o botão
-                jQuery(window).scroll(function () {
-                    if (jQuery(this).scrollTop() > 200) {
-                        jQuery(".voltar-ao-topo").fadeIn(200);
-                    } else {
-                        jQuery(".voltar-ao-topo").fadeOut(200);
-                    }
+            //JavaScript para trocar o vídeo no modal
+                $('#videoModal').on('show.bs.modal', function (event) {
+                    var button = $(event.relatedTarget); // Botão que acionou o modal
+                    var videoSrc = button.data('video'); // Extrai o vídeo do atributo data-video
+                    var modal = $(this);
+                    modal.find('#modalVideo source').attr('src', videoSrc);
+                    modal.find('#modalVideo')[0].load();
                 });
-
-                // Faz animação para subir
-                jQuery(".voltar-ao-topo").click(function (event) {
-                    event.preventDefault();
-                    jQuery("html, body").animate({ scrollTop: 0 }, 300);
+            
+                $('#videoModal').on('hide.bs.modal', function (event) {
+                    var modal = $(this);
+                    modal.find('#modalVideo')[0].pause();
+                    modal.find('#modalVideo source').attr('src', '');
                 });
-            });
+                
         </script>
 
         <script src="script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

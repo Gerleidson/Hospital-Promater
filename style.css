@@ -5,7 +5,7 @@ padding: 0;
 box-sizing: border-box;
 }
 
-body { font-family: 'SkolaSans-Regular', sans-serif;}
+body { font-family: 'Droid Sans', sans-serif;}
 
 header{
 position: fixed; 
@@ -14,7 +14,6 @@ left: 0;
 width: 100%; 
 z-index: 1000; 
 padding: 0 0;
-
 }               
 
 header a:hover{
@@ -54,14 +53,14 @@ position: relative;
 
 .video-container {
     position: absolute;
-    top: 18%; 
-    right: 5%; 
+    top: 5%; 
+    right: 3%; 
     width: 40%; 
     z-index: 10;
 }
 
 .video-container video {
-    width: 95%;
+    width: 80%;
     height: auto;
     border-radius: 5px;
     border: #fff;
@@ -82,6 +81,13 @@ width: 120px;
 height: auto;           
 }
 
+/* Remove hover effects for the logo link */
+.navbar-brand:hover {
+    color: inherit; 
+    background-color: transparent;
+    box-shadow: none;
+}
+
 /* Espaçamento entre as imagens */
 .list-unstyled > li { margin-right: 15px; }
 
@@ -100,6 +106,7 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 width: 100px;
 height: auto;
 }
+
 .table-logo td {
 text-align: center;
 vertical-align: middle;
@@ -137,9 +144,6 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 transform: translateY(-2px);
 }
 
-.href{color: rgb(0, 0, 255);}
-
-
 /* Navbar container */
 .navbar {
 background-color: transparent; 
@@ -152,7 +156,13 @@ transition: background-color 0.10s;
 
 /* Estilo para a navbar quando a página é rolada */
 .navbar.scrolled {
-background-color: #04ac8c ;}
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+    background: url('img/1.png') no-repeat 100% 100%;
+    background-size: 100% auto;
+}
 
 /* Logo container */
 .navbar-brand {
@@ -165,7 +175,7 @@ margin-left: 50px;
 .main-nav {
 flex: 1;
 text-align: left;
-align-items: center;
+align-items: right;
 background-color: transparent;
 }
 
@@ -304,8 +314,28 @@ margin: 0 auto;
     display: none; 
   }
   
+  /* botao voltar ao top */
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Torna o botão circular */
+    font-size: 24px;
+    text-align: center;
+    z-index: 1000;
+    display: none; /* Inicialmente escondido */
+    background-color: #ff0000; /* Cor de fundo */
+    border: none; /* Remove a borda padrão */
+    color: #fff; /* Cor da seta */
+    cursor: pointer; /* Cursor de ponteiro */
+}
 
-  
+#scrollToTopBtn i {
+    vertical-align: middle; /* Alinha verticalmente o ícone */
+}
+
 
 /* Footer*/
 footer {
@@ -363,13 +393,14 @@ background-color: transparent;
 
 .main-nav > ul {
 display: flex;
-justify-content: center; 
+justify-content: right; 
+padding-right: 22%;
 margin: 0;
 }
 
 .main-nav > ul > li {
 display: inline-block;
-position: relative;
+margin-right: 20px;
 }
 
 .main-nav > ul > li:last-child {

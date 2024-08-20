@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-// Função para exibir uma mensagem quando a página é carregada
+// Função para exibir uma mensagem quando a página é carregada.......................
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Página carregada e o script.js está funcionando!');
     // Adicione outras funcionalidades aqui
@@ -129,9 +129,9 @@ function toggleInstruction(id) {
 
 
     let slides = document.querySelectorAll('.slideshow');
-let dots = document.querySelectorAll('.dot');
-let slideIndex = 1;
-let timeoutID;
+    let dots = document.querySelectorAll('.dot');
+    let slideIndex = 1;
+    let timeoutID;
 
 const showSlides = (n) => {
     let i;
@@ -202,91 +202,24 @@ document.addEventListener('DOMContentLoaded', function() {
       document.body.classList.remove('show-menu');
     });
   });
-  
-// Função para buscar e exibir o número total de usuários
-async function loadTotalUsers() {
-    try {
-        const response = await fetch('/api/dashboard/total-usuarios');
-        const data = await response.json();
-        document.getElementById('total-users').textContent = data.total;
-    } catch (error) {
-        console.error('Erro ao carregar o total de usuários:', error);
-    }
-}
 
-// Função para buscar e exibir o número total de agendamentos
-async function loadTotalAppointments() {
-    try {
-        const response = await fetch('/api/dashboard/total-agendamentos');
-        const data = await response.json();
-        document.getElementById('total-appointments').textContent = data.total;
-    } catch (error) {
-        console.error('Erro ao carregar o total de agendamentos:', error);
-    }
-}
+  document.addEventListener('DOMContentLoaded', function() {
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
-// Função para carregar e exibir um gráfico de agendamentos por mês
-async function loadAppointmentsChart() {
-    try {
-        const response = await fetch('/api/dashboard/agendamentos-mensal');
-        const data = await response.json();
+    // Exibe o botão quando a rolagem for maior que 100px
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 1500) {
+            scrollToTopBtn.style.display = 'block';
+        } else {
+            scrollToTopBtn.style.display = 'none';
+        }
+    });
 
-        const ctx = document.getElementById('appointmentsChart').getContext('2d');
-        new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: data.meses,  // Supondo que o backend retorna um array de meses
-                datasets: [{
-                    label: 'Agendamentos por Mês',
-                    data: data.total,  // Supondo que o backend retorna um array com o total de agendamentos por mês
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    fill: true
-                }]
-            },
-            options: {
-                responsive: true,
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
+    // Rola para o topo quando o botão é clicado
+    scrollToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
         });
-    } catch (error) {
-        console.error('Erro ao carregar o gráfico de agendamentos:', error);
-    }
-}
-
-// Função para carregar e exibir dados em uma tabela
-async function loadRecentAppointments() {
-    try {
-        const response = await fetch('/api/dashboard/recent-appointments');
-        const data = await response.json();
-
-        const tableBody = document.getElementById('recent-appointments-table-body');
-        tableBody.innerHTML = '';  // Limpa a tabela
-
-        data.forEach(appointment => {
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>${appointment.date}</td>
-                <td>${appointment.patientName}</td>
-                <td>${appointment.service}</td>
-                <td>${appointment.status}</td>
-            `;
-            tableBody.appendChild(row);
-        });
-    } catch (error) {
-        console.error('Erro ao carregar agendamentos recentes:', error);
-    }
-}
-
-// Inicializa o dashboard ao carregar a página
-document.addEventListener('DOMContentLoaded', function() {
-    loadTotalUsers();
-    loadTotalAppointments();
-    loadAppointmentsChart();
-    loadRecentAppointments();
+    });
 });
-
