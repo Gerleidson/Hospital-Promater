@@ -9,14 +9,11 @@
     <meta name="robots" content="index, follow" />
     <title>Dashboard - Hospital Promater</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=SkolaSans-Regular:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="stylePaginas.css">
-
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  
 </head>
 <body>
     <header>
@@ -33,6 +30,7 @@
                     <li><a href="index.html" title="Home">INICIO</a></li>
                     <li><a href="#">A PROMATER</a>
                         <ul>
+                            <!-- Submenus -->
                             <li><a href="#" title="Institucional">Institucional</a>
                                 <ul>
                                     <li><a href="quemSomos.html" title="Quem Somos">Quem Somos</a></li>
@@ -55,7 +53,6 @@
                             <li><a href="#" title="Laboratorial">Laboratorial</a>
                                 <ul>
                                     <li><a href="https://www.labchecap.com.br/resultado-de-exames" title="Resultado de exames">Resultado de exames</a></li>
-                                   <!-- <li><a href="instrucoesExames.html" title="Instruções de exame">Instruções de exames</a></li>  -->
                                     <li><a href="parceriaLabchecap.html" title="Parceria Labchecap">Parceria Labchecap</a></li>
                                     <li><a href="coletaDomiciliar.html" title="Coleta domiciliar">Coleta domiciliar</a></li>
                                 </ul>
@@ -71,8 +68,7 @@
                                 </ul>
                             </li>
                             <li><a href="exames.html" title="Exames de imagem">Exames de imagem</a></li>
-                            <li><a href="convenio.html" title="Convenio">Convênios</a>
-                            </li>
+                            <li><a href="convenio.html" title="Convenio">Convênios</a></li>
                         </ul>
                     </li>
                     <li><a href="#">CONTATO</a>
@@ -95,144 +91,79 @@
             <div class="overlay"></div>
         </nav>
     </header>
-    
-    <main class="pagina">
-        <div class="container-fluid mt-4">
-            <div class="row">
-                <!-- Sidebar -->
-                <nav id="sidebar" class="col-md-2 bg-info sidebar">
-                    <div class="sidebar-sticky">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">
-                                    Dashboard
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Consultas Agendadas
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Pacientes
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Relatórios
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Configurações
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-
-                <!-- Main content -->
-                <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4">
-                    <br>
-                    <h2>Bem-vindo ao Dashboard</h2>
-                    <p>Aqui você pode visualizar e gerenciar todas as operações do hospital.</p>
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <div class="card border-primary">
-                                <div class="card-header bg-primary text-white">
-                                    Consultas Agendadas
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">Visualize e gerencie todas as consultas agendadas.</p>
-                                    <a href="#" class="btn btn-primary">Ver Consultas</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card border-success">
-                                <div class="card-header bg-success text-white">
-                                    Pacientes
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">Gerencie o cadastro e informações dos pacientes.</p>
-                                    <a href="#" class="btn btn-success">Ver Pacientes</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card border-info">
-                                <div class="card-header bg-info text-white">
-                                    Relatórios
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">Acesse e gere relatórios de desempenho e estatísticas.</p>
-                                    <a href="#" class="btn btn-info">Ver Relatórios</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card border-warning">
-                                <div class="card-header bg-warning text-dark">
-                                    Configurações
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">Ajuste as configurações do sistema conforme necessário.</p>
-                                    <a href="#" class="btn btn-warning">Acessar Configurações</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Seção de Gerenciamento de Notícias -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card border-secondary">
-                                <div class="card-header bg-secondary text-white">
-                                    Gerenciamento de Notícias
-                                </div>
-                                <div class="card-body">
-                                    <button class="btn btn-secondary mb-3" data-toggle="modal" data-target="#addNewsModal">Adicionar Notícia</button>
-
-                                    <!-- Lista de Notícias -->
-                                    <div id="newsList">
-                                        <!-- As notícias serão adicionadas aqui dinamicamente -->
-                                    </div>
-                                </div>
+        <main>
+            <div class="container mt-4">
+                <div class="row">
+                    <!-- Número de Médicos -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-white bg-primary">
+                            <div class="card-body">
+                                <h5 class="card-title">Número de Médicos</h5>
+                                <h2>150</h2>
                             </div>
                         </div>
                     </div>
-                </main>
-            </div>
-        </div>
-    </main>
 
-    <!-- Modal Adicionar Notícia -->
-    <div class="modal fade" id="addNewsModal" tabindex="-1" role="dialog" aria-labelledby="addNewsModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="addNewsModalLabel">Adicionar Notícia</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <!-- Pacientes Atendidos -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-white bg-success">
+                            <div class="card-body">
+                                <h5 class="card-title">Pacientes Atendidos</h5>
+                                <h2>1200</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pacientes Pendentes -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-white bg-warning">
+                            <div class="card-body">
+                                <h5 class="card-title">Pacientes Pendentes</h5>
+                                <h2>300</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Consultas Agendadas -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-white bg-info">
+                            <div class="card-body">
+                                <h5 class="card-title">Consultas Agendadas</h5>
+                                <h2>450</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <form id="addNewsForm">
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label for="newsTitle">Título</label>
-                            <input type="text" class="form-control" id="newsTitle" placeholder="Título da notícia" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="newsContent">Conteúdo</label>
-                            <textarea class="form-control" id="newsContent" rows="3" placeholder="Conteúdo da notícia" required></textarea>
+
+                <!-- Gráficos e Relatório de Satisfação -->
+                <div class="row">
+                    <div class="col-md-8 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Pesquisa de Satisfação</h5>
+                                <!-- Aqui você pode incluir um gráfico usando uma biblioteca como Chart.js -->
+                                <canvas id="satisfactionChart"></canvas>
+                            </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="submit" class="btn btn-primary">Adicionar Notícia</button>
+                </div>
+
+                <!-- Relatórios e Configurações do Site -->
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <button class="btn btn-secondary w-100 p-4">Relatórios</button>
                     </div>
-                </form>
+
+                    <div class="col-md-6 mb-3">
+                        <button class="btn btn-secondary w-100 p-4">Configurações do Site</button>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <button class="btn btn-secondary w-100 p-4">Gerenciar Notícias</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </main>
 
     <!-- Footer -->
     <footer class="text-center text-lg-start mt-5 text-light footer-background">
@@ -316,76 +247,40 @@
             </div>
         </div>
 
-        <!-- Botão WhatsApp -->
-        <div class="text-center my-3">
-            <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
-                <div class="rwb-tooltip">Agende pelo Whatsapp</div>
-                <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg" alt="WhatsApp">
-            </a>
-        </div>
-        
         <!-- Rodapé com Direitos Autorais -->
         <div class="mb-2 text-center p-3" style="color: black;">
             <p>&copy; 2024 Hospital Promater | Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <script>
-        
-        //Menu
-        $(".main-nav ul li:has(ul)").addClass("submenu");
-        $(".main-nav ul li:has(ul)").append("<i></i>");
-        $(".main-nav ul i").click(function() {
-          $(this)
-            .parent("li")
-            .toggleClass("open");
-          $(this)
-            .parent("li")
-            .children("ul")
-            .slideToggle();
-        });
-    
-        //Menu Mobile
-        $(".mob-btn").click(function() {
-          if (!$("html").hasClass("show-menu")) {
-            $("html").addClass("show-menu");
-          } else {
-            $("html").removeClass("show-menu");
-          }
-        });
-    
-        $(".overlay").click(function() {
-          if ($("html").hasClass("show-menu")) {
-            $("html").removeClass("show-menu");
-          }
-        });
-    
-        //Aparecer addClass
-        $(".first ul")
-          .clone()
-          .prependTo(".main-nav")
-          .addClass("desk-hide");
-        $(".last ul")
-          .clone()
-          .appendTo(".main-nav")
-          .addClass("desk-hide");
-    
-        document.addEventListener('DOMContentLoaded', function () {
-        const navbar = document.querySelector('.navbar');
 
-        window.addEventListener('scroll', function () {
-        if (window.scrollY > 50) { // Ajuste o valor conforme necessário
-        navbar.classList.add('scrolled');
-        } else {
-        navbar.classList.remove('scrolled');
-        }
-        });
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Exemplo de inicialização de gráfico com Chart.js
+        const ctx = document.getElementById('satisfactionChart').getContext('2d');
+        const satisfactionChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Excelente', 'Bom', 'Regular', 'Ruim', 'Péssimo'],
+                datasets: [{
+                    label: 'Nível de Satisfação',
+                    data: [50, 30, 10, 5, 5],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
         });
     </script>
-
-    <script src="script.js"></script>   
-    <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-
 </body>
 </html>

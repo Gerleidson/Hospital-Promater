@@ -1,119 +1,36 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
 /* Resetando margens e preenchimentos */
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {margin: 0;padding: 0;box-sizing: border-box;}
+
+header{position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 0 0; background: linear-gradient(0deg, rgba(4,172,140,0) 0%, rgba(4, 172, 141, 0) 100%);
 }
 
-body { font-family: 'Droid Sans', sans-serif;}
+header a:hover{color: #04ac8c; background-color: #fff; border-radius: 5px; transition: 0.10s;}  
 
-header{
-position: fixed; 
-top: 0; 
-left: 0;
-width: 100%; 
-z-index: 1000; 
-padding: 0 0;
-}               
-
-header a:hover{
-color: #04ac8c;
-background-color: #fff;
-border-radius: 5px;
-transition: 0.10s;
-}  
-
-main {
-background-color: #fff; 
-margin-top: 0px ; 
-}
+main {background-color: #ffffff; margin-top: 0px ; }
 
 /*Main da pagina home*/
-
-.home-page {
-margin-top: 0;
-}
-
-/*Main da outras paginas*/
-.pagina {
-margin-top: 100px;
-}
+.home-page {margin-top: 0;}
 
 /*banner*/
-.banner {
-overflow: hidden; 
-position: relative; 
-}
+.banner {overflow: hidden; position: relative; }
+.banner img { display: block; width: 100%; height: 50%;}
 
-.banner img {
-    display: block;
-    width: 100%;
-    height: 50%;
-}
+.video-container {position: absolute;top: 5%; right: 3%; width: 40%; z-index: 10;}
+.video-container video {width: 80%; height: auto; border-radius: 5px; border: #fff;}
 
-.video-container {
-    position: absolute;
-    top: 5%; 
-    right: 3%; 
-    width: 40%; 
-    z-index: 10;
-}
-
-.video-container video {
-    width: 80%;
-    height: auto;
-    border-radius: 5px;
-    border: #fff;
-
-}
-
-.logo-img {
-max-height: 90px;
-width: auto;
-background-color: transparent;
-}
-
-.img-border {
-border: 2px solid #04ac8c;
-border-radius: 4px;       
-padding: 4px;            
-width: 120px;             
-height: auto;           
-}
-
-/* Remove hover effects for the logo link */
-.navbar-brand:hover {
-    color: inherit; 
-    background-color: transparent;
-    box-shadow: none;
-}
+.logo-img {max-height: 90px; width: auto; background-color: transparent;}
+.img-border {border: 2px solid #04ac8c; border-radius: 4px; padding: 4px; width: 120px; height: auto;}
 
 /* Espaçamento entre as imagens */
 .list-unstyled > li { margin-right: 15px; }
 
-a {
-color: #000;
-text-decoration: none; 
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+a {color: #000; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease;}
+a:hover {transform: scale(1.05); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);}
 
-a:hover {
-transform: scale(1.05);
-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-}
-
-.table-logo img {
-width: 100px;
-height: auto;
-}
-
-.table-logo td {
-text-align: center;
-vertical-align: middle;
-}
-
-.sidebar { padding: 20px;}
-.sidebar .nav-link { font-weight: normal;}
+.table-logo img {width: 100px; height: auto;}
+.table-logo td {text-align: center; vertical-align: middle;}
 
 .btn-outline-success{
 background-color: #fff;
@@ -139,74 +56,39 @@ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.btn-3d:hover {
-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
-transform: translateY(-2px);
-}
+.btn-3d:hover {box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); transform: translateY(-2px);}
 
 /* Navbar container */
 .navbar {
-background-color: transparent; 
-height: 100%; 
 display: flex;
-align-items: center; 
-justify-content: space-around;
-transition: background-color 0.10s; 
+justify-content: space-between;
+align-items: center;
+background-color: transparent;
+width: 100%;
+padding: 0 20px;
 }
 
 /* Estilo para a navbar quando a página é rolada */
 .navbar.scrolled {
-    top: 0; 
-    left: 0;
-    width: 100%; 
-    z-index: 1000; 
-    background: url('img/1.png') no-repeat 100% 100%;
-    background-size: 100% auto;
+top: 0; 
+left: 0;
+width: 100%; 
+z-index: 1000; 
+background: url('img/1.png') no-repeat 100% 100%;
+background-size: 100% auto;
 }
 
 /* Logo container */
-.navbar-brand {
-display: flex;
-align-items: center;
-margin-left: 50px;
-}
-
-/* Main navigation styling */
-.main-nav {
-flex: 1;
-text-align: left;
-align-items: right;
-background-color: transparent;
-}
-
-.main-nav ul {
-list-style: none;
-padding: 0;
-margin: 0;
-display: inline-block;
-background: transparent; 
-transition: background-color 0.10s; 
-}
-
-.main-nav li {
-display: inline-block;
-color: #fff;
-}
-
-.main-nav a { text-decoration: none;}
+.navbar-brand {display: flex; align-items: center; margin-left: 50px;}
+/* Remove hover effects for the logo link */
+.navbar-brand:hover {color: inherit; background-color: transparent;box-shadow: none;}
 
 /* Carousel */
-.carousel {
-position: relative;
-width: 100%;
-overflow: hidden;
-}
+.carousel .carousel-inner {position: relative; width: 100%; overflow: hidden;}
+.carousel-item.active {display: block;}
 
-.carousel-inner {
-position: relative;
-width: 100%;
-overflow: hidden;
-}
+/* Esconder os indicadores do carrossel */
+.carousel-indicators {display: none;}
 
 /* Adicionar gradiente de opacidade nos cantos */
 .carousel::before {
@@ -216,70 +98,57 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background: radial-gradient(circle, rgba(4,172,140,0) 65%, rgba(4,172,140,1) 100%);
+background: radial-gradient(circle, rgba(4,172,140,0) 78%, rgba(4, 172, 141, 0) 100%);
 pointer-events: none; 
 z-index: 1; 
-}
-
-.carousel-item.active {
-display: block;
 }
 
 /* Estilo para os botões do carrossel */
 .carousel-control-prev,
 .carousel-control-next {
-    position: absolute;
-    top: 50%; 
-    right: 70px; 
-    width: 50px; 
-    height: 50px; 
-    background-color: #003400; 
-    color: #fff; 
-    border-radius: 10%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000; 
+position: absolute;
+top: 50%; 
+right: 100px; 
+width: 50px; 
+height: 50px; 
+background-color: #003400; 
+color: #fff; 
+border-radius: 10%; 
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 1000; 
 }
 
 /* Estilo para os ícones dos botões */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: transparent; 
-    background-size: 100%; 
-    width: 20px; 
-    height: 20px; 
-    background-repeat: no-repeat;
-    color: #fff; 
+.carousel-control-prev-icon .carousel-control-next-icon {
+background-color: transparent; 
+background-size: 100%; 
+width: 20px; 
+height: 20px; 
+background-repeat: no-repeat;
+color: #fff; 
 }
 
 .carousel-container {
-    position: relative;
-    border: 0; 
-    border-bottom: 8px solid #04ac8c;
-    border-radius: 0;
-    overflow: hidden;
-    clip-path: polygon(0 0, 100% 0, 100% 10%, 90% 100%, 0 100%);
+position: relative;
+border: 0; 
+border-bottom: 8px solid #04ac8c;
+border-radius: 0;
+overflow: hidden;
+clip-path: polygon(0 0, 100% 0, 100% 10%, 90% 100%, 0 100%);
 }
 
-/* Esconder os indicadores do carrossel */
-.carousel-indicators {
-    display: none;
-}
+/* Main navigation styling */
+.main-nav {flex: 1; text-align: left; align-items: center; background-color: transparent;}
+.main-nav li {display: inline-block; color: #fff;}
+.main-nav a { text-decoration: none;}
+.main-nav ul {list-style: none; padding: 0; margin: 0; display: inline-block; background: transparent; transition: background-color 0.10s; }
 
 /* Cards */
-.card {
-border-radius: 8px; 
-overflow: hidden; 
-height: 100%;
-background-color: #fff;
-}
-
-.card:hover {
-transform: scale(1.05);
-transition: transform 0.3s;
-cursor: pointer;
-}
+.card {border-radius: 8px; overflow: hidden; height: 100%; background-color: #fff;}
+.card:hover {transform: scale(1.05); transition: transform 0.3s; cursor: pointer;}
+.exam-card { margin-bottom: 20px;}
 
 .grid-wrapper {
 border: 5px solid #04ac8c; 
@@ -299,200 +168,76 @@ margin: 0 auto;
 .noticias .card-title {color: #000;}
 .noticias .card-text { color: #000;}
 
-.exam-card { margin-bottom: 20px;}
 
 /* Estilo para o botão WhatsApp */
-#robbu-whatsapp-button {
-    position: fixed;
-    bottom: 100px;
-    right: 20px;
-    z-index: 9999;
-  }
-  
-  /* Opcional: Estilo do tooltip se necessário */
-  .rwb-tooltip {
-    display: none; 
-  }
-  
-  /* botao voltar ao top */
-  #scrollToTopBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%; /* Torna o botão circular */
-    font-size: 24px;
-    text-align: center;
-    z-index: 1000;
-    display: none; /* Inicialmente escondido */
-    background-color: #ff0000; /* Cor de fundo */
-    border: none; /* Remove a borda padrão */
-    color: #fff; /* Cor da seta */
-    cursor: pointer; /* Cursor de ponteiro */
+#robbu-whatsapp-button {position: fixed; bottom: 100px;right: 20px;  z-index: 9999;}
+
+/* botao voltar ao top */
+#scrollToTopBtn {
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 60px;
+height: 60px;
+border-radius: 50%; /* Torna o botão circular */
+font-size: 24px;
+text-align: center;
+z-index: 1000;
+display: none; /* Inicialmente escondido */
+background-color: #0004ff; /* Cor de fundo */
+border: none; /* Remove a borda padrão */
+color: #fff; /* Cor da seta */
+cursor: pointer; /* Cursor de ponteiro */
 }
 
-#scrollToTopBtn i {
-    vertical-align: middle; /* Alinha verticalmente o ícone */
-}
-
+#scrollToTopBtn i { vertical-align: middle; }
 
 /* Footer*/
-footer {
-background-color: transparent; 
-padding: 20px 0 0 0; 
-min-height: 100px; 
-text-align: center; 
-}
-
-footer a:hover{
-color: #000;
-border-radius: 15px;
-transition: 0.5s;
-}
-
-.footer-background {
-background: url('img/bg_footer.png') no-repeat center center;
-position: relative;
-color: white;
-background-size: 100%; 
-height: 310px; 
-padding: 20px;
-}
-
-.footer-background::before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(4, 172, 140, 0.8); 
-z-index: 1;
-}
-
-.footer-background > * {
-position: relative;
-z-index: 2;
-}
-
+footer {background-color: transparent; padding: 20px 0 0 0; min-height: 100px; text-align: center; }
+footer a:hover{color: #000;border-radius: 15px;transition: 0.5s;}
+.footer-background {background: url('img/bg_footer.png') no-repeat center center;position: relative;color: white;background-size: 100%; height: 310px; padding: 20px;}
+.footer-background::before {content: ""; position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(4, 172, 140, 0.8); z-index: 1;}
+.footer-background > * {position: relative;z-index: 2;}
 
 
 /* Responsividade telas maiores*/
 @media only screen and (min-width: 1200px) {
 
-.desk-hide {
-display: none;
-}
+.desk-hide {display: none;}
 
 .main-nav {
-font-size: 17px;
-justify-content: center;
-background-color: transparent;
+font-size: 17px; /* Tamanho da fonte */
+display: flex; /* Usa flexbox para alinhamento */
+justify-content: right; /* Centraliza os itens no container */
+align-items: center; /* Centraliza verticalmente os itens */
+padding: 10px 20px; /* Ajusta o preenchimento para um design mais espaçado */
+margin: 0 auto; /* Centraliza a navegação horizontalmente */
+width: 40%; /* Largura proporcional */
+height: 70px; /* Mantém a altura da navegação */
+border-radius: 5px; /* Bordas arredondadas */
+text-align: left; /* Alinha o conteúdo ao centro */
+position: fixed; /* Fixa a navegação no topo */
+right: 400px; /* Distância da borda direita */
+z-index: 1000; /* Garante que a navegação fique acima de outros elementos */
+transition: background-color 0.3s ease; /* Transição suave para mudanças de cor */
 }
 
-.main-nav > ul {
-display: flex;
-justify-content: right; 
-padding-right: 22%;
-margin: 0;
-}
-
-.main-nav > ul > li {
-display: inline-block;
-margin-right: 20px;
-}
-
-.main-nav > ul > li:last-child {
-margin: 0;
-}
-
-.main-nav > ul > li.submenu:after {
-content: "";
-position: absolute;
-height: 0;
-width: 0;
-border-left: 5px solid transparent;
-border-right: 5px solid transparent;
-border-top: 6px solid #fff;
-right: 7px;
-top: 24px;
-pointer-events: none;
-}
-
-.main-nav > ul > li > a { 
-color: #fff;
-display: block;
-padding: 10px 20px;
-text-decoration: none;
-font-size: 15px;
-}
-
-.main-nav > ul > li:hover > a {
-color: #000;
-background: #fff;
-}
-
-.main-nav > ul > li:hover > ul {
-visibility: visible;
-opacity: 1;
-z-index: 1;
-}
-
-.main-nav > ul > li ul {
-position: absolute;
-margin: 0;
-padding: 0;
-background: #fff;
-width: 250px;
-visibility: hidden;
-opacity: 0;
-font-size: 14px;
-display: block !important;
-}
-
-.main-nav > ul > li ul li {
-display: block;
-border-bottom: 1px solid #000000;
-position: relative;
-}
-
-.main-nav > ul > li ul li:last-child {
-border: 0;
-}
-
-.main-nav > ul > li ul li a {
-padding: 15px 20px;
-display: block;
-text-decoration: none;
-font-size: 15px;
-color: #000;
-}
-
-.main-nav > ul > li ul li:hover > ul {
-visibility: visible;
-opacity: 1;
-left: 250px;
-top: 0;
-}
-
-.main-nav > ul > li ul li:hover > a {
-background: #04ac8c;
-color: #fff;
-}
-
-.main-nav > ul > li ul li.submenu::after {
-content: "";
-position: absolute;
-height: 0;
-width: 0;
-border-bottom: 5px solid transparent;
-border-left: 6px solid #000000;
-border-top: 5px solid transparent;
-right: 11px;
-top: 20px;
-pointer-events: none;
-}
+.main-nav a {color: #fff; text-decoration: none; padding: 0 10px; margin-right: 0; transition: color 0.3s ease; }
+.main-nav a:last-child {margin-right: 0; }
+.main-nav > ul {display: flex; justify-content: right; padding-right: 5px; margin: 0; list-style: none; padding: 10;}
+.main-nav > ul > li {display: inline-block; margin-right: 10px; border: 2px solid #fff; border-radius: 5px; padding: 0; background-color: #04ac8c;}
+.main-nav > ul > li:last-child {margin: 0;}
+.main-nav > ul > li.submenu:after {content: ""; position: absolute; height: 0; width: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; right: 7px; top: 24px; pointer-events: none;}
+.main-nav > ul > li > a {color: #fff; display: block; padding: 10px 20px; text-decoration: none; font-size: 15px;}
+.main-nav > ul > li:hover > a {color: #000; background: #fff;}
+.main-nav > ul > li:hover > ul {visibility: visible; opacity: 1; z-index: 1;}
+.main-nav > ul > li ul {position: absolute; margin: 0; padding: 0; background: #fff; width: 250px; visibility: hidden; opacity: 0; font-size: 14px; display: block !important;}
+.main-nav > ul > li ul li {display: block; border-bottom: 1px solid #000000; position: relative;}
+.main-nav > ul > li ul li:last-child {border: 0;}
+.main-nav > ul > li ul li a {padding: 15px 20px; display: block; text-decoration: none; font-size: 15px; color: #000;}
+.main-nav > ul > li ul li:hover > a {background: #04ac8c;color: #fff;}
+.main-nav > ul > li ul li:hover > ul {visibility: visible; opacity: 1; left: 250px; top: 0;}
+.main-nav > ul > li ul li.submenu::after {content: ""; position: absolute; height: 0; width: 0; border-bottom: 5px solid transparent; border-left: 6px solid #000000; border-top: 5px solid transparent; right: 11px; top: 20px; pointer-events: none;}
 
 .mob-btn {display: none;}
 
@@ -502,62 +247,14 @@ pointer-events: none;
 /* Responsividade para telas menores */
 @media only screen and (max-width: 1199px) {
 
-.main-nav {
-position: fixed;
-width: 250px;
-top: 0;
-right: -250px;
-background: #ffffff;
-height: 100%;
-transition: all ease 0.2s;
-z-index: 1005;
-overflow-y: auto;
-}
-
-.main-nav ul {
-margin: 0;
-padding: 0;
-display: block;
-margin-top: 0px;
-}
-
-.main-nav ul.mnav {
-margin-bottom: 30px;
-}
-
-.main-nav ul li {
-display: block;
-border-bottom: 1px solid #6fa57d;
-position: relative;
-text-transform: capitalize;
-font-size: 15px;
-}
-
+.main-nav {position: fixed; width: 250px; top: 0; right: -250px; background: #ffffff; height: 100%; transition: all ease 0.2s; z-index: 1005; overflow-y: auto;}
+.main-nav ul {margin: 0; padding: 0; display: block; margin-top: 0px;}
+.main-nav ul.mnav {margin-bottom: 30px;}
+.main-nav ul li {display: block; border-bottom: 1px solid #6fa57d; position: relative; text-transform: capitalize; font-size: 15px;}
 .main-nav ul li span { display: none;}
-
-.main-nav ul li a {
-color: #000;
-text-decoration: none;
-font-size: 1em;
-display: block;
-padding: 10px;
-padding-right: 40px;
-}
-
-.main-nav ul li a:hover {
-background-color: #04ac8c;
-color: #ffffff;
-}
-
-.main-nav ul li.submenu i {
-position: absolute;
-width: 43px;
-height: 39px;
-top: 0;
-right: 0;
-cursor: pointer;
-transition: all ease 0.5s;
-}
+.main-nav ul li a {color: #000; text-decoration: none; font-size: 1em; display: block; padding: 10px; padding-right: 40px;}
+.main-nav ul li a:hover {background-color: #04ac8c; color: #ffffff;}
+.main-nav ul li.submenu i {position: absolute;width: 43px;height: 39px;top: 0;right: 0; cursor: pointer; transition: all ease 0.5s;}
 
 .main-nav ul li.submenu i:after {
 content: "";
@@ -572,11 +269,7 @@ top: 20px;
 z-index: 10;
 }
 
-.main-nav ul ul {
-margin: 0;
-display: none;
-}
-
+.main-nav ul ul {margin: 0; display: none;}
 .main-nav ul ul li:last-child { border-bottom: 0;}
 .main-nav ul ul li:first-child { border-top: 1px solid #000;}
 .main-nav ul ul li a { padding-left: 20px;}
@@ -605,22 +298,15 @@ right: 15px;
 top: 23px;
 }
 
-.mob-btn span {
-display: block;
-width: 25px;
-height: 2px;
-border-radius: 1px;
-background: #fff; 
-}
-
+.mob-btn span {display: block; width: 25px; height: 2px; border-radius: 1px; background: #fff;}
 .mob-btn span + span { margin-top: 5px;}
 
 .footer-background {
-    background: url('img/bg_footer_mobile.png') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed; 
-    height: auto;
-    padding: 20px 0; 
+background: url('img/bg_footer_mobile.png') no-repeat center center;
+background-size: cover;
+background-attachment: fixed; 
+height: auto;
+padding: 20px 0; 
 }
 
 }
