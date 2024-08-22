@@ -3,10 +3,8 @@
 /* Resetando margens e preenchimentos */
 * {margin: 0;padding: 0;box-sizing: border-box;}
 
-header{position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 0 0; background: linear-gradient(0deg, rgba(4,172,140,0) 0%, rgba(4, 172, 141, 0) 100%);
-}
-
-header a:hover{color: #04ac8c; background-color: #fff; border-radius: 5px; transition: 0.10s;}  
+header{position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 0 0; background: linear-gradient(0deg, rgba(4,172,140,0) 0%, rgba(4, 172, 141, 0) 100%);}
+header a:hover{color: #344d0e; background-color: #fff; border-radius: 5px; transition: 0.10s;}  
 
 main {background-color: #ffffff; margin-top: 0px ; }
 
@@ -21,7 +19,7 @@ main {background-color: #ffffff; margin-top: 0px ; }
 .video-container video {width: 80%; height: auto; border-radius: 5px; border: #fff;}
 
 .logo-img {max-height: 90px; width: auto; background-color: transparent;}
-.img-border {border: 2px solid #04ac8c; border-radius: 4px; padding: 4px; width: 120px; height: auto;}
+.img-border {border: 2px solid #344d0e; border-radius: 4px; padding: 4px; width: 120px; height: auto;}
 
 /* Espaçamento entre as imagens */
 .list-unstyled > li { margin-right: 15px; }
@@ -32,112 +30,27 @@ a:hover {transform: scale(1.05); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);}
 .table-logo img {width: 100px; height: auto;}
 .table-logo td {text-align: center; vertical-align: middle;}
 
-.btn-outline-success{
-background-color: #fff;
-border:#04ac8c;
-color: #000;
-border-radius: 5px;
-padding: 10px 10px;
-text-decoration: none;
-transition: background-color 0.3s;
-}
-
-.btn-3d {
-display: inline-block;
-padding: 10px 10px;
-font-size: 16px;
-font-weight: bold;
-color: #fff;
-background-color: #04ac8c; 
-border: none;
-border-radius: 5px;
-text-decoration: none;
-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-transition: box-shadow 0.3s, transform 0.3s;
-}
-
-.btn-3d:hover {box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); transform: translateY(-2px);}
+.btn-outline-success{background-color: #fff; border:#344d0e; color: #000; border-radius: 5px; padding: 10px 10px; text-decoration: none; transition: background-color 0.3s;}
+.btn-3d {display: inline-block; padding: 10px 10px; font-size: 16px; font-weight: bold; color: #fff; background-color: #344d0e;  border: none; border-radius: 5px; text-decoration: none; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); transition: box-shadow 0.3s, transform 0.3s;}
+.btn-3d:hover {box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); transform: translateY(-2px);color: #fff}
 
 /* Navbar container */
-.navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: transparent;
-width: 100%;
-padding: 0 20px;
-}
-
-/* Estilo para a navbar quando a página é rolada */
-.navbar.scrolled {
-top: 0; 
-left: 0;
-width: 100%; 
-z-index: 1000; 
-background: url('img/1.png') no-repeat 100% 100%;
-background-size: 100% auto;
-}
+.navbar { display: flex; justify-content: space-between; align-items: center; background-color: transparent; width: 100%; padding: 0 20px;}
+.navbar.scrolled { top: 0; left: 0; width: 100%; z-index: 1000; background: url('img/1.png') no-repeat 100% 100%; background-size: 100% auto;}
 
 /* Logo container */
 .navbar-brand {display: flex; align-items: center; margin-left: 50px;}
-/* Remove hover effects for the logo link */
 .navbar-brand:hover {color: inherit; background-color: transparent;box-shadow: none;}
 
 /* Carousel */
 .carousel .carousel-inner {position: relative; width: 100%; overflow: hidden;}
 .carousel-item.active {display: block;}
-
-/* Esconder os indicadores do carrossel */
 .carousel-indicators {display: none;}
-
-/* Adicionar gradiente de opacidade nos cantos */
-.carousel::before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: radial-gradient(circle, rgba(4,172,140,0) 78%, rgba(4, 172, 141, 0) 100%);
-pointer-events: none; 
-z-index: 1; 
-}
-
-/* Estilo para os botões do carrossel */
+.carousel::before {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, rgba(4,172,140,0) 78%, rgba(4, 172, 141, 0) 100%); pointer-events: none; z-index: 1; }
 .carousel-control-prev,
-.carousel-control-next {
-position: absolute;
-top: 50%; 
-right: 100px; 
-width: 50px; 
-height: 50px; 
-background-color: #003400; 
-color: #fff; 
-border-radius: 10%; 
-display: flex;
-align-items: center;
-justify-content: center;
-z-index: 1000; 
-}
-
-/* Estilo para os ícones dos botões */
-.carousel-control-prev-icon .carousel-control-next-icon {
-background-color: transparent; 
-background-size: 100%; 
-width: 20px; 
-height: 20px; 
-background-repeat: no-repeat;
-color: #fff; 
-}
-
-.carousel-container {
-position: relative;
-border: 0; 
-border-bottom: 8px solid #04ac8c;
-border-radius: 0;
-overflow: hidden;
-clip-path: polygon(0 0, 100% 0, 100% 10%, 90% 100%, 0 100%);
-}
+.carousel-control-next { position: absolute; top: 50%; right: 100px; width: 50px; height: 50px; background-color: #003400; color: #fff; border-radius: 10%; display: flex; align-items: center;justify-content: center;z-index: 1000; }
+.carousel-control-prev-icon .carousel-control-next-icon {background-color: transparent; background-size: 100%; width: 20px; height: 20px; background-repeat: no-repeat; color: #fff; }
+.carousel-container { position: relative; border: 0; border-bottom: 8px solid #344d0e; border-radius: 0; overflow: hidden; clip-path: polygon(0 0, 100% 0, 100% 10%, 90% 100%, 0 100%);}
 
 /* Main navigation styling */
 .main-nav {flex: 1; text-align: left; align-items: center; background-color: transparent;}
@@ -150,53 +63,28 @@ clip-path: polygon(0 0, 100% 0, 100% 10%, 90% 100%, 0 100%);
 .card:hover {transform: scale(1.05); transition: transform 0.3s; cursor: pointer;}
 .exam-card { margin-bottom: 20px;}
 
-.grid-wrapper {
-border: 5px solid #04ac8c; 
-border-radius: 12px; 
-padding: 20px; 
-background-color: #fff; 
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-width: 100%; 
-height: 400px; 
-margin: 0 auto;
-}
+.grid-wrapper {border: 5px solid #344d0e; border-radius: 12px; padding: 20px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 100%; height: 400px;
+margin: 0 auto;}
 
-.home-page .card { background-color: #04ac8c;}
+.home-page .card { background-color: #344d0e;}
 .home-page .card-title{ color: #fff;}
 .home-page .card-text{ color: #fff;}
 .noticias .card{ background-color: #fff;}
 .noticias .card-title {color: #000;}
 .noticias .card-text { color: #000;}
 
-
 /* Estilo para o botão WhatsApp */
 #robbu-whatsapp-button {position: fixed; bottom: 100px;right: 20px;  z-index: 9999;}
 
 /* botao voltar ao top */
-#scrollToTopBtn {
-position: fixed;
-bottom: 20px;
-right: 20px;
-width: 60px;
-height: 60px;
-border-radius: 50%; /* Torna o botão circular */
-font-size: 24px;
-text-align: center;
-z-index: 1000;
-display: none; /* Inicialmente escondido */
-background-color: #0004ff; /* Cor de fundo */
-border: none; /* Remove a borda padrão */
-color: #fff; /* Cor da seta */
-cursor: pointer; /* Cursor de ponteiro */
-}
-
+#scrollToTopBtn {position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; border-radius: 50%; font-size: 24px; text-align: center; z-index: 1000; display: none;  background-color: #0004ff; border: none; color: #fff; cursor: pointer; display: flex; justify-content: center; align-items: center;  }
 #scrollToTopBtn i { vertical-align: middle; }
 
 /* Footer*/
 footer {background-color: transparent; padding: 20px 0 0 0; min-height: 100px; text-align: center; }
 footer a:hover{color: #000;border-radius: 15px;transition: 0.5s;}
 .footer-background {background: url('img/bg_footer.png') no-repeat center center;position: relative;color: white;background-size: 100%; height: 310px; padding: 20px;}
-.footer-background::before {content: ""; position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(4, 172, 140, 0.8); z-index: 1;}
+.footer-background::before {content: ""; position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgb(52, 77, 14, 0.8); z-index: 1;}
 .footer-background > * {position: relative;z-index: 2;}
 
 
@@ -225,7 +113,7 @@ transition: background-color 0.3s ease; /* Transição suave para mudanças de c
 .main-nav a {color: #fff; text-decoration: none; padding: 0 10px; margin-right: 0; transition: color 0.3s ease; }
 .main-nav a:last-child {margin-right: 0; }
 .main-nav > ul {display: flex; justify-content: right; padding-right: 5px; margin: 0; list-style: none; padding: 10;}
-.main-nav > ul > li {display: inline-block; margin-right: 10px; border: 2px solid #fff; border-radius: 5px; padding: 0; background-color: #04ac8c;}
+.main-nav > ul > li {display: inline-block; margin-right: 10px; border: 2px solid #fff; border-radius: 5px; padding: 0; background-color: #344d0e;}
 .main-nav > ul > li:last-child {margin: 0;}
 .main-nav > ul > li.submenu:after {content: ""; position: absolute; height: 0; width: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; right: 7px; top: 24px; pointer-events: none;}
 .main-nav > ul > li > a {color: #fff; display: block; padding: 10px 20px; text-decoration: none; font-size: 15px;}
@@ -235,7 +123,7 @@ transition: background-color 0.3s ease; /* Transição suave para mudanças de c
 .main-nav > ul > li ul li {display: block; border-bottom: 1px solid #000000; position: relative;}
 .main-nav > ul > li ul li:last-child {border: 0;}
 .main-nav > ul > li ul li a {padding: 15px 20px; display: block; text-decoration: none; font-size: 15px; color: #000;}
-.main-nav > ul > li ul li:hover > a {background: #04ac8c;color: #fff;}
+.main-nav > ul > li ul li:hover > a {background: #344d0e;color: #fff;}
 .main-nav > ul > li ul li:hover > ul {visibility: visible; opacity: 1; left: 250px; top: 0;}
 .main-nav > ul > li ul li.submenu::after {content: ""; position: absolute; height: 0; width: 0; border-bottom: 5px solid transparent; border-left: 6px solid #000000; border-top: 5px solid transparent; right: 11px; top: 20px; pointer-events: none;}
 
@@ -243,31 +131,18 @@ transition: background-color 0.3s ease; /* Transição suave para mudanças de c
 
 }
 
-
 /* Responsividade para telas menores */
 @media only screen and (max-width: 1199px) {
 
 .main-nav {position: fixed; width: 250px; top: 0; right: -250px; background: #ffffff; height: 100%; transition: all ease 0.2s; z-index: 1005; overflow-y: auto;}
 .main-nav ul {margin: 0; padding: 0; display: block; margin-top: 0px;}
 .main-nav ul.mnav {margin-bottom: 30px;}
-.main-nav ul li {display: block; border-bottom: 1px solid #6fa57d; position: relative; text-transform: capitalize; font-size: 15px;}
+.main-nav ul li {display: block; border-bottom: 1px solid #344d0e; position: relative; text-transform: capitalize; font-size: 15px;}
 .main-nav ul li span { display: none;}
 .main-nav ul li a {color: #000; text-decoration: none; font-size: 1em; display: block; padding: 10px; padding-right: 40px;}
-.main-nav ul li a:hover {background-color: #04ac8c; color: #ffffff;}
+.main-nav ul li a:hover {background-color: #344d0e; color: #ffffff;}
 .main-nav ul li.submenu i {position: absolute;width: 43px;height: 39px;top: 0;right: 0; cursor: pointer; transition: all ease 0.5s;}
-
-.main-nav ul li.submenu i:after {
-content: "";
-height: 0;
-width: 0;
-border-left: 5px solid transparent;
-border-right: 5px solid transparent;
-border-top: 6px solid #000000;
-position: absolute;
-right: 17px;
-top: 20px;
-z-index: 10;
-}
+.main-nav ul li.submenu i:after {content: ""; height: 0; width: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 6px solid #000000;position: absolute; right: 17px; top: 20px; z-index: 10;}
 
 .main-nav ul ul {margin: 0; display: none;}
 .main-nav ul ul li:last-child { border-bottom: 0;}
@@ -276,28 +151,9 @@ z-index: 10;
 .main-nav ul ul li ul a { padding-left: 30px;}
 
 .show-menu .main-nav { right: 0;}
-.show-menu .overlay {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.3);
-z-index: 1001;
-}
+.show-menu .overlay {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); z-index: 1001; }
 
-.mob-btn {
-display: block;
-position: absolute;
-float: right;
-padding: 5px 7px;
-margin: 0px;
-background-color: #04ac8c;
-cursor: pointer;
-right: 15px;
-top: 23px;
-}
-
+.mob-btn {display: block; position: absolute; float: right; padding: 5px 7px; margin: 0px; background-color: #344d0e; cursor: pointer; right: 15px; top: 23px; }
 .mob-btn span {display: block; width: 25px; height: 2px; border-radius: 1px; background: #fff;}
 .mob-btn span + span { margin-top: 5px;}
 
@@ -306,7 +162,6 @@ background: url('img/bg_footer_mobile.png') no-repeat center center;
 background-size: cover;
 background-attachment: fixed; 
 height: auto;
-padding: 20px 0; 
-}
+padding: 20px 0;}
 
 }
