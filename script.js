@@ -251,6 +251,18 @@ $(".overlay").click(function () {
     }
 });
 
+// Aparecer addClass
+$(".first ul")
+  .clone()
+  .prependTo(".main-nav")
+  .addClass("desk-hide");
+
+$(".last ul")
+  .clone()
+  .appendTo(".main-nav")
+  .addClass("desk-hide");
+
+
 // JavaScript para trocar o vídeo no modal
 $('#videoModal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget); // Botão que acionou o modal
