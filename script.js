@@ -223,3 +223,45 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+
+
+// Menu
+$(".main-nav ul li:has(ul)").addClass("submenu");
+$(".main-nav ul li:has(ul)").append("<i></i>");
+$(".main-nav ul i").click(function () {
+    $(this).parent("li").toggleClass("open");
+    $(this).parent("li").children("ul").slideToggle();
+});
+
+// Menu Mobile
+$(".mob-btn").click(function () {
+    if (!$("html").hasClass("show-menu")) {
+        $("html").addClass("show-menu");
+    } else {
+        $("html").removeClass("show-menu");
+    }
+});
+
+$(".overlay").click(function () {
+    if ($("html").hasClass("show-menu")) {
+        $("html").removeClass("show-menu");
+    }
+});
+
+// JavaScript para trocar o vídeo no modal
+$('#videoModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget); // Botão que acionou o modal
+    var videoSrc = button.data('video'); // Extrai o vídeo do atributo data-video
+    var modal = $(this);
+    modal.find('#modalVideo source').attr('src', videoSrc);
+    modal.find('#modalVideo')[0].load();
+});
+
+$('#videoModal').on('hide.bs.modal', function (event) {
+    var modal = $(this);
+    modal.find('#modalVideo')[0].pause();
+    modal.find('#modalVideo source').attr('src', '');
+});
