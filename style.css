@@ -15,8 +15,8 @@ main {background-color: #ffffff; margin-top: 0px ; }
 .banner {overflow: hidden; position: relative; }
 .banner img { display: block; width: 100%; height: 50%;}
 
-.video-container {position: absolute;top: 5%; right: 3%; width: 40%; z-index: 10;}
-.video-container video {width: 80%; height: auto; border-radius: 5px; border: #fff;}
+.video-container {position: absolute;top: 5%; right: 3%; width: 80%; z-index: 10;}
+.video-container video {width: 90%; height: auto; border-radius: 5px; border: #fff;}
 
 .logo-img {max-height: 90px; width: auto; background-color: transparent;}
 .img-border {border: 2px solid #344d0e; border-radius: 4px; padding: 4px; width: 120px; height: auto;}
