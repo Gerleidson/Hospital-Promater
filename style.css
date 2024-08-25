@@ -76,9 +76,18 @@ margin: 0 auto;}
 /* Estilo para o botão WhatsApp */
 #robbu-whatsapp-button {position: fixed; bottom: 100px;right: 20px;  z-index: 9999;}
 
-/* botao voltar ao top */
-#scrollToTopBtn {position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; border-radius: 50%; font-size: 24px; text-align: center; z-index: 1000; display: none;  background-color: #0004ff; border: none; color: #fff; cursor: pointer; display: flex; justify-content: center; align-items: center;  }
-#scrollToTopBtn i { vertical-align: middle; }
+.bg-light {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 
 /* Footer*/
 footer {background-color: transparent; padding: 20px 0 0 0; min-height: 100px; text-align: center; }
@@ -90,6 +99,12 @@ footer a:hover{color: #000;border-radius: 15px;transition: 0.5s;}
 
 /* Responsividade telas maiores*/
 @media only screen and (min-width: 1200px) {
+
+    .bg-light {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
 .desk-hide {display: none;}
 

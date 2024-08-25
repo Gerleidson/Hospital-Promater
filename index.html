@@ -156,7 +156,6 @@
         </div>
 
         <!-- Options Grid -->
-        <section>
             <div class="container mt-5 text-center">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
@@ -199,9 +198,7 @@
                     </div>
                 </div>  
             </div>  
-        </section>
-
-        <section>
+    
             <!-- Banner -->
             <div class="page-main container mt-5">
                 <div class="bg-light p-5 rounded shadow-sm">
@@ -243,9 +240,7 @@
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <section>
+    
             <!-- Notícias Destaque -->
             <div class="container mt-5">
                 <h2>Notícias</h2>
@@ -315,9 +310,7 @@
                     </div>
                 </div>
             </div>  
-        </section>          
         
-        <section>
             <!-- Onde Estamos -->
             <div class="container mt-5">
                 <div class="bg-light p-5 rounded shadow-sm">
@@ -345,7 +338,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+
     </main>
 
     <!-- Footer -->
@@ -438,16 +431,31 @@
             </a>
         </div>
 
-            <!-- Botão Voltar ao Topo -->
-        <button id="scrollToTopBtn" class="btn btn-primary">
-            <i class="fa fa-arrow-up"></i>
-        </button>
-
         <!-- Rodapé com Direitos Autorais -->
         <div class="mb-2 text-center p-3" style="color: black;">
             <p>&copy; 2024 Hospital Promater | Todos os direitos reservados.</p>
         </div>
     </footer>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#videoModal').on('show.bs.modal', function(event) {
+                var button = $(event.relatedTarget); // Botão que acionou o modal
+                var videoSrc = button.data('video'); // Extrai o caminho do vídeo
+                var modal = $(this);
+                modal.find('#modalVideo source').attr('src', videoSrc);
+                modal.find('#modalVideo')[0].load();
+            });
+    
+            $('#videoModal').on('hidden.bs.modal', function() {
+                var modal = $(this);
+                modal.find('#modalVideo source').attr('src', '');
+            });
+        });
+    </script>
+    
+
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>

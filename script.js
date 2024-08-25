@@ -203,31 +203,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-    // Exibe o botão quando a rolagem for maior que 100px
-    window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 1500) {
-            scrollToTopBtn.style.display = 'block';
-        } else {
-            scrollToTopBtn.style.display = 'none';
-        }
-    });
-
-    // Rola para o topo quando o botão é clicado
-    scrollToTopBtn.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-});
-
-
-
-
-
 // Menu
 $(".main-nav ul li:has(ul)").addClass("submenu");
 $(".main-nav ul li:has(ul)").append("<i></i>");
