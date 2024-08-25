@@ -15,8 +15,7 @@ main {background-color: #ffffff; margin-top: 0px ; }
 .banner {overflow: hidden; position: relative; }
 .banner img { display: block; width: 100%; height: 50%;}
 
-.video-container {position: absolute;top: 5%; right: 3%; width: 80%; z-index: 10;}
-.video-container video {width: 90%; height: auto; border-radius: 5px; border: #fff;}
+
 
 .logo-img {max-height: 90px; width: auto; background-color: transparent;}
 .img-border {border: 2px solid #344d0e; border-radius: 4px; padding: 4px; width: 120px; height: auto;}
@@ -76,18 +75,6 @@ margin: 0 auto;}
 /* Estilo para o botão WhatsApp */
 #robbu-whatsapp-button {position: fixed; bottom: 100px;right: 20px;  z-index: 9999;}
 
-.bg-light {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.container-fluid {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-}
-
 
 /* Footer*/
 footer {background-color: transparent; padding: 20px 0 0 0; min-height: 100px; text-align: center; }
@@ -99,12 +86,6 @@ footer a:hover{color: #000;border-radius: 15px;transition: 0.5s;}
 
 /* Responsividade telas maiores*/
 @media only screen and (min-width: 1200px) {
-
-    .bg-light {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
 
 .desk-hide {display: none;}
 

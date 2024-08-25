@@ -188,6 +188,18 @@ function autoSlides() {
     autoSlides();
 }
 
+// Script para trocar o vídeo no modal
+$(document).ready(function() {
+    $('#videoModal').on('show.bs.modal', function (e) {
+        var videoSrc = $(e.relatedTarget).data('src');
+        $('#modalVideo').attr('src', videoSrc);
+    });
+    $('#videoModal').on('hide.bs.modal', function () {
+        $('#modalVideo').attr('src', '');
+    });
+});
+
+
 //show menu
 document.addEventListener('DOMContentLoaded', function() {
     const menuButton = document.querySelector('.mob-btn');
@@ -202,3 +214,5 @@ document.addEventListener('DOMContentLoaded', function() {
       document.body.classList.remove('show-menu');
     });
   });
+
+  
