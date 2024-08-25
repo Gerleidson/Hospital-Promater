@@ -207,18 +207,27 @@ document.addEventListener('DOMContentLoaded', function () {
             // Evita a navegação padrão do link
             event.preventDefault();
 
-            // Remove a classe active de todos os itens de menu
-            document.querySelectorAll('.main-nav > ul > li').forEach(li => {
-                if (li !== this.parentElement) {
-                    li.classList.remove('active');
+            // Seleciona o submenu associado ao item clicado
+            const submenu = this.nextElementSibling;
+
+            // Fecha todos os submenus
+            document.querySelectorAll('.main-nav ul ul').forEach(sub => {
+                if (sub !== submenu) {
+                    sub.style.display = 'none';
                 }
             });
+
+            // Alterna a visibilidade do submenu clicado
+            if (submenu) {
+                submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+            }
 
             // Alterna a classe active para o item clicado
             this.parentElement.classList.toggle('active');
         });
     });
 });
+
 
 
 //show menu
