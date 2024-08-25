@@ -48,7 +48,8 @@ a:hover {transform: scale(1.05); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);}
 .carousel-indicators {display: none;}
 .carousel::before {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, rgba(4, 172, 140, 0) 78%, rgba(4, 172, 141, 0) 100%); pointer-events: none; z-index: 1;}
 .carousel-buttons { position: absolute; top: 50%; right: 72px; display: flex; gap: 10px; z-index: 1000; transform: translateY(-50%); /* Centraliza os botões verticalmente */
-}.carousel-control-prev, .carousel-control-next {width: 70px; height: 130px; background-color: #344d0e; color: #fff; display: flex; align-items: center; justify-content: center; transition: none;}
+}
+.carousel-control-prev, .carousel-control-next {width: 70px; height: 130px; background-color: #344d0e; color: #fff; display: flex; align-items: center; justify-content: center; transition: none;}
 .carousel-control-prev:hover, .carousel-control-next:hover {background-color: #344d0e;  opacity: 1; transition: none; box-shadow: none;}
 .carousel-control-prev-icon, .carousel-control-next-icon {background-size: 100%; width: 20px; height: 20px; background-repeat: no-repeat; color: #fff; transform: rotate(180deg);}
 .carousel-container {position: relative; border-bottom: 9px solid #344d0e; border-right: 9px solid #344d0e; overflow: hidden; clip-path: polygon(0 0, 100% 0, 100% 10%, 90% 100%, 0 100%);}
