@@ -199,6 +199,27 @@ $(document).ready(function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const submenuToggles = document.querySelectorAll('.main-nav > ul > li > a');
+
+    submenuToggles.forEach(toggle => {
+        toggle.addEventListener('click', function (event) {
+            // Evita a navegação padrão do link
+            event.preventDefault();
+
+            // Remove a classe active de todos os itens de menu
+            document.querySelectorAll('.main-nav > ul > li').forEach(li => {
+                if (li !== this.parentElement) {
+                    li.classList.remove('active');
+                }
+            });
+
+            // Alterna a classe active para o item clicado
+            this.parentElement.classList.toggle('active');
+        });
+    });
+});
+
 
 //show menu
 document.addEventListener('DOMContentLoaded', function() {
