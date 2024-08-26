@@ -114,7 +114,7 @@ background-color: #dfffb6; /* Cinza muito claro para itens da lista */
 /* Responsividade para telas menores */
 @media only screen and (max-width: 1199px) {
 
-.main-nav {position: fixed; width: 250px; top: 0; right: -250px; background: #fff; height: 100%; transition: all ease 0.2s; z-index: 1005; overflow-y: auto;}
+.main-nav {position: fixed; width: 250px; top: 0; right: -250px; background: #f3ffff; height: 100%; transition: all ease 0.2s; z-index: 1005; overflow-y: auto;}
 .main-nav ul {margin: 0; padding: 0; display: block; margin-top: 0px;}
 .main-nav ul.mnav {margin-bottom: 30px;}
 .main-nav ul li {display: block; border-bottom: 1px solid #344d0e; position: relative; text-transform: capitalize; font-size: 15px;}
@@ -129,8 +129,8 @@ background-color: #dfffb6; /* Cinza muito claro para itens da lista */
 .main-nav ul ul li a { padding-left: 20px;}
 .main-nav ul ul li ul a { padding-left: 30px;}
 .main-nav > ul > li ul {display: none; transition: all 0.3s ease;}
-.main-nav ul ul li { background-color: #a4fff7;}
-.main-nav ul ul li ul a { background-color: #03bb85;}
+.main-nav ul ul li { background-color: #daedec;}
+.main-nav ul ul li ul a { background-color: #a8c8c6;}
 
 
 .show-menu .main-nav {right: 0;}
