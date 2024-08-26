@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pesquisa de Satisfação - Hospital Promater" />
+    <meta name="keywords" content="Pesquisa, Satisfação, Hospital, Promater" />
+    <meta name="author" content="Gerleidson Bomfim e Ruan Esteves">
+    <meta name="robots" content="index, follow" />
+    <title>Formulário de Avaliação - Hospital Promater</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylePaginas.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        .form-container h2 {
+            margin-bottom: 1.5rem;
+        }
+        .form-container .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-container .btn {
+            width: 100%;
+            padding: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logoSemFundo.png" alt="Logo" class="logo-img">
+            </a>
+    
+            <!-- Main Navigation -->
+            <div class="main-nav">
+                <ul>
+                    <li><a href="index.html" title="Home">INICIO</a></li>
+                    <li><a href="#">A PROMATER</a>
+                        <ul>
+                            <li><a href="#" title="Institucional">Institucional</a>
+                                <ul>
+                                    <li><a href="quemSomos.html" title="Quem Somos">Quem Somos</a></li>
+                                    <li><a href="politicaQualidade.html" title="Política de Qualidade">Política de Qualidade</a></li>
+                                    <li><a href="missao.html" title="Missão, Visão e Valores">Missão, Visão e Valores</a></li>
+                                    <li><a href="politicaPrivacidade.html" title="Politica de Privacidade">Politica de Privacidade</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="diretoria.html" title="Diretoria">Diretoria</a></li>
+                            <li><a href="certificacoes.html" title="Certificações e Acreditações">Certificações e Acreditações</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ATENDIMENTO</a>
+                        <ul>
+                            <li><a href="#" title="Ambulatorial">Ambulatorial</a>
+                                <ul>
+                                    <li><a href="corpoclinico.html" title="Especialidades">Especialidades</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Laboratorial">Laboratorial</a>
+                                <ul>
+                                    <li><a href="https://www.labchecap.com.br/resultado-de-exames" title="Resultado de exames">Resultado de exames</a></li>
+                                   <!-- <li><a href="instrucoesExames.html" title="Instruções de exame">Instruções de exames</a></li>  -->
+                                    <li><a href="parceriaLabchecap.html" title="Parceria Labchecap">Parceria Labchecap</a></li>
+                                    <li><a href="coletaDomiciliar.html" title="Coleta domiciliar">Coleta domiciliar</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Emergencial">Emergencial</a>
+                                <ul>
+                                    <li><a href="atendimento24H.html" title="Sobre Atendimento 24H">Sobre Atendimento 24H</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Ocupacional">Ocupacional</a>
+                                <ul>
+                                    <li><a href="medicinaOcupacional.html" title="Ocupacional">Medicina Ocupacional</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="exames.html" title="Exames de imagem">Exames de imagem</a></li>
+                            <li><a href="convenio.html" title="Convenio">Convênios</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CONTATO</a>
+                        <ul>
+                            <li><a href="contato.html" title="Fale Conosco"><i class="fas fa-envelope"></i> Fale Conosco</a></li>
+                            <li><a href="trabalheConosco.html" title="Trabalhe Conosco"><i class="fas fa-briefcase"></i> Trabalhe Conosco</a></li>
+                            <li><a href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true"><i class="fas fa-poll"></i> Pesquisa de Satisfação</a></li>
+                            <li><a href="login.html" title="Área do Administrador"><i class="fas fa-user-shield"></i> Administrador</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Mobile Menu Button and Overlay -->
+            <div class="mob-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="overlay"></div>
+        </nav>
+    </header>
+
+    <main class="pagina mt-5 pt-5">
+        <div class="page-main container mt-5">
+            <div class="bg-light p-5 rounded shadow-sm">
+                <div class="form-container">
+                    <h2 class="text-center">Formulário de Avaliação do Hospital Promater</h2>
+                    <p>Prezado(a) paciente,
+                        A sua opinião é extremamente importante para nós! Como parte de nossos esforços contínuos para melhorar a qualidade de nossos serviços, gostaríamos de convidá-lo(a) a participar de nossa Pesquisa de Satisfação do Paciente.                 
+                        Suas respostas nos ajudarão a entender melhor sua experiência conosco e a identificar áreas em que podemos melhorar.
+                        Suas respostas serão tratadas com confidencialidade e usadas apenas para fins de avaliação e melhoria interna.</p>
+                    <form action="#" method="post">
+                        <!-- Nome Completo -->
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" class="form-control" id="name" placeholder="Digite seu nome completo" required>
+                        </div>
+                        
+                        <!-- Data da Visita -->
+                        <div class="form-group">
+                            <label for="visitDate">Data da Visita</label>
+                            <input type="date" class="form-control" id="visitDate" required>
+                        </div>
+
+                        <!-- Área visitada -->
+                        <div class="form-group">
+                            <label for="area">Área Visitada</label>
+                            <select class="form-control" id="area" required>
+                                <option value="">Selecione a área visitada</option>
+                                <option value="Ambulatório">Ambulatório</option>
+                                <option value="Emergência">Emergência</option>
+                                <option value="Internação">Internação</option>
+                                <option value="Laboratório">Laboratório</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <!-- Avaliação do Atendimento -->
+                        <div class="form-group">
+                            <label>Avaliação do Atendimento</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="atendimento" id="atendimento1" value="Excelente" required>
+                                <label class="form-check-label" for="atendimento1">Excelente</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="atendimento" id="atendimento2" value="Bom" required>
+                                <label class="form-check-label" for="atendimento2">Bom</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="atendimento" id="atendimento3" value="Regular" required>
+                                <label class="form-check-label" for="atendimento3">Regular</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="atendimento" id="atendimento4" value="Ruim" required>
+                                <label class="form-check-label" for="atendimento4">Ruim</label>
+                            </div>
+                        </div>
+
+                        <!-- Avaliação da Estrutura -->
+                        <div class="form-group">
+                            <label>Avaliação da Estrutura</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="estrutura" id="estrutura1" value="Excelente" required>
+                                <label class="form-check-label" for="estrutura1">Excelente</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="estrutura" id="estrutura2" value="Boa" required>
+                                <label class="form-check-label" for="estrutura2">Boa</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="estrutura" id="estrutura3" value="Regular" required>
+                                <label class="form-check-label" for="estrutura3">Regular</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="estrutura" id="estrutura4" value="Ruim" required>
+                                <label class="form-check-label" for="estrutura4">Ruim</label>
+                            </div>
+                        </div>
+
+                        <!-- Avaliação da Limpeza -->
+                        <div class="form-group">
+                            <label>Avaliação da Limpeza</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="limpeza" id="limpeza1" value="Excelente" required>
+                                <label class="form-check-label" for="limpeza1">Excelente</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="limpeza" id="limpeza2" value="Boa" required>
+                                <label class="form-check-label" for="limpeza2">Boa</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="limpeza" id="limpeza3" value="Regular" required>
+                                <label class="form-check-label" for="limpeza3">Regular</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="limpeza" id="limpeza4" value="Ruim" required>
+                                <label class="form-check-label" for="limpeza4">Ruim</label>
+                            </div>
+                        </div>
+
+                        <!-- Comentários adicionais -->
+                        <div class="form-group">
+                            <label for="comments">Comentários Adicionais</label>
+                            <textarea class="form-control" id="comments" rows="4" placeholder="Escreva seus comentários aqui..."></textarea>
+                        </div>
+
+                        <!-- Botão de Envio -->
+                        <button type="submit" class="btn btn-success">Enviar Avaliação</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start mt-5 text-light footer-background">
+        <div class="container p-4">
+            <div class="row">
+                <!-- Coluna da Logo -->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0 p-3">
+                    <img src="img/logo_footer.png" alt="Hospital Promater" style="height: 100px;">
+                    <h5 class="text-uppercase mt-3" style="color: white; font-size: 1.1rem;">Siga-nos</h5>
+                    <ul class="list-unstyled d-flex justify-content-center p-0 m-0">
+                        <li class="mx-3">
+                            <a href="https://facebook.com/hospitalpromater" class="text-white" aria-label="Facebook">
+                                <i class="fab fa-facebook-f fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="mx-2">
+                            <a href="https://instagram.com/hospitalpromater" class="text-white" aria-label="Instagram">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coluna Endereço -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0 p-3">
+                    <h5 class="text-uppercase" style="color: white; font-size: 1.1rem;"><i class="fas fa-map-marker-alt"></i> Endereço</h5>
+                    <ul class="list-unstyled mb-0" style="color: white; font-size: 13px;">
+                        <li class="mb-2">Av. Lauro de Freitas, 1125 - Centro - Dias D'Ávila/BA</li>
+                    </ul>
+                </div>
+
+                <!-- Coluna Empresa -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0 p-3">
+                    <h5 class="text-uppercase" style="color: white; font-size: 1.1rem;">Empresa</h5>
+                    <ul class="list-unstyled mb-0 d-none d-md-block" style="color: white; font-size: 13px;">
+                        <li class="mb-2"><a href="quemSomos.html" style="color: white;">Sobre Nós</a></li>
+                        <li class="mb-2"><a href="quemSomos.html" style="color: white;">Quem Somos</a></li>
+                        <li class="mb-2"><a href="missao.html" style="color: white;">Missão, Visão e Valores</a></li>
+                        <li class="mb-2"><a href="politicaQualidade.html" style="color: white;">Política de Qualidade</a></li>
+                        <li class="mb-2"><a href="politicaPrivacidade.html" style="color: white;">Política de Privacidade</a></li>
+                        <li class="mb-2"><a href="trabalheConosco.html" style="color: white;">Trabalhe Conosco</a></li>
+                    </ul>
+                    <!-- Menu para telas menores -->
+                    <ul class="list-unstyled mb-0 d-block d-md-none" id="footer-menu">
+                        <li class="mb-2"><a href="quemSomos.html" style="color: white;">Sobre Nós</a></li>
+                        <li class="mb-2"><a href="quemSomos.html" style="color: white;">Quem Somos</a></li>
+                        <li class="mb-2"><a href="missao.html" style="color: white;">Missão, Visão e Valores</a></li>
+                        <li class="mb-2"><a href="politicaQualidade.html" style="color: white;">Política de Qualidade</a></li>
+                        <li class="mb-2"><a href="politicaPrivacidade.html" style="color: white;">Política de Privacidade</a></li>
+                        <li class="mb-2"><a href="trabalheConosco.html" style="color: white;">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna Serviços -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0 p-3">
+                    <h5 class="text-uppercase" style="color: white; font-size: 1.1rem;">Serviços</h5>
+                    <ul class="list-unstyled mb-0 d-none d-md-block" style="color: white; font-size: 13px;">
+                        <li class="mb-2"><a href="exames.html" style="color: white;">Exames de Imagem</a></li>
+                        <li class="mb-2"><a href="https://www.labchecap.com.br/resultado-de-exames" title="Resultado de exames" style="color: white;">Resultado de exames</a></li>
+                        <li class="mb-2"><a href="trabalheConosco.html" style="color: white;">Trabalhe Conosco</a></li>
+                    </ul>
+                    <!-- Menu para telas menores -->
+                    <ul class="list-unstyled mb-0 d-block d-md-none">
+                        <li class="mb-2"><a href="exames.html" style="color: white;">Exames de Imagem</a></li>
+                        <li class="mb-2"><a href="https://www.labchecap.com.br/resultado-de-exames" title="Resultado de exames" style="color: white;">Resultado de exames</a></li>
+                        <li class="mb-2"><a href="trabalheConosco.html" style="color: white;">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna Contatos -->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0 p-3">
+                    <h5 class="text-uppercase" style="color: white; font-size: 1.1rem;">Contatos</h5>
+                    <ul class="list-unstyled mb-0" style="color: white; font-size: 13px;">
+                        <li class="mb-2">Central de Agendamento</li>
+                        <li class="mb-2"><i class="fas fa-phone-alt"></i> <a href="tel:+557136483750" style="color: white;">(71) 3648-3750</a></li>
+                        <li class="mb-2"><i class="fab fa-whatsapp"></i> <a href="tel:+5571988026456" style="color: white;">(71) 98802-6456</a></li>
+                        <li class="mt-3">Setor de Qualidade</li>
+                        <li class="mb-2"><i class="fab fa-whatsapp"></i> <a href="tel:+5571996207149" style="color: white;">(71) 99620-7149</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botão WhatsApp -->
+        <div class="text-center my-3">
+            <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
+                <div class="rwb-tooltip">Agende pelo Whatsapp</div>
+                <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg" alt="WhatsApp">
+            </a>
+        </div>
+        
+        <!-- Rodapé com Direitos Autorais -->
+        <div class="mb-2 text-center p-3" style="color: black;">
+            <p>&copy; 2024 Hospital Promater | Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+</body>
+</html>
