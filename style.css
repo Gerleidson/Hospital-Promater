@@ -78,7 +78,6 @@ footer a:hover{color: #000;border-radius: 15px;transition: 0.5s;}
 /* Responsividade telas maiores*/
 @media only screen and (min-width: 1200px) {
 
-
 .main-nav {font-size: 17px; display: flex; justify-content: right; align-items: center; padding: 10px 20px; margin: 0 auto; width: 40%; height: 70px; border-radius: 5px; text-align: left; position: fixed; right: 400px; z-index: 1000; transition: background-color 0.3s ease;}
 .main-nav a {color: #fff; text-decoration: none; padding: 0 10px; margin-right: 0; transition: color 0.3s ease; }
 .main-nav a:last-child {margin-right: 0; }
@@ -95,20 +94,7 @@ footer a:hover{color: #000;border-radius: 15px;transition: 0.5s;}
 .main-nav > ul > li ul li:hover > a {background: #344d0e;color: #fff;}
 .main-nav > ul > li ul li:hover > ul {visibility: visible; opacity: 1; left: 250px; top: 0;}
 .main-nav > ul > li ul li.submenu::after {content: ""; position: absolute; height: 0; width: 0; border-bottom: 5px solid transparent; border-left: 6px solid #000000; border-top: 5px solid transparent; right: 11px; top: 20px; pointer-events: none;}
-
-
-
-
-
-/* Cor de fundo para os itens da lista dentro dos submenus (li) */
-.main-nav ul ul li {
-background-color: #dfffb6; /* Cinza muito claro para itens da lista */
-}
-
-
-
-
-
+.main-nav ul ul li {background-color: #dfffb6; }
 }
 
 /* Responsividade para telas menores */
