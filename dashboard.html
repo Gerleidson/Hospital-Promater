@@ -91,80 +91,83 @@
             <div class="overlay"></div>
         </nav>
     </header>
-
-    <main>
-        <div class="container mt-4">
-            <div class="row">
-                <!-- Número de Médicos -->
-                <div class="col-md-3 mb-3">
-                    <div class="card text-white bg-primary">
-                        <div class="card-body">
-                            <h5 class="card-title">Número de Médicos</h5>
-                            <h2>150</h2>
+ 
+    <main class="pagina mt-5 pt-5">
+        <div class="page-main container mt-5">
+            <div class="bg-light p-5 rounded shadow-sm">
+                <div class="row">
+                    <!-- Número de Médicos -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-white bg-primary">
+                            <div class="card-body">
+                                <h5 class="card-title">Número de Médicos</h5>
+                                <h2>150</h2>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Pacientes Atendidos -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-white bg-success">
+                            <div class="card-body">
+                                <h5 class="card-title">Pacientes Atendidos</h5>
+                                <h2>1200</h2>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Pacientes Pendentes -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-white bg-warning">
+                            <div class="card-body">
+                                <h5 class="card-title">Pacientes Pendentes</h5>
+                                <h2>300</h2>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Consultas Agendadas -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-white bg-info">
+                            <div class="card-body">
+                                <h5 class="card-title">Consultas Agendadas</h5>
+                                <h2>450</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Pacientes Atendidos -->
-                <div class="col-md-3 mb-3">
-                    <div class="card text-white bg-success">
-                        <div class="card-body">
-                            <h5 class="card-title">Pacientes Atendidos</h5>
-                            <h2>1200</h2>
+        
+                <!-- Gráficos e Relatório de Satisfação -->
+                <div class="row justify-content-center">
+                    <div class="col-md-8 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Pesquisa de Satisfação</h5>
+                                <!-- Aqui você pode incluir um gráfico usando uma biblioteca como Chart.js -->
+                                <canvas id="satisfactionChart"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Pacientes Pendentes -->
-                <div class="col-md-3 mb-3">
-                    <div class="card text-white bg-warning">
-                        <div class="card-body">
-                            <h5 class="card-title">Pacientes Pendentes</h5>
-                            <h2>300</h2>
-                        </div>
+        
+                <!-- Relatórios e Configurações do Site -->
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <button class="btn btn-secondary w-100 p-4">Relatórios</button>
                     </div>
-                </div>
-
-                <!-- Consultas Agendadas -->
-                <div class="col-md-3 mb-3">
-                    <div class="card text-white bg-info">
-                        <div class="card-body">
-                            <h5 class="card-title">Consultas Agendadas</h5>
-                            <h2>450</h2>
-                        </div>
+        
+                    <div class="col-md-6 mb-3">
+                        <button class="btn btn-secondary w-100 p-4">Configurações do Site</button>
                     </div>
-                </div>
-            </div>
-
-            <!-- Gráficos e Relatório de Satisfação -->
-            <div class="row">
-                <div class="col-md-8 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Pesquisa de Satisfação</h5>
-                            <!-- Aqui você pode incluir um gráfico usando uma biblioteca como Chart.js -->
-                            <canvas id="satisfactionChart"></canvas>
-                        </div>
+        
+                    <div class="col-md-6 mb-3">
+                        <button class="btn btn-secondary w-100 p-4">Gerenciar Notícias</button>
                     </div>
-                </div>
-            </div>
-
-            <!-- Relatórios e Configurações do Site -->
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <button class="btn btn-secondary w-100 p-4">Relatórios</button>
-                </div>
-
-                <div class="col-md-6 mb-3">
-                    <button class="btn btn-secondary w-100 p-4">Configurações do Site</button>
-                </div>
-
-                <div class="col-md-6 mb-3">
-                    <button class="btn btn-secondary w-100 p-4">Gerenciar Notícias</button>
                 </div>
             </div>
         </div>
     </main>
+    
 
     <!-- Footer -->
     <footer class="text-center text-lg-start mt-5 text-light footer-background">

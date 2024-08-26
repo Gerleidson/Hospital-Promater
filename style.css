@@ -94,7 +94,7 @@ footer a:hover{color: #000;border-radius: 15px;transition: 0.5s;}
 .main-nav > ul > li ul li:hover > a {background: #344d0e;color: #fff;}
 .main-nav > ul > li ul li:hover > ul {visibility: visible; opacity: 1; left: 250px; top: 0;}
 .main-nav > ul > li ul li.submenu::after {content: ""; position: absolute; height: 0; width: 0; border-bottom: 5px solid transparent; border-left: 6px solid #000000; border-top: 5px solid transparent; right: 11px; top: 20px; pointer-events: none;}
-.main-nav ul ul li {background-color: #dfffb6; }
+.main-nav ul ul li {background-color: #daedec; }
 }
 
 /* Responsividade para telas menores */
