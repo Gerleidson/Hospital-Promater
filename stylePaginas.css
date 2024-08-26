@@ -138,11 +138,7 @@ position: relative; color: white; background-size: 100%; height: 310px; padding:
 .mob-btn span + span { margin-top: 5px;}
 
 .footer-background {
-background: url('img/bg_footer_mobile.png') no-repeat center center;
-background-size: cover;
-background-attachment: fixed; 
-height: auto;
-padding: 20px 0;}
+background: url('img/bg_footer_mobile.png') no-repeat center center; background-size: cover; background-attachment: fixed; height: auto; padding: 20px 0;}
 
 .timeline-container {width: 100%; padding: 10px; box-sizing: border-box;}
 .timeline-container.left, .timeline-container.right { left: 0; margin-left: 0; text-align: left;}

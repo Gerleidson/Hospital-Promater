@@ -200,33 +200,51 @@ $(document).ready(function() {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const submenuToggles = document.querySelectorAll('.main-nav > ul > li > a');
+    // Seleciona todos os itens de menu que podem ter submenus
+    const menuItems = document.querySelectorAll('.main-nav > ul > li > a');
 
-    submenuToggles.forEach(toggle => {
-        toggle.addEventListener('click', function (event) {
-            // Evita a navegação padrão do link
-            event.preventDefault();
-
-            // Seleciona o submenu associado ao item clicado
+    menuItems.forEach(item => {
+        item.addEventListener('click', function (event) {
+            // Evita a navegação padrão do link se houver submenu
             const submenu = this.nextElementSibling;
 
-            // Fecha todos os submenus
-            document.querySelectorAll('.main-nav ul ul').forEach(sub => {
-                if (sub !== submenu) {
-                    sub.style.display = 'none';
-                }
-            });
+            // Se não houver submenu, permite navegação padrão
+            if (!submenu) {
+                return;
+            }
 
             // Alterna a visibilidade do submenu clicado
-            if (submenu) {
-                submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+            event.preventDefault(); // Mantém este preventDefault apenas se você não quiser a navegação padrão
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+
+            // Alterna a classe active para o item clicado
+            this.parentElement.classList.toggle('active');
+        });
+    });
+
+    // Seleciona todos os itens de submenu que podem ter sub-submenus
+    const submenuItems = document.querySelectorAll('.main-nav ul ul li > a');
+
+    submenuItems.forEach(subItem => {
+        subItem.addEventListener('click', function (event) {
+            // Evita a navegação padrão do link se houver sub-submenu
+            const subsubmenu = this.nextElementSibling;
+
+            // Se não houver sub-submenu, permite navegação padrão
+            if (!subsubmenu) {
+                return;
             }
+
+            // Alterna a visibilidade do sub-submenu clicado
+            event.preventDefault(); // Mantém este preventDefault apenas se você não quiser a navegação padrão
+            subsubmenu.style.display = subsubmenu.style.display === 'block' ? 'none' : 'block';
 
             // Alterna a classe active para o item clicado
             this.parentElement.classList.toggle('active');
         });
     });
 });
+
 
 
 
