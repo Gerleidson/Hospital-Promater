@@ -1,277 +1,346 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dashboard do Hospital Promater" />
-    <meta name="keywords" content="Dashboard, Hospital, Promater" />
-    <meta name="author" content="Gerleidson Bomfim e Ruan Esteves">
-    <meta name="robots" content="index, follow" />
-    <title>Dashboard - Hospital Promater</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Moderno</title>
+    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="stylePaginas.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f7f6;
+        }
+
+        .sidebar {
+            height: 100vh;
+            background-color: #343a40;
+            color: #fff;
+            position: fixed;
+            width: 250px;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+            overflow-y: auto;
+        }
+
+        .sidebar .nav-link {
+            color: #ddd;
+        }
+
+        .sidebar .nav-link.active {
+            background-color: #495057;
+            color: #fff;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 10px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .table thead th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .bg-light {
+            background-color: #f8f9fa !important;
+        }
+
+        .dropdown-menu {
+            min-width: 200px;
+        }
+
+        .d-none {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <!-- Navbar -->
-        <nav class="navbar">
-            <!-- Logo -->
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logoSemFundo.png" alt="Logo" class="logo-img">
-            </a>
-    
-            <!-- Main Navigation -->
-            <div class="main-nav">
-                <ul>
-                    <li><a href="index.html" title="Home">INICIO</a></li>
-                    <li><a href="#">A PROMATER</a>
-                        <ul>
-                            <!-- Submenus -->
-                            <li><a href="#" title="Institucional">Institucional</a>
-                                <ul>
-                                    <li><a href="quemSomos.html" title="Quem Somos">Quem Somos</a></li>
-                                    <li><a href="politicaQualidade.html" title="Política de Qualidade">Política de Qualidade</a></li>
-                                    <li><a href="missao.html" title="Missão, Visão e Valores">Missão, Visão e Valores</a></li>
-                                    <li><a href="politicaPrivacidade.html" title="Politica de Privacidade">Politica de Privacidade</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="diretoria.html" title="Diretoria">Diretoria</a></li>
-                            <li><a href="certificacoes.html" title="Certificações e Acreditações">Certificações e Acreditações</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">ATENDIMENTO</a>
-                        <ul>
-                            <li><a href="#" title="Ambulatorial">Ambulatorial</a>
-                                <ul>
-                                    <li><a href="corpoclinico.html" title="Especialidades">Especialidades</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" title="Laboratorial">Laboratorial</a>
-                                <ul>
-                                    <li><a href="https://www.labchecap.com.br/resultado-de-exames" title="Resultado de exames">Resultado de exames</a></li>
-                                    <li><a href="parceriaLabchecap.html" title="Parceria Labchecap">Parceria Labchecap</a></li>
-                                    <li><a href="coletaDomiciliar.html" title="Coleta domiciliar">Coleta domiciliar</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" title="Emergencial">Emergencial</a>
-                                <ul>
-                                    <li><a href="atendimento24H.html" title="Sobre Atendimento 24H">Sobre Atendimento 24H</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" title="Ocupacional">Ocupacional</a>
-                                <ul>
-                                    <li><a href="medicinaOcupacional.html" title="Ocupacional">Medicina Ocupacional</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="exames.html" title="Exames de imagem">Exames de imagem</a></li>
-                            <li><a href="convenio.html" title="Convenio">Convênios</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">CONTATO</a>
-                        <ul>
-                            <li><a href="contato.html" title="Fale Conosco"><i class="fas fa-envelope"></i> Fale Conosco</a></li>
-                            <li><a href="trabalheConosco.html" title="Trabalhe Conosco"><i class="fas fa-briefcase"></i> Trabalhe Conosco</a></li>
-                            <li><a href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true"><i class="fas fa-poll"></i> Pesquisa de Satisfação</a></li>
-                            <li><a href="login.html" title="Área do Administrador"><i class="fas fa-user-shield"></i> Administrador</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-    
-            <!-- Mobile Menu Button and Overlay -->
-            <div class="mob-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="overlay"></div>
-        </nav>
-    </header>
- 
-    <main class="pagina mt-5 pt-5">
-        <div class="page-main container mt-5">
-            <div class="bg-light p-5 rounded shadow-sm">
-                <div class="row">
-                    <!-- Número de Médicos -->
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-white bg-primary">
-                            <div class="card-body">
-                                <h5 class="card-title">Número de Médicos</h5>
-                                <h2>150</h2>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Pacientes Atendidos -->
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-white bg-success">
-                            <div class="card-body">
-                                <h5 class="card-title">Pacientes Atendidos</h5>
-                                <h2>1200</h2>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Pacientes Pendentes -->
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-white bg-warning">
-                            <div class="card-body">
-                                <h5 class="card-title">Pacientes Pendentes</h5>
-                                <h2>300</h2>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Consultas Agendadas -->
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-white bg-info">
-                            <div class="card-body">
-                                <h5 class="card-title">Consultas Agendadas</h5>
-                                <h2>450</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Gráficos e Relatório de Satisfação -->
-                <div class="row justify-content-center">
-                    <div class="col-md-8 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Pesquisa de Satisfação</h5>
-                                <!-- Aqui você pode incluir um gráfico usando uma biblioteca como Chart.js -->
-                                <canvas id="satisfactionChart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Relatórios e Configurações do Site -->
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <a href="Dashboard/relatorios.html" class="btn btn-secondary w-100 p-4">Relatórios</a>
-                    </div>
-                
-                    <div class="col-md-6 mb-3">
-                        <a href="Dashboard/configuracoes.html" class="btn btn-secondary w-100 p-4">Configurações do Site</a>
-                    </div>
-                
-                    <div class="col-md-6 mb-3">
-                        <a href="Dashboard/gerenciarNoticias.html" class="btn btn-secondary w-100 p-4">Gerenciar Notícias</a>
-                    </div>
-                </div>
-                
-            </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="text-center mb-4">
+            <img src="img/logoSemFundo.png" alt="Hospital Promater" style="height: 80px;">
         </div>
-    </main>
-    
-    <!-- Footer -->
-    <footer class="text-center text-lg-start mt-5 text-light footer-background">
-        <div class="container p-4">
-            <div class="row">
-                <!-- Coluna da Logo -->
-                <div class="col-lg-3 col-md-12 mb-4 mb-md-0 p-3">
-                    <img src="img/logo_footer.png" alt="Hospital Promater" style="height: 100px;">
-                    <h5 class="text-uppercase mt-3" style="color: white; font-size: 1.1rem;">Siga-nos</h5>
-                    <ul class="list-unstyled d-flex justify-content-center p-0 m-0">
-                        <li class="mx-3">
-                            <a href="https://facebook.com/hospitalpromater" class="text-white" aria-label="Facebook">
-                                <i class="fab fa-facebook-f fa-2x"></i>
+        <h4 class="text-center mb-4">Dashboard</h4>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="#" data-target="painel-inicial">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-target="relatorios">Notícias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-target="configuracoes-site">Configurações</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container-fluid">
+            <!-- Top Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+                <a class="navbar-brand" href="#">Dashboard</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="notificationsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell"></i> Notificações
                             </a>
+                            <div class="dropdown-menu" aria-labelledby="notificationsDropdown">
+                                <a class="dropdown-item" href="#">Novo usuário registrado</a>
+                                <a class="dropdown-item" href="#">Nova notícia publicada</a>
+                                <a class="dropdown-item" href="#">Feedback recebido</a>
+                            </div>
                         </li>
-                        <li class="mx-2">
-                            <a href="https://instagram.com/hospitalpromater" class="text-white" aria-label="Instagram">
-                                <i class="fab fa-instagram fa-2x"></i>
+                        <li class="nav-item dropdown ml-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user"></i> Usuário
                             </a>
+                            <div class="dropdown-menu" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">Perfil</a>
+                                <a class="dropdown-item" href="#">Configurações</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="index.html">Sair</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
+            </nav>
 
-                <!-- Coluna Endereço -->
-                <div class="col-lg-2 col-md-4 mb-4 mb-md-0 p-3">
-                    <h5 class="text-uppercase" style="color: white; font-size: 1.1rem;"><i class="fas fa-map-marker-alt"></i> Endereço</h5>
-                    <ul class="list-unstyled mb-0" style="color: white; font-size: 13px;">
-                        <li class="mb-2">Av. Lauro de Freitas, 1125 - Centro - Dias D'Ávila/BA</li>
-                    </ul>
+            <!-- Content Sections -->
+            <div id="content-area">
+                <!-- Painel Inicial -->
+                <div id="painel-inicial">
+                    <div class="row mb-4">
+                        <div class="col-md-3">
+                            <div class="card bg-info text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Novas Notícias</h5>
+                                    <p class="card-text display-4">45</p>
+                                    <p class="text-white"><i class="fas fa-arrow-down"></i> 5% esta semana</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card bg-success text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pacientes Atendidos</h5>
+                                    <p class="card-text display-4">120</p>
+                                    <p class="text-white"><i class="fas fa-arrow-up"></i> 8% esta semana</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card bg-warning text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pacientes Pendentes</h5>
+                                    <p class="card-text display-4">30</p>
+                                    <p class="text-white"><i class="fas fa-arrow-down"></i> 10% esta semana</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card bg-danger text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Consultas Agendadas</h5>
+                                    <p class="card-text display-4">25</p>
+                                    <p class="text-white"><i class="fas fa-arrow-up"></i> 15% esta semana</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h4 class="mb-0">Visitas ao Site</h4>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="visitasChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h4 class="mb-0">Pesquisa de Satisfação</h4>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="satisfacaoChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Coluna Empresa -->
-                <div class="col-lg-2 col-md-4 mb-4 mb-md-0 p-3">
-                    <h5 class="text-uppercase" style="color: white; font-size: 1.1rem;">Empresa</h5>
-                    <ul class="list-unstyled mb-0 d-none d-md-block" style="color: white; font-size: 13px;">
-                        <li class="mb-2"><a href="quemSomos.html" style="color: white;">Sobre Nós</a></li>
-                        <li class="mb-2"><a href="quemSomos.html" style="color: white;">Quem Somos</a></li>
-                        <li class="mb-2"><a href="missao.html" style="color: white;">Missão, Visão e Valores</a></li>
-                        <li class="mb-2"><a href="politicaQualidade.html" style="color: white;">Política de Qualidade</a></li>
-                        <li class="mb-2"><a href="politicaPrivacidade.html" style="color: white;">Política de Privacidade</a></li>
-                        <li class="mb-2"><a href="trabalheConosco.html" style="color: white;">Trabalhe Conosco</a></li>
-                    </ul>
-                    <!-- Menu para telas menores -->
-                    <ul class="list-unstyled mb-0 d-block d-md-none">
-                        <li class="mb-2"><a href="quemSomos.html" style="color: white;">Sobre Nós</a></li>
-                        <li class="mb-2"><a href="quemSomos.html" style="color: white;">Quem Somos</a></li>
-                        <li class="mb-2"><a href="missao.html" style="color: white;">Missão, Visão e Valores</a></li>
-                        <li class="mb-2"><a href="politicaQualidade.html" style="color: white;">Política de Qualidade</a></li>
-                        <li class="mb-2"><a href="politicaPrivacidade.html" style="color: white;">Política de Privacidade</a></li>
-                        <li class="mb-2"><a href="trabalheConosco.html" style="color: white;">Trabalhe Conosco</a></li>
-                    </ul>
+                <!-- Relatórios -->
+                <div id="relatorios" class="d-none">
+                    <div class="row">
+                        <!-- Tabela de Notícias -->
+                        <div class="col-md-12">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h4 class="mb-0">Todas as Notícias</h4>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Selecionar</th>
+                                                <th>Midia</th>
+                                                <th>Título</th>
+                                                <th>Link</th>
+                                                <th>Ações</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td><img src="image.jpg" alt="Imagem" style="width: 50px;"></td>
+                                                <td>Notícia Exemplo</td>
+                                                <td><a href="#">Link</a></td>
+                                                <td>
+                                                    <a href="#" class="btn btn-warning btn-sm">Editar</a>
+                                                    <a href="#" class="btn btn-danger btn-sm">Remover</a>
+                                                    <a href="#" class="btn btn-secondary btn-sm">Apagar</a>
+                                                </td>
+                                            </tr>
+                                            <!-- Mais linhas conforme necessário -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nova Notícia -->
+                        <div class="col-md-12">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h4 class="mb-0">Nova Notícia</h4>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="titulo">Título</label>
+                                            <input type="text" class="form-control" id="titulo" placeholder="Título da Notícia">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="descricao">Descrição</label>
+                                            <textarea class="form-control" id="descricao" rows="3" placeholder="Descrição da Notícia"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="imagens">Imagens (Mídia)</label>
+                                            <input type="file" class="form-control-file" id="imagens">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Salvar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Coluna Serviços -->
-                <div class="col-lg-2 col-md-4 mb-4 mb-md-0 p-3">
-                    <h5 class="text-uppercase" style="color: white; font-size: 1.1rem;">Serviços</h5>
-                    <ul class="list-unstyled mb-0 d-none d-md-block" style="color: white; font-size: 13px;">
-                        <li class="mb-2"><a href="exames.html" style="color: white;">Exames de Imagem</a></li>
-                        <li class="mb-2"><a href="https://www.labchecap.com.br/resultado-de-exames" title="Resultado de exames" style="color: white;">Resultado de exames</a></li>
-                        <li class="mb-2"><a href="trabalheConosco.html" style="color: white;">Trabalhe Conosco</a></li>
-                    </ul>
-                    <!-- Menu para telas menores -->
-                    <ul class="list-unstyled mb-0 d-block d-md-none" id="footer-menu">
-                        <li class="mb-2"><a href="exames.html" style="color: white;">Exames de Imagem</a></li>
-                        <li class="mb-2"><a href="https://www.labchecap.com.br/resultado-de-exames" title="Resultado de exames" style="color: white;">Resultado de exames</a></li>
-                        <li class="mb-2"><a href="trabalheConosco.html" style="color: white;">Trabalhe Conosco</a></li>
-                    </ul>
+                <!-- Configurações do Site -->
+                <div id="configuracoes-site" class="d-none">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h4 class="mb-0">Páginas</h4>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Título</th>
+                                                <th>Ações</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Página Exemplo</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-warning btn-sm">Editar</a>
+                                                    <a href="#" class="btn btn-danger btn-sm">Remover</a>
+                                                </td>
+                                            </tr>
+                                            <!-- Mais linhas conforme necessário -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Coluna Contatos -->
-                <div class="col-lg-3 col-md-12 mb-4 mb-md-0 p-3">
-                    <h5 class="text-uppercase" style="color: white; font-size: 1.1rem;">Contatos</h5>
-                    <ul class="list-unstyled mb-0" style="color: white; font-size: 13px;">
-                        <li class="mb-2">Central de Agendamento</li>
-                        <li class="mb-2"><i class="fas fa-phone-alt"></i> <a href="tel:+557136483750" style="color: white;">(71) 3648-3750</a></li>
-                        <li class="mb-2"><i class="fab fa-whatsapp"></i> <a href="tel:+5571988026456" style="color: white;">(71) 98802-6456</a></li>
-                        <li class="mt-3">Setor de Qualidade</li>
-                        <li class="mb-2"><i class="fab fa-whatsapp"></i> <a href="tel:+5571996207149" style="color: white;">(71) 99620-7149</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
-        
-        <!-- Rodapé com Direitos Autorais -->
-        <div class="mb-2 text-center p-3" style="color: black;">
-            <p>&copy; 2024 Hospital Promater | Todos os direitos reservados.</p>
-        </div>
-    </footer>
+    </div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
+    <!-- Custom Script for Charts and Navigation -->
     <script>
-        // Exemplo de inicialização de gráfico com Chart.js
-        const ctx = document.getElementById('satisfactionChart').getContext('2d');
-        const satisfactionChart = new Chart(ctx, {
+        var ctxVisitas = document.getElementById('visitasChart').getContext('2d');
+        var visitasChart = new Chart(ctxVisitas, {
+            type: 'line',
+            data: {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+                datasets: [{
+                    label: 'Visitas',
+                    data: [10, 20, 15, 30, 25, 40],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        var ctxSatisfacao = document.getElementById('satisfacaoChart').getContext('2d');
+        var satisfacaoChart = new Chart(ctxSatisfacao, {
             type: 'bar',
             data: {
-                labels: ['Excelente', 'Bom', 'Regular', 'Ruim', 'Péssimo'],
+                labels: ['Muito Satisfeito', 'Satisfeito', 'Neutro', 'Insatisfeito', 'Muito Insatisfeito'],
                 datasets: [{
-                    label: 'Nível de Satisfação',
-                    data: [50, 30, 10, 5, 5],
+                    label: 'Pesquisa de Satisfação',
+                    data: [20, 30, 25, 15, 10],
                     backgroundColor: 'rgba(54, 162, 235, 0.2)',
                     borderColor: 'rgba(54, 162, 235, 1)',
                     borderWidth: 1
@@ -285,6 +354,23 @@
                 }
             }
         });
+
+        document.querySelectorAll('.sidebar .nav-link').forEach(function (link) {
+            link.addEventListener('click', function () {
+                document.querySelectorAll('#content-area > div').forEach(function (section) {
+                    section.classList.add('d-none');
+                });
+                var targetId = link.getAttribute('data-target');
+                document.getElementById(targetId).classList.remove('d-none');
+                document.querySelectorAll('.sidebar .nav-link').forEach(function (navLink) {
+                    navLink.classList.remove('active');
+                });
+                link.classList.add('active');
+            });
+        });
+
+        // Show the default section
+        document.querySelector('.sidebar .nav-link.active').click();
     </script>
 </body>
 </html>
