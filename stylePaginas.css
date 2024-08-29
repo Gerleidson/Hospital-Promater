@@ -3,6 +3,8 @@
 
 * {margin: 0; padding: 0; box-sizing: border-box;}
 
+body {font-family: 'roboto', Arial, Helvetica, sans-serif;}
+
 header{position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 0 0; background: url('img/1.png') no-repeat 100% 100%;}               
 header a:hover{color: #344d0e; background-color: #fff; border-radius: 5px; transition: 0.10s; }  
 
