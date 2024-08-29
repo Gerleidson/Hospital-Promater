@@ -259,3 +259,26 @@ document.addEventListener('DOMContentLoaded', function() {
       document.body.classList.remove('show-menu');
     });
   });
+  
+  // Adicionar um evento de digitação na barra de pesquisa
+document.getElementById('searchInput').addEventListener('keyup', function() {
+    // Obter o valor da pesquisa e convertê-lo para minúsculas
+    let searchValue = this.value.toLowerCase();
+    
+    // Selecionar todos os cartões de médicos
+    let cards = document.querySelectorAll('.col-md-4');
+
+    // Loop através de todos os cartões para verificar o filtro
+    cards.forEach(function(card) {
+        // Obter o nome do médico e a especialidade do cartão
+        let doctorName = card.querySelector('h6.card-title').textContent.toLowerCase();
+        let specialty = card.querySelector('h5.card-title').textContent.toLowerCase();
+
+        // Verificar se o nome ou a especialidade contém o valor pesquisado
+        if (doctorName.includes(searchValue) || specialty.includes(searchValue)) {
+            card.style.display = ''; // Mostrar cartão
+        } else {
+            card.style.display = 'none'; // Ocultar cartão
+        }
+    });
+});
