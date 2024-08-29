@@ -126,7 +126,6 @@ function toggleInstruction(id) {
       }
     });
 
-
     let slides = document.querySelectorAll('.slideshow');
     let dots = document.querySelectorAll('.dot');
     let slideIndex = 1;
@@ -187,16 +186,43 @@ function autoSlides() {
     autoSlides();
 }
 
-// Script para trocar o vídeo no modal
-$(document).ready(function() {
-    $('#videoModal').on('show.bs.modal', function (e) {
-        var videoSrc = $(e.relatedTarget).data('src');
-        $('#modalVideo').attr('src', videoSrc);
+//Função para exibir o video de noticias pelo modal
+document.addEventListener('DOMContentLoaded', function () {
+    // Seleciona todos os links que abrem o modal
+    var videoLinks = document.querySelectorAll('a[data-toggle="modal"][data-target="#videoModal"]');
+
+    videoLinks.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            // Obtém o título da notícia correspondente
+            var card = this.closest('.card'); // Encontra o elemento pai com a classe .card
+            var videoTitle = card.querySelector('.card-title').textContent; // Pega o texto do título
+            var videoSrc = this.getAttribute('data-src'); // Obtém a fonte do vídeo
+
+            // Atualiza o título do modal
+            var modalTitle = document.getElementById('videoModalLabel');
+            modalTitle.textContent = videoTitle;
+
+            // Atualiza a fonte do vídeo no modal
+            var modalVideo = document.getElementById('modalVideo');
+            modalVideo.querySelector('source').src = videoSrc;
+            modalVideo.load(); // Recarrega o vídeo
+
+            // Abre o modal
+            $('#videoModal').modal('show');
+        });
     });
-    $('#videoModal').on('hide.bs.modal', function () {
-        $('#modalVideo').attr('src', '');
+
+    // Evento para remover a fonte do vídeo quando o modal for fechado
+    $('#videoModal').on('hidden.bs.modal', function () {
+        var modalVideo = document.getElementById('modalVideo');
+        modalVideo.pause(); // Pausa o vídeo
+        modalVideo.querySelector('source').src = ''; // Remove a fonte
+        modalVideo.load(); // Recarrega o vídeo sem fonte
     });
 });
+
 
 document.addEventListener('DOMContentLoaded', function () {
     // Seleciona todos os itens de menu que podem ter submenus
@@ -308,6 +334,7 @@ document.addEventListener('DOMContentLoaded', function() {
     sortCards();
 });
 
+//Função para exibir mensagem do Whatsapp de acordo com a especialidade selecionada
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.whatsapp-link').forEach(function(link) {
         link.addEventListener('click', function(event) {
