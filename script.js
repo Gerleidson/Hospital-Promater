@@ -116,7 +116,6 @@ function toggleInstruction(id) {
     }
 }
 
-  
     // Classe no Navbar ao Rolar
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', function () {
@@ -282,7 +281,6 @@ document.getElementById('searchInput').addEventListener('keyup', function() {
     });
 });
 
-
 // Função para ordenar os cartões das especialidades por ordem alfabética
 function sortCards() {
     // Obter o container onde os cartões estão localizados
@@ -308,4 +306,24 @@ function sortCards() {
 // Adicionar um evento para ordenar os cartões quando a página carrega
 document.addEventListener('DOMContentLoaded', function() {
     sortCards();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.whatsapp-link').forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            
+            // Encontrar o elemento pai (o cartão) e obter a especialidade
+            var card = this.closest('.card');
+            var specialty = card.getAttribute('data-specialty');
+            
+            // Criar a URL do WhatsApp com a especialidade selecionada
+            var phone = '5571996207149'; // Número de telefone
+            var message = encodeURIComponent(`Olá, gostaria de agendar uma consulta com ${specialty}`);
+            var whatsappURL = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
+            
+            // Redirecionar para a URL do WhatsApp
+            window.location.href = whatsappURL;
+        });
+    });
 });
