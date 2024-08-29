@@ -260,22 +260,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Adicionar um evento de digitação na barra de pesquisa
+// Adicionar um evento de digitação na barra de pesquisa
 document.getElementById('searchInput').addEventListener('keyup', function() {
     // Obter o valor da pesquisa e convertê-lo para minúsculas
     let searchValue = this.value.toLowerCase();
     
-    // Selecionar todos os cartões de médicos
-    let cards = document.querySelectorAll('.col-md-4');
+    // Selecionar todos os cartões de especialidade
+    let cards = document.querySelectorAll('.card');
 
     // Loop através de todos os cartões para verificar o filtro
     cards.forEach(function(card) {
-        // Obter o nome do médico e a especialidade do cartão
-        let doctorName = card.querySelector('h6.card-title').textContent.toLowerCase();
-        let specialty = card.querySelector('h5.card-title').textContent.toLowerCase();
+        // Obter a especialidade do cartão
+        let specialty = card.querySelector('.specialty').textContent.toLowerCase();
 
-        // Verificar se o nome ou a especialidade contém o valor pesquisado
-        if (doctorName.includes(searchValue) || specialty.includes(searchValue)) {
+        // Verificar se a especialidade contém o valor pesquisado
+        if (specialty.includes(searchValue)) {
             card.style.display = ''; // Mostrar cartão
         } else {
             card.style.display = 'none'; // Ocultar cartão
@@ -283,19 +282,20 @@ document.getElementById('searchInput').addEventListener('keyup', function() {
     });
 });
 
-// Função para ordenar os cartões dos médicos por ordem alfabética
+
+// Função para ordenar os cartões das especialidades por ordem alfabética
 function sortCards() {
     // Obter o container onde os cartões estão localizados
-    const container = document.querySelector('.row');
+    const container = document.querySelector('.page-main .bg-light');
     
     // Obter todos os cartões e convertê-los em um array
-    let cards = Array.from(container.querySelectorAll('.col-md-4'));
+    let cards = Array.from(container.querySelectorAll('.card'));
     
-    // Ordenar os cartões por nome do médico (baseado no conteúdo do <h6>)
+    // Ordenar os cartões por especialidade (baseado no conteúdo do <div class="specialty">)
     cards.sort((a, b) => {
-        let nameA = a.querySelector('h6.card-title').textContent.toLowerCase();
-        let nameB = b.querySelector('h6.card-title').textContent.toLowerCase();
-        return nameA.localeCompare(nameB);
+        let specialtyA = a.querySelector('.specialty').textContent.toLowerCase();
+        let specialtyB = b.querySelector('.specialty').textContent.toLowerCase();
+        return specialtyA.localeCompare(specialtyB);
     });
 
     // Remover todos os cartões do container
