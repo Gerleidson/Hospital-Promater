@@ -282,3 +282,30 @@ document.getElementById('searchInput').addEventListener('keyup', function() {
         }
     });
 });
+
+// Função para ordenar os cartões dos médicos por ordem alfabética
+function sortCards() {
+    // Obter o container onde os cartões estão localizados
+    const container = document.querySelector('.row');
+    
+    // Obter todos os cartões e convertê-los em um array
+    let cards = Array.from(container.querySelectorAll('.col-md-4'));
+    
+    // Ordenar os cartões por nome do médico (baseado no conteúdo do <h6>)
+    cards.sort((a, b) => {
+        let nameA = a.querySelector('h6.card-title').textContent.toLowerCase();
+        let nameB = b.querySelector('h6.card-title').textContent.toLowerCase();
+        return nameA.localeCompare(nameB);
+    });
+
+    // Remover todos os cartões do container
+    container.innerHTML = '';
+
+    // Adicionar os cartões ordenados de volta ao container
+    cards.forEach(card => container.appendChild(card));
+}
+
+// Adicionar um evento para ordenar os cartões quando a página carrega
+document.addEventListener('DOMContentLoaded', function() {
+    sortCards();
+});
