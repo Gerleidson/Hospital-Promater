@@ -354,3 +354,35 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+// Adiciona uma nova notícia ao Firestore
+function adicionarNoticiaAoFirestore(titulo, descricao) {
+    db.collection("noticias").add({
+        titulo: titulo,
+        descricao: descricao,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    })
+    .then((docRef) => {
+        console.log("Notícia adicionada com ID: ", docRef.id);
+    })
+    .catch((error) => {
+        console.error("Erro ao adicionar notícia: ", error);
+    });
+}
+
+// Exemplo de uso
+adicionarNoticiaAoFirestore("Nova Notícia", "Esta é a descrição da nova notícia.");
+
+
+// Ler notícias do Firestore e exibir no console
+function lerNoticiasDoFirestore() {
+    db.collection("noticias").orderBy("timestamp", "desc").get().then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            console.log(`${doc.id} => ${doc.data().titulo}`);
+        });
+    });
+}
+
+// Exemplo de uso
+lerNoticiasDoFirestore();
