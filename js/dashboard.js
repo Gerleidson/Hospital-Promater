@@ -9,25 +9,6 @@ function atualizarDashboard() {
 // Chamar a função para atualizar o dashboard a cada 5 segundos
 setInterval(atualizarDashboard, 5000);
 
-// Adicionar eventos de clique para os botões
-document.querySelector('button:contains("Relatórios")').addEventListener('click', function () {
-    alert('Abrindo página de relatórios...');
-    // Aqui você pode redirecionar para uma página de relatórios
-    window.location.href = 'Dashboard/relatorio.html';
-});
-
-document.querySelector('button:contains("Configurações do Site")').addEventListener('click', function () {
-    alert('Abrindo configurações do site...');
-    // Aqui você pode redirecionar para uma página de configurações
-    window.location.href = 'Dashboard/configuracoes.html';
-});
-
-document.querySelector('button:contains("Gerenciar Notícias")').addEventListener('click', function () {
-    alert('Abrindo gerenciamento de notícias...');
-    // Aqui você pode redirecionar para uma página de gerenciamento de notícias
-    window.location.href = 'Dashboard/gerenciarNoticias.html';
-});
-
 // Função para atualizar o gráfico de satisfação dinamicamente
 function atualizarGraficoSatisfacao() {
     satisfactionChart.data.datasets[0].data = [
@@ -40,5 +21,50 @@ function atualizarGraficoSatisfacao() {
     satisfactionChart.update();
 }
 
-// Chamar a função para atualizar o gráfico a cada 10 segundos
-setInterval(atualizarGraficoSatisfacao, 10000);
+// Código para o gráfico de satisfação
+var ctxSatisfacao = document.getElementById('satisfacaoChart').getContext('2d');
+var satisfacaoChart = new Chart(ctxSatisfacao, {
+    type: 'bar',
+    data: {
+        labels: ['Muito Satisfeito', 'Satisfeito', 'Neutro', 'Insatisfeito', 'Muito Insatisfeito'],
+        datasets: [{
+            label: 'Pesquisa de Satisfação',
+            data: [20, 30, 25, 15, 10],
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+// Mostrar a seção padrão
+document.querySelector('.sidebar .nav-link.active').click();
+
+//Gerar Relatorios
+function gerarRelatorio() {
+    // Captura os valores dos filtros
+    const dataInicio = document.getElementById('dataInicio').value;
+    const dataFim = document.getElementById('dataFim').value;
+    const tipoRelatorio = document.getElementById('tipoRelatorio').value;
+
+    // Validação simples dos campos (pode ser aprimorada conforme necessário)
+    if (!dataInicio || !dataFim || !tipoRelatorio) {
+        alert('Por favor, preencha todos os filtros para gerar o relatório.');
+        return;
+    }
+
+    // Exibe os resultados (exemplo de resposta do relatório)
+    const resultadoArea = document.getElementById('resultadoRelatorio');
+    resultadoArea.innerHTML = `
+        <h5>Resultado do Relatório: ${tipoRelatorio}</h5>
+        <p><strong>Período:</strong> De ${dataInicio} a ${dataFim}</p>
+        <p>Este é um exemplo de relatório para o tipo selecionado. Os dados reais podem ser integrados através de uma API ou lógica adicional.</p>
+    `;
+}

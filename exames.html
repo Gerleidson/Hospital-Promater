@@ -10,7 +10,6 @@
     <title>Exames - Hospital Promater</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="stylePaginas.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -108,7 +107,7 @@
                             <div class="card-body">
                                 <p class="card-text"><strong>Dia da Semana:</strong> Segunda a Sexta-feira</p>
                                 <p class="card-text"><strong>Horário:</strong> Manhã/Tarde</p>
-                                <a href="https://api.whatsapp.com/send?phone=5571996207149&text=Olá,%20como%20posso%20ajudar?" class="btn btn-success">Agendar</a>
+                                <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
                             </div>
                         </div>
                     </div>
@@ -121,7 +120,7 @@
                                 <p class="card-text"><strong>Dia da Semana:</strong> Segunda a Sexta-feira</p>
                                 <p class="card-text"><strong>Horário:</strong> Manhã/Tarde</p>
                                 <p class="card-text"><strong>Sábado:</strong> Pela manhã</p>
-                                <a href="https://api.whatsapp.com/send?phone=5571996207149&text=Olá,%20como%20posso%20ajudar?" class="btn btn-success">Agendar</a>
+                                <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
                             </div>
                         </div>
                     </div>
@@ -134,7 +133,7 @@
                                 <p class="card-text"><strong>Dia da Semana:</strong> Segunda a Sexta-feira</p>
                                 <p class="card-text"><strong>Horário:</strong> Manhã/Tarde</p>
                                 <p class="card-text"><strong>Sábado:</strong> Pela manhã</p>
-                                <a href="https://api.whatsapp.com/send?phone=5571996207149&text=Olá,%20como%20posso%20ajudar?" class="btn btn-success">Agendar</a>
+                                <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
                             </div>
                         </div>
                     </div>
@@ -146,7 +145,7 @@
                             <div class="card-body">
                                 <p class="card-text"><strong>Dia da Semana:</strong> Segunda e Quarta-feira</p>
                                 <p class="card-text"><strong>Horário:</strong> Manhã</p>
-                                <a href="https://api.whatsapp.com/send?phone=5571996207149&text=Olá,%20como%20posso%20ajudar?" class="btn btn-success">Agendar</a>
+                                <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
                             </div>
                         </div>
                     </div>
@@ -158,7 +157,7 @@
                             <div class="card-body">
                                 <p class="card-text"><strong>Dia da Semana:</strong> Segunda a Sexta-feira</p>
                                 <p class="card-text"><strong>Horário:</strong> Manhã</p>
-                                <a href="https://api.whatsapp.com/send?phone=5571996207149&text=Olá,%20como%20posso%20ajudar?" class="btn btn-success">Agendar</a>
+                                <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
                             </div>
                         </div>
                     </div>
@@ -170,7 +169,7 @@
                             <div class="card-body">
                                 <p class="card-text"><strong>Dia da Semana:</strong> Segunda a Sexta-feira</p>
                                 <p class="card-text"><strong>Horário:</strong> Manhã</p>
-                                <a href="https://api.whatsapp.com/send?phone=5571996207149&text=Olá,%20como%20posso%20ajudar?" class="btn btn-success">Agendar</a>
+                                <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
                             </div>
                         </div>
                     </div>
@@ -183,7 +182,7 @@
                                 <p class="card-text"><strong>Dia da Semana:</strong> Segunda a Sexta-feira</p>
                                 <p class="card-text"><strong>Horário:</strong> Manhã/Tarde</p>
                                 <p class="card-text"><strong>Sábado:</strong> Pela manhã</p>
-                                <a href="https://api.whatsapp.com/send?phone=5571996207149&text=Olá,%20como%20posso%20ajudar?" class="btn btn-success">Agendar</a>
+                                <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
                             </div>
                         </div>
                     </div>
@@ -273,14 +272,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Botão WhatsApp -->
-        <div class="text-center my-3">
-            <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
-                <div class="rwb-tooltip">Agende pelo Whatsapp</div>
-                <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg" alt="WhatsApp">
-            </a>
-        </div>
         
         <!-- Rodapé com Direitos Autorais -->
         <div class="mb-2 text-center p-3" style="color: black;">
@@ -292,5 +283,25 @@
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.whatsapp-link').forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    
+                    var card = this.closest('.card');
+                    var specialty = card.querySelector('.card-header h5').innerText.trim();
+                    
+                    console.log('Specialty:', specialty);
+                    
+                    var phone = '5571996207149'; // Número de telefone
+                    var message = encodeURIComponent(`Olá, gostaria de agendar uma consulta de ${specialty}.`);
+                    var whatsappURL = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
+                    
+                    window.location.href = whatsappURL;
+                });
+            });
+        });
+    </script>
 </body>
 </html>

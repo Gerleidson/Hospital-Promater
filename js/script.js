@@ -354,3 +354,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+//botão agendar da pagina de exames
+
+
