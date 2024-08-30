@@ -38,16 +38,27 @@ a:hover {transform: scale(1.05); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);}
 .navbar-brand {display: flex; align-items: center; margin-left: 50px;}
 .navbar-brand:hover {color: inherit; background-color: transparent;box-shadow: none;}
 
+
 /* Carousel */
 .carousel .carousel-inner {position: relative; width: 100%; overflow: hidden;}
 .carousel-item.active {display: block;}
 .carousel-indicators {display: none;}
 .carousel::before {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, rgba(4, 172, 140, 0) 78%, rgba(4, 172, 141, 0) 100%); pointer-events: none; z-index: 1;}
-.carousel-buttons { position: absolute; top: 35%; right: 72px; display: flex;  flex-direction: column; gap: 10px; z-index: 1000; transform: translateY(-50%);}
+.carousel-buttons { position: absolute; top: 50%; right: 72px; display: flex;  flex-direction: column; gap: 10px; z-index: 1000;transform: translateY(-100%); transform: rotate(180deg);}
 .carousel-control-prev, .carousel-control-next {width: 70px; height: 130px; background-color: #344d0e; color: #fff; display: flex; align-items: center; justify-content: center; transition: none;}
 .carousel-control-prev:hover, .carousel-control-next:hover {background-color: #344d0e;  opacity: 1; transition: none; box-shadow: none;}
-.carousel-control-prev-icon, .carousel-control-next-icon {background-size: 100%; width: 20px; height: 20px; background-repeat: no-repeat; color: #fff; transform: rotate(180deg);}
+.carousel-control-prev-icon, .carousel-control-next-icon {background-size: 100%; width: 20px; height: 20px; background-repeat: no-repeat; color: #fff;transform: rotate(180deg);}
 .carousel-container {position: relative; border-bottom: 9px solid #344d0e; border-right: 9px solid #344d0e; overflow: hidden; clip-path: polygon(0 0, 100% 0, 100% 10%, 90% 100%, 0 100%);}
+
+/* Inverter a ordem dos botões */
+.carousel-control-prev {
+    order: 1; /* Aparece à esquerda */
+}
+
+.carousel-control-next {
+    order: 2 /* Aparece à direita */
+}
+
 
 /* Main navigation styling */
 .main-nav {flex: 1; text-align: left; align-items: center; background-color: transparent;}
@@ -79,7 +90,7 @@ footer a:hover{color: #000;border-radius: 15px;transition: 0.5s;}
     .main-nav {font-size: 17px; display: flex; justify-content: right; align-items: center; padding: 10px 20px; margin: 0 auto; width: 40%; height: 70px; border-radius: 5px; text-align: left; position: fixed; right: 400px; z-index: 1000; transition: background-color 0.3s ease;}
     .main-nav a {color: #fff; text-decoration: none; padding: 0 10px; margin-right: 0; transition: color 0.3s ease; }
     .main-nav a:last-child {margin-right: 0; }
-    .main-nav > ul > li {display: inline-block; margin-right: 10px; border: 2px solid #fff; border-radius: 5px; padding: 0; background-color: #344d0e;}
+    .main-nav > ul > li {display: inline-block; margin-right: 10px; border-radius: 5px; padding: 0; background-color: #344d0e;}
     .main-nav > ul > li:last-child {margin: 0;}
     .main-nav > ul > li.submenu:after {content: ""; position: absolute; height: 0; width: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; right: 7px; top: 24px; pointer-events: none;}
     .main-nav > ul > li > a {color: #fff; display: block; padding: 10px 20px; text-decoration: none; font-size: 15px;}
