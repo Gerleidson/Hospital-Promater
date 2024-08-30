@@ -96,19 +96,26 @@
     </header>
 
     <main class="pagina mt-5 pt-5">
-        <div class="page-main container mt-5 p-5 rounded shadow-sm">
+        <div class="page-main container mt-5 p-5 bg-light rounded shadow-sm">
             <div class="text-center">
                 <h3>
-                    <img src="path/to/your-icon.png" alt="Ícone" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;">
+                    <i class="fa fa-stethoscope" aria-hidden="true" style="font-size: 24px; vertical-align: middle; margin-right: 8px;"></i>
                     Especialidades e Cirurgias
                 </h3>
+                
                 <p>Pesquise por uma especialidade e agende uma consulta.</p>
             </div>
             <div class="text-center my-3">
-                <input type="text" id="searchInput" placeholder="Buscar por especialidade..." class="form-control">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                    </div>
+                    <input type="text" id="searchInput" placeholder="Digite uma especialidade ou cirurgia" class="form-control">
+                </div>
             </div>
+            
             <!-- Card Layout -->
-            <div class="bg-light p-5 rounded shadow-sm">
+           
                 <div class="card mb-3" data-specialty="Dermatologia">
                     <div class="card-body d-flex justify-content-between align-items-center">
                         <div class="specialty">Dermatologia</div>
@@ -473,7 +480,6 @@
                     </div>
                 </div>
            
-            </div>                   
         </div>                                                    
     </main>
        
