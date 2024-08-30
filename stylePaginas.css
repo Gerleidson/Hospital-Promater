@@ -57,6 +57,12 @@ a:hover {transform: scale(1.05); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);}
 #robbu-whatsapp-button {position: fixed; bottom: 100px; right: 20px; z-index: 9999;}
 .rwb-tooltip{transform: translate(-50%, -50%); font-size: 14px; padding: 5px; background: rgba(255, 255, 255, 0.8); color: #000; border-radius: 3px; opacity: 0; transition: opacity 0.3s; pointer-events: none;}
 
+.more-info {
+    display: none;
+    margin-top: 10px;
+}
+
+
 /* font awesome */
 .icon-container {padding: 20px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: #fff; text-align: center; margin-bottom: 20px;}
 .icon-container i {font-size: 3rem; color: #344d0e; margin-bottom: 15px;}
