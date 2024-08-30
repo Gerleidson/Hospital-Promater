@@ -42,3 +42,10 @@ function atualizarGraficoSatisfacao() {
 
 // Chamar a função para atualizar o gráfico a cada 10 segundos
 setInterval(atualizarGraficoSatisfacao, 10000);
+
+
+
+
+  
+
+  

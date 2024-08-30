@@ -4,11 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Moderno</title>
+    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/dashboard.css">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f7f6;
+        }
 
+        .sidebar {
+            height: 100vh;
+            background-color: #343a40;
+            color: #fff;
+            position: fixed;
+            width: 250px;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+            overflow-y: auto;
+        }
+
+        .sidebar .nav-link {
+            color: #ddd;
+        }
+
+        .sidebar .nav-link.active {
+            background-color: #495057;
+            color: #fff;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 10px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .table thead th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .bg-light {
+            background-color: #f8f9fa !important;
+        }
+
+        .dropdown-menu {
+            min-width: 200px;
+        }
+
+        .d-none {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -134,7 +197,7 @@
                     </div>
                 </div>
 
-                <!-- Notícias -->
+                <!-- Relatórios -->
                 <div id="relatorios" class="d-none">
                     <div class="row">
                         <!-- Tabela de Notícias -->
@@ -163,6 +226,7 @@
                                                 <td>
                                                     <a href="#" class="btn btn-warning btn-sm">Editar</a>
                                                     <a href="#" class="btn btn-danger btn-sm">Remover</a>
+                                                    <a href="#" class="btn btn-secondary btn-sm">Apagar</a>
                                                 </td>
                                             </tr>
                                             <!-- Mais linhas conforme necessário -->
@@ -200,11 +264,10 @@
                     </div>
                 </div>
 
-                    <!-- Configurações do Site -->
+                <!-- Configurações do Site -->
                 <div id="configuracoes-site" class="d-none">
                     <div class="row">
                         <div class="col-md-12">
-                            <!-- Seção de Páginas -->
                             <div class="card mb-4">
                                 <div class="card-header">
                                     <h4 class="mb-0">Páginas</h4>
@@ -232,129 +295,6 @@
                                     </table>
                                 </div>
                             </div>
-
-                            <!-- Seção para Gerenciar Imagens do Carousel -->
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <h4 class="mb-0">Gerenciar Imagens do Carousel</h4>
-                                </div>
-                                <div class="card-body">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>Imagem</th>
-                                                <th>Ações</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <!-- Inserir dinamicamente as imagens do carousel -->
-                                            <tr>
-                                                <td>1</td>
-                                                <td><img src="caminho/para/imagem1.jpg" alt="Imagem Carousel" width="100"></td>
-                                                <td>
-                                                    <a href="#" class="btn btn-warning btn-sm">Editar</a>
-                                                    <a href="#" class="btn btn-danger btn-sm">Remover</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <!-- Formulário para adicionar nova imagem -->
-                                    <form method="post" enctype="multipart/form-data">
-                                        <div class="form-group">
-                                            <label for="novaImagemCarousel">Adicionar Nova Imagem</label>
-                                            <input type="file" id="novaImagemCarousel" name="novaImagemCarousel" class="form-control">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary mt-3">Salvar Imagem</button>
-                                    </form>
-                                </div>
-                            </div>
-
-                            <!-- Seção para Gerenciar Vídeos de Notícias -->
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <h4 class="mb-0">Gerenciar Vídeos de Notícias</h4>
-                                </div>
-                                <div class="card-body">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>Título</th>
-                                                <th>URL do Vídeo</th>
-                                                <th>Ações</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <!-- Inserir dinamicamente os vídeos de notícias -->
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Título do Vídeo 1</td>
-                                                <td>https://youtube.com/vídeo1</td>
-                                                <td>
-                                                    <a href="#" class="btn btn-warning btn-sm">Editar</a>
-                                                    <a href="#" class="btn btn-danger btn-sm">Remover</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <!-- Formulário para adicionar novo vídeo -->
-                                    <form method="post">
-                                        <div class="form-group">
-                                            <label for="tituloVideo">Título do Vídeo</label>
-                                            <input type="text" id="tituloVideo" name="tituloVideo" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="urlVideo">URL do Vídeo</label>
-                                            <input type="url" id="urlVideo" name="urlVideo" class="form-control">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary mt-3">Salvar Vídeo</button>
-                                    </form>
-                                </div>
-                            </div>
-
-                            <!-- Seção para Gerenciar Vagas -->
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <h4 class="mb-0">Gerenciar Banco de Vagas</h4>
-                                </div>
-                                <div class="card-body">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>Título da Vaga</th>
-                                                <th>Descrição</th>
-                                                <th>Ações</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <!-- Inserir dinamicamente as vagas -->
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Vaga de Exemplo</td>
-                                                <td>Descrição da vaga de exemplo</td>
-                                                <td>
-                                                    <a href="#" class="btn btn-warning btn-sm">Editar</a>
-                                                    <a href="#" class="btn btn-danger btn-sm">Remover</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <!-- Formulário para adicionar nova vaga -->
-                                    <form method="post">
-                                        <div class="form-group">
-                                            <label for="tituloVaga">Título da Vaga</label>
-                                            <input type="text" id="tituloVaga" name="tituloVaga" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="descricaoVaga">Descrição</label>
-                                            <textarea id="descricaoVaga" name="descricaoVaga" class="form-control"></textarea>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary mt-3">Salvar Vaga</button>
-                                    </form>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -363,7 +303,9 @@
         </div>
     </div>
 
-    <script src="js/dashboard.js"></script>   
+    <!-- Bootstrap JS and dependencies -->
+
+    <script src="dashboard.js"></script>   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -431,7 +373,6 @@
 
         // Show the default section
         document.querySelector('.sidebar .nav-link.active').click();
-        
     </script>
 </body>
 </html>
