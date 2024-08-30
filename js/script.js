@@ -355,6 +355,25 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//função para exibir o texto na pagira de especialidades
+document.addEventListener('DOMContentLoaded', function() {
+    // Selecione todos os botões "Saiba Mais"
+    const buttons = document.querySelectorAll('.saiba-mais-btn');
 
+    buttons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault(); // Impede o comportamento padrão do link
 
+            // Identifique o bloco de informação relacionado
+            const card = button.closest('.card');
+            const moreInfo = card.querySelector('.more-info');
 
+            // Alterna a visibilidade do bloco de informação
+            if (moreInfo.style.display === 'none' || moreInfo.style.display === '') {
+                moreInfo.style.display = 'block';
+            } else {
+                moreInfo.style.display = 'none';
+            }
+        });
+    });
+});
