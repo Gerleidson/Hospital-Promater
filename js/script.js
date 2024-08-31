@@ -329,28 +329,37 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-//função para exibir o texto na pagina de especialidades
-document.addEventListener('DOMContentLoaded', function() {
-    // Selecione todos os botões "Saiba Mais"
-    const buttons = document.querySelectorAll('.saiba-mais-btn');
 
-    buttons.forEach(button => {
-        button.addEventListener('click', function(event) {
-            event.preventDefault(); // Impede o comportamento padrão do link
 
-            // Identifique o bloco de informação relacionado
-            const card = button.closest('.card');
-            const moreInfo = card.querySelector('.more-info');
 
-            // Alterna a visibilidade do bloco de informação
-            if (moreInfo.style.display === 'none' || moreInfo.style.display === '') {
-                moreInfo.style.display = 'block';
-            } else {
-                moreInfo.style.display = 'none';
-            }
-        });
+
+
+// Função para ordenar os cartões por ordem alfabética
+function ordenarCardsPorEspecialidade() {
+    // Seleciona o container onde os cartões estão
+    const container = document.querySelector('#container-cards'); // Substitua '#container-cards' pelo seletor do seu container
+
+    // Obtém todos os cartões
+    const cards = Array.from(container.querySelectorAll('.card'));
+
+    // Ordena os cartões com base no atributo data-specialty
+    cards.sort((a, b) => {
+        const especialidadeA = a.getAttribute('data-specialty').toLowerCase();
+        const especialidadeB = b.getAttribute('data-specialty').toLowerCase();
+        if (especialidadeA < especialidadeB) return -1;
+        if (especialidadeA > especialidadeB) return 1;
+        return 0;
     });
-});
 
+    // Remove todos os cartões do container
+    container.innerHTML = '';
 
+    // Reinsere os cartões ordenados no container
+    cards.forEach(card => {
+        container.appendChild(card);
+    });
+}
+
+// Chama a função para ordenar os cartões ao carregar a página
+document.addEventListener('DOMContentLoaded', ordenarCardsPorEspecialidade);
 
