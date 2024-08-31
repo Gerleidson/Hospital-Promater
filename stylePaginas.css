@@ -83,16 +83,6 @@ footer a:hover{color: #000; border-radius: 15px; transition: 0.5s;}
 position: relative; color: white; background-size: 100%; height: 310px; padding: 20px; }
 .footer-background::before {content: ""; position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgb(52, 77, 14, 0.8); z-index: 1;}
 
-.timeline {position: relative; max-width: 1200px; margin: 50px auto; padding: 20px 0;}
-.timeline::before {content: ""; position: absolute; width: 6px; background-color: #344d0e; top: 0; bottom: 0; left: 50%; transform: translateX(-50%);}
-.timeline-container {position: relative; width: 45%; padding: 20px; box-sizing: border-box;}
-.timeline-container.left {left: 0;}
-.timeline-container.right {left: 50%; margin-left: 10px;}
-.timeline-content {background-color: white; padding: 20px; border-radius: 6px; position: relative; border: 1px solid #344d0e;}
-.timeline-content h2, .timeline-content h3 {margin: 0; color: #000;}
-.timeline-content p {margin: 10px 0 0;}
-.timeline-container.left::after {content: ""; position: absolute; top: 20px; right: -10px; border-width: 10px; border-style: solid; border-color: transparent transparent  transparent rgb(255, 255, 255); }
-.timeline-container.right::after {content: ""; position: absolute; top: 20px; left: -10px; border-width: 10px; border-style: solid; border-color: transparent white transparent transparent;}
 
 /* Responsividade telas maiores*/
 @media only screen and (min-width: 1200px) {
