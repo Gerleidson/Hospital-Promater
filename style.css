@@ -13,10 +13,6 @@ main {background-color: #ffffff; margin-top: 0px ; }
 /*Main da pagina home*/
 .home-page {margin-top: 0;}
 
-/*banner*/
-.banner {overflow: hidden; position: relative; }
-.banner img { display: block; width: 100%; height: 50%;}
-
 .logo-img {max-height: 90px; width: auto; background-color: transparent;}
 .img-border {border: 2px solid #344d0e; border-radius: 4px; padding: 4px; width: 120px; height: auto;}
 
@@ -38,7 +34,6 @@ a:hover {transform: scale(1.05); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);}
 .navbar-brand {display: flex; align-items: center; margin-left: 50px;}
 .navbar-brand:hover {color: inherit; background-color: transparent;box-shadow: none;}
 
-
 /* Carousel */
 .carousel .carousel-inner {position: relative; width: 100%; overflow: hidden;}
 .carousel-item.active {display: block;}
@@ -51,13 +46,8 @@ a:hover {transform: scale(1.05); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);}
 .carousel-container {position: relative; border-bottom: 9px solid #344d0e; border-right: 9px solid #344d0e; overflow: hidden; clip-path: polygon(0 0, 100% 0, 100% 10%, 90% 100%, 0 100%);}
 
 /* Inverter a ordem dos botões */
-.carousel-control-prev {
-    order: 1; /* Aparece à esquerda */
-}
-
-.carousel-control-next {
-    order: 2 /* Aparece à direita */
-}
+.carousel-control-prev {order: 1;}
+.carousel-control-next {order: 2 }
 
 
 /* Main navigation styling */
@@ -70,11 +60,17 @@ a:hover {transform: scale(1.05); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);}
 .card {border-radius: 8px; overflow: hidden; height: 100%; background-color: #fff;}
 .card:hover {transform: scale(1.05); transition: transform 0.3s; cursor: pointer;}
 
-.grid-wrapper {border: 5px solid #344d0e; border-radius: 12px; padding: 20px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 100%; height: 400px;
-margin: 0 auto;}
+/*cards de noticias*/
+.news-card {border: none; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;}
+.news-card img {border-bottom: 1px solid #ddd;}
+.card-title {font-size: 1.25rem; font-weight: bold;}
+.divider {border: 0; border-top: 1px solid #ddd; margin: 10px 0;}
+.card-date {color: #777; font-size: 0.875rem; margin-bottom: 0;}
 
 /* Estilo para o botão WhatsApp */
 #robbu-whatsapp-button {position: fixed; bottom: 100px;right: 20px;  z-index: 9999;}
+.grid-wrapper {border: 5px solid #344d0e; border-radius: 12px; padding: 20px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 100%; height: 400px;
+    margin: 0 auto;}
 
 /* Footer*/
 footer {background-color: transparent; padding: 20px 0 0 0; min-height: 100px; text-align: center; }

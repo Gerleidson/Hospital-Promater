@@ -51,11 +51,10 @@ a:hover {transform: scale(1.05); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);}
 .card {border-radius: 8px; overflow: hidden; height: 100%; background-color: #fff;}
 .card:hover {transform: scale(1.05); transition: transform 0.3s; cursor: pointer;}
 
-.grid-wrapper {border: 5px solid #344d0e; border-radius: 12px; padding: 20px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 100%; height: 400px; margin: 0 auto;}
-
 /* Estilo para o botão WhatsApp */
 #robbu-whatsapp-button {position: fixed; bottom: 100px; right: 20px; z-index: 9999;}
 .rwb-tooltip{transform: translate(-50%, -50%); font-size: 14px; padding: 5px; background: rgba(255, 255, 255, 0.8); color: #000; border-radius: 3px; opacity: 0; transition: opacity 0.3s; pointer-events: none;}
+.grid-wrapper {border: 5px solid #344d0e; border-radius: 12px; padding: 20px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 100%; height: 400px; margin: 0 auto;}
 
 .more-info {display: none; margin-top: 10px;}
 
