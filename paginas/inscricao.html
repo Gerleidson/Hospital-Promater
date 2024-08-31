@@ -16,7 +16,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
-<body>
+<body class="bg-white">
 
     <header>
         <!-- Navbar -->
@@ -110,34 +110,32 @@
         </nav>
     </header>
 
-    <main class="pagina mt-5 pt-5">
-        <div class="page-main container mt-5">
-            <div class="bg-light p-5 rounded shadow-sm">
-                <h3 class="text-center mb-4">Inscrição para Vaga</h3>
-                <form action="processar_inscricao.php" method="post" enctype="multipart/form-data">
-                    <div class="form-group">
-                        <label for="nome">Nome Completo</label>
-                        <input type="text" class="form-control" id="nome" name="nome" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" class="form-control" id="telefone" name="telefone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="curriculo">Anexe seu Currículo (PDF)</label>
-                        <input type="file" class="form-control-file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx" required>
-                    </div>
-                    <button id="btnEnviar" class="btn btn-success" onclick="enviarFormulario()">Enviar</button>
-                </form>
-            </div>
+    <main class="container content-section">
+        <div class="container mt-5">
+            <h3 class="text-center mb-4">Inscrição para Vaga</h3>
+            <form action="processar_inscricao.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" name="telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="curriculo">Anexe seu Currículo (PDF)</label>
+                    <input type="file" class="form-control-file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx" required>
+                </div>
+                <button id="btnEnviar" class="btn btn-success" onclick="enviarFormulario()">Enviar</button>
+            </form>
         </div>
     </main>
 

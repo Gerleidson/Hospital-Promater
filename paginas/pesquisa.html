@@ -17,7 +17,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
-<body>
+<body class="bg-white">
     
     <header>
         <!-- Navbar -->
@@ -111,115 +111,113 @@
         </nav>
     </header>
 
-    <main class="pagina mt-5 pt-5">
-        <div class="page-main container mt-5">
-            <div class="bg-light p-5 rounded shadow-sm">
-                <div class="form-container">
-                    <h2 class="text-center">Formulário de Avaliação do Hospital Promater</h2>
-                    <p>Prezado(a) paciente,
-                        A sua opinião é extremamente importante para nós! Como parte de nossos esforços contínuos para melhorar a qualidade de nossos serviços, gostaríamos de convidá-lo(a) a participar de nossa Pesquisa de Satisfação do Paciente.                 
-                        Suas respostas nos ajudarão a entender melhor sua experiência conosco e a identificar áreas em que podemos melhorar.
-                        Suas respostas serão tratadas com confidencialidade e usadas apenas para fins de avaliação e melhoria interna.</p>
-                    <form action="#" method="post">
-                        <!-- Nome Completo -->
-                        <div class="form-group">
-                            <label for="name">Nome Completo</label>
-                            <input type="text" class="form-control" id="name" placeholder="Digite seu nome completo" required>
-                        </div>
-                        
-                        <!-- Data da Visita -->
-                        <div class="form-group">
-                            <label for="visitDate">Data da Visita</label>
-                            <input type="date" class="form-control" id="visitDate" required>
-                        </div>
+    <main class="container content-section">
+        <div class="container mt-5">
+            <div class="form-container">
+                <h2 class="text-center">Formulário de Avaliação do Hospital Promater</h2>
+                <p>Prezado(a) paciente,
+                    A sua opinião é extremamente importante para nós! Como parte de nossos esforços contínuos para melhorar a qualidade de nossos serviços, gostaríamos de convidá-lo(a) a participar de nossa Pesquisa de Satisfação do Paciente.                 
+                    Suas respostas nos ajudarão a entender melhor sua experiência conosco e a identificar áreas em que podemos melhorar.
+                    Suas respostas serão tratadas com confidencialidade e usadas apenas para fins de avaliação e melhoria interna.</p>
+                <form action="#" method="post">
+                    <!-- Nome Completo -->
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" class="form-control" id="name" placeholder="Digite seu nome completo" required>
+                    </div>
+                    
+                    <!-- Data da Visita -->
+                    <div class="form-group">
+                        <label for="visitDate">Data da Visita</label>
+                        <input type="date" class="form-control" id="visitDate" required>
+                    </div>
 
-                        <!-- Área visitada -->
-                        <div class="form-group">
-                            <label for="area">Área Visitada</label>
-                            <select class="form-control" id="area" required>
-                                <option value="">Selecione a área visitada</option>
-                                <option value="Ambulatório">Ambulatório</option>
-                                <option value="Emergência">Emergência</option>
-                                <option value="Internação">Internação</option>
-                                <option value="Laboratório">Laboratório</option>
-                                <option value="Outro">Outro</option>
-                            </select>
-                        </div>
+                    <!-- Área visitada -->
+                    <div class="form-group">
+                        <label for="area">Área Visitada</label>
+                        <select class="form-control" id="area" required>
+                            <option value="">Selecione a área visitada</option>
+                            <option value="Ambulatório">Ambulatório</option>
+                            <option value="Emergência">Emergência</option>
+                            <option value="Internação">Internação</option>
+                            <option value="Laboratório">Laboratório</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
 
-                        <!-- Avaliação do Atendimento -->
-                        <div class="form-group">
-                            <label>Avaliação do Atendimento</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="atendimento" id="atendimento1" value="Excelente" required>
-                                <label class="form-check-label" for="atendimento1">Excelente</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="atendimento" id="atendimento2" value="Bom" required>
-                                <label class="form-check-label" for="atendimento2">Bom</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="atendimento" id="atendimento3" value="Regular" required>
-                                <label class="form-check-label" for="atendimento3">Regular</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="atendimento" id="atendimento4" value="Ruim" required>
-                                <label class="form-check-label" for="atendimento4">Ruim</label>
-                            </div>
+                    <!-- Avaliação do Atendimento -->
+                    <div class="form-group">
+                        <label>Avaliação do Atendimento</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="atendimento" id="atendimento1" value="Excelente" required>
+                            <label class="form-check-label" for="atendimento1">Excelente</label>
                         </div>
-
-                        <!-- Avaliação da Estrutura -->
-                        <div class="form-group">
-                            <label>Avaliação da Estrutura</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="estrutura" id="estrutura1" value="Excelente" required>
-                                <label class="form-check-label" for="estrutura1">Excelente</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="estrutura" id="estrutura2" value="Boa" required>
-                                <label class="form-check-label" for="estrutura2">Boa</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="estrutura" id="estrutura3" value="Regular" required>
-                                <label class="form-check-label" for="estrutura3">Regular</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="estrutura" id="estrutura4" value="Ruim" required>
-                                <label class="form-check-label" for="estrutura4">Ruim</label>
-                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="atendimento" id="atendimento2" value="Bom" required>
+                            <label class="form-check-label" for="atendimento2">Bom</label>
                         </div>
-
-                        <!-- Avaliação da Limpeza -->
-                        <div class="form-group">
-                            <label>Avaliação da Limpeza</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="limpeza" id="limpeza1" value="Excelente" required>
-                                <label class="form-check-label" for="limpeza1">Excelente</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="limpeza" id="limpeza2" value="Boa" required>
-                                <label class="form-check-label" for="limpeza2">Boa</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="limpeza" id="limpeza3" value="Regular" required>
-                                <label class="form-check-label" for="limpeza3">Regular</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="limpeza" id="limpeza4" value="Ruim" required>
-                                <label class="form-check-label" for="limpeza4">Ruim</label>
-                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="atendimento" id="atendimento3" value="Regular" required>
+                            <label class="form-check-label" for="atendimento3">Regular</label>
                         </div>
-
-                        <!-- Comentários adicionais -->
-                        <div class="form-group">
-                            <label for="comments">Comentários Adicionais</label>
-                            <textarea class="form-control" id="comments" rows="4" placeholder="Escreva seus comentários aqui..."></textarea>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="atendimento" id="atendimento4" value="Ruim" required>
+                            <label class="form-check-label" for="atendimento4">Ruim</label>
                         </div>
+                    </div>
 
-                        <!-- Botão de Envio -->
-                        <button type="submit" class="btn btn-success">Enviar Avaliação</button>
-                        
-                    </form>
-                </div>
+                    <!-- Avaliação da Estrutura -->
+                    <div class="form-group">
+                        <label>Avaliação da Estrutura</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="estrutura" id="estrutura1" value="Excelente" required>
+                            <label class="form-check-label" for="estrutura1">Excelente</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="estrutura" id="estrutura2" value="Boa" required>
+                            <label class="form-check-label" for="estrutura2">Boa</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="estrutura" id="estrutura3" value="Regular" required>
+                            <label class="form-check-label" for="estrutura3">Regular</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="estrutura" id="estrutura4" value="Ruim" required>
+                            <label class="form-check-label" for="estrutura4">Ruim</label>
+                        </div>
+                    </div>
+
+                    <!-- Avaliação da Limpeza -->
+                    <div class="form-group">
+                        <label>Avaliação da Limpeza</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="limpeza" id="limpeza1" value="Excelente" required>
+                            <label class="form-check-label" for="limpeza1">Excelente</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="limpeza" id="limpeza2" value="Boa" required>
+                            <label class="form-check-label" for="limpeza2">Boa</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="limpeza" id="limpeza3" value="Regular" required>
+                            <label class="form-check-label" for="limpeza3">Regular</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="limpeza" id="limpeza4" value="Ruim" required>
+                            <label class="form-check-label" for="limpeza4">Ruim</label>
+                        </div>
+                    </div>
+
+                    <!-- Comentários adicionais -->
+                    <div class="form-group">
+                        <label for="comments">Comentários Adicionais</label>
+                        <textarea class="form-control" id="comments" rows="4" placeholder="Escreva seus comentários aqui..."></textarea>
+                    </div>
+
+                    <!-- Botão de Envio -->
+                    <button type="submit" class="btn btn-success">Enviar Avaliação</button>
+                    
+                </form>
             </div>
         </div>
     </main>

@@ -16,7 +16,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   
 </head>
-<body>
+<body class="bg-white">
 
     <header>
         <!-- Navbar -->
@@ -110,113 +110,108 @@
         </nav>
     </header>
     
-    <main class="pagina mt-5 pt-5">
+    <main class="container content-section">
         <div class="container mt-5">
-            <!-- Conteúdo principal da página -->
-            <div class="bg-light p-5 rounded shadow-sm">
-                <div class="row mb-3"> <!-- Ajustado de mb-5 para mb-3 para menos espaço -->
-                    <!-- Seção de descrição sobre Medicina Ocupacional -->
-                    <div class="col-md-8">
-                        <div class="p-4 bg-light">
-                            <h3 class="text-black">A Medicina Ocupacional</h3>
-                            <p class="mb-0">
-                                É uma especialidade dedicada à promoção da saúde e segurança dos trabalhadores, prevenindo, diagnosticando e tratando doenças e lesões relacionadas ao ambiente de trabalho.
-                            </p>
-                            <div class="row mt-3">
-                                <div class="col-md-4 mb-4">
-                                    <div class="feature-card">
-                                        <i class="fas fa-briefcase-medical feature-icon"></i>
-                                        <div class="feature-title">Gestão de Saúde</div>
-                                        <div class="feature-description">
-                                            A gestão de medicina ocupacional é crucial para o bem-estar e produtividade dos colaboradores.
-                                        </div>
+            <div class="row mb-3"> <!-- Ajustado de mb-5 para mb-3 para menos espaço -->
+                <!-- Seção de descrição sobre Medicina Ocupacional -->
+                <div class="col-md-8">
+                        <h3 class="text-black">A Medicina Ocupacional</h3>
+                        <p class="mb-0">
+                            É uma especialidade dedicada à promoção da saúde e segurança dos trabalhadores, prevenindo, diagnosticando e tratando doenças e lesões relacionadas ao ambiente de trabalho.
+                        </p>
+                        <div class="row mt-3">
+                            <div class="col-md-4 mb-4">
+                                <div class="feature-card">
+                                    <i class="fas fa-briefcase-medical feature-icon"></i>
+                                    <div class="feature-title">Gestão de Saúde</div>
+                                    <div class="feature-description">
+                                        A gestão de medicina ocupacional é crucial para o bem-estar e produtividade dos colaboradores.
                                     </div>
                                 </div>
-                                <div class="col-md-4 mb-4">
-                                    <div class="feature-card">
-                                        <i class="fas fa-user-md feature-icon"></i>
-                                        <div class="feature-title">Equipe Especializada</div>
-                                        <div class="feature-description">
-                                            Nossa equipe está preparada para oferecer suporte completo, desde a prevenção até o acompanhamento da saúde.
-                                        </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="feature-card">
+                                    <i class="fas fa-user-md feature-icon"></i>
+                                    <div class="feature-title">Equipe Especializada</div>
+                                    <div class="feature-description">
+                                        Nossa equipe está preparada para oferecer suporte completo, desde a prevenção até o acompanhamento da saúde.
                                     </div>
                                 </div>
-                                <div class="col-md-4 mb-4">
-                                    <div class="feature-card">
-                                        <i class="fas fa-hospital-user feature-icon"></i>
-                                        <div class="feature-title">Suporte Completo</div>
-                                        <div class="feature-description">
-                                            Implementação de programas e exames periódicos para garantir um ambiente laboral saudável.
-                                        </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="feature-card">
+                                    <i class="fas fa-hospital-user feature-icon"></i>
+                                    <div class="feature-title">Suporte Completo</div>
+                                    <div class="feature-description">
+                                        Implementação de programas e exames periódicos para garantir um ambiente laboral saudável.
                                     </div>
                                 </div>
                             </div>
                         </div>
+                </div>
+                
+                <!-- Formulário para solicitar uma proposta rápida -->
+                <div class="col-md-4">
+                    <div class="p-4 bg-white border rounded shadow-sm">
+                        <h4 class="text-black">Solicitar Uma Proposta Rápida</h4>
+                        <form action="https://formspree.io/f/meojeelz" method="POST">
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" class="form-control" id="telefone" placeholder="Seu telefone">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Enviar</button>
+                        </form>
                     </div>
-                    
-                    <!-- Formulário para solicitar uma proposta rápida -->
-                    <div class="col-md-4">
-                        <div class="p-4 bg-white border rounded shadow-sm">
-                            <h4 class="text-black">Solicitar Uma Proposta Rápida</h4>
-                            <form action="https://formspree.io/f/meojeelz" method="POST">
-                                <div class="form-group">
-                                    <label for="nome">Nome</label>
-                                    <input type="text" class="form-control" id="nome" placeholder="Seu nome">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">E-mail</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
-                                </div>
-                                <div class="form-group">
-                                    <label for="telefone">Telefone</label>
-                                    <input type="tel" class="form-control" id="telefone" placeholder="Seu telefone">
-                                </div>
-                                <div class="form-group">
-                                    <label for="mensagem">Mensagem</label>
-                                    <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-success btn-block">Enviar</button>
-                            </form>
-                        </div>
-                    </div>
                 </div>
-    
-                <!-- Seção com as Funções -->
-                <div class="mt-5">
-                    <h4 class="text-black">Funções:</h4>
-                    <ul>
-                        <li>Avaliação e Monitoramento: Realização de exames médicos e monitoramento das condições de saúde dos trabalhadores.</li>
-                        <li>Prevenção: Implementação de medidas para evitar doenças e lesões ocupacionais.</li>
-                        <li>Tratamento: Diagnóstico e tratamento de condições de saúde relacionadas ao trabalho.</li>
-                        <li>Reabilitação: Apoio na reintegração de trabalhadores após acidentes ou doenças ocupacionais.</li>
-                        <li>Consultoria: Orientação sobre práticas seguras e cumprimento das normas de saúde e segurança.</li>
-                    </ul>
-                </div>
-    
-                <!-- Seção com as Vantagens -->
-                <div class="mt-5">
-                    <h4 class="text-black">Vantagens:</h4>
-                    <ul>
-                        <li>Redução de Absenteísmo: Menos faltas e ausências devido a problemas de saúde.</li>
-                        <li>Aumento da Produtividade: Ambiente de trabalho saudável melhora a eficiência.</li>
-                        <li>Menores Custos com Saúde: Diminuição de gastos com tratamentos e compensações.</li>
-                        <li>Conformidade Legal: Garantia de cumprimento das regulamentações de saúde e segurança.</li>
-                        <li>Melhoria da Moral: Ambientes seguros e saudáveis elevam a satisfação dos funcionários.</li>
-                    </ul>
-                </div>
-    
-                <!-- Seção com o Embasamento Legal -->
-                <div class="mt-5">
-                    <h4 class="text-black">Embasamento Legal:</h4>
-                    <p>
-                        A Medicina Ocupacional no Brasil é regulada pela Consolidação das Leis do Trabalho (CLT) e suas Normas Regulamentadoras (NRs), como a NR 7, que define o Programa de Controle Médico de Saúde Ocupacional (PCMSO). A Lei nº 6.514/1977 e o Decreto nº 3.048/1999 estabelecem as responsabilidades dos empregadores e a prevenção de doenças ocupacionais. A Lei nº 8.213/1991 garante direitos em casos de acidentes e doenças, e a Lei nº 13.467/2017, com a Reforma Trabalhista, introduz novas disposições que afetam a saúde e segurança no trabalho. Essas normas asseguram a proteção e a promoção da saúde dos trabalhadores.
-                    </p>
-                </div>
-    
-                <!-- Mensagem de Compromisso -->
-                <div class="text-center mt-4">
-                    <p>Estamos comprometidos em fornecer um suporte sólido e confiável para promover a saúde no ambiente de trabalho, assegurando que sua empresa adote as melhores práticas em medicina ocupacional.</p>
-                </div>
+            </div>
+
+            <!-- Seção com as Funções -->
+            <div class="p-4 bg-white ">
+                <h4 class="text-black">Funções:</h4>
+                <ul>
+                    <li>Avaliação e Monitoramento: Realização de exames médicos e monitoramento das condições de saúde dos trabalhadores.</li>
+                    <li>Prevenção: Implementação de medidas para evitar doenças e lesões ocupacionais.</li>
+                    <li>Tratamento: Diagnóstico e tratamento de condições de saúde relacionadas ao trabalho.</li>
+                    <li>Reabilitação: Apoio na reintegração de trabalhadores após acidentes ou doenças ocupacionais.</li>
+                    <li>Consultoria: Orientação sobre práticas seguras e cumprimento das normas de saúde e segurança.</li>
+                </ul>
+            </div>
+
+            <!-- Seção com as Vantagens -->
+            <div class="p-4 bg-white ">
+                <h4 class="text-black">Vantagens:</h4>
+                <ul>
+                    <li>Redução de Absenteísmo: Menos faltas e ausências devido a problemas de saúde.</li>
+                    <li>Aumento da Produtividade: Ambiente de trabalho saudável melhora a eficiência.</li>
+                    <li>Menores Custos com Saúde: Diminuição de gastos com tratamentos e compensações.</li>
+                    <li>Conformidade Legal: Garantia de cumprimento das regulamentações de saúde e segurança.</li>
+                    <li>Melhoria da Moral: Ambientes seguros e saudáveis elevam a satisfação dos funcionários.</li>
+                </ul>
+            </div>
+
+            <!-- Seção com o Embasamento Legal -->
+            <div class="p-4 bg-white ">
+                <h4 class="text-black">Embasamento Legal:</h4>
+                <p>
+                    A Medicina Ocupacional no Brasil é regulada pela Consolidação das Leis do Trabalho (CLT) e suas Normas Regulamentadoras (NRs), como a NR 7, que define o Programa de Controle Médico de Saúde Ocupacional (PCMSO). A Lei nº 6.514/1977 e o Decreto nº 3.048/1999 estabelecem as responsabilidades dos empregadores e a prevenção de doenças ocupacionais. A Lei nº 8.213/1991 garante direitos em casos de acidentes e doenças, e a Lei nº 13.467/2017, com a Reforma Trabalhista, introduz novas disposições que afetam a saúde e segurança no trabalho. Essas normas asseguram a proteção e a promoção da saúde dos trabalhadores.
+                </p>
+            </div>
+
+            <!-- Mensagem de Compromisso -->
+            <div class="p-4 bg-white ">
+                <p>Estamos comprometidos em fornecer um suporte sólido e confiável para promover a saúde no ambiente de trabalho, assegurando que sua empresa adote as melhores práticas em medicina ocupacional.</p>
             </div>
         </div>
     </main>

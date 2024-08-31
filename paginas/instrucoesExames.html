@@ -18,13 +18,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <style>
-        .instruction-content {
-            display: none;
-        }
-    </style>
 </head>
-<body>
+<body class="bg-white">
 
     <header>
         <!-- Navbar -->
@@ -118,8 +113,8 @@
         </nav>
     </header>
 
-    <main class="pagina mt-5 pt-5">
-        <div class="container mt-4">
+    <main class="container content-section">
+        <div class="container mt-5">
             <h3 class="mb-4">Instruções de Exames</h3>
             <div id="examList" class="list-group">
                 <!-- Repeat this block for each exam item -->
@@ -132,195 +127,195 @@
                         <p>Para o exame de sangue, é necessário estar em jejum de pelo menos 8 horas. Evite consumir bebidas alcoólicas 24 horas antes do exame.</p>
                     </div>
                 </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Urina</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('urineTest')">+</button>
-                        </div>
-                        <div id="urineTest" class="instruction-content mt-2">
-                            <p>Para o exame de urina, deve-se evitar a ingestão de alimentos que possam alterar a coloração da urina, como beterraba.</p>
-                        </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Urina</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('urineTest')">+</button>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Fezes</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('stoolTest')">+</button>
-                        </div>
-                        <div id="stoolTest" class="instruction-content mt-2">
-                            <p>Para o exame de fezes, deve-se evitar alimentos que podem alterar o resultado, como frutas e vegetais ricos em fibras.</p>
-                        </div>
+                    <div id="urineTest" class="instruction-content mt-2">
+                        <p>Para o exame de urina, deve-se evitar a ingestão de alimentos que possam alterar a coloração da urina, como beterraba.</p>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Colesterol</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('cholesterolTest')">+</button>
-                        </div>
-                        <div id="cholesterolTest" class="instruction-content mt-2">
-                            <p>Para o exame de colesterol, é recomendado jejum de 12 horas. Evite alimentos gordurosos no dia anterior.</p>
-                        </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Fezes</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('stoolTest')">+</button>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Glicose</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('glucoseTest')">+</button>
-                        </div>
-                        <div id="glucoseTest" class="instruction-content mt-2">
-                            <p>Para o exame de glicose, é necessário jejum de pelo menos 8 horas. Evite doces e bebidas açucaradas antes do exame.</p>
-                        </div>
+                    <div id="stoolTest" class="instruction-content mt-2">
+                        <p>Para o exame de fezes, deve-se evitar alimentos que podem alterar o resultado, como frutas e vegetais ricos em fibras.</p>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Hepatite</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('hepatitisTest')">+</button>
-                        </div>
-                        <div id="hepatitisTest" class="instruction-content mt-2">
-                            <p>Para o exame de hepatite, não há preparações especiais, mas informe ao médico sobre qualquer condição pré-existente.</p>
-                        </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Colesterol</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('cholesterolTest')">+</button>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de HIV</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('hivTest')">+</button>
-                        </div>
-                        <div id="hivTest" class="instruction-content mt-2">
-                            <p>Para o exame de HIV, é aconselhável não realizar qualquer tipo de teste diagnóstico nos 6 meses anteriores ao exame.</p>
-                        </div>
+                    <div id="cholesterolTest" class="instruction-content mt-2">
+                        <p>Para o exame de colesterol, é recomendado jejum de 12 horas. Evite alimentos gordurosos no dia anterior.</p>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de TSH</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('tshTest')">+</button>
-                        </div>
-                        <div id="tshTest" class="instruction-content mt-2">
-                            <p>Para o exame de TSH, não é necessário jejum. Pode ser realizado a qualquer hora do dia.</p>
-                        </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Glicose</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('glucoseTest')">+</button>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de PSA</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('psaTest')">+</button>
-                        </div>
-                        <div id="psaTest" class="instruction-content mt-2">
-                            <p>Para o exame de PSA, é recomendado evitar atividades físicas intensas e relações sexuais nas 48 horas anteriores.</p>
-                        </div>
+                    <div id="glucoseTest" class="instruction-content mt-2">
+                        <p>Para o exame de glicose, é necessário jejum de pelo menos 8 horas. Evite doces e bebidas açucaradas antes do exame.</p>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Creatinina</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('creatinineTest')">+</button>
-                        </div>
-                        <div id="creatinineTest" class="instruction-content mt-2">
-                            <p>Para o exame de creatinina, não é necessário jejum. No entanto, evite a ingestão de alimentos ricos em proteínas antes do exame.</p>
-                        </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Hepatite</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('hepatitisTest')">+</button>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Ácido Úrico</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('uricAcidTest')">+</button>
-                        </div>
-                        <div id="uricAcidTest" class="instruction-content mt-2">
-                            <p>Para o exame de ácido úrico, recomenda-se jejum de 8 horas e evitar alimentos ricos em purinas, como carnes vermelhas.</p>
-                        </div>
+                    <div id="hepatitisTest" class="instruction-content mt-2">
+                        <p>Para o exame de hepatite, não há preparações especiais, mas informe ao médico sobre qualquer condição pré-existente.</p>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Hormônios</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('hormonesTest')">+</button>
-                        </div>
-                        <div id="hormonesTest" class="instruction-content mt-2">
-                            <p>Para exames hormonais, o jejum e o horário do exame podem variar dependendo do hormônio a ser testado.</p>
-                        </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de HIV</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('hivTest')">+</button>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Vitamina D</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('vitaminDTest')">+</button>
-                        </div>
-                        <div id="vitaminDTest" class="instruction-content mt-2">
-                            <p>Não há preparação especial para o exame de vitamina D, mas evite a exposição excessiva ao sol antes do exame.</p>
-                        </div>
+                    <div id="hivTest" class="instruction-content mt-2">
+                        <p>Para o exame de HIV, é aconselhável não realizar qualquer tipo de teste diagnóstico nos 6 meses anteriores ao exame.</p>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Cálcio</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('calciumTest')">+</button>
-                        </div>
-                        <div id="calciumTest" class="instruction-content mt-2">
-                            <p>Para o exame de cálcio, recomenda-se jejum de 12 horas e evitar suplementos de cálcio antes do exame.</p>
-                        </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de TSH</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('tshTest')">+</button>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Ferritina</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('ferritinTest')">+</button>
-                        </div>
-                        <div id="ferritinTest" class="instruction-content mt-2">
-                            <p>Para o exame de ferritina, jejum não é necessário, mas evite alimentos ricos em ferro antes do exame.</p>
-                        </div>
+                    <div id="tshTest" class="instruction-content mt-2">
+                        <p>Para o exame de TSH, não é necessário jejum. Pode ser realizado a qualquer hora do dia.</p>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Bilirrubina</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('bilirubinTest')">+</button>
-                        </div>
-                        <div id="bilirubinTest" class="instruction-content mt-2">
-                            <p>Para o exame de bilirrubina, não é necessário jejum, mas evite alimentos gordurosos e bebidas alcoólicas antes do exame.</p>
-                        </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de PSA</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('psaTest')">+</button>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Albumina</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('albuminTest')">+</button>
-                        </div>
-                        <div id="albuminTest" class="instruction-content mt-2">
-                            <p>Não é necessário jejum para o exame de albumina. Informe ao médico sobre qualquer medicamento que esteja tomando.</p>
-                        </div>
+                    <div id="psaTest" class="instruction-content mt-2">
+                        <p>Para o exame de PSA, é recomendado evitar atividades físicas intensas e relações sexuais nas 48 horas anteriores.</p>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Triglicerídeos</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('triglyceridesTest')">+</button>
-                        </div>
-                        <div id="triglyceridesTest" class="instruction-content mt-2">
-                            <p>Para o exame de triglicerídeos, recomenda-se jejum de 12 horas. Evite alimentos ricos em gorduras e açúcares.</p>
-                        </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Creatinina</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('creatinineTest')">+</button>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Gama GT</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('gammaGTTest')">+</button>
-                        </div>
-                        <div id="gammaGTTest" class="instruction-content mt-2">
-                            <p>Para o exame de gama GT, é aconselhável evitar o consumo de bebidas alcoólicas e medicamentos que podem afetar o resultado.</p>
-                        </div>
+                    <div id="creatinineTest" class="instruction-content mt-2">
+                        <p>Para o exame de creatinina, não é necessário jejum. No entanto, evite a ingestão de alimentos ricos em proteínas antes do exame.</p>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de TGO e TGP</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('tgoTgpTest')">+</button>
-                        </div>
-                        <div id="tgoTgpTest" class="instruction-content mt-2">
-                            <p>Para o exame de TGO e TGP, recomenda-se jejum de 8 horas. Evite alimentos gordurosos e bebidas alcoólicas.</p>
-                        </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Ácido Úrico</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('uricAcidTest')">+</button>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Ácido Fólico</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('folicAcidTest')">+</button>
-                        </div>
-                        <div id="folicAcidTest" class="instruction-content mt-2">
-                            <p>Não é necessário jejum para o exame de ácido fólico, mas informe ao médico sobre qualquer suplemento vitamínico.</p>
-                        </div>
+                    <div id="uricAcidTest" class="instruction-content mt-2">
+                        <p>Para o exame de ácido úrico, recomenda-se jejum de 8 horas e evitar alimentos ricos em purinas, como carnes vermelhas.</p>
                     </div>
-                    <div class="list-group-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>Exame de Cobre</span>
-                            <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('copperTest')">+</button>
-                        </div>
-                        <div id="copperTest" class="instruction-content mt-2">
-                            <p>Para o exame de cobre, é recomendado jejum de 12 horas e evitar o uso de suplementos de cobre antes do exame.</p>
-                        </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Hormônios</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('hormonesTest')">+</button>
                     </div>
+                    <div id="hormonesTest" class="instruction-content mt-2">
+                        <p>Para exames hormonais, o jejum e o horário do exame podem variar dependendo do hormônio a ser testado.</p>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Vitamina D</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('vitaminDTest')">+</button>
+                    </div>
+                    <div id="vitaminDTest" class="instruction-content mt-2">
+                        <p>Não há preparação especial para o exame de vitamina D, mas evite a exposição excessiva ao sol antes do exame.</p>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Cálcio</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('calciumTest')">+</button>
+                    </div>
+                    <div id="calciumTest" class="instruction-content mt-2">
+                        <p>Para o exame de cálcio, recomenda-se jejum de 12 horas e evitar suplementos de cálcio antes do exame.</p>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Ferritina</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('ferritinTest')">+</button>
+                    </div>
+                    <div id="ferritinTest" class="instruction-content mt-2">
+                        <p>Para o exame de ferritina, jejum não é necessário, mas evite alimentos ricos em ferro antes do exame.</p>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Bilirrubina</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('bilirubinTest')">+</button>
+                    </div>
+                    <div id="bilirubinTest" class="instruction-content mt-2">
+                        <p>Para o exame de bilirrubina, não é necessário jejum, mas evite alimentos gordurosos e bebidas alcoólicas antes do exame.</p>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Albumina</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('albuminTest')">+</button>
+                    </div>
+                    <div id="albuminTest" class="instruction-content mt-2">
+                        <p>Não é necessário jejum para o exame de albumina. Informe ao médico sobre qualquer medicamento que esteja tomando.</p>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Triglicerídeos</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('triglyceridesTest')">+</button>
+                    </div>
+                    <div id="triglyceridesTest" class="instruction-content mt-2">
+                        <p>Para o exame de triglicerídeos, recomenda-se jejum de 12 horas. Evite alimentos ricos em gorduras e açúcares.</p>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Gama GT</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('gammaGTTest')">+</button>
+                    </div>
+                    <div id="gammaGTTest" class="instruction-content mt-2">
+                        <p>Para o exame de gama GT, é aconselhável evitar o consumo de bebidas alcoólicas e medicamentos que podem afetar o resultado.</p>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de TGO e TGP</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('tgoTgpTest')">+</button>
+                    </div>
+                    <div id="tgoTgpTest" class="instruction-content mt-2">
+                        <p>Para o exame de TGO e TGP, recomenda-se jejum de 8 horas. Evite alimentos gordurosos e bebidas alcoólicas.</p>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Ácido Fólico</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('folicAcidTest')">+</button>
+                    </div>
+                    <div id="folicAcidTest" class="instruction-content mt-2">
+                        <p>Não é necessário jejum para o exame de ácido fólico, mas informe ao médico sobre qualquer suplemento vitamínico.</p>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Exame de Cobre</span>
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleInstruction('copperTest')">+</button>
+                    </div>
+                    <div id="copperTest" class="instruction-content mt-2">
+                        <p>Para o exame de cobre, é recomendado jejum de 12 horas e evitar o uso de suplementos de cobre antes do exame.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
