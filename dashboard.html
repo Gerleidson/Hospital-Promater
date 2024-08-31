@@ -173,27 +173,29 @@
                                     <h4 class="mb-0">Nova Notícia</h4>
                                 </div>
                                 <div class="card-body">
-                                    <form>
+                                    <!-- Formulário para adicionar notícias -->
+                                    <form id="addNewsForm">
                                         <div class="form-group">
-                                            <label for="titulo">Título</label>
-                                            <input type="text" class="form-control" id="titulo" placeholder="Título da Notícia">
+                                            <label for="title">Título</label>
+                                            <input type="text" id="title" name="title" class="form-control" required>
                                         </div>
                                         <div class="form-group">
-                                            <label for="descricao">Descrição</label>
-                                            <textarea class="form-control" id="descricao" rows="3" placeholder="Descrição da Notícia"></textarea>
+                                            <label for="image">Imagem URL</label>
+                                            <input type="text" id="image" name="image" class="form-control" required>
                                         </div>
                                         <div class="form-group">
-                                            <label for="imagens">Imagens (Mídia)</label>
-                                            <input type="file" class="form-control-file" id="imagens">
+                                            <label for="date">Data</label>
+                                            <input type="date" id="date" name="date" class="form-control" required>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Salvar</button>
+                                        <div class="form-group">
+                                            <label for="description">Descrição</label>
+                                            <textarea id="description" name="description" class="form-control" rows="3" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Adicionar Notícia</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
 
@@ -434,6 +436,30 @@
                 link.classList.add('active');
             });
         });
+
+
+    document.getElementById('addNewsForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const title = document.getElementById('title').value;
+        const image = document.getElementById('image').value;
+        const date = document.getElementById('date').value;
+        const description = document.getElementById('description').value;
+
+        const response = await fetch('/news/add', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ title, image, date, description })
+        });
+
+        if (response.ok) {
+            alert('Notícia adicionada com sucesso!');
+            // Limpar o formulário ou redirecionar
+        } else {
+            alert('Erro ao adicionar notícia.');
+        }
+    });
+
 
     </script>
 </body>

@@ -428,5 +428,34 @@
 <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+<script>
+    async function loadNews() {
+        const response = await fetch('/news');
+        const news = await response.json();
+
+        const container = document.getElementById('newsContainer');
+        container.innerHTML = ''; // Limpa o container antes de adicionar as notícias
+
+        news.forEach(item => {
+            const card = `
+                <div class="col-md-4 mb-4">
+                    <div class="card news-card">
+                        <img src="${item.image}" class="card-img-top" alt="${item.title}">
+                        <div class="card-body">
+                            <h5 class="card-title">${item.title}</h5>
+                            <hr class="divider">
+                            <p class="card-date">${new Date(item.date).toLocaleDateString()}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            container.innerHTML += card;
+        });
+    }
+
+    // Carregar notícias ao iniciar a página
+    loadNews();
+</script>
+
 </body>
 </html>
