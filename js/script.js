@@ -307,33 +307,6 @@ document.getElementById('searchInput').addEventListener('keyup', function() {
     });
 });
 
-// Função para ordenar os cartões das especialidades por ordem alfabética
-function sortCards() {
-    // Obter o container onde os cartões estão localizados
-    const container = document.querySelector('.page-main .bg-light');
-    
-    // Obter todos os cartões e convertê-los em um array
-    let cards = Array.from(container.querySelectorAll('.card'));
-    
-    // Ordenar os cartões por especialidade (baseado no conteúdo do <div class="specialty">)
-    cards.sort((a, b) => {
-        let specialtyA = a.querySelector('.specialty').textContent.toLowerCase();
-        let specialtyB = b.querySelector('.specialty').textContent.toLowerCase();
-        return specialtyA.localeCompare(specialtyB);
-    });
-
-    // Remover todos os cartões do container
-    container.innerHTML = '';
-
-    // Adicionar os cartões ordenados de volta ao container
-    cards.forEach(card => container.appendChild(card));
-}
-
-// Adicionar um evento para ordenar os cartões quando a página carrega
-document.addEventListener('DOMContentLoaded', function() {
-    sortCards();
-});
-
 //Função para exibir mensagem do Whatsapp de acordo com a especialidade selecionada
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.whatsapp-link').forEach(function(link) {
@@ -355,7 +328,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-//função para exibir o texto na pagira de especialidades
+
+//função para exibir o texto na pagina de especialidades
 document.addEventListener('DOMContentLoaded', function() {
     // Selecione todos os botões "Saiba Mais"
     const buttons = document.querySelectorAll('.saiba-mais-btn');
@@ -377,3 +351,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hospital Promater">
+    <meta name="keywords" content="Hospital, Promater">
+    <meta name="author" content="Gerleidson Bomfim e Ruan Esteves">
+    <meta name="robots" content="index, follow">
+    <title>Corpo Clínico - Hospital Promater</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../stylePaginas.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <!-- Logo -->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logoSemFundo.png" alt="Logo" class="logo-img" />
+            </a>
+            
+            <!-- Main Navigation -->
+            <div class="main-nav">
+                <ul>
+                    <li><a href="index.html" title="Home">INICIO</a></li>
+                    <li>
+                        <a href="#">A PROMATER</a>
+                        <ul>
+                            <li>
+                                <a href="#" title="Institucional">Institucional</a>
+                                <ul>
+                                    <li><a href="paginas/quemSomos.html" title="Quem Somos">Quem Somos</a></li>
+                                    <li><a href="paginas/politicaQualidade.html" title="Política de Qualidade">Política de Qualidade</a></li>
+                                    <li><a href="paginas/missao.html" title="Missão, Visão e Valores">Missão, Visão e Valores</a></li>
+                                    <li><a href="paginas/politicaPrivacidade.html" title="Politica de Privacidade">Politica de Privacidade</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="paginas/diretoria.html" title="Diretoria">Diretoria</a></li>
+                            <li><a href="paginas/certificacoes.html" title="Certificações e Acreditações">Certificações e Acreditações</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ATENDIMENTO</a>
+                        <ul>
+                            <li>
+                                <a href="#" title="Ambulatorial">Ambulatorial</a>
+                                <ul>
+                                    <li><a href="paginas/corpoclinico.html" title="Especialidades">Especialidades</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" title="Laboratorial">Laboratorial</a>
+                                <ul>
+                                    <li><a href="https://www.labchecap.com.br/resultado-de-exames" title="Resultado de exames">Resultado de exames</a></li>
+                                    <!-- <li><a href="paginas/instrucoesExames.html" title="Instruções de exame">Instruções de exames</a></li>  -->
+                                    <li><a href="paginas/parceriaLabchecap.html" title="Parceria Labchecap">Parceria Labchecap</a></li>
+                                    <li><a href="paginas/coletaDomiciliar.html" title="Coleta domiciliar">Coleta domiciliar</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" title="Emergencial">Emergencial</a>
+                                <ul>
+                                    <li><a href="paginas/atendimento24H.html" title="Sobre Atendimento 24H">Sobre Atendimento 24H</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" title="Ocupacional">Ocupacional</a>
+                                <ul>
+                                    <li><a href="paginas/medicinaOcupacional.html" title="Ocupacional">Medicina Ocupacional</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="paginas/exames.html" title="Exames de imagem">Exames de imagem / Cardiológicos</a></li>
+                            <li><a href="paginas/convenio.html" title="Convenio">Convênios</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">CONTATO</a>
+                        <ul>
+                            <li>
+                                <a href="paginas/contato.html" title="Fale Conosco"><i class="fas fa-envelope"></i> Fale Conosco</a>
+                            </li>
+                            <li>
+                                <a href="paginas/trabalheConosco.html" title="Trabalhe Conosco"><i class="fas fa-briefcase"></i> Trabalhe Conosco</a>
+                            </li>
+                            <li>
+                                <a href="https://docs.google.com/forms/d/1J9Of4940VyoOdomYQUOcSU2-Lw7eiFjy0K6bzCR1uUw/viewform?edit_requested=true"><i class="fas fa-poll"></i> Pesquisa de Satisfação</a>
+                            </li>
+                            <li>
+                                <a href="paginas/login.html" title="Área do Administrador"><i class="fas fa-user-shield"></i> Administrador</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+          
+            <!-- Mobile Menu Button and Overlay -->
+            <div class="mob-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="overlay"></div>
+        </nav>
+    </header>
+
+    <main class="pagina mt-5 pt-5">
+        <div class="page-main container mt-5 p-5 bg-light rounded shadow-sm">
+            <div class="text-center">
+                <h3>
+                    <i class="fa fa-stethoscope" aria-hidden="true" style="font-size: 24px; vertical-align: middle; margin-right: 8px;"></i>
+                    Especialidades e Cirurgias
+                </h3>
+                
+                <p>Pesquise por uma especialidade e agende uma consulta.</p>
+            </div>
+            <div class="text-center my-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                    </div>
+                    <input type="text" id="searchInput" placeholder="Digite uma especialidade ou cirurgia" class="form-control">
+                </div>
+            </div>
+            
+            <!-- Card Layout -->
+           
+                <div class="card mb-3" data-specialty="Dermatologia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Dermatologia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Dermatologia">
+                        <h4> O que é Dermatologia?</h4>
+                        <p> A Dermatologia é a especialidade médica que concentra no diagnóstico, prevenção e tratamento de doenças e afecções relacionadas à pele, pelos, mucosas, cabelo e unhas. É também especialidade indicada para atuação em procedimentos médicos estéticos, cirúrgicos, oncológicos.</p>
+                    </div>
+                </div>
+            
+                <div class="card mb-3" data-specialty="Cirurgião Pediátrico">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Cirurgião Pediátrico</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Cirurgião Pediátrico">
+                        <h4>O que é Cirurgião Pediátrico?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vel leo cursus tincidunt.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-3" data-specialty="Otorrinolaringologia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Otorrinolaringologia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Otorrinolaringologia">
+                        <h4>O que é Otorrinolaringologia?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vel leo cursus tincidunt.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-3" data-specialty="Ultrasonografia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Ultrasonografia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Ultrasonografia">
+                        <h4>O que é Ultrasonografia?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vel leo cursus tincidunt.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Psicologia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Psicologia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Psicologia">
+                        <h4>O que é Psicologia?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vel leo cursus tincidunt.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Oftalmologia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Oftalmologia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Oftalmologia">
+                        <h4>O que é Oftalmologia?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vel leo cursus tincidunt.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-3" data-specialty="Clínico Geral">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Clínico Geral</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Clínico Geral">
+                        <h4>O que é Clínico Geral?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vel leo cursus tincidunt.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-3" data-specialty="Obstetrícia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Obstetrícia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Obstetrícia">
+                        <h4>O que é Obstetrícia?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vel leo cursus tincidunt.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-3" data-specialty="Ginecologia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Ginecologia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Ginecologia">
+                        <h4>O que é Ginecologia?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vel leo cursus tincidunt.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-3" data-specialty="Podologia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Podologia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Podologia">
+                        <h4>O que é Podologia?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vel leo cursus tincidunt.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-3" data-specialty="Fonoaudiologia (Exame)">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Fonoaudiologia (Exame)</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Fonoaudiologia (Exame)">
+                        <h4>O que é Fonoaudiologia?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vel leo cursus tincidunt.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Endocrinologia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Endocrinologia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Endocrinologia">
+                        <h4>O que é Endocrinologia?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Angiologia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Angiologia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Angiologia">
+                        <h4>O que é Angiologia?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Cirurgia Vascular">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Cirurgia Vascular</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Cirurgia-Vascular">
+                        <h4>O que é Cirurgia Vascular?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Fisioterapia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Fisioterapia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Fisioterapia">
+                        <h4>O que é Fisioterapia?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Neurologia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Neurologia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Neurologia">
+                        <h4>O que é Neurologia?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Massoterapia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Massoterapia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Massoterapia">
+                        <h4>O que é Massoterapia?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Ortopedia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Ortopedia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Ortopedia">
+                        <h4>O que é Ortopedia?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Cirurgião Geral">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Cirurgião Geral</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Cirurgiao-Geral">
+                        <h4>O que é Cirurgião Geral?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Urologia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Urologia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Urologia">
+                        <h4>O que é Urologia?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Emergência">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Emergência</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Emergencia">
+                        <h4>O que é Emergência?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Cardiologia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Cardiologia</div>
+                        <div>
+                            <a href="especialidades/cardiologia.html" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                  
+                </div>
+                
+                <div class="card mb-3" data-specialty="Gastroenterologia">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Gastroenterologia</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Gastroenterologia">
+                        <h4>O que é Gastroenterologia?</h4>
+                        <p>Gastroenterologia trata das condições do sistema digestivo, incluindo problemas no estômago, intestinos e fígado.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Nutrição">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Nutrição</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Nutricao">
+                        <h4>O que é Nutrição?</h4>
+                        <p>A Nutrição ajuda na escolha de alimentos saudáveis para promover a saúde e prevenir doenças relacionadas à dieta.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Pediatria">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Pediatria</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Pediatria">
+                        <h4>O que é Pediatria?</h4>
+                        <p>Pediatria cuida da saúde de bebês, crianças e adolescentes, abordando desde o nascimento até a adolescência.</p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3" data-specialty="Cirurgião Bariátrico">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div class="specialty">Cirurgião Bariátrico</div>
+                        <div>
+                            <a href="#" class="btn btn-info mr-2 saiba-mais-btn">Saiba Mais</a>
+                            <a href="#" class="btn btn-success whatsapp-link">Agendar</a>
+                        </div>
+                    </div>
+                    <div class="more-info" id="info-Cirurgiao-Bariatrico">
+                        <h4>O que é Cirurgia Bariátrica?</h4>
+                        <p>Cirurgia Bariátrica é uma especialidade voltada para o tratamento cirúrgico da obesidade e suas comorbidades.</p>
+                    </div>
+                </div>
+           
+        </div>                                                    
+    </main>
+       
+    <!-- Footer -->
+    <footer class="text-center text-lg-start mt-5 text-light footer-background">
+        <div class="container p-4">
+            <div class="row">
+                <!-- Coluna da Logo -->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0 p-3">
+                    <img src="../img/logo_footer.png" alt="Hospital Promater" style="height: 100px;">
+                    <h5 class="text-uppercase mt-3" style="color: white; font-size: 1.1rem;">Siga-nos</h5>
+                    <ul class="list-unstyled d-flex justify-content-center p-0 m-0">
+                        <li class="mx-3">
+                            <a href="https://facebook.com/hospitalpromater" class="text-white" aria-label="Facebook">
+                                <i class="fab fa-facebook-f fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="mx-2">
+                            <a href="https://instagram.com/hospitalpromater" class="text-white" aria-label="Instagram">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coluna Endereço -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0 p-3">
+                    <h5 class="text-uppercase" style="color: white; font-size: 1.1rem;"><i class="fas fa-map-marker-alt"></i> Endereço</h5>
+                    <ul class="list-unstyled mb-0" style="color: white; font-size: 13px;">
+                        <li class="mb-2">Av. Lauro de Freitas, 1125 - Centro - Dias D'Ávila/BA</li>
+                    </ul>
+                </div>
+
+                <!-- Coluna Empresa -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0 p-3">
+                    <h5 class="text-uppercase" style="color: white; font-size: 1.1rem;">Empresa</h5>
+                    <ul class="list-unstyled mb-0 d-none d-md-block" style="color: white; font-size: 13px;">
+                        <li class="mb-2"><a href="../paginas/quemSomos.html" style="color: white;">Sobre Nós</a></li>
+                        <li class="mb-2"><a href="../paginas/quemSomos.html" style="color: white;">Quem Somos</a></li>
+                        <li class="mb-2"><a href="../paginas/missao.html" style="color: white;">Missão, Visão e Valores</a></li>
+                        <li class="mb-2"><a href="../paginas/politicaQualidade.html" style="color: white;">Política de Qualidade</a></li>
+                        <li class="mb-2"><a href="../paginas/politicaPrivacidade.html" style="color: white;">Política de Privacidade</a></li>
+                        <li class="mb-2"><a href="../paginas/trabalheConosco.html" style="color: white;">Trabalhe Conosco</a></li>
+                    </ul>
+                    <!-- Menu para telas menores -->
+                    <ul class="list-unstyled mb-0 d-block d-md-none" id="footer-menu">
+                        <li class="mb-2"><a href="../paginas/quemSomos.html" style="color: white;">Sobre Nós</a></li>
+                        <li class="mb-2"><a href="../paginas/quemSomos.html" style="color: white;">Quem Somos</a></li>
+                        <li class="mb-2"><a href="../paginas/missao.html" style="color: white;">Missão, Visão e Valores</a></li>
+                        <li class="mb-2"><a href="../paginas/politicaQualidade.html" style="color: white;">Política de Qualidade</a></li>
+                        <li class="mb-2"><a href="../paginas/politicaPrivacidade.html" style="color: white;">Política de Privacidade</a></li>
+                        <li class="mb-2"><a href="../paginas/trabalheConosco.html" style="color: white;">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna Serviços -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0 p-3">
+                    <h5 class="text-uppercase" style="color: white; font-size: 1.1rem;">Serviços</h5>
+                    <ul class="list-unstyled mb-0 d-none d-md-block" style="color: white; font-size: 13px;">
+                        <li class="mb-2"><a href="../paginas/exames.html" style="color: white;">Exames de Imagem</a></li>
+                        <li class="mb-2"><a href="https://www.labchecap.com.br/resultado-de-exames" title="Resultado de exames" style="color: white;">Resultado de exames</a></li>
+                        <li class="mb-2"><a href="../paginas/trabalheConosco.html" style="color: white;">Trabalhe Conosco</a></li>
+                    </ul>
+                    <!-- Menu para telas menores -->
+                    <ul class="list-unstyled mb-0 d-block d-md-none">
+                        <li class="mb-2"><a href="../paginas/exames.html" style="color: white;">Exames de Imagem</a></li>
+                        <li class="mb-2"><a href="https://www.labchecap.com.br/resultado-de-exames" title="Resultado de exames" style="color: white;">Resultado de exames</a></li>
+                        <li class="mb-2"><a href="../paginas/trabalheConosco.html" style="color: white;">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna Contatos -->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0 p-3">
+                    <h5 class="text-uppercase" style="color: white; font-size: 1.1rem;">Contatos</h5>
+                    <ul class="list-unstyled mb-0" style="color: white; font-size: 13px;">
+                        <li class="mb-2">Central de Agendamento</li>
+                        <li class="mb-2"><i class="fas fa-phone-alt"></i> <a href="tel:+557136483750" style="color: white;">(71) 3648-3750</a></li>
+                        <li class="mb-2"><i class="fab fa-whatsapp"></i> <a href="tel:+5571988026456" style="color: white;">(71) 98802-6456</a></li>
+                        <li class="mt-3">Setor de Qualidade</li>
+                        <li class="mb-2"><i class="fab fa-whatsapp"></i> <a href="tel:+5571996207149" style="color: white;">(71) 99620-7149</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botão WhatsApp -->
+        <div class="text-center my-3">
+            <a id="robbu-whatsapp-button" target="_blank" href="whatsapp-contacts.html">
+                <div class="rwb-tooltip">Agende pelo Whatsapp</div>
+                <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg" alt="WhatsApp">
+            </a>
+        </div>
+        
+        <!-- Rodapé com Direitos Autorais -->
+        <div class="mb-2 text-center p-3" style="color: black;">
+            <p>&copy; 2024 Hospital Promater | Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+
+
+</body>
+</html>
