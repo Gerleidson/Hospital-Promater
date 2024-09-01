@@ -329,11 +329,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
-
-
-
 // Função para ordenar os cartões por ordem alfabética
 function ordenarCardsPorEspecialidade() {
     // Seleciona o container onde os cartões estão
